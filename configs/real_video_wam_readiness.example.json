@@ -1,0 +1,26 @@
+{
+  "benchmark_name": "bodyshield_real_video_wam_readiness",
+  "datasets": [
+    {
+      "action_dim": 2,
+      "dataset_id": "fixture_manifest_sequence",
+      "dataset_root": "",
+      "frame_size": 16,
+      "frames": 8,
+      "manifest_path": "",
+      "notes": "Deterministic generated frame-manifest smoke used to prove the ingestion and fit path executes.",
+      "source": "fixture_sequence"
+    },
+    {
+      "action_dim": 2,
+      "dataset_id": "replace_with_real_camera_sequence",
+      "dataset_root": "external_real_video/replace_with_camera_sequence",
+      "manifest_path": "manifest.csv",
+      "notes": "Template row: replace with extracted real camera frames and action labels before claiming real-video WAM evidence.",
+      "source": "real_video_dataset"
+    }
+  ],
+  "evidence_boundary": "Readiness/interface validation only; not real-video or foundation-scale WAM evidence.",
+  "path_base": "repo_root",
+  "schema_version": 1
+}

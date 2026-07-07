@@ -1,0 +1,25 @@
+robot:
+  type: so101_follower
+  id: so101_bodyshield
+  port: /dev/ttyACM0
+  camera: overhead
+safety:
+  require_safety_green: true
+  max_trials_per_batch: 50
+  speed_scale_max: 0.30
+  pause_on_safety_event: true
+  pause_on_verifier_uncertainty: true
+task:
+  id: push_block
+  verifier: aruco_target_zone
+  reset: rail_return_or_verified_manual
+perturbation:
+  families: [latency_ms, action_noise_std, calibration_offset_mm, speed_cap_scale]
+  search: bodybreak_compound
+method:
+  policy: bodyshield
+  baseline_compare: [nominal, domain_randomization, robust_control, grid_worstcase]
+logging:
+  save_video: true
+  save_joint_logs: true
+  save_config_hash: true

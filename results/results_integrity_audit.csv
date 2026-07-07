@@ -1,0 +1,302 @@
+artifact,check,status,detail,observed,expected
+results/bodybreak_minimality_audit.csv,csv_exists_nonempty,pass,CSV exists and is nonempty,5355,>0 bytes
+results/bodybreak_minimality_audit.csv,csv_parse,pass,CSV parsed,12 rows; 19 columns,
+results/bodybreak_minimality_audit.csv,csv_nonempty_rows,pass,CSV has data rows,12,>0
+results/bodybreak_minimality_audit.csv,csv_unique_columns,pass,column names are unique,,
+results/breaking_search.csv,csv_exists_nonempty,pass,CSV exists and is nonempty,55246,>0 bytes
+results/breaking_search.csv,csv_parse,pass,CSV parsed,288 rows; 10 columns,
+results/breaking_search.csv,csv_nonempty_rows,pass,CSV has data rows,288,>0
+results/breaking_search.csv,csv_unique_columns,pass,column names are unique,,
+results/claim_boundary_audit.csv,csv_exists_nonempty,pass,CSV exists and is nonempty,9037,>0 bytes
+results/claim_boundary_audit.csv,csv_parse,pass,CSV parsed,63 rows; 6 columns,
+results/claim_boundary_audit.csv,csv_nonempty_rows,pass,CSV has data rows,63,>0
+results/claim_boundary_audit.csv,csv_unique_columns,pass,column names are unique,,
+results/command_surface_audit.csv,csv_exists_nonempty,pass,CSV exists and is nonempty,41424,>0 bytes
+results/command_surface_audit.csv,csv_parse,pass,CSV parsed,237 rows; 8 columns,
+results/command_surface_audit.csv,csv_nonempty_rows,pass,CSV has data rows,237,>0
+results/command_surface_audit.csv,csv_unique_columns,pass,column names are unique,,
+results/config_schema_audit.csv,csv_exists_nonempty,pass,CSV exists and is nonempty,6161,>0 bytes
+results/config_schema_audit.csv,csv_parse,pass,CSV parsed,40 rows; 6 columns,
+results/config_schema_audit.csv,csv_nonempty_rows,pass,CSV has data rows,40,>0
+results/config_schema_audit.csv,csv_unique_columns,pass,column names are unique,,
+results/corrective_adaptation_eval.csv,csv_exists_nonempty,pass,CSV exists and is nonempty,2565,>0 bytes
+results/corrective_adaptation_eval.csv,csv_parse,pass,CSV parsed,12 rows; 11 columns,
+results/corrective_adaptation_eval.csv,csv_nonempty_rows,pass,CSV has data rows,12,>0
+results/corrective_adaptation_eval.csv,csv_unique_columns,pass,column names are unique,,
+results/corrective_adaptation_residual_weights.csv,csv_exists_nonempty,pass,CSV exists and is nonempty,4103,>0 bytes
+results/corrective_adaptation_residual_weights.csv,csv_parse,pass,CSV parsed,52 rows; 4 columns,
+results/corrective_adaptation_residual_weights.csv,csv_nonempty_rows,pass,CSV has data rows,52,>0
+results/corrective_adaptation_residual_weights.csv,csv_unique_columns,pass,column names are unique,,
+results/corrective_adaptation_rollouts.csv,csv_exists_nonempty,pass,CSV exists and is nonempty,1465486,>0 bytes
+results/corrective_adaptation_rollouts.csv,csv_parse,pass,CSV parsed,6912 rows; 14 columns,
+results/corrective_adaptation_rollouts.csv,csv_nonempty_rows,pass,CSV has data rows,6912,>0
+results/corrective_adaptation_rollouts.csv,csv_unique_columns,pass,column names are unique,,
+results/corrective_trace_readiness.csv,csv_exists_nonempty,pass,CSV exists and is nonempty,1251,>0 bytes
+results/corrective_trace_readiness.csv,csv_parse,pass,CSV parsed,2 rows; 16 columns,
+results/corrective_trace_readiness.csv,csv_nonempty_rows,pass,CSV has data rows,2,>0
+results/corrective_trace_readiness.csv,csv_unique_columns,pass,column names are unique,,
+results/derived_results_audit.csv,csv_exists_nonempty,pass,CSV exists and is nonempty,2679,>0 bytes
+results/derived_results_audit.csv,csv_parse,pass,CSV parsed,16 rows; 6 columns,
+results/derived_results_audit.csv,csv_nonempty_rows,pass,CSV has data rows,16,>0
+results/derived_results_audit.csv,csv_unique_columns,pass,column names are unique,,
+results/environment_dependency_audit.csv,csv_exists_nonempty,pass,CSV exists and is nonempty,2001,>0 bytes
+results/environment_dependency_audit.csv,csv_parse,pass,CSV parsed,16 rows; 11 columns,
+results/environment_dependency_audit.csv,csv_nonempty_rows,pass,CSV has data rows,16,>0
+results/environment_dependency_audit.csv,csv_unique_columns,pass,column names are unique,,
+results/evidence_consistency_audit.csv,csv_exists_nonempty,pass,CSV exists and is nonempty,68532,>0 bytes
+results/evidence_consistency_audit.csv,csv_parse,pass,CSV parsed,662 rows; 5 columns,
+results/evidence_consistency_audit.csv,csv_nonempty_rows,pass,CSV has data rows,662,>0
+results/evidence_consistency_audit.csv,csv_unique_columns,pass,column names are unique,,
+results/external_policy_benchmark_readiness.csv,csv_exists_nonempty,pass,CSV exists and is nonempty,1239,>0 bytes
+results/external_policy_benchmark_readiness.csv,csv_parse,pass,CSV parsed,2 rows; 20 columns,
+results/external_policy_benchmark_readiness.csv,csv_nonempty_rows,pass,CSV has data rows,2,>0
+results/external_policy_benchmark_readiness.csv,csv_unique_columns,pass,column names are unique,,
+results/failure_taxonomy_counts.csv,csv_exists_nonempty,pass,CSV exists and is nonempty,2693,>0 bytes
+results/failure_taxonomy_counts.csv,csv_parse,pass,CSV parsed,90 rows; 3 columns,
+results/failure_taxonomy_counts.csv,csv_nonempty_rows,pass,CSV has data rows,90,>0
+results/failure_taxonomy_counts.csv,csv_unique_columns,pass,column names are unique,,
+results/high_fidelity_benchmark.csv,csv_exists_nonempty,pass,CSV exists and is nonempty,126792,>0 bytes
+results/high_fidelity_benchmark.csv,csv_parse,pass,CSV parsed,594 rows; 19 columns,
+results/high_fidelity_benchmark.csv,csv_nonempty_rows,pass,CSV has data rows,594,>0
+results/high_fidelity_benchmark.csv,csv_unique_columns,pass,column names are unique,,
+results/learned_outcome_axis_weights.csv,csv_exists_nonempty,pass,CSV exists and is nonempty,1485,>0 bytes
+results/learned_outcome_axis_weights.csv,csv_parse,pass,CSV parsed,15 rows; 3 columns,
+results/learned_outcome_axis_weights.csv,csv_nonempty_rows,pass,CSV has data rows,15,>0
+results/learned_outcome_axis_weights.csv,csv_unique_columns,pass,column names are unique,,
+results/learned_outcome_model_eval.csv,csv_exists_nonempty,pass,CSV exists and is nonempty,893,>0 bytes
+results/learned_outcome_model_eval.csv,csv_parse,pass,CSV parsed,6 rows; 8 columns,
+results/learned_outcome_model_eval.csv,csv_nonempty_rows,pass,CSV has data rows,6,>0
+results/learned_outcome_model_eval.csv,csv_unique_columns,pass,column names are unique,,
+results/learned_outcome_predictions.csv,csv_exists_nonempty,pass,CSV exists and is nonempty,3090676,>0 bytes
+results/learned_outcome_predictions.csv,csv_parse,pass,CSV parsed,23040 rows; 10 columns,
+results/learned_outcome_predictions.csv,csv_nonempty_rows,pass,CSV has data rows,23040,>0
+results/learned_outcome_predictions.csv,csv_unique_columns,pass,column names are unique,,
+results/method_deltas_vs_bodyshield.csv,csv_exists_nonempty,pass,CSV exists and is nonempty,6590,>0 bytes
+results/method_deltas_vs_bodyshield.csv,csv_parse,pass,CSV parsed,27 rows; 15 columns,
+results/method_deltas_vs_bodyshield.csv,csv_nonempty_rows,pass,CSV has data rows,27,>0
+results/method_deltas_vs_bodyshield.csv,csv_unique_columns,pass,column names are unique,,
+results/mujoco_residual_policy_eval.csv,csv_exists_nonempty,pass,CSV exists and is nonempty,1956,>0 bytes
+results/mujoco_residual_policy_eval.csv,csv_parse,pass,CSV parsed,9 rows; 14 columns,
+results/mujoco_residual_policy_eval.csv,csv_nonempty_rows,pass,CSV has data rows,9,>0
+results/mujoco_residual_policy_eval.csv,csv_unique_columns,pass,column names are unique,,
+results/mujoco_residual_policy_gate_ablation.csv,csv_exists_nonempty,pass,CSV exists and is nonempty,3229,>0 bytes
+results/mujoco_residual_policy_gate_ablation.csv,csv_parse,pass,CSV parsed,16 rows; 15 columns,
+results/mujoco_residual_policy_gate_ablation.csv,csv_nonempty_rows,pass,CSV has data rows,16,>0
+results/mujoco_residual_policy_gate_ablation.csv,csv_unique_columns,pass,column names are unique,,
+results/mujoco_residual_policy_rollouts.csv,csv_exists_nonempty,pass,CSV exists and is nonempty,53469,>0 bytes
+results/mujoco_residual_policy_rollouts.csv,csv_parse,pass,CSV parsed,252 rows; 17 columns,
+results/mujoco_residual_policy_rollouts.csv,csv_nonempty_rows,pass,CSV has data rows,252,>0
+results/mujoco_residual_policy_rollouts.csv,csv_unique_columns,pass,column names are unique,,
+results/mujoco_residual_policy_weights.csv,csv_exists_nonempty,pass,CSV exists and is nonempty,3241,>0 bytes
+results/mujoco_residual_policy_weights.csv,csv_parse,pass,CSV parsed,44 rows; 4 columns,
+results/mujoco_residual_policy_weights.csv,csv_nonempty_rows,pass,CSV has data rows,44,>0
+results/mujoco_residual_policy_weights.csv,csv_unique_columns,pass,column names are unique,,
+results/neural_wam_eval.csv,csv_exists_nonempty,pass,CSV exists and is nonempty,1436,>0 bytes
+results/neural_wam_eval.csv,csv_parse,pass,CSV parsed,9 rows; 9 columns,
+results/neural_wam_eval.csv,csv_nonempty_rows,pass,CSV has data rows,9,>0
+results/neural_wam_eval.csv,csv_unique_columns,pass,column names are unique,,
+results/neural_wam_rollouts.csv,csv_exists_nonempty,pass,CSV exists and is nonempty,1403159,>0 bytes
+results/neural_wam_rollouts.csv,csv_parse,pass,CSV parsed,6912 rows; 13 columns,
+results/neural_wam_rollouts.csv,csv_nonempty_rows,pass,CSV has data rows,6912,>0
+results/neural_wam_rollouts.csv,csv_unique_columns,pass,column names are unique,,
+results/neural_wam_training_curve.csv,csv_exists_nonempty,pass,CSV exists and is nonempty,612,>0 bytes
+results/neural_wam_training_curve.csv,csv_parse,pass,CSV parsed,9 rows; 6 columns,
+results/neural_wam_training_curve.csv,csv_nonempty_rows,pass,CSV has data rows,9,>0
+results/neural_wam_training_curve.csv,csv_unique_columns,pass,column names are unique,,
+results/nominal_vs_robustness_radius.csv,csv_exists_nonempty,pass,CSV exists and is nonempty,1060,>0 bytes
+results/nominal_vs_robustness_radius.csv,csv_parse,pass,CSV parsed,10 rows; 5 columns,
+results/nominal_vs_robustness_radius.csv,csv_nonempty_rows,pass,CSV has data rows,10,>0
+results/nominal_vs_robustness_radius.csv,csv_unique_columns,pass,column names are unique,,
+results/oracle_feasibility.csv,csv_exists_nonempty,pass,CSV exists and is nonempty,8443,>0 bytes
+results/oracle_feasibility.csv,csv_parse,pass,CSV parsed,60 rows; 7 columns,
+results/oracle_feasibility.csv,csv_nonempty_rows,pass,CSV has data rows,60,>0
+results/oracle_feasibility.csv,csv_unique_columns,pass,column names are unique,,
+results/paper_source_audit.csv,csv_exists_nonempty,pass,CSV exists and is nonempty,2701,>0 bytes
+results/paper_source_audit.csv,csv_parse,pass,CSV parsed,20 rows; 6 columns,
+results/paper_source_audit.csv,csv_nonempty_rows,pass,CSV has data rows,20,>0
+results/paper_source_audit.csv,csv_unique_columns,pass,column names are unique,,
+results/real_video_wam_readiness.csv,csv_exists_nonempty,pass,CSV exists and is nonempty,1166,>0 bytes
+results/real_video_wam_readiness.csv,csv_parse,pass,CSV parsed,2 rows; 17 columns,
+results/real_video_wam_readiness.csv,csv_nonempty_rows,pass,CSV has data rows,2,>0
+results/real_video_wam_readiness.csv,csv_unique_columns,pass,column names are unique,,
+results/repair_axis_importance.csv,csv_exists_nonempty,pass,CSV exists and is nonempty,818,>0 bytes
+results/repair_axis_importance.csv,csv_parse,pass,CSV parsed,15 rows; 3 columns,
+results/repair_axis_importance.csv,csv_nonempty_rows,pass,CSV has data rows,15,>0
+results/repair_axis_importance.csv,csv_unique_columns,pass,column names are unique,,
+results/repair_history.csv,csv_exists_nonempty,pass,CSV exists and is nonempty,7060,>0 bytes
+results/repair_history.csv,csv_parse,pass,CSV parsed,160 rows; 3 columns,
+results/repair_history.csv,csv_nonempty_rows,pass,CSV has data rows,160,>0
+results/repair_history.csv,csv_unique_columns,pass,column names are unique,,
+results/robustness_profiles.csv,csv_exists_nonempty,pass,CSV exists and is nonempty,13594,>0 bytes
+results/robustness_profiles.csv,csv_parse,pass,CSV parsed,170 rows; 5 columns,
+results/robustness_profiles.csv,csv_nonempty_rows,pass,CSV has data rows,170,>0
+results/robustness_profiles.csv,csv_unique_columns,pass,column names are unique,,
+results/secondary_metrics_by_method.csv,csv_exists_nonempty,pass,CSV exists and is nonempty,1697,>0 bytes
+results/secondary_metrics_by_method.csv,csv_parse,pass,CSV parsed,10 rows; 8 columns,
+results/secondary_metrics_by_method.csv,csv_nonempty_rows,pass,CSV has data rows,10,>0
+results/secondary_metrics_by_method.csv,csv_unique_columns,pass,column names are unique,,
+results/sim_env_availability.csv,csv_exists_nonempty,pass,CSV exists and is nonempty,261,>0 bytes
+results/sim_env_availability.csv,csv_parse,pass,CSV parsed,3 rows; 5 columns,
+results/sim_env_availability.csv,csv_nonempty_rows,pass,CSV has data rows,3,>0
+results/sim_env_availability.csv,csv_unique_columns,pass,column names are unique,,
+results/simulation_rollout_videos.csv,csv_exists_nonempty,pass,CSV exists and is nonempty,1347,>0 bytes
+results/simulation_rollout_videos.csv,csv_parse,pass,CSV parsed,3 rows; 14 columns,
+results/simulation_rollout_videos.csv,csv_nonempty_rows,pass,CSV has data rows,3,>0
+results/simulation_rollout_videos.csv,csv_unique_columns,pass,column names are unique,,
+results/source_import_audit.csv,csv_exists_nonempty,pass,CSV exists and is nonempty,15759,>0 bytes
+results/source_import_audit.csv,csv_parse,pass,CSV parsed,157 rows; 6 columns,
+results/source_import_audit.csv,csv_nonempty_rows,pass,CSV has data rows,157,>0
+results/source_import_audit.csv,csv_unique_columns,pass,column names are unique,,
+results/summary_by_method_bucket.csv,csv_exists_nonempty,pass,CSV exists and is nonempty,4571,>0 bytes
+results/summary_by_method_bucket.csv,csv_parse,pass,CSV parsed,30 rows; 11 columns,
+results/summary_by_method_bucket.csv,csv_nonempty_rows,pass,CSV has data rows,30,>0
+results/summary_by_method_bucket.csv,csv_unique_columns,pass,column names are unique,,
+results/task_suite_cards.csv,csv_exists_nonempty,pass,CSV exists and is nonempty,1962,>0 bytes
+results/task_suite_cards.csv,csv_parse,pass,CSV parsed,8 rows; 6 columns,
+results/task_suite_cards.csv,csv_nonempty_rows,pass,CSV has data rows,8,>0
+results/task_suite_cards.csv,csv_unique_columns,pass,column names are unique,,
+results/threshold_sensitivity.csv,csv_exists_nonempty,pass,CSV exists and is nonempty,66232,>0 bytes
+results/threshold_sensitivity.csv,csv_parse,pass,CSV parsed,360 rows; 11 columns,
+results/threshold_sensitivity.csv,csv_nonempty_rows,pass,CSV has data rows,360,>0
+results/threshold_sensitivity.csv,csv_unique_columns,pass,column names are unique,,
+results/trajectory_wam_axis_weights.csv,csv_exists_nonempty,pass,CSV exists and is nonempty,2442,>0 bytes
+results/trajectory_wam_axis_weights.csv,csv_parse,pass,CSV parsed,15 rows; 7 columns,
+results/trajectory_wam_axis_weights.csv,csv_nonempty_rows,pass,CSV has data rows,15,>0
+results/trajectory_wam_axis_weights.csv,csv_unique_columns,pass,column names are unique,,
+results/trajectory_wam_eval.csv,csv_exists_nonempty,pass,CSV exists and is nonempty,1039,>0 bytes
+results/trajectory_wam_eval.csv,csv_parse,pass,CSV parsed,6 rows; 9 columns,
+results/trajectory_wam_eval.csv,csv_nonempty_rows,pass,CSV has data rows,6,>0
+results/trajectory_wam_eval.csv,csv_unique_columns,pass,column names are unique,,
+results/trajectory_wam_rollouts.csv,csv_exists_nonempty,pass,CSV exists and is nonempty,5899222,>0 bytes
+results/trajectory_wam_rollouts.csv,csv_parse,pass,CSV parsed,23040 rows; 15 columns,
+results/trajectory_wam_rollouts.csv,csv_nonempty_rows,pass,CSV has data rows,23040,>0
+results/trajectory_wam_rollouts.csv,csv_unique_columns,pass,column names are unique,,
+results/trials.csv,csv_exists_nonempty,pass,CSV exists and is nonempty,344431261,>0 bytes
+results/trials.csv,csv_parse,pass,CSV parsed,1152000 rows; 33 columns,
+results/trials.csv,csv_nonempty_rows,pass,CSV has data rows,1152000,>0
+results/trials.csv,csv_unique_columns,pass,column names are unique,,
+results/visual_artifact_audit.csv,csv_exists_nonempty,pass,CSV exists and is nonempty,19709,>0 bytes
+results/visual_artifact_audit.csv,csv_parse,pass,CSV parsed,156 rows; 6 columns,
+results/visual_artifact_audit.csv,csv_nonempty_rows,pass,CSV has data rows,156,>0
+results/visual_artifact_audit.csv,csv_unique_columns,pass,column names are unique,,
+results/visual_wam_eval.csv,csv_exists_nonempty,pass,CSV exists and is nonempty,1491,>0 bytes
+results/visual_wam_eval.csv,csv_parse,pass,CSV parsed,9 rows; 9 columns,
+results/visual_wam_eval.csv,csv_nonempty_rows,pass,CSV has data rows,9,>0
+results/visual_wam_eval.csv,csv_unique_columns,pass,column names are unique,,
+results/visual_wam_feature_weights.csv,csv_exists_nonempty,pass,CSV exists and is nonempty,17950,>0 bytes
+results/visual_wam_feature_weights.csv,csv_parse,pass,CSV parsed,329 rows; 3 columns,
+results/visual_wam_feature_weights.csv,csv_nonempty_rows,pass,CSV has data rows,329,>0
+results/visual_wam_feature_weights.csv,csv_unique_columns,pass,column names are unique,,
+results/visual_wam_rollouts.csv,csv_exists_nonempty,pass,CSV exists and is nonempty,1375581,>0 bytes
+results/visual_wam_rollouts.csv,csv_parse,pass,CSV parsed,6912 rows; 12 columns,
+results/visual_wam_rollouts.csv,csv_nonempty_rows,pass,CSV has data rows,6912,>0
+results/visual_wam_rollouts.csv,csv_unique_columns,pass,column names are unique,,
+results/trials.csv,required_columns,pass,required columns present,15,
+results/trials.csv,exact_row_count,pass,row count matches expected,1152000,1152000
+results/trials.csv,non_null:trial_id,pass,required column has no nulls,0,0
+results/trials.csv,non_null:phase,pass,required column has no nulls,0,0
+results/trials.csv,non_null:task_id,pass,required column has no nulls,0,0
+results/trials.csv,non_null:robot_id,pass,required column has no nulls,0,0
+results/trials.csv,non_null:method_id,pass,required column has no nulls,0,0
+results/trials.csv,non_null:bucket,pass,required column has no nulls,0,0
+results/trials.csv,unique_key,pass,"unique key ['trial_id', 'task_id', 'robot_id', 'method_id', 'bucket', 'perturbation_family', 'level'] has no duplicates",0,0
+results/trials.csv,required_values:phase,pass,required values present,simulation,simulation
+results/trials.csv,required_values:bucket,pass,required values present,"heldout,nominal,seen","nominal,seen,heldout"
+results/trials.csv,required_values:method_id,pass,required values present,"bodyshield,domain_randomization,epec,grid_worstcase,human_effect_prior,nominal,oracle,random_tuning,robust_control,sysid_retune","nominal,random_tuning,domain_randomization,grid_worstcase,robust_control,sysid_retune,oracle,human_effect_prior,epec,bodyshield"
+results/trials.csv,numeric_range:perturbation_cost,pass,numeric values are within range,min=0; max=1,"[0.0, inf]"
+results/trials.csv,numeric_range:success,pass,numeric values are within range,min=0; max=1,"[0.0, 1.0]"
+results/trials.csv,numeric_range:execution_time_s,pass,numeric values are within range,min=1.92; max=3.78,"[0.0, inf]"
+results/trials.csv,numeric_range:path_length_m,pass,numeric values are within range,min=0.4032; max=0.6804,"[0.0, inf]"
+results/trials.csv,numeric_range:workspace_violation,pass,numeric values are within range,min=0; max=1,"[0.0, 1.0]"
+results/trials.csv,numeric_range:verifier_confidence,pass,numeric values are within range,min=0.885; max=0.885,"[0.0, 1.0]"
+results/breaking_search.csv,required_columns,pass,required columns present,10,
+results/breaking_search.csv,exact_row_count,pass,row count matches expected,288,288
+results/breaking_search.csv,unique_key,pass,"unique key ['method_id', 'task_id', 'robot_id', 'search_mode'] has no duplicates",0,0
+results/breaking_search.csv,required_values:search_mode,pass,required values present,"bodybreak,grid,one_axis,random","random,one_axis,grid,bodybreak"
+results/breaking_search.csv,allowed_values:notes,pass,only allowed values present,"found_break,no_break_found_returned_lowest_success","found_break,no_break_found_returned_lowest_success"
+results/breaking_search.csv,numeric_range:breaking_cost,pass,numeric values are within range,min=0.256433; max=1.2272,"[0.0, inf]"
+results/breaking_search.csv,numeric_range:success_rate,pass,numeric values are within range,min=0.264349; max=0.76094,"[0.0, 1.0]"
+results/breaking_search.csv,numeric_range:trials,pass,numeric values are within range,min=49; max=200,"[1.0, 200.0]"
+results/bodybreak_minimality_audit.csv,required_columns,pass,required columns present,7,
+results/bodybreak_minimality_audit.csv,minimum_row_count,pass,row count meets minimum,12,>=12
+results/bodybreak_minimality_audit.csv,numeric_range:bodybreak_cost,pass,numeric values are within range,min=0.256433; max=0.434631,"[0.0, inf]"
+results/bodybreak_minimality_audit.csv,numeric_range:dense_candidate_count,pass,numeric values are within range,min=448; max=449,"[1.0, inf]"
+results/bodybreak_minimality_audit.csv,numeric_range:confirm_trials,pass,numeric values are within range,min=320; max=320,"[1.0, inf]"
+results/summary_by_method_bucket.csv,required_columns,pass,required columns present,7,
+results/summary_by_method_bucket.csv,exact_row_count,pass,row count matches expected,30,30
+results/summary_by_method_bucket.csv,unique_key,pass,"unique key ['method_id', 'bucket'] has no duplicates",0,0
+results/summary_by_method_bucket.csv,required_values:bucket,pass,required values present,"heldout,nominal,seen","nominal,seen,heldout"
+results/summary_by_method_bucket.csv,numeric_range:n,pass,numeric values are within range,min=2400; max=67200,"[1.0, inf]"
+results/summary_by_method_bucket.csv,numeric_range:successes,pass,numeric values are within range,min=1905; max=61149,"[0.0, inf]"
+results/summary_by_method_bucket.csv,numeric_range:success_rate,pass,numeric values are within range,min=0.714167; max=0.925417,"[0.0, 1.0]"
+results/summary_by_method_bucket.csv,numeric_range:ci_low,pass,numeric values are within range,min=0.710002; max=0.914212,"[0.0, 1.0]"
+results/summary_by_method_bucket.csv,numeric_range:ci_high,pass,numeric values are within range,min=0.718295; max=0.935261,"[0.0, 1.0]"
+results/high_fidelity_benchmark.csv,required_columns,pass,required columns present,6,
+results/high_fidelity_benchmark.csv,minimum_row_count,pass,row count meets minimum,594,>=500
+results/high_fidelity_benchmark.csv,required_values:engine,pass,required values present,"maniskill,mujoco,mujoco_planar","mujoco,mujoco_planar,maniskill"
+results/high_fidelity_benchmark.csv,numeric_range:success_rate,pass,numeric values are within range,min=0; max=1,"[0.0, 1.0]"
+results/learned_outcome_model_eval.csv,required_columns,pass,required columns present,6,
+results/learned_outcome_model_eval.csv,exact_row_count,pass,row count matches expected,6,6
+results/learned_outcome_model_eval.csv,required_values:split,pass,required values present,"all,bucket=heldout,bucket=nominal,bucket=seen,heldout,train_seen_or_nominal","train_seen_or_nominal,heldout"
+results/learned_outcome_model_eval.csv,numeric_range:mae,pass,numeric values are within range,min=0.0378488; max=0.0842049,"[0.0, inf]"
+results/learned_outcome_model_eval.csv,numeric_range:brier,pass,numeric values are within range,min=0.00224809; max=0.0127979,"[0.0, inf]"
+results/trajectory_wam_eval.csv,required_columns,pass,required columns present,5,
+results/trajectory_wam_eval.csv,exact_row_count,pass,row count matches expected,6,6
+results/trajectory_wam_eval.csv,required_values:split,pass,required values present,"all,bucket=heldout,bucket=nominal,bucket=seen,heldout,train_seen_or_nominal","train_seen_or_nominal,heldout"
+results/trajectory_wam_eval.csv,numeric_range:n_transitions,pass,numeric values are within range,min=8640; max=414720,"[1.0, inf]"
+results/trajectory_wam_eval.csv,numeric_range:final_xy_mae,pass,numeric values are within range,min=0.00929708; max=0.0472362,"[0.0, inf]"
+results/visual_wam_eval.csv,required_columns,pass,required columns present,5,
+results/visual_wam_eval.csv,exact_row_count,pass,row count matches expected,9,9
+results/visual_wam_eval.csv,numeric_range:n_transitions,pass,numeric values are within range,min=2016; max=96768,"[1.0, inf]"
+results/visual_wam_eval.csv,numeric_range:transition_frame_mse,pass,numeric values are within range,min=0.000298155; max=0.000460869,"[0.0, inf]"
+results/neural_wam_eval.csv,required_columns,pass,required columns present,5,
+results/neural_wam_eval.csv,exact_row_count,pass,row count matches expected,9,9
+results/neural_wam_eval.csv,numeric_range:n_transitions,pass,numeric values are within range,min=2016; max=96768,"[1.0, inf]"
+results/neural_wam_eval.csv,numeric_range:transition_latent_mse,pass,numeric values are within range,min=0.00122784; max=0.00251364,"[0.0, inf]"
+results/corrective_adaptation_eval.csv,required_columns,pass,required columns present,5,
+results/corrective_adaptation_eval.csv,exact_row_count,pass,row count matches expected,12,12
+results/corrective_adaptation_eval.csv,numeric_range:n_rollouts,pass,numeric values are within range,min=144; max=6912,"[1.0, inf]"
+results/corrective_adaptation_eval.csv,numeric_range:base_final_error,pass,numeric values are within range,min=0.00652849; max=0.048686,"[0.0, inf]"
+results/mujoco_residual_policy_eval.csv,required_columns,pass,required columns present,5,
+results/mujoco_residual_policy_eval.csv,exact_row_count,pass,row count matches expected,9,9
+results/mujoco_residual_policy_eval.csv,numeric_range:n_rollouts,pass,numeric values are within range,min=36; max=252,"[1.0, inf]"
+results/mujoco_residual_policy_eval.csv,numeric_range:base_success_rate,pass,numeric values are within range,min=0; max=0.75,"[0.0, 1.0]"
+results/mujoco_residual_policy_eval.csv,numeric_range:adapted_success_rate,pass,numeric values are within range,min=0; max=0.75,"[0.0, 1.0]"
+results/mujoco_residual_policy_gate_ablation.csv,required_columns,pass,required columns present,5,
+results/mujoco_residual_policy_gate_ablation.csv,exact_row_count,pass,row count matches expected,16,16
+results/mujoco_residual_policy_gate_ablation.csv,required_values:variant,pass,required values present,"always_on,gated_default,non_nominal_only,residual_off","residual_off,always_on,non_nominal_only,gated_default"
+results/mujoco_residual_policy_gate_ablation.csv,numeric_range:base_success_rate,pass,numeric values are within range,min=0; max=0.75,"[0.0, 1.0]"
+results/mujoco_residual_policy_gate_ablation.csv,numeric_range:adapted_success_rate,pass,numeric values are within range,min=0; max=0.75,"[0.0, 1.0]"
+results/external_policy_benchmark_readiness.csv,required_columns,pass,required columns present,6,
+results/external_policy_benchmark_readiness.csv,exact_row_count,pass,row count matches expected,2,2
+results/external_policy_benchmark_readiness.csv,required_values:status,pass,required values present,"fixture_smoke_passed,missing_checkpoint","fixture_smoke_passed,missing_checkpoint"
+results/real_video_wam_readiness.csv,required_columns,pass,required columns present,6,
+results/real_video_wam_readiness.csv,exact_row_count,pass,row count matches expected,2,2
+results/real_video_wam_readiness.csv,required_values:status,pass,required values present,"fixture_training_smoke_passed,missing_dataset","fixture_training_smoke_passed,missing_dataset"
+results/corrective_trace_readiness.csv,required_columns,pass,required columns present,6,
+results/corrective_trace_readiness.csv,exact_row_count,pass,row count matches expected,2,2
+results/corrective_trace_readiness.csv,required_values:status,pass,required values present,"fixture_fit_smoke_passed,missing_dataset","fixture_fit_smoke_passed,missing_dataset"
+results/simulation_rollout_videos.csv,required_columns,pass,required columns present,6,
+results/simulation_rollout_videos.csv,exact_row_count,pass,row count matches expected,3,3
+results/simulation_rollout_videos.csv,unique_key,pass,unique key ['artifact_id'] has no duplicates,0,0
+results/simulation_rollout_videos.csv,required_values:artifact_id,pass,required values present,"bodybreak_failure,bodyshield_repair,nominal_reference","nominal_reference,bodybreak_failure,bodyshield_repair"
+results/simulation_rollout_videos.csv,numeric_range:frames,pass,numeric values are within range,min=19; max=19,"[2.0, inf]"
+results/simulation_rollout_videos.csv,numeric_range:success_probability,pass,numeric values are within range,min=0.499933; max=0.885,"[0.0, 1.0]"
+results/environment_dependency_audit.csv,required_columns,pass,required columns present,6,
+results/environment_dependency_audit.csv,minimum_row_count,pass,row count meets minimum,16,>=14
+results/environment_dependency_audit.csv,required_values:status,pass,required values present,pass,pass
+results/config_schema_audit.csv,required_columns,pass,required columns present,6,
+results/config_schema_audit.csv,minimum_row_count,pass,row count meets minimum,40,>=30
+results/config_schema_audit.csv,required_values:status,pass,required values present,pass,pass
+results/source_import_audit.csv,required_columns,pass,required columns present,6,
+results/source_import_audit.csv,minimum_row_count,pass,row count meets minimum,157,>=100
+results/source_import_audit.csv,required_values:status,pass,required values present,pass,pass
+results/derived_results_audit.csv,required_columns,pass,required columns present,6,
+results/derived_results_audit.csv,minimum_row_count,pass,row count meets minimum,16,>=10
+results/derived_results_audit.csv,required_values:status,pass,required values present,pass,pass
+results/trials_sample.jsonl,jsonl_parse_and_shape,pass,JSONL sample parsed with nested keys,2000,
+results/trials_sample.jsonl,jsonl_exact_rows,pass,sample row count,2000,2000
+results/trials_sample.jsonl,jsonl_unique_trial_ids,pass,sample trial IDs are unique,2000,2000
+results/trials_sample.jsonl,jsonl_metadata_code_hash,pass,sample metadata code hash matches current source tree,b283a7c310f9ae04,b283a7c310f9ae04
+results/schema_validation_summary.json,schema_summary_values,pass,schema validation summary has expected counts/status,"{""jsonschema_validated_sample_records"": 200, ""lightweight_validated_records"": 1152000, ""parquet_status"": ""written"", ""trial_json_schema_path"": ""trial_schema.schema.json""}","1,152,000 lightweight; 200 jsonschema; parquet written"
+results/trials.parquet,parquet_rows_match_trials_csv,pass,Parquet metadata row count matches trials.csv,parquet=1152000; csv=1152000,1152000

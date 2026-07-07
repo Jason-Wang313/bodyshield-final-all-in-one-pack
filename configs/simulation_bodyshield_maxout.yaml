@@ -1,0 +1,43 @@
+simulation:
+  engines: [mujoco, maniskill]
+  robots: [franka_panda, ur5e, xarm6, widowx250_like, so101_urdf, aloha_single_arm]
+tasks:
+  - push_block
+  - press_button
+  - slide_track
+  - pick_place_bin
+  - pull_ring
+  - constrained_place
+  - tool_push
+  - rotate_object
+perturbations:
+  software:
+    latency_ms: [0, 40, 80, 120, 160, 240]
+    action_noise_std: [0, 0.005, 0.01, 0.02, 0.04]
+    joint_range_scale: [1.0, 0.85, 0.70, 0.55]
+    gripper_limit_scale: [1.0, 0.8, 0.6, 0.4]
+    speed_cap_scale: [1.0, 0.75, 0.5, 0.3]
+    acceleration_cap_scale: [1.0, 0.75, 0.5, 0.3]
+    calibration_offset_mm: [0, 5, 10, 20, 35]
+    controller_rate_scale: [1.0, 0.75, 0.5, 0.25]
+    camera_shift_px: [0, 40, 80]
+    payload_g: [0, 250, 500]
+    tool_extension_cm: [0, 10, 20]
+    physical_gripper_restriction_mm: [0, 10, 20]
+    obstacle_clearance_cm: [0, 5, 10]
+    friction_surface: [nominal, felt, low_friction]
+methods:
+  - nominal
+  - random_tuning
+  - domain_randomization
+  - grid_worstcase
+  - robust_control
+  - sysid_retune
+  - oracle
+  - human_effect_prior
+  - epec
+  - bodyshield
+statistics:
+  trials_per_condition: 50
+  confidence_intervals: true
+  bootstrap: true

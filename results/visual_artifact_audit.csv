@@ -1,0 +1,157 @@
+artifact,check,status,detail,observed,expected
+results/figures,figure_stems_match_expected,pass,figure stems missing=[]; unexpected=[],"bodybreak_minimality_audit,bodyshield_mechanism,breaking_search_comparison,corrective_adaptation_summary,high_fidelity_summary,mujoco_residual_gate_ablation,mujoco_residual_policy_summary,neural_wam_summary,nominal_vs_radius,repair_seen_heldout,trajectory_wam_summary,visual_wam_summary","bodyshield_mechanism,breaking_search_comparison,bodybreak_minimality_audit,repair_seen_heldout,nominal_vs_radius,high_fidelity_summary,trajectory_wam_summary,visual_wam_summary,neural_wam_summary,mujoco_residual_policy_summary,mujoco_residual_gate_ablation,corrective_adaptation_summary"
+results/figures/bodyshield_mechanism,pdf_png_pair_exists,pass,figure has both PDF and PNG exports,pdf=True; png=True,pdf=True; png=True
+results/figures/bodyshield_mechanism.pdf,pdf_exists_nonempty,pass,PDF exists and is nonempty,11112,>0 bytes
+results/figures/bodyshield_mechanism.pdf,pdf_readable,pass,PDF opens successfully,pages=1,
+results/figures/bodyshield_mechanism.pdf,pdf_one_page,pass,figure PDF has exactly one page,1,1
+results/figures/bodyshield_mechanism.pdf,pdf_safe_structure,pass,PDF has no interactive/unsafe structure flags,,none
+results/figures/bodyshield_mechanism.pdf,pdf_min_dimensions,pass,PDF media box is inspectable,470.8x158.5,>=100x100 pt
+results/figures/bodyshield_mechanism.png,png_exists_nonempty,pass,PNG exists and is nonempty,56997,>0 bytes
+results/figures/bodyshield_mechanism.png,png_readable,pass,PNG opens successfully,1569x528,
+results/figures/bodyshield_mechanism.png,png_min_dimensions,pass,PNG dimensions are large enough for inspection,1569x528,>=300x150
+results/figures/bodyshield_mechanism.png,png_nonblank_variance,pass,PNG has nonblank pixel variation,"variance=1837.528; extrema=(0, 255)",variance>=10 and range>=10
+results/figures/breaking_search_comparison,pdf_png_pair_exists,pass,figure has both PDF and PNG exports,pdf=True; png=True,pdf=True; png=True
+results/figures/breaking_search_comparison.pdf,pdf_exists_nonempty,pass,PDF exists and is nonempty,13675,>0 bytes
+results/figures/breaking_search_comparison.pdf,pdf_readable,pass,PDF opens successfully,pages=1,
+results/figures/breaking_search_comparison.pdf,pdf_one_page,pass,figure PDF has exactly one page,1,1
+results/figures/breaking_search_comparison.pdf,pdf_safe_structure,pass,PDF has no interactive/unsafe structure flags,,none
+results/figures/breaking_search_comparison.pdf,pdf_min_dimensions,pass,PDF media box is inspectable,612.4x285.5,>=100x100 pt
+results/figures/breaking_search_comparison.png,png_exists_nonempty,pass,PNG exists and is nonempty,111059,>0 bytes
+results/figures/breaking_search_comparison.png,png_readable,pass,PNG opens successfully,2042x952,
+results/figures/breaking_search_comparison.png,png_min_dimensions,pass,PNG dimensions are large enough for inspection,2042x952,>=300x150
+results/figures/breaking_search_comparison.png,png_nonblank_variance,pass,PNG has nonblank pixel variation,"variance=4266.281; extrema=(0, 255)",variance>=10 and range>=10
+results/figures/bodybreak_minimality_audit,pdf_png_pair_exists,pass,figure has both PDF and PNG exports,pdf=True; png=True,pdf=True; png=True
+results/figures/bodybreak_minimality_audit.pdf,pdf_exists_nonempty,pass,PDF exists and is nonempty,14739,>0 bytes
+results/figures/bodybreak_minimality_audit.pdf,pdf_readable,pass,PDF opens successfully,pages=1,
+results/figures/bodybreak_minimality_audit.pdf,pdf_one_page,pass,figure PDF has exactly one page,1,1
+results/figures/bodybreak_minimality_audit.pdf,pdf_safe_structure,pass,PDF has no interactive/unsafe structure flags,,none
+results/figures/bodybreak_minimality_audit.pdf,pdf_min_dimensions,pass,PDF media box is inspectable,857.3x576.5,>=100x100 pt
+results/figures/bodybreak_minimality_audit.png,png_exists_nonempty,pass,PNG exists and is nonempty,153174,>0 bytes
+results/figures/bodybreak_minimality_audit.png,png_readable,pass,PNG opens successfully,2856x1923,
+results/figures/bodybreak_minimality_audit.png,png_min_dimensions,pass,PNG dimensions are large enough for inspection,2856x1923,>=300x150
+results/figures/bodybreak_minimality_audit.png,png_nonblank_variance,pass,PNG has nonblank pixel variation,"variance=3925.530; extrema=(0, 255)",variance>=10 and range>=10
+results/figures/repair_seen_heldout,pdf_png_pair_exists,pass,figure has both PDF and PNG exports,pdf=True; png=True,pdf=True; png=True
+results/figures/repair_seen_heldout.pdf,pdf_exists_nonempty,pass,PDF exists and is nonempty,13133,>0 bytes
+results/figures/repair_seen_heldout.pdf,pdf_readable,pass,PDF opens successfully,pages=1,
+results/figures/repair_seen_heldout.pdf,pdf_one_page,pass,figure PDF has exactly one page,1,1
+results/figures/repair_seen_heldout.pdf,pdf_safe_structure,pass,PDF has no interactive/unsafe structure flags,,none
+results/figures/repair_seen_heldout.pdf,pdf_min_dimensions,pass,PDF media box is inspectable,511.0x300.7,>=100x100 pt
+results/figures/repair_seen_heldout.png,png_exists_nonempty,pass,PNG exists and is nonempty,73794,>0 bytes
+results/figures/repair_seen_heldout.png,png_readable,pass,PNG opens successfully,1703x1005,
+results/figures/repair_seen_heldout.png,png_min_dimensions,pass,PNG dimensions are large enough for inspection,1703x1005,>=300x150
+results/figures/repair_seen_heldout.png,png_nonblank_variance,pass,PNG has nonblank pixel variation,"variance=4545.949; extrema=(0, 255)",variance>=10 and range>=10
+results/figures/nominal_vs_radius,pdf_png_pair_exists,pass,figure has both PDF and PNG exports,pdf=True; png=True,pdf=True; png=True
+results/figures/nominal_vs_radius.pdf,pdf_exists_nonempty,pass,PDF exists and is nonempty,15684,>0 bytes
+results/figures/nominal_vs_radius.pdf,pdf_readable,pass,PDF opens successfully,pages=1,
+results/figures/nominal_vs_radius.pdf,pdf_one_page,pass,figure PDF has exactly one page,1,1
+results/figures/nominal_vs_radius.pdf,pdf_safe_structure,pass,PDF has no interactive/unsafe structure flags,,none
+results/figures/nominal_vs_radius.pdf,pdf_min_dimensions,pass,PDF media box is inspectable,384.1x292.0,>=100x100 pt
+results/figures/nominal_vs_radius.png,png_exists_nonempty,pass,PNG exists and is nonempty,97394,>0 bytes
+results/figures/nominal_vs_radius.png,png_readable,pass,PNG opens successfully,1281x975,
+results/figures/nominal_vs_radius.png,png_min_dimensions,pass,PNG dimensions are large enough for inspection,1281x975,>=300x150
+results/figures/nominal_vs_radius.png,png_nonblank_variance,pass,PNG has nonblank pixel variation,"variance=1774.989; extrema=(0, 255)",variance>=10 and range>=10
+results/figures/high_fidelity_summary,pdf_png_pair_exists,pass,figure has both PDF and PNG exports,pdf=True; png=True,pdf=True; png=True
+results/figures/high_fidelity_summary.pdf,pdf_exists_nonempty,pass,PDF exists and is nonempty,15226,>0 bytes
+results/figures/high_fidelity_summary.pdf,pdf_readable,pass,PDF opens successfully,pages=1,
+results/figures/high_fidelity_summary.pdf,pdf_one_page,pass,figure PDF has exactly one page,1,1
+results/figures/high_fidelity_summary.pdf,pdf_safe_structure,pass,PDF has no interactive/unsafe structure flags,,none
+results/figures/high_fidelity_summary.pdf,pdf_min_dimensions,pass,PDF media box is inspectable,856.8x302.8,>=100x100 pt
+results/figures/high_fidelity_summary.png,png_exists_nonempty,pass,PNG exists and is nonempty,113172,>0 bytes
+results/figures/high_fidelity_summary.png,png_readable,pass,PNG opens successfully,2856x1010,
+results/figures/high_fidelity_summary.png,png_min_dimensions,pass,PNG dimensions are large enough for inspection,2856x1010,>=300x150
+results/figures/high_fidelity_summary.png,png_nonblank_variance,pass,PNG has nonblank pixel variation,"variance=4366.705; extrema=(0, 255)",variance>=10 and range>=10
+results/figures/trajectory_wam_summary,pdf_png_pair_exists,pass,figure has both PDF and PNG exports,pdf=True; png=True,pdf=True; png=True
+results/figures/trajectory_wam_summary.pdf,pdf_exists_nonempty,pass,PDF exists and is nonempty,346436,>0 bytes
+results/figures/trajectory_wam_summary.pdf,pdf_readable,pass,PDF opens successfully,pages=1,
+results/figures/trajectory_wam_summary.pdf,pdf_one_page,pass,figure PDF has exactly one page,1,1
+results/figures/trajectory_wam_summary.pdf,pdf_safe_structure,pass,PDF has no interactive/unsafe structure flags,,none
+results/figures/trajectory_wam_summary.pdf,pdf_min_dimensions,pass,PDF media box is inspectable,611.9x275.1,>=100x100 pt
+results/figures/trajectory_wam_summary.png,png_exists_nonempty,pass,PNG exists and is nonempty,177264,>0 bytes
+results/figures/trajectory_wam_summary.png,png_readable,pass,PNG opens successfully,2040x918,
+results/figures/trajectory_wam_summary.png,png_min_dimensions,pass,PNG dimensions are large enough for inspection,2040x918,>=300x150
+results/figures/trajectory_wam_summary.png,png_nonblank_variance,pass,PNG has nonblank pixel variation,"variance=3432.676; extrema=(0, 255)",variance>=10 and range>=10
+results/figures/visual_wam_summary,pdf_png_pair_exists,pass,figure has both PDF and PNG exports,pdf=True; png=True,pdf=True; png=True
+results/figures/visual_wam_summary.pdf,pdf_exists_nonempty,pass,PDF exists and is nonempty,14917,>0 bytes
+results/figures/visual_wam_summary.pdf,pdf_readable,pass,PDF opens successfully,pages=1,
+results/figures/visual_wam_summary.pdf,pdf_one_page,pass,figure PDF has exactly one page,1,1
+results/figures/visual_wam_summary.pdf,pdf_safe_structure,pass,PDF has no interactive/unsafe structure flags,,none
+results/figures/visual_wam_summary.pdf,pdf_min_dimensions,pass,PDF media box is inspectable,626.4x275.2,>=100x100 pt
+results/figures/visual_wam_summary.png,png_exists_nonempty,pass,PNG exists and is nonempty,80934,>0 bytes
+results/figures/visual_wam_summary.png,png_readable,pass,PNG opens successfully,2089x918,
+results/figures/visual_wam_summary.png,png_min_dimensions,pass,PNG dimensions are large enough for inspection,2089x918,>=300x150
+results/figures/visual_wam_summary.png,png_nonblank_variance,pass,PNG has nonblank pixel variation,"variance=5172.200; extrema=(0, 255)",variance>=10 and range>=10
+results/figures/neural_wam_summary,pdf_png_pair_exists,pass,figure has both PDF and PNG exports,pdf=True; png=True,pdf=True; png=True
+results/figures/neural_wam_summary.pdf,pdf_exists_nonempty,pass,PDF exists and is nonempty,14821,>0 bytes
+results/figures/neural_wam_summary.pdf,pdf_readable,pass,PDF opens successfully,pages=1,
+results/figures/neural_wam_summary.pdf,pdf_one_page,pass,figure PDF has exactly one page,1,1
+results/figures/neural_wam_summary.pdf,pdf_safe_structure,pass,PDF has no interactive/unsafe structure flags,,none
+results/figures/neural_wam_summary.pdf,pdf_min_dimensions,pass,PDF media box is inspectable,626.4x275.1,>=100x100 pt
+results/figures/neural_wam_summary.png,png_exists_nonempty,pass,PNG exists and is nonempty,116050,>0 bytes
+results/figures/neural_wam_summary.png,png_readable,pass,PNG opens successfully,2089x918,
+results/figures/neural_wam_summary.png,png_min_dimensions,pass,PNG dimensions are large enough for inspection,2089x918,>=300x150
+results/figures/neural_wam_summary.png,png_nonblank_variance,pass,PNG has nonblank pixel variation,"variance=3481.194; extrema=(0, 255)",variance>=10 and range>=10
+results/figures/mujoco_residual_policy_summary,pdf_png_pair_exists,pass,figure has both PDF and PNG exports,pdf=True; png=True,pdf=True; png=True
+results/figures/mujoco_residual_policy_summary.pdf,pdf_exists_nonempty,pass,PDF exists and is nonempty,12996,>0 bytes
+results/figures/mujoco_residual_policy_summary.pdf,pdf_readable,pass,PDF opens successfully,pages=1,
+results/figures/mujoco_residual_policy_summary.pdf,pdf_one_page,pass,figure PDF has exactly one page,1,1
+results/figures/mujoco_residual_policy_summary.pdf,pdf_safe_structure,pass,PDF has no interactive/unsafe structure flags,,none
+results/figures/mujoco_residual_policy_summary.pdf,pdf_min_dimensions,pass,PDF media box is inspectable,626.3x275.2,>=100x100 pt
+results/figures/mujoco_residual_policy_summary.png,png_exists_nonempty,pass,PNG exists and is nonempty,116856,>0 bytes
+results/figures/mujoco_residual_policy_summary.png,png_readable,pass,PNG opens successfully,2088x918,
+results/figures/mujoco_residual_policy_summary.png,png_min_dimensions,pass,PNG dimensions are large enough for inspection,2088x918,>=300x150
+results/figures/mujoco_residual_policy_summary.png,png_nonblank_variance,pass,PNG has nonblank pixel variation,"variance=5818.191; extrema=(0, 255)",variance>=10 and range>=10
+results/figures/mujoco_residual_gate_ablation,pdf_png_pair_exists,pass,figure has both PDF and PNG exports,pdf=True; png=True,pdf=True; png=True
+results/figures/mujoco_residual_gate_ablation.pdf,pdf_exists_nonempty,pass,PDF exists and is nonempty,13615,>0 bytes
+results/figures/mujoco_residual_gate_ablation.pdf,pdf_readable,pass,PDF opens successfully,pages=1,
+results/figures/mujoco_residual_gate_ablation.pdf,pdf_one_page,pass,figure PDF has exactly one page,1,1
+results/figures/mujoco_residual_gate_ablation.pdf,pdf_safe_structure,pass,PDF has no interactive/unsafe structure flags,,none
+results/figures/mujoco_residual_gate_ablation.pdf,pdf_min_dimensions,pass,PDF media box is inspectable,647.1x275.2,>=100x100 pt
+results/figures/mujoco_residual_gate_ablation.png,png_exists_nonempty,pass,PNG exists and is nonempty,100819,>0 bytes
+results/figures/mujoco_residual_gate_ablation.png,png_readable,pass,PNG opens successfully,2158x918,
+results/figures/mujoco_residual_gate_ablation.png,png_min_dimensions,pass,PNG dimensions are large enough for inspection,2158x918,>=300x150
+results/figures/mujoco_residual_gate_ablation.png,png_nonblank_variance,pass,PNG has nonblank pixel variation,"variance=3672.937; extrema=(0, 255)",variance>=10 and range>=10
+results/figures/corrective_adaptation_summary,pdf_png_pair_exists,pass,figure has both PDF and PNG exports,pdf=True; png=True,pdf=True; png=True
+results/figures/corrective_adaptation_summary.pdf,pdf_exists_nonempty,pass,PDF exists and is nonempty,13501,>0 bytes
+results/figures/corrective_adaptation_summary.pdf,pdf_readable,pass,PDF opens successfully,pages=1,
+results/figures/corrective_adaptation_summary.pdf,pdf_one_page,pass,figure PDF has exactly one page,1,1
+results/figures/corrective_adaptation_summary.pdf,pdf_safe_structure,pass,PDF has no interactive/unsafe structure flags,,none
+results/figures/corrective_adaptation_summary.pdf,pdf_min_dimensions,pass,PDF media box is inspectable,626.3x275.2,>=100x100 pt
+results/figures/corrective_adaptation_summary.png,png_exists_nonempty,pass,PNG exists and is nonempty,111659,>0 bytes
+results/figures/corrective_adaptation_summary.png,png_readable,pass,PNG opens successfully,2088x918,
+results/figures/corrective_adaptation_summary.png,png_min_dimensions,pass,PNG dimensions are large enough for inspection,2088x918,>=300x150
+results/figures/corrective_adaptation_summary.png,png_nonblank_variance,pass,PNG has nonblank pixel variation,"variance=5606.202; extrema=(0, 255)",variance>=10 and range>=10
+reports/FIGURE_CAPTIONS.md,caption_report_exists_nonempty,pass,caption report exists and is nonempty,4459,>0 bytes
+reports/FIGURE_CAPTIONS.md,caption_figure_paths_match_expected,pass,caption figure refs missing=[]; unexpected=[],13,12
+reports/FIGURE_CAPTIONS.md,caption_gif_heading_present,pass,caption report includes synthetic GIF media heading,True,True
+results/figures/bodybreak_minimality_audit.pdf,caption_reference_resolves,pass,caption target exists and is nonempty,True,True
+results/figures/bodyshield_mechanism.pdf,caption_reference_resolves,pass,caption target exists and is nonempty,True,True
+results/figures/breaking_search_comparison.pdf,caption_reference_resolves,pass,caption target exists and is nonempty,True,True
+results/figures/corrective_adaptation_summary.pdf,caption_reference_resolves,pass,caption target exists and is nonempty,True,True
+results/figures/high_fidelity_summary.pdf,caption_reference_resolves,pass,caption target exists and is nonempty,True,True
+results/figures/mujoco_residual_gate_ablation.pdf,caption_reference_resolves,pass,caption target exists and is nonempty,True,True
+results/figures/mujoco_residual_policy_summary.pdf,caption_reference_resolves,pass,caption target exists and is nonempty,True,True
+results/figures/neural_wam_summary.pdf,caption_reference_resolves,pass,caption target exists and is nonempty,True,True
+results/figures/nominal_vs_radius.pdf,caption_reference_resolves,pass,caption target exists and is nonempty,True,True
+results/figures/repair_seen_heldout.pdf,caption_reference_resolves,pass,caption target exists and is nonempty,True,True
+results/figures/trajectory_wam_summary.pdf,caption_reference_resolves,pass,caption target exists and is nonempty,True,True
+results/figures/visual_wam_summary.pdf,caption_reference_resolves,pass,caption target exists and is nonempty,True,True
+results/videos/bodyshield_synthetic_*.gif,caption_reference_resolves,pass,caption glob resolves,3,>0
+results/simulation_rollout_videos.csv,gif_manifest_row_count,pass,GIF manifest has expected rows,3,3
+results/videos/bodyshield_synthetic_nominal_reference.gif,gif_exists_nonempty,pass,GIF exists and is nonempty,57877,>0 bytes
+results/videos/bodyshield_synthetic_nominal_reference.gif,gif_readable,pass,GIF opens successfully,"frames=19; size=(240, 264)",
+results/videos/bodyshield_synthetic_nominal_reference.gif,gif_frame_count_matches_manifest,pass,GIF frame count matches manifest,19,19
+results/videos/bodyshield_synthetic_nominal_reference.gif,gif_dimensions_match_manifest,pass,GIF dimensions match renderer convention and manifest frame size,"(240, 264)",240x264
+results/videos/bodyshield_synthetic_nominal_reference.gif,gif_nonblank_first_frame,pass,GIF first frame is nonblank,variance=708.357,>=10
+results/videos/bodyshield_synthetic_nominal_reference.gif,gif_has_motion,pass,GIF has frame-to-frame motion,True,True
+results/videos/bodyshield_synthetic_bodybreak_failure.gif,gif_exists_nonempty,pass,GIF exists and is nonempty,71687,>0 bytes
+results/videos/bodyshield_synthetic_bodybreak_failure.gif,gif_readable,pass,GIF opens successfully,"frames=19; size=(240, 264)",
+results/videos/bodyshield_synthetic_bodybreak_failure.gif,gif_frame_count_matches_manifest,pass,GIF frame count matches manifest,19,19
+results/videos/bodyshield_synthetic_bodybreak_failure.gif,gif_dimensions_match_manifest,pass,GIF dimensions match renderer convention and manifest frame size,"(240, 264)",240x264
+results/videos/bodyshield_synthetic_bodybreak_failure.gif,gif_nonblank_first_frame,pass,GIF first frame is nonblank,variance=701.709,>=10
+results/videos/bodyshield_synthetic_bodybreak_failure.gif,gif_has_motion,pass,GIF has frame-to-frame motion,True,True
+results/videos/bodyshield_synthetic_bodyshield_repair.gif,gif_exists_nonempty,pass,GIF exists and is nonempty,85823,>0 bytes
+results/videos/bodyshield_synthetic_bodyshield_repair.gif,gif_readable,pass,GIF opens successfully,"frames=19; size=(240, 264)",
+results/videos/bodyshield_synthetic_bodyshield_repair.gif,gif_frame_count_matches_manifest,pass,GIF frame count matches manifest,19,19
+results/videos/bodyshield_synthetic_bodyshield_repair.gif,gif_dimensions_match_manifest,pass,GIF dimensions match renderer convention and manifest frame size,"(240, 264)",240x264
+results/videos/bodyshield_synthetic_bodyshield_repair.gif,gif_nonblank_first_frame,pass,GIF first frame is nonblank,variance=698.260,>=10
+results/videos/bodyshield_synthetic_bodyshield_repair.gif,gif_has_motion,pass,GIF has frame-to-frame motion,True,True

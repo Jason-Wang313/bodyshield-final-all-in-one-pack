@@ -1,0 +1,997 @@
+artifact,check,status,detail,observed,expected
+reports/ARTIFACT_MANIFEST.csv,artifact_manifest_exists_nonempty,pass,artifact manifest exists and is nonempty,178,>0 rows
+release/RELEASE_BUNDLE_MANIFEST.csv,release_manifest_exists_nonempty,pass,release manifest exists and is nonempty,252,>0 rows
+reports/ARTIFACT_MANIFEST.csv,artifact_manifest_exact_current_generated_set,pass,missing=[]; extra=[],178,178
+reports/ARTIFACT_MANIFEST.csv,artifact_manifest_hashes_match_current_files,pass,bad_bytes=[]; bad_hashes=[],0,0
+release/RELEASE_BUNDLE_MANIFEST.csv,release_manifest_exact_current_payload_set,pass,missing=[]; extra=[],252,252
+release/RELEASE_BUNDLE_MANIFEST.csv,release_manifest_hashes_match_current_files,pass,bad_bytes=[]; bad_hashes=[],0,0
+README_EXECUTION.md,documented_output_references_discovered,pass,documented output references discovered,68,>0
+reports/NON_HARDWARE_COMPLETE.md,documented_output_exists_nonempty,pass,README_EXECUTION.md reference exists and is nonempty,1,1
+reports/NON_HARDWARE_COMPLETE.md,documented_output_in_artifact_manifest_when_eligible,pass,README_EXECUTION.md reference artifact_manifest_missing=[],1,1
+reports/NON_HARDWARE_COMPLETE.md,documented_output_in_release_manifest_when_eligible,pass,README_EXECUTION.md reference release_manifest_missing=[],1,1
+reports/NON_HARDWARE_AUDIT.md,documented_output_exists_nonempty,pass,README_EXECUTION.md reference exists and is nonempty,1,1
+reports/NON_HARDWARE_AUDIT.md,documented_output_in_artifact_manifest_when_eligible,pass,README_EXECUTION.md reference artifact_manifest_missing=[],1,1
+reports/NON_HARDWARE_AUDIT.md,documented_output_in_release_manifest_when_eligible,pass,README_EXECUTION.md reference release_manifest_missing=[],1,1
+reports/NON_HARDWARE_REQUIREMENTS_TRACE.md,documented_output_exists_nonempty,pass,README_EXECUTION.md reference exists and is nonempty,1,1
+reports/NON_HARDWARE_REQUIREMENTS_TRACE.md,documented_output_in_artifact_manifest_when_eligible,pass,README_EXECUTION.md reference artifact_manifest_missing=[],1,1
+reports/NON_HARDWARE_REQUIREMENTS_TRACE.md,documented_output_in_release_manifest_when_eligible,pass,README_EXECUTION.md reference release_manifest_missing=[],1,1
+reports/BUDGET_AND_FAIRNESS_AUDIT.md,documented_output_exists_nonempty,pass,README_EXECUTION.md reference exists and is nonempty,1,1
+reports/BUDGET_AND_FAIRNESS_AUDIT.md,documented_output_in_artifact_manifest_when_eligible,pass,README_EXECUTION.md reference artifact_manifest_missing=[],1,1
+reports/BUDGET_AND_FAIRNESS_AUDIT.md,documented_output_in_release_manifest_when_eligible,pass,README_EXECUTION.md reference release_manifest_missing=[],1,1
+reports/BODYBREAK_MINIMALITY_AUDIT.md,documented_output_exists_nonempty,pass,README_EXECUTION.md reference exists and is nonempty,1,1
+reports/BODYBREAK_MINIMALITY_AUDIT.md,documented_output_in_artifact_manifest_when_eligible,pass,README_EXECUTION.md reference artifact_manifest_missing=[],1,1
+reports/BODYBREAK_MINIMALITY_AUDIT.md,documented_output_in_release_manifest_when_eligible,pass,README_EXECUTION.md reference release_manifest_missing=[],1,1
+reports/CLAIM_LEDGER.md,documented_output_exists_nonempty,pass,README_EXECUTION.md reference exists and is nonempty,1,1
+reports/CLAIM_LEDGER.md,documented_output_in_artifact_manifest_when_eligible,pass,README_EXECUTION.md reference artifact_manifest_missing=[],1,1
+reports/CLAIM_LEDGER.md,documented_output_in_release_manifest_when_eligible,pass,README_EXECUTION.md reference release_manifest_missing=[],1,1
+reports/REPRODUCIBILITY_MANIFEST.md,documented_output_exists_nonempty,pass,README_EXECUTION.md reference exists and is nonempty,1,1
+reports/REPRODUCIBILITY_MANIFEST.md,documented_output_in_artifact_manifest_when_eligible,pass,README_EXECUTION.md reference artifact_manifest_missing=[],1,1
+reports/REPRODUCIBILITY_MANIFEST.md,documented_output_in_release_manifest_when_eligible,pass,README_EXECUTION.md reference release_manifest_missing=[],1,1
+reports/RELEASE_BUNDLE.md,documented_output_exists_nonempty,pass,README_EXECUTION.md reference exists and is nonempty,1,1
+reports/RELEASE_BUNDLE.md,documented_output_in_artifact_manifest_when_eligible,pass,README_EXECUTION.md reference artifact_manifest_missing=[],1,1
+reports/RELEASE_BUNDLE.md,documented_output_in_release_manifest_when_eligible,pass,README_EXECUTION.md reference release_manifest_missing=[],0,0
+reports/ARTIFACT_INVENTORY_AUDIT.md,documented_output_exists_nonempty,pass,README_EXECUTION.md reference exists and is nonempty,1,1
+reports/ARTIFACT_INVENTORY_AUDIT.md,documented_output_in_artifact_manifest_when_eligible,pass,README_EXECUTION.md reference artifact_manifest_missing=[],0,0
+reports/ARTIFACT_INVENTORY_AUDIT.md,documented_output_in_release_manifest_when_eligible,pass,README_EXECUTION.md reference release_manifest_missing=[],0,0
+reports/CLAIM_BOUNDARY_AUDIT.md,documented_output_exists_nonempty,pass,README_EXECUTION.md reference exists and is nonempty,1,1
+reports/CLAIM_BOUNDARY_AUDIT.md,documented_output_in_artifact_manifest_when_eligible,pass,README_EXECUTION.md reference artifact_manifest_missing=[],1,1
+reports/CLAIM_BOUNDARY_AUDIT.md,documented_output_in_release_manifest_when_eligible,pass,README_EXECUTION.md reference release_manifest_missing=[],1,1
+reports/COMMAND_SURFACE_AUDIT.md,documented_output_exists_nonempty,pass,README_EXECUTION.md reference exists and is nonempty,1,1
+reports/COMMAND_SURFACE_AUDIT.md,documented_output_in_artifact_manifest_when_eligible,pass,README_EXECUTION.md reference artifact_manifest_missing=[],1,1
+reports/COMMAND_SURFACE_AUDIT.md,documented_output_in_release_manifest_when_eligible,pass,README_EXECUTION.md reference release_manifest_missing=[],1,1
+reports/EVIDENCE_CONSISTENCY_AUDIT.md,documented_output_exists_nonempty,pass,README_EXECUTION.md reference exists and is nonempty,1,1
+reports/EVIDENCE_CONSISTENCY_AUDIT.md,documented_output_in_artifact_manifest_when_eligible,pass,README_EXECUTION.md reference artifact_manifest_missing=[],1,1
+reports/EVIDENCE_CONSISTENCY_AUDIT.md,documented_output_in_release_manifest_when_eligible,pass,README_EXECUTION.md reference release_manifest_missing=[],1,1
+reports/ENVIRONMENT_DEPENDENCY_AUDIT.md,documented_output_exists_nonempty,pass,README_EXECUTION.md reference exists and is nonempty,1,1
+reports/ENVIRONMENT_DEPENDENCY_AUDIT.md,documented_output_in_artifact_manifest_when_eligible,pass,README_EXECUTION.md reference artifact_manifest_missing=[],1,1
+reports/ENVIRONMENT_DEPENDENCY_AUDIT.md,documented_output_in_release_manifest_when_eligible,pass,README_EXECUTION.md reference release_manifest_missing=[],1,1
+reports/CONFIG_SCHEMA_AUDIT.md,documented_output_exists_nonempty,pass,README_EXECUTION.md reference exists and is nonempty,1,1
+reports/CONFIG_SCHEMA_AUDIT.md,documented_output_in_artifact_manifest_when_eligible,pass,README_EXECUTION.md reference artifact_manifest_missing=[],1,1
+reports/CONFIG_SCHEMA_AUDIT.md,documented_output_in_release_manifest_when_eligible,pass,README_EXECUTION.md reference release_manifest_missing=[],1,1
+reports/DERIVED_RESULTS_AUDIT.md,documented_output_exists_nonempty,pass,README_EXECUTION.md reference exists and is nonempty,1,1
+reports/DERIVED_RESULTS_AUDIT.md,documented_output_in_artifact_manifest_when_eligible,pass,README_EXECUTION.md reference artifact_manifest_missing=[],1,1
+reports/DERIVED_RESULTS_AUDIT.md,documented_output_in_release_manifest_when_eligible,pass,README_EXECUTION.md reference release_manifest_missing=[],1,1
+reports/SOURCE_IMPORT_AUDIT.md,documented_output_exists_nonempty,pass,README_EXECUTION.md reference exists and is nonempty,1,1
+reports/SOURCE_IMPORT_AUDIT.md,documented_output_in_artifact_manifest_when_eligible,pass,README_EXECUTION.md reference artifact_manifest_missing=[],1,1
+reports/SOURCE_IMPORT_AUDIT.md,documented_output_in_release_manifest_when_eligible,pass,README_EXECUTION.md reference release_manifest_missing=[],1,1
+reports/RESULTS_INTEGRITY_AUDIT.md,documented_output_exists_nonempty,pass,README_EXECUTION.md reference exists and is nonempty,1,1
+reports/RESULTS_INTEGRITY_AUDIT.md,documented_output_in_artifact_manifest_when_eligible,pass,README_EXECUTION.md reference artifact_manifest_missing=[],1,1
+reports/RESULTS_INTEGRITY_AUDIT.md,documented_output_in_release_manifest_when_eligible,pass,README_EXECUTION.md reference release_manifest_missing=[],1,1
+reports/PAPER_SOURCE_AUDIT.md,documented_output_exists_nonempty,pass,README_EXECUTION.md reference exists and is nonempty,1,1
+reports/PAPER_SOURCE_AUDIT.md,documented_output_in_artifact_manifest_when_eligible,pass,README_EXECUTION.md reference artifact_manifest_missing=[],1,1
+reports/PAPER_SOURCE_AUDIT.md,documented_output_in_release_manifest_when_eligible,pass,README_EXECUTION.md reference release_manifest_missing=[],1,1
+reports/PORTABLE_HYGIENE_AUDIT.md,documented_output_exists_nonempty,pass,README_EXECUTION.md reference exists and is nonempty,1,1
+reports/PORTABLE_HYGIENE_AUDIT.md,documented_output_in_artifact_manifest_when_eligible,pass,README_EXECUTION.md reference artifact_manifest_missing=[],0,0
+reports/PORTABLE_HYGIENE_AUDIT.md,documented_output_in_release_manifest_when_eligible,pass,README_EXECUTION.md reference release_manifest_missing=[],0,0
+reports/VISUAL_ARTIFACT_AUDIT.md,documented_output_exists_nonempty,pass,README_EXECUTION.md reference exists and is nonempty,1,1
+reports/VISUAL_ARTIFACT_AUDIT.md,documented_output_in_artifact_manifest_when_eligible,pass,README_EXECUTION.md reference artifact_manifest_missing=[],1,1
+reports/VISUAL_ARTIFACT_AUDIT.md,documented_output_in_release_manifest_when_eligible,pass,README_EXECUTION.md reference release_manifest_missing=[],1,1
+reports/RELEASE_PAYLOAD_AUDIT.md,documented_output_exists_nonempty,pass,README_EXECUTION.md reference exists and is nonempty,1,1
+reports/RELEASE_PAYLOAD_AUDIT.md,documented_output_in_artifact_manifest_when_eligible,pass,README_EXECUTION.md reference artifact_manifest_missing=[],0,0
+reports/RELEASE_PAYLOAD_AUDIT.md,documented_output_in_release_manifest_when_eligible,pass,README_EXECUTION.md reference release_manifest_missing=[],0,0
+reports/RELEASE_DETERMINISM_AUDIT.md,documented_output_exists_nonempty,pass,README_EXECUTION.md reference exists and is nonempty,1,1
+reports/RELEASE_DETERMINISM_AUDIT.md,documented_output_in_artifact_manifest_when_eligible,pass,README_EXECUTION.md reference artifact_manifest_missing=[],0,0
+reports/RELEASE_DETERMINISM_AUDIT.md,documented_output_in_release_manifest_when_eligible,pass,README_EXECUTION.md reference release_manifest_missing=[],0,0
+reports/RELEASE_RUNTIME_AUDIT.md,documented_output_exists_nonempty,pass,README_EXECUTION.md reference exists and is nonempty,1,1
+reports/RELEASE_RUNTIME_AUDIT.md,documented_output_in_artifact_manifest_when_eligible,pass,README_EXECUTION.md reference artifact_manifest_missing=[],0,0
+reports/RELEASE_RUNTIME_AUDIT.md,documented_output_in_release_manifest_when_eligible,pass,README_EXECUTION.md reference release_manifest_missing=[],0,0
+reports/PACK_VERIFICATION.md,documented_output_exists_nonempty,pass,README_EXECUTION.md reference exists and is nonempty,1,1
+reports/PACK_VERIFICATION.md,documented_output_in_artifact_manifest_when_eligible,pass,README_EXECUTION.md reference artifact_manifest_missing=[],0,0
+reports/PACK_VERIFICATION.md,documented_output_in_release_manifest_when_eligible,pass,README_EXECUTION.md reference release_manifest_missing=[],0,0
+reports/METHOD_DELTA_TABLE.md,documented_output_exists_nonempty,pass,README_EXECUTION.md reference exists and is nonempty,1,1
+reports/METHOD_DELTA_TABLE.md,documented_output_in_artifact_manifest_when_eligible,pass,README_EXECUTION.md reference artifact_manifest_missing=[],1,1
+reports/METHOD_DELTA_TABLE.md,documented_output_in_release_manifest_when_eligible,pass,README_EXECUTION.md reference release_manifest_missing=[],1,1
+reports/LEARNED_OUTCOME_MODEL_INTERPRETATION.md,documented_output_exists_nonempty,pass,README_EXECUTION.md reference exists and is nonempty,1,1
+reports/LEARNED_OUTCOME_MODEL_INTERPRETATION.md,documented_output_in_artifact_manifest_when_eligible,pass,README_EXECUTION.md reference artifact_manifest_missing=[],1,1
+reports/LEARNED_OUTCOME_MODEL_INTERPRETATION.md,documented_output_in_release_manifest_when_eligible,pass,README_EXECUTION.md reference release_manifest_missing=[],1,1
+reports/VISUAL_WAM_INTERPRETATION.md,documented_output_exists_nonempty,pass,README_EXECUTION.md reference exists and is nonempty,1,1
+reports/VISUAL_WAM_INTERPRETATION.md,documented_output_in_artifact_manifest_when_eligible,pass,README_EXECUTION.md reference artifact_manifest_missing=[],1,1
+reports/VISUAL_WAM_INTERPRETATION.md,documented_output_in_release_manifest_when_eligible,pass,README_EXECUTION.md reference release_manifest_missing=[],1,1
+reports/SIMULATION_ROLLOUT_VIDEOS.md,documented_output_exists_nonempty,pass,README_EXECUTION.md reference exists and is nonempty,1,1
+reports/SIMULATION_ROLLOUT_VIDEOS.md,documented_output_in_artifact_manifest_when_eligible,pass,README_EXECUTION.md reference artifact_manifest_missing=[],1,1
+reports/SIMULATION_ROLLOUT_VIDEOS.md,documented_output_in_release_manifest_when_eligible,pass,README_EXECUTION.md reference release_manifest_missing=[],1,1
+reports/NEURAL_WAM_INTERPRETATION.md,documented_output_exists_nonempty,pass,README_EXECUTION.md reference exists and is nonempty,1,1
+reports/NEURAL_WAM_INTERPRETATION.md,documented_output_in_artifact_manifest_when_eligible,pass,README_EXECUTION.md reference artifact_manifest_missing=[],1,1
+reports/NEURAL_WAM_INTERPRETATION.md,documented_output_in_release_manifest_when_eligible,pass,README_EXECUTION.md reference release_manifest_missing=[],1,1
+reports/REAL_VIDEO_WAM_READINESS.md,documented_output_exists_nonempty,pass,README_EXECUTION.md reference exists and is nonempty,1,1
+reports/REAL_VIDEO_WAM_READINESS.md,documented_output_in_artifact_manifest_when_eligible,pass,README_EXECUTION.md reference artifact_manifest_missing=[],1,1
+reports/REAL_VIDEO_WAM_READINESS.md,documented_output_in_release_manifest_when_eligible,pass,README_EXECUTION.md reference release_manifest_missing=[],1,1
+reports/MUJOCO_RESIDUAL_POLICY_INTERPRETATION.md,documented_output_exists_nonempty,pass,README_EXECUTION.md reference exists and is nonempty,1,1
+reports/MUJOCO_RESIDUAL_POLICY_INTERPRETATION.md,documented_output_in_artifact_manifest_when_eligible,pass,README_EXECUTION.md reference artifact_manifest_missing=[],1,1
+reports/MUJOCO_RESIDUAL_POLICY_INTERPRETATION.md,documented_output_in_release_manifest_when_eligible,pass,README_EXECUTION.md reference release_manifest_missing=[],1,1
+reports/MUJOCO_RESIDUAL_POLICY_GATE_ABLATION_TABLE.md,documented_output_exists_nonempty,pass,README_EXECUTION.md reference exists and is nonempty,1,1
+reports/MUJOCO_RESIDUAL_POLICY_GATE_ABLATION_TABLE.md,documented_output_in_artifact_manifest_when_eligible,pass,README_EXECUTION.md reference artifact_manifest_missing=[],1,1
+reports/MUJOCO_RESIDUAL_POLICY_GATE_ABLATION_TABLE.md,documented_output_in_release_manifest_when_eligible,pass,README_EXECUTION.md reference release_manifest_missing=[],1,1
+reports/EXTERNAL_POLICY_BENCHMARK_READINESS.md,documented_output_exists_nonempty,pass,README_EXECUTION.md reference exists and is nonempty,1,1
+reports/EXTERNAL_POLICY_BENCHMARK_READINESS.md,documented_output_in_artifact_manifest_when_eligible,pass,README_EXECUTION.md reference artifact_manifest_missing=[],1,1
+reports/EXTERNAL_POLICY_BENCHMARK_READINESS.md,documented_output_in_release_manifest_when_eligible,pass,README_EXECUTION.md reference release_manifest_missing=[],1,1
+reports/TRAJECTORY_WAM_INTERPRETATION.md,documented_output_exists_nonempty,pass,README_EXECUTION.md reference exists and is nonempty,1,1
+reports/TRAJECTORY_WAM_INTERPRETATION.md,documented_output_in_artifact_manifest_when_eligible,pass,README_EXECUTION.md reference artifact_manifest_missing=[],1,1
+reports/TRAJECTORY_WAM_INTERPRETATION.md,documented_output_in_release_manifest_when_eligible,pass,README_EXECUTION.md reference release_manifest_missing=[],1,1
+reports/CORRECTIVE_ADAPTATION_INTERPRETATION.md,documented_output_exists_nonempty,pass,README_EXECUTION.md reference exists and is nonempty,1,1
+reports/CORRECTIVE_ADAPTATION_INTERPRETATION.md,documented_output_in_artifact_manifest_when_eligible,pass,README_EXECUTION.md reference artifact_manifest_missing=[],1,1
+reports/CORRECTIVE_ADAPTATION_INTERPRETATION.md,documented_output_in_release_manifest_when_eligible,pass,README_EXECUTION.md reference release_manifest_missing=[],1,1
+reports/CORRECTIVE_TRACE_READINESS.md,documented_output_exists_nonempty,pass,README_EXECUTION.md reference exists and is nonempty,1,1
+reports/CORRECTIVE_TRACE_READINESS.md,documented_output_in_artifact_manifest_when_eligible,pass,README_EXECUTION.md reference artifact_manifest_missing=[],1,1
+reports/CORRECTIVE_TRACE_READINESS.md,documented_output_in_release_manifest_when_eligible,pass,README_EXECUTION.md reference release_manifest_missing=[],1,1
+reports/MUJOCO_PLANAR_METHOD_SUMMARY_TABLE.md,documented_output_exists_nonempty,pass,README_EXECUTION.md reference exists and is nonempty,1,1
+reports/MUJOCO_PLANAR_METHOD_SUMMARY_TABLE.md,documented_output_in_artifact_manifest_when_eligible,pass,README_EXECUTION.md reference artifact_manifest_missing=[],1,1
+reports/MUJOCO_PLANAR_METHOD_SUMMARY_TABLE.md,documented_output_in_release_manifest_when_eligible,pass,README_EXECUTION.md reference release_manifest_missing=[],1,1
+reports/MUJOCO_PLANAR_PROBE_TABLE.md,documented_output_exists_nonempty,pass,README_EXECUTION.md reference exists and is nonempty,1,1
+reports/MUJOCO_PLANAR_PROBE_TABLE.md,documented_output_in_artifact_manifest_when_eligible,pass,README_EXECUTION.md reference artifact_manifest_missing=[],1,1
+reports/MUJOCO_PLANAR_PROBE_TABLE.md,documented_output_in_release_manifest_when_eligible,pass,README_EXECUTION.md reference release_manifest_missing=[],1,1
+results/trials.csv,documented_output_exists_nonempty,pass,README_EXECUTION.md reference exists and is nonempty,1,1
+results/trials.csv,documented_output_in_artifact_manifest_when_eligible,pass,README_EXECUTION.md reference artifact_manifest_missing=[],1,1
+results/trials.csv,documented_output_in_release_manifest_when_eligible,pass,README_EXECUTION.md reference release_manifest_missing=[],1,1
+results/bodybreak_minimality_audit.csv,documented_output_exists_nonempty,pass,README_EXECUTION.md reference exists and is nonempty,1,1
+results/bodybreak_minimality_audit.csv,documented_output_in_artifact_manifest_when_eligible,pass,README_EXECUTION.md reference artifact_manifest_missing=[],1,1
+results/bodybreak_minimality_audit.csv,documented_output_in_release_manifest_when_eligible,pass,README_EXECUTION.md reference release_manifest_missing=[],1,1
+results/visual_wam_rollouts.csv,documented_output_exists_nonempty,pass,README_EXECUTION.md reference exists and is nonempty,1,1
+results/visual_wam_rollouts.csv,documented_output_in_artifact_manifest_when_eligible,pass,README_EXECUTION.md reference artifact_manifest_missing=[],1,1
+results/visual_wam_rollouts.csv,documented_output_in_release_manifest_when_eligible,pass,README_EXECUTION.md reference release_manifest_missing=[],1,1
+results/simulation_rollout_videos.csv,documented_output_exists_nonempty,pass,README_EXECUTION.md reference exists and is nonempty,1,1
+results/simulation_rollout_videos.csv,documented_output_in_artifact_manifest_when_eligible,pass,README_EXECUTION.md reference artifact_manifest_missing=[],1,1
+results/simulation_rollout_videos.csv,documented_output_in_release_manifest_when_eligible,pass,README_EXECUTION.md reference release_manifest_missing=[],1,1
+results/neural_wam_rollouts.csv,documented_output_exists_nonempty,pass,README_EXECUTION.md reference exists and is nonempty,1,1
+results/neural_wam_rollouts.csv,documented_output_in_artifact_manifest_when_eligible,pass,README_EXECUTION.md reference artifact_manifest_missing=[],1,1
+results/neural_wam_rollouts.csv,documented_output_in_release_manifest_when_eligible,pass,README_EXECUTION.md reference release_manifest_missing=[],1,1
+results/real_video_wam_readiness.csv,documented_output_exists_nonempty,pass,README_EXECUTION.md reference exists and is nonempty,1,1
+results/real_video_wam_readiness.csv,documented_output_in_artifact_manifest_when_eligible,pass,README_EXECUTION.md reference artifact_manifest_missing=[],1,1
+results/real_video_wam_readiness.csv,documented_output_in_release_manifest_when_eligible,pass,README_EXECUTION.md reference release_manifest_missing=[],1,1
+results/mujoco_residual_policy_rollouts.csv,documented_output_exists_nonempty,pass,README_EXECUTION.md reference exists and is nonempty,1,1
+results/mujoco_residual_policy_rollouts.csv,documented_output_in_artifact_manifest_when_eligible,pass,README_EXECUTION.md reference artifact_manifest_missing=[],1,1
+results/mujoco_residual_policy_rollouts.csv,documented_output_in_release_manifest_when_eligible,pass,README_EXECUTION.md reference release_manifest_missing=[],1,1
+results/mujoco_residual_policy_gate_ablation.csv,documented_output_exists_nonempty,pass,README_EXECUTION.md reference exists and is nonempty,1,1
+results/mujoco_residual_policy_gate_ablation.csv,documented_output_in_artifact_manifest_when_eligible,pass,README_EXECUTION.md reference artifact_manifest_missing=[],1,1
+results/mujoco_residual_policy_gate_ablation.csv,documented_output_in_release_manifest_when_eligible,pass,README_EXECUTION.md reference release_manifest_missing=[],1,1
+results/external_policy_benchmark_readiness.csv,documented_output_exists_nonempty,pass,README_EXECUTION.md reference exists and is nonempty,1,1
+results/external_policy_benchmark_readiness.csv,documented_output_in_artifact_manifest_when_eligible,pass,README_EXECUTION.md reference artifact_manifest_missing=[],1,1
+results/external_policy_benchmark_readiness.csv,documented_output_in_release_manifest_when_eligible,pass,README_EXECUTION.md reference release_manifest_missing=[],1,1
+results/trajectory_wam_rollouts.csv,documented_output_exists_nonempty,pass,README_EXECUTION.md reference exists and is nonempty,1,1
+results/trajectory_wam_rollouts.csv,documented_output_in_artifact_manifest_when_eligible,pass,README_EXECUTION.md reference artifact_manifest_missing=[],1,1
+results/trajectory_wam_rollouts.csv,documented_output_in_release_manifest_when_eligible,pass,README_EXECUTION.md reference release_manifest_missing=[],1,1
+results/corrective_adaptation_rollouts.csv,documented_output_exists_nonempty,pass,README_EXECUTION.md reference exists and is nonempty,1,1
+results/corrective_adaptation_rollouts.csv,documented_output_in_artifact_manifest_when_eligible,pass,README_EXECUTION.md reference artifact_manifest_missing=[],1,1
+results/corrective_adaptation_rollouts.csv,documented_output_in_release_manifest_when_eligible,pass,README_EXECUTION.md reference release_manifest_missing=[],1,1
+results/corrective_trace_readiness.csv,documented_output_exists_nonempty,pass,README_EXECUTION.md reference exists and is nonempty,1,1
+results/corrective_trace_readiness.csv,documented_output_in_artifact_manifest_when_eligible,pass,README_EXECUTION.md reference artifact_manifest_missing=[],1,1
+results/corrective_trace_readiness.csv,documented_output_in_release_manifest_when_eligible,pass,README_EXECUTION.md reference release_manifest_missing=[],1,1
+results/artifact_inventory_audit.csv,documented_output_exists_nonempty,pass,README_EXECUTION.md reference exists and is nonempty,1,1
+results/artifact_inventory_audit.csv,documented_output_in_artifact_manifest_when_eligible,pass,README_EXECUTION.md reference artifact_manifest_missing=[],0,0
+results/artifact_inventory_audit.csv,documented_output_in_release_manifest_when_eligible,pass,README_EXECUTION.md reference release_manifest_missing=[],0,0
+results/claim_boundary_audit.csv,documented_output_exists_nonempty,pass,README_EXECUTION.md reference exists and is nonempty,1,1
+results/claim_boundary_audit.csv,documented_output_in_artifact_manifest_when_eligible,pass,README_EXECUTION.md reference artifact_manifest_missing=[],1,1
+results/claim_boundary_audit.csv,documented_output_in_release_manifest_when_eligible,pass,README_EXECUTION.md reference release_manifest_missing=[],1,1
+results/command_surface_audit.csv,documented_output_exists_nonempty,pass,README_EXECUTION.md reference exists and is nonempty,1,1
+results/command_surface_audit.csv,documented_output_in_artifact_manifest_when_eligible,pass,README_EXECUTION.md reference artifact_manifest_missing=[],1,1
+results/command_surface_audit.csv,documented_output_in_release_manifest_when_eligible,pass,README_EXECUTION.md reference release_manifest_missing=[],1,1
+results/config_schema_audit.csv,documented_output_exists_nonempty,pass,README_EXECUTION.md reference exists and is nonempty,1,1
+results/config_schema_audit.csv,documented_output_in_artifact_manifest_when_eligible,pass,README_EXECUTION.md reference artifact_manifest_missing=[],1,1
+results/config_schema_audit.csv,documented_output_in_release_manifest_when_eligible,pass,README_EXECUTION.md reference release_manifest_missing=[],1,1
+results/derived_results_audit.csv,documented_output_exists_nonempty,pass,README_EXECUTION.md reference exists and is nonempty,1,1
+results/derived_results_audit.csv,documented_output_in_artifact_manifest_when_eligible,pass,README_EXECUTION.md reference artifact_manifest_missing=[],1,1
+results/derived_results_audit.csv,documented_output_in_release_manifest_when_eligible,pass,README_EXECUTION.md reference release_manifest_missing=[],1,1
+results/source_import_audit.csv,documented_output_exists_nonempty,pass,README_EXECUTION.md reference exists and is nonempty,1,1
+results/source_import_audit.csv,documented_output_in_artifact_manifest_when_eligible,pass,README_EXECUTION.md reference artifact_manifest_missing=[],1,1
+results/source_import_audit.csv,documented_output_in_release_manifest_when_eligible,pass,README_EXECUTION.md reference release_manifest_missing=[],1,1
+results/results_integrity_audit.csv,documented_output_exists_nonempty,pass,README_EXECUTION.md reference exists and is nonempty,1,1
+results/results_integrity_audit.csv,documented_output_in_artifact_manifest_when_eligible,pass,README_EXECUTION.md reference artifact_manifest_missing=[],1,1
+results/results_integrity_audit.csv,documented_output_in_release_manifest_when_eligible,pass,README_EXECUTION.md reference release_manifest_missing=[],1,1
+results/paper_source_audit.csv,documented_output_exists_nonempty,pass,README_EXECUTION.md reference exists and is nonempty,1,1
+results/paper_source_audit.csv,documented_output_in_artifact_manifest_when_eligible,pass,README_EXECUTION.md reference artifact_manifest_missing=[],1,1
+results/paper_source_audit.csv,documented_output_in_release_manifest_when_eligible,pass,README_EXECUTION.md reference release_manifest_missing=[],1,1
+results/portable_hygiene_audit.csv,documented_output_exists_nonempty,pass,README_EXECUTION.md reference exists and is nonempty,1,1
+results/portable_hygiene_audit.csv,documented_output_in_artifact_manifest_when_eligible,pass,README_EXECUTION.md reference artifact_manifest_missing=[],0,0
+results/portable_hygiene_audit.csv,documented_output_in_release_manifest_when_eligible,pass,README_EXECUTION.md reference release_manifest_missing=[],0,0
+results/visual_artifact_audit.csv,documented_output_exists_nonempty,pass,README_EXECUTION.md reference exists and is nonempty,1,1
+results/visual_artifact_audit.csv,documented_output_in_artifact_manifest_when_eligible,pass,README_EXECUTION.md reference artifact_manifest_missing=[],1,1
+results/visual_artifact_audit.csv,documented_output_in_release_manifest_when_eligible,pass,README_EXECUTION.md reference release_manifest_missing=[],1,1
+results/release_payload_audit.csv,documented_output_exists_nonempty,pass,README_EXECUTION.md reference exists and is nonempty,1,1
+results/release_payload_audit.csv,documented_output_in_artifact_manifest_when_eligible,pass,README_EXECUTION.md reference artifact_manifest_missing=[],0,0
+results/release_payload_audit.csv,documented_output_in_release_manifest_when_eligible,pass,README_EXECUTION.md reference release_manifest_missing=[],0,0
+results/release_determinism_audit.csv,documented_output_exists_nonempty,pass,README_EXECUTION.md reference exists and is nonempty,1,1
+results/release_determinism_audit.csv,documented_output_in_artifact_manifest_when_eligible,pass,README_EXECUTION.md reference artifact_manifest_missing=[],0,0
+results/release_determinism_audit.csv,documented_output_in_release_manifest_when_eligible,pass,README_EXECUTION.md reference release_manifest_missing=[],0,0
+results/release_runtime_audit.csv,documented_output_exists_nonempty,pass,README_EXECUTION.md reference exists and is nonempty,1,1
+results/release_runtime_audit.csv,documented_output_in_artifact_manifest_when_eligible,pass,README_EXECUTION.md reference artifact_manifest_missing=[],0,0
+results/release_runtime_audit.csv,documented_output_in_release_manifest_when_eligible,pass,README_EXECUTION.md reference release_manifest_missing=[],0,0
+results/high_fidelity_benchmark.csv,documented_output_exists_nonempty,pass,README_EXECUTION.md reference exists and is nonempty,1,1
+results/high_fidelity_benchmark.csv,documented_output_in_artifact_manifest_when_eligible,pass,README_EXECUTION.md reference artifact_manifest_missing=[],1,1
+results/high_fidelity_benchmark.csv,documented_output_in_release_manifest_when_eligible,pass,README_EXECUTION.md reference release_manifest_missing=[],1,1
+results/videos/bodyshield_synthetic_*.gif,documented_output_exists_nonempty,pass,README_EXECUTION.md reference exists and is nonempty,3,3
+results/videos/bodyshield_synthetic_*.gif,documented_output_in_artifact_manifest_when_eligible,pass,README_EXECUTION.md reference artifact_manifest_missing=[],3,3
+results/videos/bodyshield_synthetic_*.gif,documented_output_in_release_manifest_when_eligible,pass,README_EXECUTION.md reference release_manifest_missing=[],3,3
+release/bodyshield_non_hardware_release.zip,documented_output_exists_nonempty,pass,README_EXECUTION.md reference exists and is nonempty,1,1
+release/bodyshield_non_hardware_release.zip,documented_output_in_artifact_manifest_when_eligible,pass,README_EXECUTION.md reference artifact_manifest_missing=[],1,1
+release/bodyshield_non_hardware_release.zip,documented_output_in_release_manifest_when_eligible,pass,README_EXECUTION.md reference release_manifest_missing=[],0,0
+release/RELEASE_BUNDLE_MANIFEST.csv,documented_output_exists_nonempty,pass,README_EXECUTION.md reference exists and is nonempty,1,1
+release/RELEASE_BUNDLE_MANIFEST.csv,documented_output_in_artifact_manifest_when_eligible,pass,README_EXECUTION.md reference artifact_manifest_missing=[],1,1
+release/RELEASE_BUNDLE_MANIFEST.csv,documented_output_in_release_manifest_when_eligible,pass,README_EXECUTION.md reference release_manifest_missing=[],0,0
+release/RELEASE_BUNDLE_CHECKSUMS.txt,documented_output_exists_nonempty,pass,README_EXECUTION.md reference exists and is nonempty,1,1
+release/RELEASE_BUNDLE_CHECKSUMS.txt,documented_output_in_artifact_manifest_when_eligible,pass,README_EXECUTION.md reference artifact_manifest_missing=[],1,1
+release/RELEASE_BUNDLE_CHECKSUMS.txt,documented_output_in_release_manifest_when_eligible,pass,README_EXECUTION.md reference release_manifest_missing=[],0,0
+reports/REPRODUCIBILITY_MANIFEST.md,documented_output_references_discovered,pass,documented output references discovered,130,>0
+data_schema.json,documented_output_exists_nonempty,pass,reports/REPRODUCIBILITY_MANIFEST.md reference exists and is nonempty,1,1
+data_schema.json,documented_output_in_artifact_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference artifact_manifest_missing=[],1,1
+data_schema.json,documented_output_in_release_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference release_manifest_missing=[],1,1
+results/trials.csv,documented_output_exists_nonempty,pass,reports/REPRODUCIBILITY_MANIFEST.md reference exists and is nonempty,1,1
+results/trials.csv,documented_output_in_artifact_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference artifact_manifest_missing=[],1,1
+results/trials.csv,documented_output_in_release_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference release_manifest_missing=[],1,1
+results/trials.parquet,documented_output_exists_nonempty,pass,reports/REPRODUCIBILITY_MANIFEST.md reference exists and is nonempty,1,1
+results/trials.parquet,documented_output_in_artifact_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference artifact_manifest_missing=[],1,1
+results/trials.parquet,documented_output_in_release_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference release_manifest_missing=[],1,1
+results/trials_sample.jsonl,documented_output_exists_nonempty,pass,reports/REPRODUCIBILITY_MANIFEST.md reference exists and is nonempty,1,1
+results/trials_sample.jsonl,documented_output_in_artifact_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference artifact_manifest_missing=[],1,1
+results/trials_sample.jsonl,documented_output_in_release_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference release_manifest_missing=[],1,1
+results/schema_validation_summary.json,documented_output_exists_nonempty,pass,reports/REPRODUCIBILITY_MANIFEST.md reference exists and is nonempty,1,1
+results/schema_validation_summary.json,documented_output_in_artifact_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference artifact_manifest_missing=[],1,1
+results/schema_validation_summary.json,documented_output_in_release_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference release_manifest_missing=[],1,1
+results/breaking_search.csv,documented_output_exists_nonempty,pass,reports/REPRODUCIBILITY_MANIFEST.md reference exists and is nonempty,1,1
+results/breaking_search.csv,documented_output_in_artifact_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference artifact_manifest_missing=[],1,1
+results/breaking_search.csv,documented_output_in_release_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference release_manifest_missing=[],1,1
+results/bodybreak_minimality_audit.csv,documented_output_exists_nonempty,pass,reports/REPRODUCIBILITY_MANIFEST.md reference exists and is nonempty,1,1
+results/bodybreak_minimality_audit.csv,documented_output_in_artifact_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference artifact_manifest_missing=[],1,1
+results/bodybreak_minimality_audit.csv,documented_output_in_release_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference release_manifest_missing=[],1,1
+results/summary_by_method_bucket.csv,documented_output_exists_nonempty,pass,reports/REPRODUCIBILITY_MANIFEST.md reference exists and is nonempty,1,1
+results/summary_by_method_bucket.csv,documented_output_in_artifact_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference artifact_manifest_missing=[],1,1
+results/summary_by_method_bucket.csv,documented_output_in_release_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference release_manifest_missing=[],1,1
+results/robustness_profiles.csv,documented_output_exists_nonempty,pass,reports/REPRODUCIBILITY_MANIFEST.md reference exists and is nonempty,1,1
+results/robustness_profiles.csv,documented_output_in_artifact_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference artifact_manifest_missing=[],1,1
+results/robustness_profiles.csv,documented_output_in_release_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference release_manifest_missing=[],1,1
+results/threshold_sensitivity.csv,documented_output_exists_nonempty,pass,reports/REPRODUCIBILITY_MANIFEST.md reference exists and is nonempty,1,1
+results/threshold_sensitivity.csv,documented_output_in_artifact_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference artifact_manifest_missing=[],1,1
+results/threshold_sensitivity.csv,documented_output_in_release_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference release_manifest_missing=[],1,1
+results/oracle_feasibility.csv,documented_output_exists_nonempty,pass,reports/REPRODUCIBILITY_MANIFEST.md reference exists and is nonempty,1,1
+results/oracle_feasibility.csv,documented_output_in_artifact_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference artifact_manifest_missing=[],1,1
+results/oracle_feasibility.csv,documented_output_in_release_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference release_manifest_missing=[],1,1
+results/method_deltas_vs_bodyshield.csv,documented_output_exists_nonempty,pass,reports/REPRODUCIBILITY_MANIFEST.md reference exists and is nonempty,1,1
+results/method_deltas_vs_bodyshield.csv,documented_output_in_artifact_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference artifact_manifest_missing=[],1,1
+results/method_deltas_vs_bodyshield.csv,documented_output_in_release_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference release_manifest_missing=[],1,1
+results/learned_outcome_model_eval.csv,documented_output_exists_nonempty,pass,reports/REPRODUCIBILITY_MANIFEST.md reference exists and is nonempty,1,1
+results/learned_outcome_model_eval.csv,documented_output_in_artifact_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference artifact_manifest_missing=[],1,1
+results/learned_outcome_model_eval.csv,documented_output_in_release_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference release_manifest_missing=[],1,1
+results/learned_outcome_axis_weights.csv,documented_output_exists_nonempty,pass,reports/REPRODUCIBILITY_MANIFEST.md reference exists and is nonempty,1,1
+results/learned_outcome_axis_weights.csv,documented_output_in_artifact_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference artifact_manifest_missing=[],1,1
+results/learned_outcome_axis_weights.csv,documented_output_in_release_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference release_manifest_missing=[],1,1
+results/learned_outcome_predictions.csv,documented_output_exists_nonempty,pass,reports/REPRODUCIBILITY_MANIFEST.md reference exists and is nonempty,1,1
+results/learned_outcome_predictions.csv,documented_output_in_artifact_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference artifact_manifest_missing=[],1,1
+results/learned_outcome_predictions.csv,documented_output_in_release_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference release_manifest_missing=[],1,1
+results/visual_wam_eval.csv,documented_output_exists_nonempty,pass,reports/REPRODUCIBILITY_MANIFEST.md reference exists and is nonempty,1,1
+results/visual_wam_eval.csv,documented_output_in_artifact_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference artifact_manifest_missing=[],1,1
+results/visual_wam_eval.csv,documented_output_in_release_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference release_manifest_missing=[],1,1
+results/visual_wam_feature_weights.csv,documented_output_exists_nonempty,pass,reports/REPRODUCIBILITY_MANIFEST.md reference exists and is nonempty,1,1
+results/visual_wam_feature_weights.csv,documented_output_in_artifact_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference artifact_manifest_missing=[],1,1
+results/visual_wam_feature_weights.csv,documented_output_in_release_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference release_manifest_missing=[],1,1
+results/visual_wam_rollouts.csv,documented_output_exists_nonempty,pass,reports/REPRODUCIBILITY_MANIFEST.md reference exists and is nonempty,1,1
+results/visual_wam_rollouts.csv,documented_output_in_artifact_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference artifact_manifest_missing=[],1,1
+results/visual_wam_rollouts.csv,documented_output_in_release_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference release_manifest_missing=[],1,1
+results/visual_wam_trace_sample.jsonl,documented_output_exists_nonempty,pass,reports/REPRODUCIBILITY_MANIFEST.md reference exists and is nonempty,1,1
+results/visual_wam_trace_sample.jsonl,documented_output_in_artifact_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference artifact_manifest_missing=[],1,1
+results/visual_wam_trace_sample.jsonl,documented_output_in_release_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference release_manifest_missing=[],1,1
+results/neural_wam_eval.csv,documented_output_exists_nonempty,pass,reports/REPRODUCIBILITY_MANIFEST.md reference exists and is nonempty,1,1
+results/neural_wam_eval.csv,documented_output_in_artifact_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference artifact_manifest_missing=[],1,1
+results/neural_wam_eval.csv,documented_output_in_release_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference release_manifest_missing=[],1,1
+results/neural_wam_rollouts.csv,documented_output_exists_nonempty,pass,reports/REPRODUCIBILITY_MANIFEST.md reference exists and is nonempty,1,1
+results/neural_wam_rollouts.csv,documented_output_in_artifact_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference artifact_manifest_missing=[],1,1
+results/neural_wam_rollouts.csv,documented_output_in_release_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference release_manifest_missing=[],1,1
+results/neural_wam_training_curve.csv,documented_output_exists_nonempty,pass,reports/REPRODUCIBILITY_MANIFEST.md reference exists and is nonempty,1,1
+results/neural_wam_training_curve.csv,documented_output_in_artifact_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference artifact_manifest_missing=[],1,1
+results/neural_wam_training_curve.csv,documented_output_in_release_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference release_manifest_missing=[],1,1
+results/neural_wam_trace_sample.jsonl,documented_output_exists_nonempty,pass,reports/REPRODUCIBILITY_MANIFEST.md reference exists and is nonempty,1,1
+results/neural_wam_trace_sample.jsonl,documented_output_in_artifact_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference artifact_manifest_missing=[],1,1
+results/neural_wam_trace_sample.jsonl,documented_output_in_release_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference release_manifest_missing=[],1,1
+results/real_video_wam_readiness.csv,documented_output_exists_nonempty,pass,reports/REPRODUCIBILITY_MANIFEST.md reference exists and is nonempty,1,1
+results/real_video_wam_readiness.csv,documented_output_in_artifact_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference artifact_manifest_missing=[],1,1
+results/real_video_wam_readiness.csv,documented_output_in_release_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference release_manifest_missing=[],1,1
+results/mujoco_residual_policy_eval.csv,documented_output_exists_nonempty,pass,reports/REPRODUCIBILITY_MANIFEST.md reference exists and is nonempty,1,1
+results/mujoco_residual_policy_eval.csv,documented_output_in_artifact_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference artifact_manifest_missing=[],1,1
+results/mujoco_residual_policy_eval.csv,documented_output_in_release_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference release_manifest_missing=[],1,1
+results/mujoco_residual_policy_rollouts.csv,documented_output_exists_nonempty,pass,reports/REPRODUCIBILITY_MANIFEST.md reference exists and is nonempty,1,1
+results/mujoco_residual_policy_rollouts.csv,documented_output_in_artifact_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference artifact_manifest_missing=[],1,1
+results/mujoco_residual_policy_rollouts.csv,documented_output_in_release_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference release_manifest_missing=[],1,1
+results/mujoco_residual_policy_weights.csv,documented_output_exists_nonempty,pass,reports/REPRODUCIBILITY_MANIFEST.md reference exists and is nonempty,1,1
+results/mujoco_residual_policy_weights.csv,documented_output_in_artifact_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference artifact_manifest_missing=[],1,1
+results/mujoco_residual_policy_weights.csv,documented_output_in_release_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference release_manifest_missing=[],1,1
+results/mujoco_residual_policy_gate_ablation.csv,documented_output_exists_nonempty,pass,reports/REPRODUCIBILITY_MANIFEST.md reference exists and is nonempty,1,1
+results/mujoco_residual_policy_gate_ablation.csv,documented_output_in_artifact_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference artifact_manifest_missing=[],1,1
+results/mujoco_residual_policy_gate_ablation.csv,documented_output_in_release_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference release_manifest_missing=[],1,1
+results/mujoco_residual_policy_trace_sample.jsonl,documented_output_exists_nonempty,pass,reports/REPRODUCIBILITY_MANIFEST.md reference exists and is nonempty,1,1
+results/mujoco_residual_policy_trace_sample.jsonl,documented_output_in_artifact_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference artifact_manifest_missing=[],1,1
+results/mujoco_residual_policy_trace_sample.jsonl,documented_output_in_release_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference release_manifest_missing=[],1,1
+results/trajectory_wam_eval.csv,documented_output_exists_nonempty,pass,reports/REPRODUCIBILITY_MANIFEST.md reference exists and is nonempty,1,1
+results/trajectory_wam_eval.csv,documented_output_in_artifact_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference artifact_manifest_missing=[],1,1
+results/trajectory_wam_eval.csv,documented_output_in_release_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference release_manifest_missing=[],1,1
+results/trajectory_wam_axis_weights.csv,documented_output_exists_nonempty,pass,reports/REPRODUCIBILITY_MANIFEST.md reference exists and is nonempty,1,1
+results/trajectory_wam_axis_weights.csv,documented_output_in_artifact_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference artifact_manifest_missing=[],1,1
+results/trajectory_wam_axis_weights.csv,documented_output_in_release_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference release_manifest_missing=[],1,1
+results/trajectory_wam_rollouts.csv,documented_output_exists_nonempty,pass,reports/REPRODUCIBILITY_MANIFEST.md reference exists and is nonempty,1,1
+results/trajectory_wam_rollouts.csv,documented_output_in_artifact_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference artifact_manifest_missing=[],1,1
+results/trajectory_wam_rollouts.csv,documented_output_in_release_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference release_manifest_missing=[],1,1
+results/trajectory_wam_trace_sample.jsonl,documented_output_exists_nonempty,pass,reports/REPRODUCIBILITY_MANIFEST.md reference exists and is nonempty,1,1
+results/trajectory_wam_trace_sample.jsonl,documented_output_in_artifact_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference artifact_manifest_missing=[],1,1
+results/trajectory_wam_trace_sample.jsonl,documented_output_in_release_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference release_manifest_missing=[],1,1
+results/corrective_adaptation_eval.csv,documented_output_exists_nonempty,pass,reports/REPRODUCIBILITY_MANIFEST.md reference exists and is nonempty,1,1
+results/corrective_adaptation_eval.csv,documented_output_in_artifact_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference artifact_manifest_missing=[],1,1
+results/corrective_adaptation_eval.csv,documented_output_in_release_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference release_manifest_missing=[],1,1
+results/corrective_adaptation_residual_weights.csv,documented_output_exists_nonempty,pass,reports/REPRODUCIBILITY_MANIFEST.md reference exists and is nonempty,1,1
+results/corrective_adaptation_residual_weights.csv,documented_output_in_artifact_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference artifact_manifest_missing=[],1,1
+results/corrective_adaptation_residual_weights.csv,documented_output_in_release_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference release_manifest_missing=[],1,1
+results/corrective_adaptation_rollouts.csv,documented_output_exists_nonempty,pass,reports/REPRODUCIBILITY_MANIFEST.md reference exists and is nonempty,1,1
+results/corrective_adaptation_rollouts.csv,documented_output_in_artifact_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference artifact_manifest_missing=[],1,1
+results/corrective_adaptation_rollouts.csv,documented_output_in_release_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference release_manifest_missing=[],1,1
+results/corrective_adaptation_trace_sample.jsonl,documented_output_exists_nonempty,pass,reports/REPRODUCIBILITY_MANIFEST.md reference exists and is nonempty,1,1
+results/corrective_adaptation_trace_sample.jsonl,documented_output_in_artifact_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference artifact_manifest_missing=[],1,1
+results/corrective_adaptation_trace_sample.jsonl,documented_output_in_release_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference release_manifest_missing=[],1,1
+results/corrective_trace_readiness.csv,documented_output_exists_nonempty,pass,reports/REPRODUCIBILITY_MANIFEST.md reference exists and is nonempty,1,1
+results/corrective_trace_readiness.csv,documented_output_in_artifact_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference artifact_manifest_missing=[],1,1
+results/corrective_trace_readiness.csv,documented_output_in_release_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference release_manifest_missing=[],1,1
+results/artifact_inventory_audit.csv,documented_output_exists_nonempty,pass,reports/REPRODUCIBILITY_MANIFEST.md reference exists and is nonempty,1,1
+results/artifact_inventory_audit.csv,documented_output_in_artifact_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference artifact_manifest_missing=[],0,0
+results/artifact_inventory_audit.csv,documented_output_in_release_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference release_manifest_missing=[],0,0
+results/claim_boundary_audit.csv,documented_output_exists_nonempty,pass,reports/REPRODUCIBILITY_MANIFEST.md reference exists and is nonempty,1,1
+results/claim_boundary_audit.csv,documented_output_in_artifact_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference artifact_manifest_missing=[],1,1
+results/claim_boundary_audit.csv,documented_output_in_release_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference release_manifest_missing=[],1,1
+results/command_surface_audit.csv,documented_output_exists_nonempty,pass,reports/REPRODUCIBILITY_MANIFEST.md reference exists and is nonempty,1,1
+results/command_surface_audit.csv,documented_output_in_artifact_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference artifact_manifest_missing=[],1,1
+results/command_surface_audit.csv,documented_output_in_release_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference release_manifest_missing=[],1,1
+results/evidence_consistency_audit.csv,documented_output_exists_nonempty,pass,reports/REPRODUCIBILITY_MANIFEST.md reference exists and is nonempty,1,1
+results/evidence_consistency_audit.csv,documented_output_in_artifact_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference artifact_manifest_missing=[],1,1
+results/evidence_consistency_audit.csv,documented_output_in_release_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference release_manifest_missing=[],1,1
+results/environment_dependency_audit.csv,documented_output_exists_nonempty,pass,reports/REPRODUCIBILITY_MANIFEST.md reference exists and is nonempty,1,1
+results/environment_dependency_audit.csv,documented_output_in_artifact_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference artifact_manifest_missing=[],1,1
+results/environment_dependency_audit.csv,documented_output_in_release_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference release_manifest_missing=[],1,1
+results/environment_snapshot.json,documented_output_exists_nonempty,pass,reports/REPRODUCIBILITY_MANIFEST.md reference exists and is nonempty,1,1
+results/environment_snapshot.json,documented_output_in_artifact_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference artifact_manifest_missing=[],1,1
+results/environment_snapshot.json,documented_output_in_release_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference release_manifest_missing=[],1,1
+results/config_schema_audit.csv,documented_output_exists_nonempty,pass,reports/REPRODUCIBILITY_MANIFEST.md reference exists and is nonempty,1,1
+results/config_schema_audit.csv,documented_output_in_artifact_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference artifact_manifest_missing=[],1,1
+results/config_schema_audit.csv,documented_output_in_release_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference release_manifest_missing=[],1,1
+results/derived_results_audit.csv,documented_output_exists_nonempty,pass,reports/REPRODUCIBILITY_MANIFEST.md reference exists and is nonempty,1,1
+results/derived_results_audit.csv,documented_output_in_artifact_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference artifact_manifest_missing=[],1,1
+results/derived_results_audit.csv,documented_output_in_release_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference release_manifest_missing=[],1,1
+results/source_import_audit.csv,documented_output_exists_nonempty,pass,reports/REPRODUCIBILITY_MANIFEST.md reference exists and is nonempty,1,1
+results/source_import_audit.csv,documented_output_in_artifact_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference artifact_manifest_missing=[],1,1
+results/source_import_audit.csv,documented_output_in_release_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference release_manifest_missing=[],1,1
+results/results_integrity_audit.csv,documented_output_exists_nonempty,pass,reports/REPRODUCIBILITY_MANIFEST.md reference exists and is nonempty,1,1
+results/results_integrity_audit.csv,documented_output_in_artifact_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference artifact_manifest_missing=[],1,1
+results/results_integrity_audit.csv,documented_output_in_release_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference release_manifest_missing=[],1,1
+results/paper_source_audit.csv,documented_output_exists_nonempty,pass,reports/REPRODUCIBILITY_MANIFEST.md reference exists and is nonempty,1,1
+results/paper_source_audit.csv,documented_output_in_artifact_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference artifact_manifest_missing=[],1,1
+results/paper_source_audit.csv,documented_output_in_release_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference release_manifest_missing=[],1,1
+results/portable_hygiene_audit.csv,documented_output_exists_nonempty,pass,reports/REPRODUCIBILITY_MANIFEST.md reference exists and is nonempty,1,1
+results/portable_hygiene_audit.csv,documented_output_in_artifact_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference artifact_manifest_missing=[],0,0
+results/portable_hygiene_audit.csv,documented_output_in_release_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference release_manifest_missing=[],0,0
+results/visual_artifact_audit.csv,documented_output_exists_nonempty,pass,reports/REPRODUCIBILITY_MANIFEST.md reference exists and is nonempty,1,1
+results/visual_artifact_audit.csv,documented_output_in_artifact_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference artifact_manifest_missing=[],1,1
+results/visual_artifact_audit.csv,documented_output_in_release_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference release_manifest_missing=[],1,1
+results/release_payload_audit.csv,documented_output_exists_nonempty,pass,reports/REPRODUCIBILITY_MANIFEST.md reference exists and is nonempty,1,1
+results/release_payload_audit.csv,documented_output_in_artifact_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference artifact_manifest_missing=[],0,0
+results/release_payload_audit.csv,documented_output_in_release_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference release_manifest_missing=[],0,0
+results/release_determinism_audit.csv,documented_output_exists_nonempty,pass,reports/REPRODUCIBILITY_MANIFEST.md reference exists and is nonempty,1,1
+results/release_determinism_audit.csv,documented_output_in_artifact_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference artifact_manifest_missing=[],0,0
+results/release_determinism_audit.csv,documented_output_in_release_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference release_manifest_missing=[],0,0
+results/release_runtime_audit.csv,documented_output_exists_nonempty,pass,reports/REPRODUCIBILITY_MANIFEST.md reference exists and is nonempty,1,1
+results/release_runtime_audit.csv,documented_output_in_artifact_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference artifact_manifest_missing=[],0,0
+results/release_runtime_audit.csv,documented_output_in_release_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference release_manifest_missing=[],0,0
+results/simulation_rollout_videos.csv,documented_output_exists_nonempty,pass,reports/REPRODUCIBILITY_MANIFEST.md reference exists and is nonempty,1,1
+results/simulation_rollout_videos.csv,documented_output_in_artifact_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference artifact_manifest_missing=[],1,1
+results/simulation_rollout_videos.csv,documented_output_in_release_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference release_manifest_missing=[],1,1
+results/secondary_metrics_by_method.csv,documented_output_exists_nonempty,pass,reports/REPRODUCIBILITY_MANIFEST.md reference exists and is nonempty,1,1
+results/secondary_metrics_by_method.csv,documented_output_in_artifact_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference artifact_manifest_missing=[],1,1
+results/secondary_metrics_by_method.csv,documented_output_in_release_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference release_manifest_missing=[],1,1
+results/failure_taxonomy_counts.csv,documented_output_exists_nonempty,pass,reports/REPRODUCIBILITY_MANIFEST.md reference exists and is nonempty,1,1
+results/failure_taxonomy_counts.csv,documented_output_in_artifact_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference artifact_manifest_missing=[],1,1
+results/failure_taxonomy_counts.csv,documented_output_in_release_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference release_manifest_missing=[],1,1
+results/nominal_vs_robustness_radius.csv,documented_output_exists_nonempty,pass,reports/REPRODUCIBILITY_MANIFEST.md reference exists and is nonempty,1,1
+results/nominal_vs_robustness_radius.csv,documented_output_in_artifact_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference artifact_manifest_missing=[],1,1
+results/nominal_vs_robustness_radius.csv,documented_output_in_release_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference release_manifest_missing=[],1,1
+results/high_fidelity_benchmark.csv,documented_output_exists_nonempty,pass,reports/REPRODUCIBILITY_MANIFEST.md reference exists and is nonempty,1,1
+results/high_fidelity_benchmark.csv,documented_output_in_artifact_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference artifact_manifest_missing=[],1,1
+results/high_fidelity_benchmark.csv,documented_output_in_release_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference release_manifest_missing=[],1,1
+results/external_policy_benchmark_readiness.csv,documented_output_exists_nonempty,pass,reports/REPRODUCIBILITY_MANIFEST.md reference exists and is nonempty,1,1
+results/external_policy_benchmark_readiness.csv,documented_output_in_artifact_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference artifact_manifest_missing=[],1,1
+results/external_policy_benchmark_readiness.csv,documented_output_in_release_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference release_manifest_missing=[],1,1
+trial_schema.schema.json,documented_output_exists_nonempty,pass,reports/REPRODUCIBILITY_MANIFEST.md reference exists and is nonempty,1,1
+trial_schema.schema.json,documented_output_in_artifact_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference artifact_manifest_missing=[],1,1
+trial_schema.schema.json,documented_output_in_release_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference release_manifest_missing=[],1,1
+reports/ARTIFACT_MANIFEST.csv,documented_output_exists_nonempty,pass,reports/REPRODUCIBILITY_MANIFEST.md reference exists and is nonempty,1,1
+reports/ARTIFACT_MANIFEST.csv,documented_output_in_artifact_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference artifact_manifest_missing=[],0,0
+reports/ARTIFACT_MANIFEST.csv,documented_output_in_release_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference release_manifest_missing=[],0,0
+reports/ARTIFACT_MANIFEST.md,documented_output_exists_nonempty,pass,reports/REPRODUCIBILITY_MANIFEST.md reference exists and is nonempty,1,1
+reports/ARTIFACT_MANIFEST.md,documented_output_in_artifact_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference artifact_manifest_missing=[],0,0
+reports/ARTIFACT_MANIFEST.md,documented_output_in_release_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference release_manifest_missing=[],0,0
+reports/RELEASE_BUNDLE.md,documented_output_exists_nonempty,pass,reports/REPRODUCIBILITY_MANIFEST.md reference exists and is nonempty,1,1
+reports/RELEASE_BUNDLE.md,documented_output_in_artifact_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference artifact_manifest_missing=[],1,1
+reports/RELEASE_BUNDLE.md,documented_output_in_release_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference release_manifest_missing=[],0,0
+reports/ARTIFACT_INVENTORY_AUDIT.md,documented_output_exists_nonempty,pass,reports/REPRODUCIBILITY_MANIFEST.md reference exists and is nonempty,1,1
+reports/ARTIFACT_INVENTORY_AUDIT.md,documented_output_in_artifact_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference artifact_manifest_missing=[],0,0
+reports/ARTIFACT_INVENTORY_AUDIT.md,documented_output_in_release_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference release_manifest_missing=[],0,0
+reports/CLAIM_BOUNDARY_AUDIT.md,documented_output_exists_nonempty,pass,reports/REPRODUCIBILITY_MANIFEST.md reference exists and is nonempty,1,1
+reports/CLAIM_BOUNDARY_AUDIT.md,documented_output_in_artifact_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference artifact_manifest_missing=[],1,1
+reports/CLAIM_BOUNDARY_AUDIT.md,documented_output_in_release_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference release_manifest_missing=[],1,1
+reports/COMMAND_SURFACE_AUDIT.md,documented_output_exists_nonempty,pass,reports/REPRODUCIBILITY_MANIFEST.md reference exists and is nonempty,1,1
+reports/COMMAND_SURFACE_AUDIT.md,documented_output_in_artifact_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference artifact_manifest_missing=[],1,1
+reports/COMMAND_SURFACE_AUDIT.md,documented_output_in_release_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference release_manifest_missing=[],1,1
+reports/EVIDENCE_CONSISTENCY_AUDIT.md,documented_output_exists_nonempty,pass,reports/REPRODUCIBILITY_MANIFEST.md reference exists and is nonempty,1,1
+reports/EVIDENCE_CONSISTENCY_AUDIT.md,documented_output_in_artifact_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference artifact_manifest_missing=[],1,1
+reports/EVIDENCE_CONSISTENCY_AUDIT.md,documented_output_in_release_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference release_manifest_missing=[],1,1
+reports/ENVIRONMENT_DEPENDENCY_AUDIT.md,documented_output_exists_nonempty,pass,reports/REPRODUCIBILITY_MANIFEST.md reference exists and is nonempty,1,1
+reports/ENVIRONMENT_DEPENDENCY_AUDIT.md,documented_output_in_artifact_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference artifact_manifest_missing=[],1,1
+reports/ENVIRONMENT_DEPENDENCY_AUDIT.md,documented_output_in_release_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference release_manifest_missing=[],1,1
+reports/CONFIG_SCHEMA_AUDIT.md,documented_output_exists_nonempty,pass,reports/REPRODUCIBILITY_MANIFEST.md reference exists and is nonempty,1,1
+reports/CONFIG_SCHEMA_AUDIT.md,documented_output_in_artifact_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference artifact_manifest_missing=[],1,1
+reports/CONFIG_SCHEMA_AUDIT.md,documented_output_in_release_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference release_manifest_missing=[],1,1
+reports/DERIVED_RESULTS_AUDIT.md,documented_output_exists_nonempty,pass,reports/REPRODUCIBILITY_MANIFEST.md reference exists and is nonempty,1,1
+reports/DERIVED_RESULTS_AUDIT.md,documented_output_in_artifact_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference artifact_manifest_missing=[],1,1
+reports/DERIVED_RESULTS_AUDIT.md,documented_output_in_release_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference release_manifest_missing=[],1,1
+reports/SOURCE_IMPORT_AUDIT.md,documented_output_exists_nonempty,pass,reports/REPRODUCIBILITY_MANIFEST.md reference exists and is nonempty,1,1
+reports/SOURCE_IMPORT_AUDIT.md,documented_output_in_artifact_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference artifact_manifest_missing=[],1,1
+reports/SOURCE_IMPORT_AUDIT.md,documented_output_in_release_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference release_manifest_missing=[],1,1
+reports/RESULTS_INTEGRITY_AUDIT.md,documented_output_exists_nonempty,pass,reports/REPRODUCIBILITY_MANIFEST.md reference exists and is nonempty,1,1
+reports/RESULTS_INTEGRITY_AUDIT.md,documented_output_in_artifact_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference artifact_manifest_missing=[],1,1
+reports/RESULTS_INTEGRITY_AUDIT.md,documented_output_in_release_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference release_manifest_missing=[],1,1
+reports/PAPER_SOURCE_AUDIT.md,documented_output_exists_nonempty,pass,reports/REPRODUCIBILITY_MANIFEST.md reference exists and is nonempty,1,1
+reports/PAPER_SOURCE_AUDIT.md,documented_output_in_artifact_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference artifact_manifest_missing=[],1,1
+reports/PAPER_SOURCE_AUDIT.md,documented_output_in_release_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference release_manifest_missing=[],1,1
+reports/PORTABLE_HYGIENE_AUDIT.md,documented_output_exists_nonempty,pass,reports/REPRODUCIBILITY_MANIFEST.md reference exists and is nonempty,1,1
+reports/PORTABLE_HYGIENE_AUDIT.md,documented_output_in_artifact_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference artifact_manifest_missing=[],0,0
+reports/PORTABLE_HYGIENE_AUDIT.md,documented_output_in_release_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference release_manifest_missing=[],0,0
+reports/VISUAL_ARTIFACT_AUDIT.md,documented_output_exists_nonempty,pass,reports/REPRODUCIBILITY_MANIFEST.md reference exists and is nonempty,1,1
+reports/VISUAL_ARTIFACT_AUDIT.md,documented_output_in_artifact_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference artifact_manifest_missing=[],1,1
+reports/VISUAL_ARTIFACT_AUDIT.md,documented_output_in_release_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference release_manifest_missing=[],1,1
+reports/RELEASE_PAYLOAD_AUDIT.md,documented_output_exists_nonempty,pass,reports/REPRODUCIBILITY_MANIFEST.md reference exists and is nonempty,1,1
+reports/RELEASE_PAYLOAD_AUDIT.md,documented_output_in_artifact_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference artifact_manifest_missing=[],0,0
+reports/RELEASE_PAYLOAD_AUDIT.md,documented_output_in_release_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference release_manifest_missing=[],0,0
+reports/RELEASE_DETERMINISM_AUDIT.md,documented_output_exists_nonempty,pass,reports/REPRODUCIBILITY_MANIFEST.md reference exists and is nonempty,1,1
+reports/RELEASE_DETERMINISM_AUDIT.md,documented_output_in_artifact_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference artifact_manifest_missing=[],0,0
+reports/RELEASE_DETERMINISM_AUDIT.md,documented_output_in_release_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference release_manifest_missing=[],0,0
+reports/RELEASE_RUNTIME_AUDIT.md,documented_output_exists_nonempty,pass,reports/REPRODUCIBILITY_MANIFEST.md reference exists and is nonempty,1,1
+reports/RELEASE_RUNTIME_AUDIT.md,documented_output_in_artifact_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference artifact_manifest_missing=[],0,0
+reports/RELEASE_RUNTIME_AUDIT.md,documented_output_in_release_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference release_manifest_missing=[],0,0
+reports/PACK_VERIFICATION.json,documented_output_exists_nonempty,pass,reports/REPRODUCIBILITY_MANIFEST.md reference exists and is nonempty,1,1
+reports/PACK_VERIFICATION.json,documented_output_in_artifact_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference artifact_manifest_missing=[],0,0
+reports/PACK_VERIFICATION.json,documented_output_in_release_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference release_manifest_missing=[],0,0
+reports/PACK_VERIFICATION.md,documented_output_exists_nonempty,pass,reports/REPRODUCIBILITY_MANIFEST.md reference exists and is nonempty,1,1
+reports/PACK_VERIFICATION.md,documented_output_in_artifact_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference artifact_manifest_missing=[],0,0
+reports/PACK_VERIFICATION.md,documented_output_in_release_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference release_manifest_missing=[],0,0
+reports/NON_HARDWARE_AUDIT.md,documented_output_exists_nonempty,pass,reports/REPRODUCIBILITY_MANIFEST.md reference exists and is nonempty,1,1
+reports/NON_HARDWARE_AUDIT.md,documented_output_in_artifact_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference artifact_manifest_missing=[],1,1
+reports/NON_HARDWARE_AUDIT.md,documented_output_in_release_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference release_manifest_missing=[],1,1
+reports/CLAIM_LEDGER.md,documented_output_exists_nonempty,pass,reports/REPRODUCIBILITY_MANIFEST.md reference exists and is nonempty,1,1
+reports/CLAIM_LEDGER.md,documented_output_in_artifact_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference artifact_manifest_missing=[],1,1
+reports/CLAIM_LEDGER.md,documented_output_in_release_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference release_manifest_missing=[],1,1
+reports/NON_HARDWARE_REQUIREMENTS_TRACE.md,documented_output_exists_nonempty,pass,reports/REPRODUCIBILITY_MANIFEST.md reference exists and is nonempty,1,1
+reports/NON_HARDWARE_REQUIREMENTS_TRACE.md,documented_output_in_artifact_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference artifact_manifest_missing=[],1,1
+reports/NON_HARDWARE_REQUIREMENTS_TRACE.md,documented_output_in_release_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference release_manifest_missing=[],1,1
+reports/BUDGET_AND_FAIRNESS_AUDIT.md,documented_output_exists_nonempty,pass,reports/REPRODUCIBILITY_MANIFEST.md reference exists and is nonempty,1,1
+reports/BUDGET_AND_FAIRNESS_AUDIT.md,documented_output_in_artifact_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference artifact_manifest_missing=[],1,1
+reports/BUDGET_AND_FAIRNESS_AUDIT.md,documented_output_in_release_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference release_manifest_missing=[],1,1
+reports/BODYBREAK_MINIMALITY_AUDIT.md,documented_output_exists_nonempty,pass,reports/REPRODUCIBILITY_MANIFEST.md reference exists and is nonempty,1,1
+reports/BODYBREAK_MINIMALITY_AUDIT.md,documented_output_in_artifact_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference artifact_manifest_missing=[],1,1
+reports/BODYBREAK_MINIMALITY_AUDIT.md,documented_output_in_release_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference release_manifest_missing=[],1,1
+reports/BODYBREAK_MINIMALITY_AUDIT_TABLE.md,documented_output_exists_nonempty,pass,reports/REPRODUCIBILITY_MANIFEST.md reference exists and is nonempty,1,1
+reports/BODYBREAK_MINIMALITY_AUDIT_TABLE.md,documented_output_in_artifact_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference artifact_manifest_missing=[],1,1
+reports/BODYBREAK_MINIMALITY_AUDIT_TABLE.md,documented_output_in_release_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference release_manifest_missing=[],1,1
+reports/METHOD_DELTA_TABLE.md,documented_output_exists_nonempty,pass,reports/REPRODUCIBILITY_MANIFEST.md reference exists and is nonempty,1,1
+reports/METHOD_DELTA_TABLE.md,documented_output_in_artifact_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference artifact_manifest_missing=[],1,1
+reports/METHOD_DELTA_TABLE.md,documented_output_in_release_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference release_manifest_missing=[],1,1
+reports/AGENDA_FIT_MEMO.md,documented_output_exists_nonempty,pass,reports/REPRODUCIBILITY_MANIFEST.md reference exists and is nonempty,1,1
+reports/AGENDA_FIT_MEMO.md,documented_output_in_artifact_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference artifact_manifest_missing=[],1,1
+reports/AGENDA_FIT_MEMO.md,documented_output_in_release_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference release_manifest_missing=[],1,1
+reports/LEARNED_OUTCOME_MODEL_TABLE.md,documented_output_exists_nonempty,pass,reports/REPRODUCIBILITY_MANIFEST.md reference exists and is nonempty,1,1
+reports/LEARNED_OUTCOME_MODEL_TABLE.md,documented_output_in_artifact_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference artifact_manifest_missing=[],1,1
+reports/LEARNED_OUTCOME_MODEL_TABLE.md,documented_output_in_release_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference release_manifest_missing=[],1,1
+reports/LEARNED_OUTCOME_MODEL_INTERPRETATION.md,documented_output_exists_nonempty,pass,reports/REPRODUCIBILITY_MANIFEST.md reference exists and is nonempty,1,1
+reports/LEARNED_OUTCOME_MODEL_INTERPRETATION.md,documented_output_in_artifact_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference artifact_manifest_missing=[],1,1
+reports/LEARNED_OUTCOME_MODEL_INTERPRETATION.md,documented_output_in_release_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference release_manifest_missing=[],1,1
+reports/VISUAL_WAM_TABLE.md,documented_output_exists_nonempty,pass,reports/REPRODUCIBILITY_MANIFEST.md reference exists and is nonempty,1,1
+reports/VISUAL_WAM_TABLE.md,documented_output_in_artifact_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference artifact_manifest_missing=[],1,1
+reports/VISUAL_WAM_TABLE.md,documented_output_in_release_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference release_manifest_missing=[],1,1
+reports/VISUAL_WAM_FEATURE_WEIGHT_TABLE.md,documented_output_exists_nonempty,pass,reports/REPRODUCIBILITY_MANIFEST.md reference exists and is nonempty,1,1
+reports/VISUAL_WAM_FEATURE_WEIGHT_TABLE.md,documented_output_in_artifact_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference artifact_manifest_missing=[],1,1
+reports/VISUAL_WAM_FEATURE_WEIGHT_TABLE.md,documented_output_in_release_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference release_manifest_missing=[],1,1
+reports/VISUAL_WAM_INTERPRETATION.md,documented_output_exists_nonempty,pass,reports/REPRODUCIBILITY_MANIFEST.md reference exists and is nonempty,1,1
+reports/VISUAL_WAM_INTERPRETATION.md,documented_output_in_artifact_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference artifact_manifest_missing=[],1,1
+reports/VISUAL_WAM_INTERPRETATION.md,documented_output_in_release_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference release_manifest_missing=[],1,1
+reports/NEURAL_WAM_TABLE.md,documented_output_exists_nonempty,pass,reports/REPRODUCIBILITY_MANIFEST.md reference exists and is nonempty,1,1
+reports/NEURAL_WAM_TABLE.md,documented_output_in_artifact_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference artifact_manifest_missing=[],1,1
+reports/NEURAL_WAM_TABLE.md,documented_output_in_release_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference release_manifest_missing=[],1,1
+reports/NEURAL_WAM_TRAINING_CURVE.md,documented_output_exists_nonempty,pass,reports/REPRODUCIBILITY_MANIFEST.md reference exists and is nonempty,1,1
+reports/NEURAL_WAM_TRAINING_CURVE.md,documented_output_in_artifact_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference artifact_manifest_missing=[],1,1
+reports/NEURAL_WAM_TRAINING_CURVE.md,documented_output_in_release_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference release_manifest_missing=[],1,1
+reports/NEURAL_WAM_INTERPRETATION.md,documented_output_exists_nonempty,pass,reports/REPRODUCIBILITY_MANIFEST.md reference exists and is nonempty,1,1
+reports/NEURAL_WAM_INTERPRETATION.md,documented_output_in_artifact_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference artifact_manifest_missing=[],1,1
+reports/NEURAL_WAM_INTERPRETATION.md,documented_output_in_release_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference release_manifest_missing=[],1,1
+reports/REAL_VIDEO_WAM_READINESS.md,documented_output_exists_nonempty,pass,reports/REPRODUCIBILITY_MANIFEST.md reference exists and is nonempty,1,1
+reports/REAL_VIDEO_WAM_READINESS.md,documented_output_in_artifact_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference artifact_manifest_missing=[],1,1
+reports/REAL_VIDEO_WAM_READINESS.md,documented_output_in_release_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference release_manifest_missing=[],1,1
+reports/REAL_VIDEO_WAM_READINESS_TABLE.md,documented_output_exists_nonempty,pass,reports/REPRODUCIBILITY_MANIFEST.md reference exists and is nonempty,1,1
+reports/REAL_VIDEO_WAM_READINESS_TABLE.md,documented_output_in_artifact_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference artifact_manifest_missing=[],1,1
+reports/REAL_VIDEO_WAM_READINESS_TABLE.md,documented_output_in_release_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference release_manifest_missing=[],1,1
+reports/MUJOCO_RESIDUAL_POLICY_TABLE.md,documented_output_exists_nonempty,pass,reports/REPRODUCIBILITY_MANIFEST.md reference exists and is nonempty,1,1
+reports/MUJOCO_RESIDUAL_POLICY_TABLE.md,documented_output_in_artifact_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference artifact_manifest_missing=[],1,1
+reports/MUJOCO_RESIDUAL_POLICY_TABLE.md,documented_output_in_release_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference release_manifest_missing=[],1,1
+reports/MUJOCO_RESIDUAL_POLICY_WEIGHT_TABLE.md,documented_output_exists_nonempty,pass,reports/REPRODUCIBILITY_MANIFEST.md reference exists and is nonempty,1,1
+reports/MUJOCO_RESIDUAL_POLICY_WEIGHT_TABLE.md,documented_output_in_artifact_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference artifact_manifest_missing=[],1,1
+reports/MUJOCO_RESIDUAL_POLICY_WEIGHT_TABLE.md,documented_output_in_release_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference release_manifest_missing=[],1,1
+reports/MUJOCO_RESIDUAL_POLICY_GATE_ABLATION_TABLE.md,documented_output_exists_nonempty,pass,reports/REPRODUCIBILITY_MANIFEST.md reference exists and is nonempty,1,1
+reports/MUJOCO_RESIDUAL_POLICY_GATE_ABLATION_TABLE.md,documented_output_in_artifact_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference artifact_manifest_missing=[],1,1
+reports/MUJOCO_RESIDUAL_POLICY_GATE_ABLATION_TABLE.md,documented_output_in_release_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference release_manifest_missing=[],1,1
+reports/MUJOCO_RESIDUAL_POLICY_INTERPRETATION.md,documented_output_exists_nonempty,pass,reports/REPRODUCIBILITY_MANIFEST.md reference exists and is nonempty,1,1
+reports/MUJOCO_RESIDUAL_POLICY_INTERPRETATION.md,documented_output_in_artifact_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference artifact_manifest_missing=[],1,1
+reports/MUJOCO_RESIDUAL_POLICY_INTERPRETATION.md,documented_output_in_release_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference release_manifest_missing=[],1,1
+reports/TRAJECTORY_WAM_TABLE.md,documented_output_exists_nonempty,pass,reports/REPRODUCIBILITY_MANIFEST.md reference exists and is nonempty,1,1
+reports/TRAJECTORY_WAM_TABLE.md,documented_output_in_artifact_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference artifact_manifest_missing=[],1,1
+reports/TRAJECTORY_WAM_TABLE.md,documented_output_in_release_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference release_manifest_missing=[],1,1
+reports/TRAJECTORY_WAM_AXIS_TABLE.md,documented_output_exists_nonempty,pass,reports/REPRODUCIBILITY_MANIFEST.md reference exists and is nonempty,1,1
+reports/TRAJECTORY_WAM_AXIS_TABLE.md,documented_output_in_artifact_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference artifact_manifest_missing=[],1,1
+reports/TRAJECTORY_WAM_AXIS_TABLE.md,documented_output_in_release_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference release_manifest_missing=[],1,1
+reports/TRAJECTORY_WAM_INTERPRETATION.md,documented_output_exists_nonempty,pass,reports/REPRODUCIBILITY_MANIFEST.md reference exists and is nonempty,1,1
+reports/TRAJECTORY_WAM_INTERPRETATION.md,documented_output_in_artifact_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference artifact_manifest_missing=[],1,1
+reports/TRAJECTORY_WAM_INTERPRETATION.md,documented_output_in_release_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference release_manifest_missing=[],1,1
+reports/CORRECTIVE_ADAPTATION_TABLE.md,documented_output_exists_nonempty,pass,reports/REPRODUCIBILITY_MANIFEST.md reference exists and is nonempty,1,1
+reports/CORRECTIVE_ADAPTATION_TABLE.md,documented_output_in_artifact_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference artifact_manifest_missing=[],1,1
+reports/CORRECTIVE_ADAPTATION_TABLE.md,documented_output_in_release_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference release_manifest_missing=[],1,1
+reports/CORRECTIVE_ADAPTATION_WEIGHT_TABLE.md,documented_output_exists_nonempty,pass,reports/REPRODUCIBILITY_MANIFEST.md reference exists and is nonempty,1,1
+reports/CORRECTIVE_ADAPTATION_WEIGHT_TABLE.md,documented_output_in_artifact_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference artifact_manifest_missing=[],1,1
+reports/CORRECTIVE_ADAPTATION_WEIGHT_TABLE.md,documented_output_in_release_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference release_manifest_missing=[],1,1
+reports/CORRECTIVE_ADAPTATION_INTERPRETATION.md,documented_output_exists_nonempty,pass,reports/REPRODUCIBILITY_MANIFEST.md reference exists and is nonempty,1,1
+reports/CORRECTIVE_ADAPTATION_INTERPRETATION.md,documented_output_in_artifact_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference artifact_manifest_missing=[],1,1
+reports/CORRECTIVE_ADAPTATION_INTERPRETATION.md,documented_output_in_release_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference release_manifest_missing=[],1,1
+reports/CORRECTIVE_TRACE_READINESS.md,documented_output_exists_nonempty,pass,reports/REPRODUCIBILITY_MANIFEST.md reference exists and is nonempty,1,1
+reports/CORRECTIVE_TRACE_READINESS.md,documented_output_in_artifact_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference artifact_manifest_missing=[],1,1
+reports/CORRECTIVE_TRACE_READINESS.md,documented_output_in_release_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference release_manifest_missing=[],1,1
+reports/CORRECTIVE_TRACE_READINESS_TABLE.md,documented_output_exists_nonempty,pass,reports/REPRODUCIBILITY_MANIFEST.md reference exists and is nonempty,1,1
+reports/CORRECTIVE_TRACE_READINESS_TABLE.md,documented_output_in_artifact_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference artifact_manifest_missing=[],1,1
+reports/CORRECTIVE_TRACE_READINESS_TABLE.md,documented_output_in_release_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference release_manifest_missing=[],1,1
+reports/SIMULATION_ROLLOUT_VIDEOS.md,documented_output_exists_nonempty,pass,reports/REPRODUCIBILITY_MANIFEST.md reference exists and is nonempty,1,1
+reports/SIMULATION_ROLLOUT_VIDEOS.md,documented_output_in_artifact_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference artifact_manifest_missing=[],1,1
+reports/SIMULATION_ROLLOUT_VIDEOS.md,documented_output_in_release_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference release_manifest_missing=[],1,1
+reports/EXTERNAL_POLICY_BENCHMARK_READINESS.md,documented_output_exists_nonempty,pass,reports/REPRODUCIBILITY_MANIFEST.md reference exists and is nonempty,1,1
+reports/EXTERNAL_POLICY_BENCHMARK_READINESS.md,documented_output_in_artifact_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference artifact_manifest_missing=[],1,1
+reports/EXTERNAL_POLICY_BENCHMARK_READINESS.md,documented_output_in_release_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference release_manifest_missing=[],1,1
+reports/EXTERNAL_POLICY_BENCHMARK_READINESS_TABLE.md,documented_output_exists_nonempty,pass,reports/REPRODUCIBILITY_MANIFEST.md reference exists and is nonempty,1,1
+reports/EXTERNAL_POLICY_BENCHMARK_READINESS_TABLE.md,documented_output_in_artifact_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference artifact_manifest_missing=[],1,1
+reports/EXTERNAL_POLICY_BENCHMARK_READINESS_TABLE.md,documented_output_in_release_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference release_manifest_missing=[],1,1
+reports/MUJOCO_PLANAR_METHOD_SUMMARY_TABLE.md,documented_output_exists_nonempty,pass,reports/REPRODUCIBILITY_MANIFEST.md reference exists and is nonempty,1,1
+reports/MUJOCO_PLANAR_METHOD_SUMMARY_TABLE.md,documented_output_in_artifact_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference artifact_manifest_missing=[],1,1
+reports/MUJOCO_PLANAR_METHOD_SUMMARY_TABLE.md,documented_output_in_release_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference release_manifest_missing=[],1,1
+reports/MUJOCO_PLANAR_PROBE_TABLE.md,documented_output_exists_nonempty,pass,reports/REPRODUCIBILITY_MANIFEST.md reference exists and is nonempty,1,1
+reports/MUJOCO_PLANAR_PROBE_TABLE.md,documented_output_in_artifact_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference artifact_manifest_missing=[],1,1
+reports/MUJOCO_PLANAR_PROBE_TABLE.md,documented_output_in_release_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference release_manifest_missing=[],1,1
+reports/REVIEWER_ATTACK_CLOSURE.md,documented_output_exists_nonempty,pass,reports/REPRODUCIBILITY_MANIFEST.md reference exists and is nonempty,1,1
+reports/REVIEWER_ATTACK_CLOSURE.md,documented_output_in_artifact_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference artifact_manifest_missing=[],1,1
+reports/REVIEWER_ATTACK_CLOSURE.md,documented_output_in_release_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference release_manifest_missing=[],1,1
+reports/CITATION_VERIFICATION_TABLE.md,documented_output_exists_nonempty,pass,reports/REPRODUCIBILITY_MANIFEST.md reference exists and is nonempty,1,1
+reports/CITATION_VERIFICATION_TABLE.md,documented_output_in_artifact_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference artifact_manifest_missing=[],1,1
+reports/CITATION_VERIFICATION_TABLE.md,documented_output_in_release_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference release_manifest_missing=[],1,1
+reports/PREBUTTAL.md,documented_output_exists_nonempty,pass,reports/REPRODUCIBILITY_MANIFEST.md reference exists and is nonempty,1,1
+reports/PREBUTTAL.md,documented_output_in_artifact_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference artifact_manifest_missing=[],1,1
+reports/PREBUTTAL.md,documented_output_in_release_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference release_manifest_missing=[],1,1
+reports/PAPER_REVIEWER_RISK_AUDIT.md,documented_output_exists_nonempty,pass,reports/REPRODUCIBILITY_MANIFEST.md reference exists and is nonempty,1,1
+reports/PAPER_REVIEWER_RISK_AUDIT.md,documented_output_in_artifact_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference artifact_manifest_missing=[],1,1
+reports/PAPER_REVIEWER_RISK_AUDIT.md,documented_output_in_release_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference release_manifest_missing=[],1,1
+reports/FIGURE_CAPTIONS.md,documented_output_exists_nonempty,pass,reports/REPRODUCIBILITY_MANIFEST.md reference exists and is nonempty,1,1
+reports/FIGURE_CAPTIONS.md,documented_output_in_artifact_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference artifact_manifest_missing=[],1,1
+reports/FIGURE_CAPTIONS.md,documented_output_in_release_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference release_manifest_missing=[],1,1
+reports/HIGH_FIDELITY_INTERPRETATION.md,documented_output_exists_nonempty,pass,reports/REPRODUCIBILITY_MANIFEST.md reference exists and is nonempty,1,1
+reports/HIGH_FIDELITY_INTERPRETATION.md,documented_output_in_artifact_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference artifact_manifest_missing=[],1,1
+reports/HIGH_FIDELITY_INTERPRETATION.md,documented_output_in_release_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference release_manifest_missing=[],1,1
+paper/bodyshield_non_hardware_draft.pdf,documented_output_exists_nonempty,pass,reports/REPRODUCIBILITY_MANIFEST.md reference exists and is nonempty,1,1
+paper/bodyshield_non_hardware_draft.pdf,documented_output_in_artifact_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference artifact_manifest_missing=[],1,1
+paper/bodyshield_non_hardware_draft.pdf,documented_output_in_release_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference release_manifest_missing=[],1,1
+results/videos/bodyshield_synthetic_nominal_reference.gif,documented_output_exists_nonempty,pass,reports/REPRODUCIBILITY_MANIFEST.md reference exists and is nonempty,1,1
+results/videos/bodyshield_synthetic_nominal_reference.gif,documented_output_in_artifact_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference artifact_manifest_missing=[],1,1
+results/videos/bodyshield_synthetic_nominal_reference.gif,documented_output_in_release_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference release_manifest_missing=[],1,1
+results/videos/bodyshield_synthetic_bodybreak_failure.gif,documented_output_exists_nonempty,pass,reports/REPRODUCIBILITY_MANIFEST.md reference exists and is nonempty,1,1
+results/videos/bodyshield_synthetic_bodybreak_failure.gif,documented_output_in_artifact_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference artifact_manifest_missing=[],1,1
+results/videos/bodyshield_synthetic_bodybreak_failure.gif,documented_output_in_release_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference release_manifest_missing=[],1,1
+results/videos/bodyshield_synthetic_bodyshield_repair.gif,documented_output_exists_nonempty,pass,reports/REPRODUCIBILITY_MANIFEST.md reference exists and is nonempty,1,1
+results/videos/bodyshield_synthetic_bodyshield_repair.gif,documented_output_in_artifact_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference artifact_manifest_missing=[],1,1
+results/videos/bodyshield_synthetic_bodyshield_repair.gif,documented_output_in_release_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference release_manifest_missing=[],1,1
+release/bodyshield_non_hardware_release.zip,documented_output_exists_nonempty,pass,reports/REPRODUCIBILITY_MANIFEST.md reference exists and is nonempty,1,1
+release/bodyshield_non_hardware_release.zip,documented_output_in_artifact_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference artifact_manifest_missing=[],1,1
+release/bodyshield_non_hardware_release.zip,documented_output_in_release_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference release_manifest_missing=[],0,0
+release/RELEASE_BUNDLE_MANIFEST.csv,documented_output_exists_nonempty,pass,reports/REPRODUCIBILITY_MANIFEST.md reference exists and is nonempty,1,1
+release/RELEASE_BUNDLE_MANIFEST.csv,documented_output_in_artifact_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference artifact_manifest_missing=[],1,1
+release/RELEASE_BUNDLE_MANIFEST.csv,documented_output_in_release_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference release_manifest_missing=[],0,0
+release/RELEASE_BUNDLE_CHECKSUMS.txt,documented_output_exists_nonempty,pass,reports/REPRODUCIBILITY_MANIFEST.md reference exists and is nonempty,1,1
+release/RELEASE_BUNDLE_CHECKSUMS.txt,documented_output_in_artifact_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference artifact_manifest_missing=[],1,1
+release/RELEASE_BUNDLE_CHECKSUMS.txt,documented_output_in_release_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference release_manifest_missing=[],0,0
+release/RELEASE_README.md,documented_output_exists_nonempty,pass,reports/REPRODUCIBILITY_MANIFEST.md reference exists and is nonempty,1,1
+release/RELEASE_README.md,documented_output_in_artifact_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference artifact_manifest_missing=[],1,1
+release/RELEASE_README.md,documented_output_in_release_manifest_when_eligible,pass,reports/REPRODUCIBILITY_MANIFEST.md reference release_manifest_missing=[],0,0
+reports/NON_HARDWARE_COMPLETE.md,documented_output_references_discovered,pass,documented output references discovered,131,>0
+results/trials.csv,documented_output_exists_nonempty,pass,reports/NON_HARDWARE_COMPLETE.md reference exists and is nonempty,1,1
+results/trials.csv,documented_output_in_artifact_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference artifact_manifest_missing=[],1,1
+results/trials.csv,documented_output_in_release_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference release_manifest_missing=[],1,1
+results/trials.parquet,documented_output_exists_nonempty,pass,reports/NON_HARDWARE_COMPLETE.md reference exists and is nonempty,1,1
+results/trials.parquet,documented_output_in_artifact_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference artifact_manifest_missing=[],1,1
+results/trials.parquet,documented_output_in_release_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference release_manifest_missing=[],1,1
+results/trials_sample.jsonl,documented_output_exists_nonempty,pass,reports/NON_HARDWARE_COMPLETE.md reference exists and is nonempty,1,1
+results/trials_sample.jsonl,documented_output_in_artifact_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference artifact_manifest_missing=[],1,1
+results/trials_sample.jsonl,documented_output_in_release_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference release_manifest_missing=[],1,1
+results/schema_validation_summary.json,documented_output_exists_nonempty,pass,reports/NON_HARDWARE_COMPLETE.md reference exists and is nonempty,1,1
+results/schema_validation_summary.json,documented_output_in_artifact_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference artifact_manifest_missing=[],1,1
+results/schema_validation_summary.json,documented_output_in_release_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference release_manifest_missing=[],1,1
+results/breaking_search.csv,documented_output_exists_nonempty,pass,reports/NON_HARDWARE_COMPLETE.md reference exists and is nonempty,1,1
+results/breaking_search.csv,documented_output_in_artifact_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference artifact_manifest_missing=[],1,1
+results/breaking_search.csv,documented_output_in_release_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference release_manifest_missing=[],1,1
+results/bodybreak_minimality_audit.csv,documented_output_exists_nonempty,pass,reports/NON_HARDWARE_COMPLETE.md reference exists and is nonempty,1,1
+results/bodybreak_minimality_audit.csv,documented_output_in_artifact_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference artifact_manifest_missing=[],1,1
+results/bodybreak_minimality_audit.csv,documented_output_in_release_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference release_manifest_missing=[],1,1
+results/summary_by_method_bucket.csv,documented_output_exists_nonempty,pass,reports/NON_HARDWARE_COMPLETE.md reference exists and is nonempty,1,1
+results/summary_by_method_bucket.csv,documented_output_in_artifact_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference artifact_manifest_missing=[],1,1
+results/summary_by_method_bucket.csv,documented_output_in_release_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference release_manifest_missing=[],1,1
+results/robustness_profiles.csv,documented_output_exists_nonempty,pass,reports/NON_HARDWARE_COMPLETE.md reference exists and is nonempty,1,1
+results/robustness_profiles.csv,documented_output_in_artifact_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference artifact_manifest_missing=[],1,1
+results/robustness_profiles.csv,documented_output_in_release_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference release_manifest_missing=[],1,1
+results/threshold_sensitivity.csv,documented_output_exists_nonempty,pass,reports/NON_HARDWARE_COMPLETE.md reference exists and is nonempty,1,1
+results/threshold_sensitivity.csv,documented_output_in_artifact_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference artifact_manifest_missing=[],1,1
+results/threshold_sensitivity.csv,documented_output_in_release_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference release_manifest_missing=[],1,1
+results/oracle_feasibility.csv,documented_output_exists_nonempty,pass,reports/NON_HARDWARE_COMPLETE.md reference exists and is nonempty,1,1
+results/oracle_feasibility.csv,documented_output_in_artifact_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference artifact_manifest_missing=[],1,1
+results/oracle_feasibility.csv,documented_output_in_release_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference release_manifest_missing=[],1,1
+results/method_deltas_vs_bodyshield.csv,documented_output_exists_nonempty,pass,reports/NON_HARDWARE_COMPLETE.md reference exists and is nonempty,1,1
+results/method_deltas_vs_bodyshield.csv,documented_output_in_artifact_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference artifact_manifest_missing=[],1,1
+results/method_deltas_vs_bodyshield.csv,documented_output_in_release_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference release_manifest_missing=[],1,1
+results/learned_outcome_model_eval.csv,documented_output_exists_nonempty,pass,reports/NON_HARDWARE_COMPLETE.md reference exists and is nonempty,1,1
+results/learned_outcome_model_eval.csv,documented_output_in_artifact_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference artifact_manifest_missing=[],1,1
+results/learned_outcome_model_eval.csv,documented_output_in_release_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference release_manifest_missing=[],1,1
+results/learned_outcome_axis_weights.csv,documented_output_exists_nonempty,pass,reports/NON_HARDWARE_COMPLETE.md reference exists and is nonempty,1,1
+results/learned_outcome_axis_weights.csv,documented_output_in_artifact_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference artifact_manifest_missing=[],1,1
+results/learned_outcome_axis_weights.csv,documented_output_in_release_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference release_manifest_missing=[],1,1
+results/learned_outcome_predictions.csv,documented_output_exists_nonempty,pass,reports/NON_HARDWARE_COMPLETE.md reference exists and is nonempty,1,1
+results/learned_outcome_predictions.csv,documented_output_in_artifact_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference artifact_manifest_missing=[],1,1
+results/learned_outcome_predictions.csv,documented_output_in_release_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference release_manifest_missing=[],1,1
+results/visual_wam_eval.csv,documented_output_exists_nonempty,pass,reports/NON_HARDWARE_COMPLETE.md reference exists and is nonempty,1,1
+results/visual_wam_eval.csv,documented_output_in_artifact_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference artifact_manifest_missing=[],1,1
+results/visual_wam_eval.csv,documented_output_in_release_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference release_manifest_missing=[],1,1
+results/visual_wam_feature_weights.csv,documented_output_exists_nonempty,pass,reports/NON_HARDWARE_COMPLETE.md reference exists and is nonempty,1,1
+results/visual_wam_feature_weights.csv,documented_output_in_artifact_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference artifact_manifest_missing=[],1,1
+results/visual_wam_feature_weights.csv,documented_output_in_release_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference release_manifest_missing=[],1,1
+results/visual_wam_rollouts.csv,documented_output_exists_nonempty,pass,reports/NON_HARDWARE_COMPLETE.md reference exists and is nonempty,1,1
+results/visual_wam_rollouts.csv,documented_output_in_artifact_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference artifact_manifest_missing=[],1,1
+results/visual_wam_rollouts.csv,documented_output_in_release_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference release_manifest_missing=[],1,1
+results/visual_wam_trace_sample.jsonl,documented_output_exists_nonempty,pass,reports/NON_HARDWARE_COMPLETE.md reference exists and is nonempty,1,1
+results/visual_wam_trace_sample.jsonl,documented_output_in_artifact_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference artifact_manifest_missing=[],1,1
+results/visual_wam_trace_sample.jsonl,documented_output_in_release_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference release_manifest_missing=[],1,1
+results/neural_wam_eval.csv,documented_output_exists_nonempty,pass,reports/NON_HARDWARE_COMPLETE.md reference exists and is nonempty,1,1
+results/neural_wam_eval.csv,documented_output_in_artifact_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference artifact_manifest_missing=[],1,1
+results/neural_wam_eval.csv,documented_output_in_release_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference release_manifest_missing=[],1,1
+results/neural_wam_rollouts.csv,documented_output_exists_nonempty,pass,reports/NON_HARDWARE_COMPLETE.md reference exists and is nonempty,1,1
+results/neural_wam_rollouts.csv,documented_output_in_artifact_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference artifact_manifest_missing=[],1,1
+results/neural_wam_rollouts.csv,documented_output_in_release_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference release_manifest_missing=[],1,1
+results/neural_wam_training_curve.csv,documented_output_exists_nonempty,pass,reports/NON_HARDWARE_COMPLETE.md reference exists and is nonempty,1,1
+results/neural_wam_training_curve.csv,documented_output_in_artifact_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference artifact_manifest_missing=[],1,1
+results/neural_wam_training_curve.csv,documented_output_in_release_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference release_manifest_missing=[],1,1
+results/neural_wam_trace_sample.jsonl,documented_output_exists_nonempty,pass,reports/NON_HARDWARE_COMPLETE.md reference exists and is nonempty,1,1
+results/neural_wam_trace_sample.jsonl,documented_output_in_artifact_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference artifact_manifest_missing=[],1,1
+results/neural_wam_trace_sample.jsonl,documented_output_in_release_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference release_manifest_missing=[],1,1
+results/real_video_wam_readiness.csv,documented_output_exists_nonempty,pass,reports/NON_HARDWARE_COMPLETE.md reference exists and is nonempty,1,1
+results/real_video_wam_readiness.csv,documented_output_in_artifact_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference artifact_manifest_missing=[],1,1
+results/real_video_wam_readiness.csv,documented_output_in_release_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference release_manifest_missing=[],1,1
+results/mujoco_residual_policy_eval.csv,documented_output_exists_nonempty,pass,reports/NON_HARDWARE_COMPLETE.md reference exists and is nonempty,1,1
+results/mujoco_residual_policy_eval.csv,documented_output_in_artifact_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference artifact_manifest_missing=[],1,1
+results/mujoco_residual_policy_eval.csv,documented_output_in_release_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference release_manifest_missing=[],1,1
+results/mujoco_residual_policy_rollouts.csv,documented_output_exists_nonempty,pass,reports/NON_HARDWARE_COMPLETE.md reference exists and is nonempty,1,1
+results/mujoco_residual_policy_rollouts.csv,documented_output_in_artifact_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference artifact_manifest_missing=[],1,1
+results/mujoco_residual_policy_rollouts.csv,documented_output_in_release_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference release_manifest_missing=[],1,1
+results/mujoco_residual_policy_weights.csv,documented_output_exists_nonempty,pass,reports/NON_HARDWARE_COMPLETE.md reference exists and is nonempty,1,1
+results/mujoco_residual_policy_weights.csv,documented_output_in_artifact_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference artifact_manifest_missing=[],1,1
+results/mujoco_residual_policy_weights.csv,documented_output_in_release_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference release_manifest_missing=[],1,1
+results/mujoco_residual_policy_gate_ablation.csv,documented_output_exists_nonempty,pass,reports/NON_HARDWARE_COMPLETE.md reference exists and is nonempty,1,1
+results/mujoco_residual_policy_gate_ablation.csv,documented_output_in_artifact_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference artifact_manifest_missing=[],1,1
+results/mujoco_residual_policy_gate_ablation.csv,documented_output_in_release_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference release_manifest_missing=[],1,1
+results/mujoco_residual_policy_trace_sample.jsonl,documented_output_exists_nonempty,pass,reports/NON_HARDWARE_COMPLETE.md reference exists and is nonempty,1,1
+results/mujoco_residual_policy_trace_sample.jsonl,documented_output_in_artifact_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference artifact_manifest_missing=[],1,1
+results/mujoco_residual_policy_trace_sample.jsonl,documented_output_in_release_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference release_manifest_missing=[],1,1
+results/trajectory_wam_eval.csv,documented_output_exists_nonempty,pass,reports/NON_HARDWARE_COMPLETE.md reference exists and is nonempty,1,1
+results/trajectory_wam_eval.csv,documented_output_in_artifact_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference artifact_manifest_missing=[],1,1
+results/trajectory_wam_eval.csv,documented_output_in_release_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference release_manifest_missing=[],1,1
+results/trajectory_wam_axis_weights.csv,documented_output_exists_nonempty,pass,reports/NON_HARDWARE_COMPLETE.md reference exists and is nonempty,1,1
+results/trajectory_wam_axis_weights.csv,documented_output_in_artifact_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference artifact_manifest_missing=[],1,1
+results/trajectory_wam_axis_weights.csv,documented_output_in_release_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference release_manifest_missing=[],1,1
+results/trajectory_wam_rollouts.csv,documented_output_exists_nonempty,pass,reports/NON_HARDWARE_COMPLETE.md reference exists and is nonempty,1,1
+results/trajectory_wam_rollouts.csv,documented_output_in_artifact_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference artifact_manifest_missing=[],1,1
+results/trajectory_wam_rollouts.csv,documented_output_in_release_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference release_manifest_missing=[],1,1
+results/trajectory_wam_trace_sample.jsonl,documented_output_exists_nonempty,pass,reports/NON_HARDWARE_COMPLETE.md reference exists and is nonempty,1,1
+results/trajectory_wam_trace_sample.jsonl,documented_output_in_artifact_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference artifact_manifest_missing=[],1,1
+results/trajectory_wam_trace_sample.jsonl,documented_output_in_release_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference release_manifest_missing=[],1,1
+results/corrective_adaptation_eval.csv,documented_output_exists_nonempty,pass,reports/NON_HARDWARE_COMPLETE.md reference exists and is nonempty,1,1
+results/corrective_adaptation_eval.csv,documented_output_in_artifact_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference artifact_manifest_missing=[],1,1
+results/corrective_adaptation_eval.csv,documented_output_in_release_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference release_manifest_missing=[],1,1
+results/corrective_adaptation_residual_weights.csv,documented_output_exists_nonempty,pass,reports/NON_HARDWARE_COMPLETE.md reference exists and is nonempty,1,1
+results/corrective_adaptation_residual_weights.csv,documented_output_in_artifact_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference artifact_manifest_missing=[],1,1
+results/corrective_adaptation_residual_weights.csv,documented_output_in_release_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference release_manifest_missing=[],1,1
+results/corrective_adaptation_rollouts.csv,documented_output_exists_nonempty,pass,reports/NON_HARDWARE_COMPLETE.md reference exists and is nonempty,1,1
+results/corrective_adaptation_rollouts.csv,documented_output_in_artifact_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference artifact_manifest_missing=[],1,1
+results/corrective_adaptation_rollouts.csv,documented_output_in_release_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference release_manifest_missing=[],1,1
+results/corrective_adaptation_trace_sample.jsonl,documented_output_exists_nonempty,pass,reports/NON_HARDWARE_COMPLETE.md reference exists and is nonempty,1,1
+results/corrective_adaptation_trace_sample.jsonl,documented_output_in_artifact_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference artifact_manifest_missing=[],1,1
+results/corrective_adaptation_trace_sample.jsonl,documented_output_in_release_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference release_manifest_missing=[],1,1
+results/corrective_trace_readiness.csv,documented_output_exists_nonempty,pass,reports/NON_HARDWARE_COMPLETE.md reference exists and is nonempty,1,1
+results/corrective_trace_readiness.csv,documented_output_in_artifact_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference artifact_manifest_missing=[],1,1
+results/corrective_trace_readiness.csv,documented_output_in_release_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference release_manifest_missing=[],1,1
+results/evidence_consistency_audit.csv,documented_output_exists_nonempty,pass,reports/NON_HARDWARE_COMPLETE.md reference exists and is nonempty,1,1
+results/evidence_consistency_audit.csv,documented_output_in_artifact_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference artifact_manifest_missing=[],1,1
+results/evidence_consistency_audit.csv,documented_output_in_release_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference release_manifest_missing=[],1,1
+results/artifact_inventory_audit.csv,documented_output_exists_nonempty,pass,reports/NON_HARDWARE_COMPLETE.md reference exists and is nonempty,1,1
+results/artifact_inventory_audit.csv,documented_output_in_artifact_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference artifact_manifest_missing=[],0,0
+results/artifact_inventory_audit.csv,documented_output_in_release_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference release_manifest_missing=[],0,0
+results/claim_boundary_audit.csv,documented_output_exists_nonempty,pass,reports/NON_HARDWARE_COMPLETE.md reference exists and is nonempty,1,1
+results/claim_boundary_audit.csv,documented_output_in_artifact_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference artifact_manifest_missing=[],1,1
+results/claim_boundary_audit.csv,documented_output_in_release_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference release_manifest_missing=[],1,1
+results/command_surface_audit.csv,documented_output_exists_nonempty,pass,reports/NON_HARDWARE_COMPLETE.md reference exists and is nonempty,1,1
+results/command_surface_audit.csv,documented_output_in_artifact_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference artifact_manifest_missing=[],1,1
+results/command_surface_audit.csv,documented_output_in_release_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference release_manifest_missing=[],1,1
+results/environment_dependency_audit.csv,documented_output_exists_nonempty,pass,reports/NON_HARDWARE_COMPLETE.md reference exists and is nonempty,1,1
+results/environment_dependency_audit.csv,documented_output_in_artifact_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference artifact_manifest_missing=[],1,1
+results/environment_dependency_audit.csv,documented_output_in_release_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference release_manifest_missing=[],1,1
+results/environment_snapshot.json,documented_output_exists_nonempty,pass,reports/NON_HARDWARE_COMPLETE.md reference exists and is nonempty,1,1
+results/environment_snapshot.json,documented_output_in_artifact_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference artifact_manifest_missing=[],1,1
+results/environment_snapshot.json,documented_output_in_release_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference release_manifest_missing=[],1,1
+results/config_schema_audit.csv,documented_output_exists_nonempty,pass,reports/NON_HARDWARE_COMPLETE.md reference exists and is nonempty,1,1
+results/config_schema_audit.csv,documented_output_in_artifact_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference artifact_manifest_missing=[],1,1
+results/config_schema_audit.csv,documented_output_in_release_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference release_manifest_missing=[],1,1
+results/derived_results_audit.csv,documented_output_exists_nonempty,pass,reports/NON_HARDWARE_COMPLETE.md reference exists and is nonempty,1,1
+results/derived_results_audit.csv,documented_output_in_artifact_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference artifact_manifest_missing=[],1,1
+results/derived_results_audit.csv,documented_output_in_release_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference release_manifest_missing=[],1,1
+results/source_import_audit.csv,documented_output_exists_nonempty,pass,reports/NON_HARDWARE_COMPLETE.md reference exists and is nonempty,1,1
+results/source_import_audit.csv,documented_output_in_artifact_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference artifact_manifest_missing=[],1,1
+results/source_import_audit.csv,documented_output_in_release_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference release_manifest_missing=[],1,1
+results/results_integrity_audit.csv,documented_output_exists_nonempty,pass,reports/NON_HARDWARE_COMPLETE.md reference exists and is nonempty,1,1
+results/results_integrity_audit.csv,documented_output_in_artifact_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference artifact_manifest_missing=[],1,1
+results/results_integrity_audit.csv,documented_output_in_release_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference release_manifest_missing=[],1,1
+results/paper_source_audit.csv,documented_output_exists_nonempty,pass,reports/NON_HARDWARE_COMPLETE.md reference exists and is nonempty,1,1
+results/paper_source_audit.csv,documented_output_in_artifact_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference artifact_manifest_missing=[],1,1
+results/paper_source_audit.csv,documented_output_in_release_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference release_manifest_missing=[],1,1
+results/portable_hygiene_audit.csv,documented_output_exists_nonempty,pass,reports/NON_HARDWARE_COMPLETE.md reference exists and is nonempty,1,1
+results/portable_hygiene_audit.csv,documented_output_in_artifact_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference artifact_manifest_missing=[],0,0
+results/portable_hygiene_audit.csv,documented_output_in_release_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference release_manifest_missing=[],0,0
+results/visual_artifact_audit.csv,documented_output_exists_nonempty,pass,reports/NON_HARDWARE_COMPLETE.md reference exists and is nonempty,1,1
+results/visual_artifact_audit.csv,documented_output_in_artifact_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference artifact_manifest_missing=[],1,1
+results/visual_artifact_audit.csv,documented_output_in_release_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference release_manifest_missing=[],1,1
+results/release_payload_audit.csv,documented_output_exists_nonempty,pass,reports/NON_HARDWARE_COMPLETE.md reference exists and is nonempty,1,1
+results/release_payload_audit.csv,documented_output_in_artifact_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference artifact_manifest_missing=[],0,0
+results/release_payload_audit.csv,documented_output_in_release_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference release_manifest_missing=[],0,0
+results/release_determinism_audit.csv,documented_output_exists_nonempty,pass,reports/NON_HARDWARE_COMPLETE.md reference exists and is nonempty,1,1
+results/release_determinism_audit.csv,documented_output_in_artifact_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference artifact_manifest_missing=[],0,0
+results/release_determinism_audit.csv,documented_output_in_release_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference release_manifest_missing=[],0,0
+results/release_runtime_audit.csv,documented_output_exists_nonempty,pass,reports/NON_HARDWARE_COMPLETE.md reference exists and is nonempty,1,1
+results/release_runtime_audit.csv,documented_output_in_artifact_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference artifact_manifest_missing=[],0,0
+results/release_runtime_audit.csv,documented_output_in_release_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference release_manifest_missing=[],0,0
+results/simulation_rollout_videos.csv,documented_output_exists_nonempty,pass,reports/NON_HARDWARE_COMPLETE.md reference exists and is nonempty,1,1
+results/simulation_rollout_videos.csv,documented_output_in_artifact_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference artifact_manifest_missing=[],1,1
+results/simulation_rollout_videos.csv,documented_output_in_release_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference release_manifest_missing=[],1,1
+results/videos/bodyshield_synthetic_nominal_reference.gif,documented_output_exists_nonempty,pass,reports/NON_HARDWARE_COMPLETE.md reference exists and is nonempty,1,1
+results/videos/bodyshield_synthetic_nominal_reference.gif,documented_output_in_artifact_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference artifact_manifest_missing=[],1,1
+results/videos/bodyshield_synthetic_nominal_reference.gif,documented_output_in_release_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference release_manifest_missing=[],1,1
+results/videos/bodyshield_synthetic_bodybreak_failure.gif,documented_output_exists_nonempty,pass,reports/NON_HARDWARE_COMPLETE.md reference exists and is nonempty,1,1
+results/videos/bodyshield_synthetic_bodybreak_failure.gif,documented_output_in_artifact_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference artifact_manifest_missing=[],1,1
+results/videos/bodyshield_synthetic_bodybreak_failure.gif,documented_output_in_release_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference release_manifest_missing=[],1,1
+results/videos/bodyshield_synthetic_bodyshield_repair.gif,documented_output_exists_nonempty,pass,reports/NON_HARDWARE_COMPLETE.md reference exists and is nonempty,1,1
+results/videos/bodyshield_synthetic_bodyshield_repair.gif,documented_output_in_artifact_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference artifact_manifest_missing=[],1,1
+results/videos/bodyshield_synthetic_bodyshield_repair.gif,documented_output_in_release_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference release_manifest_missing=[],1,1
+results/secondary_metrics_by_method.csv,documented_output_exists_nonempty,pass,reports/NON_HARDWARE_COMPLETE.md reference exists and is nonempty,1,1
+results/secondary_metrics_by_method.csv,documented_output_in_artifact_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference artifact_manifest_missing=[],1,1
+results/secondary_metrics_by_method.csv,documented_output_in_release_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference release_manifest_missing=[],1,1
+results/failure_taxonomy_counts.csv,documented_output_exists_nonempty,pass,reports/NON_HARDWARE_COMPLETE.md reference exists and is nonempty,1,1
+results/failure_taxonomy_counts.csv,documented_output_in_artifact_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference artifact_manifest_missing=[],1,1
+results/failure_taxonomy_counts.csv,documented_output_in_release_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference release_manifest_missing=[],1,1
+results/task_suite_cards.csv,documented_output_exists_nonempty,pass,reports/NON_HARDWARE_COMPLETE.md reference exists and is nonempty,1,1
+results/task_suite_cards.csv,documented_output_in_artifact_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference artifact_manifest_missing=[],1,1
+results/task_suite_cards.csv,documented_output_in_release_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference release_manifest_missing=[],1,1
+results/sim_env_availability.csv,documented_output_exists_nonempty,pass,reports/NON_HARDWARE_COMPLETE.md reference exists and is nonempty,1,1
+results/sim_env_availability.csv,documented_output_in_artifact_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference artifact_manifest_missing=[],1,1
+results/sim_env_availability.csv,documented_output_in_release_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference release_manifest_missing=[],1,1
+results/high_fidelity_benchmark.csv,documented_output_exists_nonempty,pass,reports/NON_HARDWARE_COMPLETE.md reference exists and is nonempty,1,1
+results/high_fidelity_benchmark.csv,documented_output_in_artifact_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference artifact_manifest_missing=[],1,1
+results/high_fidelity_benchmark.csv,documented_output_in_release_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference release_manifest_missing=[],1,1
+results/external_policy_benchmark_readiness.csv,documented_output_exists_nonempty,pass,reports/NON_HARDWARE_COMPLETE.md reference exists and is nonempty,1,1
+results/external_policy_benchmark_readiness.csv,documented_output_in_artifact_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference artifact_manifest_missing=[],1,1
+results/external_policy_benchmark_readiness.csv,documented_output_in_release_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference release_manifest_missing=[],1,1
+trial_schema.schema.json,documented_output_exists_nonempty,pass,reports/NON_HARDWARE_COMPLETE.md reference exists and is nonempty,1,1
+trial_schema.schema.json,documented_output_in_artifact_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference artifact_manifest_missing=[],1,1
+trial_schema.schema.json,documented_output_in_release_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference release_manifest_missing=[],1,1
+results/nominal_vs_robustness_radius.csv,documented_output_exists_nonempty,pass,reports/NON_HARDWARE_COMPLETE.md reference exists and is nonempty,1,1
+results/nominal_vs_robustness_radius.csv,documented_output_in_artifact_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference artifact_manifest_missing=[],1,1
+results/nominal_vs_robustness_radius.csv,documented_output_in_release_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference release_manifest_missing=[],1,1
+results/figures/bodyshield_mechanism.pdf,documented_output_exists_nonempty,pass,reports/NON_HARDWARE_COMPLETE.md reference exists and is nonempty,1,1
+results/figures/bodyshield_mechanism.pdf,documented_output_in_artifact_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference artifact_manifest_missing=[],1,1
+results/figures/bodyshield_mechanism.pdf,documented_output_in_release_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference release_manifest_missing=[],1,1
+results/figures/breaking_search_comparison.pdf,documented_output_exists_nonempty,pass,reports/NON_HARDWARE_COMPLETE.md reference exists and is nonempty,1,1
+results/figures/breaking_search_comparison.pdf,documented_output_in_artifact_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference artifact_manifest_missing=[],1,1
+results/figures/breaking_search_comparison.pdf,documented_output_in_release_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference release_manifest_missing=[],1,1
+results/figures/bodybreak_minimality_audit.pdf,documented_output_exists_nonempty,pass,reports/NON_HARDWARE_COMPLETE.md reference exists and is nonempty,1,1
+results/figures/bodybreak_minimality_audit.pdf,documented_output_in_artifact_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference artifact_manifest_missing=[],1,1
+results/figures/bodybreak_minimality_audit.pdf,documented_output_in_release_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference release_manifest_missing=[],1,1
+results/figures/repair_seen_heldout.pdf,documented_output_exists_nonempty,pass,reports/NON_HARDWARE_COMPLETE.md reference exists and is nonempty,1,1
+results/figures/repair_seen_heldout.pdf,documented_output_in_artifact_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference artifact_manifest_missing=[],1,1
+results/figures/repair_seen_heldout.pdf,documented_output_in_release_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference release_manifest_missing=[],1,1
+results/figures/nominal_vs_radius.pdf,documented_output_exists_nonempty,pass,reports/NON_HARDWARE_COMPLETE.md reference exists and is nonempty,1,1
+results/figures/nominal_vs_radius.pdf,documented_output_in_artifact_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference artifact_manifest_missing=[],1,1
+results/figures/nominal_vs_radius.pdf,documented_output_in_release_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference release_manifest_missing=[],1,1
+results/figures/high_fidelity_summary.pdf,documented_output_exists_nonempty,pass,reports/NON_HARDWARE_COMPLETE.md reference exists and is nonempty,1,1
+results/figures/high_fidelity_summary.pdf,documented_output_in_artifact_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference artifact_manifest_missing=[],1,1
+results/figures/high_fidelity_summary.pdf,documented_output_in_release_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference release_manifest_missing=[],1,1
+results/figures/visual_wam_summary.pdf,documented_output_exists_nonempty,pass,reports/NON_HARDWARE_COMPLETE.md reference exists and is nonempty,1,1
+results/figures/visual_wam_summary.pdf,documented_output_in_artifact_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference artifact_manifest_missing=[],1,1
+results/figures/visual_wam_summary.pdf,documented_output_in_release_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference release_manifest_missing=[],1,1
+results/figures/neural_wam_summary.pdf,documented_output_exists_nonempty,pass,reports/NON_HARDWARE_COMPLETE.md reference exists and is nonempty,1,1
+results/figures/neural_wam_summary.pdf,documented_output_in_artifact_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference artifact_manifest_missing=[],1,1
+results/figures/neural_wam_summary.pdf,documented_output_in_release_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference release_manifest_missing=[],1,1
+results/figures/mujoco_residual_policy_summary.pdf,documented_output_exists_nonempty,pass,reports/NON_HARDWARE_COMPLETE.md reference exists and is nonempty,1,1
+results/figures/mujoco_residual_policy_summary.pdf,documented_output_in_artifact_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference artifact_manifest_missing=[],1,1
+results/figures/mujoco_residual_policy_summary.pdf,documented_output_in_release_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference release_manifest_missing=[],1,1
+results/figures/mujoco_residual_gate_ablation.pdf,documented_output_exists_nonempty,pass,reports/NON_HARDWARE_COMPLETE.md reference exists and is nonempty,1,1
+results/figures/mujoco_residual_gate_ablation.pdf,documented_output_in_artifact_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference artifact_manifest_missing=[],1,1
+results/figures/mujoco_residual_gate_ablation.pdf,documented_output_in_release_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference release_manifest_missing=[],1,1
+results/figures/trajectory_wam_summary.pdf,documented_output_exists_nonempty,pass,reports/NON_HARDWARE_COMPLETE.md reference exists and is nonempty,1,1
+results/figures/trajectory_wam_summary.pdf,documented_output_in_artifact_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference artifact_manifest_missing=[],1,1
+results/figures/trajectory_wam_summary.pdf,documented_output_in_release_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference release_manifest_missing=[],1,1
+results/figures/corrective_adaptation_summary.pdf,documented_output_exists_nonempty,pass,reports/NON_HARDWARE_COMPLETE.md reference exists and is nonempty,1,1
+results/figures/corrective_adaptation_summary.pdf,documented_output_in_artifact_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference artifact_manifest_missing=[],1,1
+results/figures/corrective_adaptation_summary.pdf,documented_output_in_release_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference release_manifest_missing=[],1,1
+reports/FIGURE_CAPTIONS.md,documented_output_exists_nonempty,pass,reports/NON_HARDWARE_COMPLETE.md reference exists and is nonempty,1,1
+reports/FIGURE_CAPTIONS.md,documented_output_in_artifact_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference artifact_manifest_missing=[],1,1
+reports/FIGURE_CAPTIONS.md,documented_output_in_release_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference release_manifest_missing=[],1,1
+reports/PACK_VERIFICATION.md,documented_output_exists_nonempty,pass,reports/NON_HARDWARE_COMPLETE.md reference exists and is nonempty,1,1
+reports/PACK_VERIFICATION.md,documented_output_in_artifact_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference artifact_manifest_missing=[],0,0
+reports/PACK_VERIFICATION.md,documented_output_in_release_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference release_manifest_missing=[],0,0
+reports/PACK_VERIFICATION.json,documented_output_exists_nonempty,pass,reports/NON_HARDWARE_COMPLETE.md reference exists and is nonempty,1,1
+reports/PACK_VERIFICATION.json,documented_output_in_artifact_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference artifact_manifest_missing=[],0,0
+reports/PACK_VERIFICATION.json,documented_output_in_release_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference release_manifest_missing=[],0,0
+reports/RELEASE_BUNDLE.md,documented_output_exists_nonempty,pass,reports/NON_HARDWARE_COMPLETE.md reference exists and is nonempty,1,1
+reports/RELEASE_BUNDLE.md,documented_output_in_artifact_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference artifact_manifest_missing=[],1,1
+reports/RELEASE_BUNDLE.md,documented_output_in_release_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference release_manifest_missing=[],0,0
+reports/RELEASE_DETERMINISM_AUDIT.md,documented_output_exists_nonempty,pass,reports/NON_HARDWARE_COMPLETE.md reference exists and is nonempty,1,1
+reports/RELEASE_DETERMINISM_AUDIT.md,documented_output_in_artifact_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference artifact_manifest_missing=[],0,0
+reports/RELEASE_DETERMINISM_AUDIT.md,documented_output_in_release_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference release_manifest_missing=[],0,0
+reports/RELEASE_PAYLOAD_AUDIT.md,documented_output_exists_nonempty,pass,reports/NON_HARDWARE_COMPLETE.md reference exists and is nonempty,1,1
+reports/RELEASE_PAYLOAD_AUDIT.md,documented_output_in_artifact_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference artifact_manifest_missing=[],0,0
+reports/RELEASE_PAYLOAD_AUDIT.md,documented_output_in_release_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference release_manifest_missing=[],0,0
+reports/RELEASE_RUNTIME_AUDIT.md,documented_output_exists_nonempty,pass,reports/NON_HARDWARE_COMPLETE.md reference exists and is nonempty,1,1
+reports/RELEASE_RUNTIME_AUDIT.md,documented_output_in_artifact_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference artifact_manifest_missing=[],0,0
+reports/RELEASE_RUNTIME_AUDIT.md,documented_output_in_release_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference release_manifest_missing=[],0,0
+reports/EVIDENCE_CONSISTENCY_AUDIT.md,documented_output_exists_nonempty,pass,reports/NON_HARDWARE_COMPLETE.md reference exists and is nonempty,1,1
+reports/EVIDENCE_CONSISTENCY_AUDIT.md,documented_output_in_artifact_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference artifact_manifest_missing=[],1,1
+reports/EVIDENCE_CONSISTENCY_AUDIT.md,documented_output_in_release_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference release_manifest_missing=[],1,1
+reports/ARTIFACT_INVENTORY_AUDIT.md,documented_output_exists_nonempty,pass,reports/NON_HARDWARE_COMPLETE.md reference exists and is nonempty,1,1
+reports/ARTIFACT_INVENTORY_AUDIT.md,documented_output_in_artifact_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference artifact_manifest_missing=[],0,0
+reports/ARTIFACT_INVENTORY_AUDIT.md,documented_output_in_release_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference release_manifest_missing=[],0,0
+reports/ENVIRONMENT_DEPENDENCY_AUDIT.md,documented_output_exists_nonempty,pass,reports/NON_HARDWARE_COMPLETE.md reference exists and is nonempty,1,1
+reports/ENVIRONMENT_DEPENDENCY_AUDIT.md,documented_output_in_artifact_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference artifact_manifest_missing=[],1,1
+reports/ENVIRONMENT_DEPENDENCY_AUDIT.md,documented_output_in_release_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference release_manifest_missing=[],1,1
+reports/CONFIG_SCHEMA_AUDIT.md,documented_output_exists_nonempty,pass,reports/NON_HARDWARE_COMPLETE.md reference exists and is nonempty,1,1
+reports/CONFIG_SCHEMA_AUDIT.md,documented_output_in_artifact_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference artifact_manifest_missing=[],1,1
+reports/CONFIG_SCHEMA_AUDIT.md,documented_output_in_release_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference release_manifest_missing=[],1,1
+reports/DERIVED_RESULTS_AUDIT.md,documented_output_exists_nonempty,pass,reports/NON_HARDWARE_COMPLETE.md reference exists and is nonempty,1,1
+reports/DERIVED_RESULTS_AUDIT.md,documented_output_in_artifact_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference artifact_manifest_missing=[],1,1
+reports/DERIVED_RESULTS_AUDIT.md,documented_output_in_release_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference release_manifest_missing=[],1,1
+reports/SOURCE_IMPORT_AUDIT.md,documented_output_exists_nonempty,pass,reports/NON_HARDWARE_COMPLETE.md reference exists and is nonempty,1,1
+reports/SOURCE_IMPORT_AUDIT.md,documented_output_in_artifact_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference artifact_manifest_missing=[],1,1
+reports/SOURCE_IMPORT_AUDIT.md,documented_output_in_release_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference release_manifest_missing=[],1,1
+reports/PAPER_SOURCE_AUDIT.md,documented_output_exists_nonempty,pass,reports/NON_HARDWARE_COMPLETE.md reference exists and is nonempty,1,1
+reports/PAPER_SOURCE_AUDIT.md,documented_output_in_artifact_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference artifact_manifest_missing=[],1,1
+reports/PAPER_SOURCE_AUDIT.md,documented_output_in_release_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference release_manifest_missing=[],1,1
+reports/PORTABLE_HYGIENE_AUDIT.md,documented_output_exists_nonempty,pass,reports/NON_HARDWARE_COMPLETE.md reference exists and is nonempty,1,1
+reports/PORTABLE_HYGIENE_AUDIT.md,documented_output_in_artifact_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference artifact_manifest_missing=[],0,0
+reports/PORTABLE_HYGIENE_AUDIT.md,documented_output_in_release_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference release_manifest_missing=[],0,0
+reports/HIGH_FIDELITY_INTERPRETATION.md,documented_output_exists_nonempty,pass,reports/NON_HARDWARE_COMPLETE.md reference exists and is nonempty,1,1
+reports/HIGH_FIDELITY_INTERPRETATION.md,documented_output_in_artifact_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference artifact_manifest_missing=[],1,1
+reports/HIGH_FIDELITY_INTERPRETATION.md,documented_output_in_release_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference release_manifest_missing=[],1,1
+reports/EXTERNAL_POLICY_BENCHMARK_READINESS.md,documented_output_exists_nonempty,pass,reports/NON_HARDWARE_COMPLETE.md reference exists and is nonempty,1,1
+reports/EXTERNAL_POLICY_BENCHMARK_READINESS.md,documented_output_in_artifact_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference artifact_manifest_missing=[],1,1
+reports/EXTERNAL_POLICY_BENCHMARK_READINESS.md,documented_output_in_release_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference release_manifest_missing=[],1,1
+reports/EXTERNAL_POLICY_BENCHMARK_READINESS_TABLE.md,documented_output_exists_nonempty,pass,reports/NON_HARDWARE_COMPLETE.md reference exists and is nonempty,1,1
+reports/EXTERNAL_POLICY_BENCHMARK_READINESS_TABLE.md,documented_output_in_artifact_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference artifact_manifest_missing=[],1,1
+reports/EXTERNAL_POLICY_BENCHMARK_READINESS_TABLE.md,documented_output_in_release_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference release_manifest_missing=[],1,1
+reports/NON_HARDWARE_REQUIREMENTS_TRACE.md,documented_output_exists_nonempty,pass,reports/NON_HARDWARE_COMPLETE.md reference exists and is nonempty,1,1
+reports/NON_HARDWARE_REQUIREMENTS_TRACE.md,documented_output_in_artifact_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference artifact_manifest_missing=[],1,1
+reports/NON_HARDWARE_REQUIREMENTS_TRACE.md,documented_output_in_release_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference release_manifest_missing=[],1,1
+reports/BUDGET_AND_FAIRNESS_AUDIT.md,documented_output_exists_nonempty,pass,reports/NON_HARDWARE_COMPLETE.md reference exists and is nonempty,1,1
+reports/BUDGET_AND_FAIRNESS_AUDIT.md,documented_output_in_artifact_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference artifact_manifest_missing=[],1,1
+reports/BUDGET_AND_FAIRNESS_AUDIT.md,documented_output_in_release_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference release_manifest_missing=[],1,1
+reports/BODYBREAK_MINIMALITY_AUDIT.md,documented_output_exists_nonempty,pass,reports/NON_HARDWARE_COMPLETE.md reference exists and is nonempty,1,1
+reports/BODYBREAK_MINIMALITY_AUDIT.md,documented_output_in_artifact_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference artifact_manifest_missing=[],1,1
+reports/BODYBREAK_MINIMALITY_AUDIT.md,documented_output_in_release_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference release_manifest_missing=[],1,1
+reports/BODYBREAK_MINIMALITY_AUDIT_TABLE.md,documented_output_exists_nonempty,pass,reports/NON_HARDWARE_COMPLETE.md reference exists and is nonempty,1,1
+reports/BODYBREAK_MINIMALITY_AUDIT_TABLE.md,documented_output_in_artifact_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference artifact_manifest_missing=[],1,1
+reports/BODYBREAK_MINIMALITY_AUDIT_TABLE.md,documented_output_in_release_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference release_manifest_missing=[],1,1
+reports/METHOD_DELTA_TABLE.md,documented_output_exists_nonempty,pass,reports/NON_HARDWARE_COMPLETE.md reference exists and is nonempty,1,1
+reports/METHOD_DELTA_TABLE.md,documented_output_in_artifact_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference artifact_manifest_missing=[],1,1
+reports/METHOD_DELTA_TABLE.md,documented_output_in_release_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference release_manifest_missing=[],1,1
+reports/AGENDA_FIT_MEMO.md,documented_output_exists_nonempty,pass,reports/NON_HARDWARE_COMPLETE.md reference exists and is nonempty,1,1
+reports/AGENDA_FIT_MEMO.md,documented_output_in_artifact_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference artifact_manifest_missing=[],1,1
+reports/AGENDA_FIT_MEMO.md,documented_output_in_release_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference release_manifest_missing=[],1,1
+reports/LEARNED_OUTCOME_MODEL_TABLE.md,documented_output_exists_nonempty,pass,reports/NON_HARDWARE_COMPLETE.md reference exists and is nonempty,1,1
+reports/LEARNED_OUTCOME_MODEL_TABLE.md,documented_output_in_artifact_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference artifact_manifest_missing=[],1,1
+reports/LEARNED_OUTCOME_MODEL_TABLE.md,documented_output_in_release_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference release_manifest_missing=[],1,1
+reports/LEARNED_OUTCOME_MODEL_INTERPRETATION.md,documented_output_exists_nonempty,pass,reports/NON_HARDWARE_COMPLETE.md reference exists and is nonempty,1,1
+reports/LEARNED_OUTCOME_MODEL_INTERPRETATION.md,documented_output_in_artifact_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference artifact_manifest_missing=[],1,1
+reports/LEARNED_OUTCOME_MODEL_INTERPRETATION.md,documented_output_in_release_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference release_manifest_missing=[],1,1
+reports/VISUAL_WAM_TABLE.md,documented_output_exists_nonempty,pass,reports/NON_HARDWARE_COMPLETE.md reference exists and is nonempty,1,1
+reports/VISUAL_WAM_TABLE.md,documented_output_in_artifact_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference artifact_manifest_missing=[],1,1
+reports/VISUAL_WAM_TABLE.md,documented_output_in_release_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference release_manifest_missing=[],1,1
+reports/VISUAL_WAM_INTERPRETATION.md,documented_output_exists_nonempty,pass,reports/NON_HARDWARE_COMPLETE.md reference exists and is nonempty,1,1
+reports/VISUAL_WAM_INTERPRETATION.md,documented_output_in_artifact_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference artifact_manifest_missing=[],1,1
+reports/VISUAL_WAM_INTERPRETATION.md,documented_output_in_release_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference release_manifest_missing=[],1,1
+reports/SIMULATION_ROLLOUT_VIDEOS.md,documented_output_exists_nonempty,pass,reports/NON_HARDWARE_COMPLETE.md reference exists and is nonempty,1,1
+reports/SIMULATION_ROLLOUT_VIDEOS.md,documented_output_in_artifact_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference artifact_manifest_missing=[],1,1
+reports/SIMULATION_ROLLOUT_VIDEOS.md,documented_output_in_release_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference release_manifest_missing=[],1,1
+reports/NEURAL_WAM_TABLE.md,documented_output_exists_nonempty,pass,reports/NON_HARDWARE_COMPLETE.md reference exists and is nonempty,1,1
+reports/NEURAL_WAM_TABLE.md,documented_output_in_artifact_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference artifact_manifest_missing=[],1,1
+reports/NEURAL_WAM_TABLE.md,documented_output_in_release_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference release_manifest_missing=[],1,1
+reports/NEURAL_WAM_TRAINING_CURVE.md,documented_output_exists_nonempty,pass,reports/NON_HARDWARE_COMPLETE.md reference exists and is nonempty,1,1
+reports/NEURAL_WAM_TRAINING_CURVE.md,documented_output_in_artifact_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference artifact_manifest_missing=[],1,1
+reports/NEURAL_WAM_TRAINING_CURVE.md,documented_output_in_release_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference release_manifest_missing=[],1,1
+reports/NEURAL_WAM_INTERPRETATION.md,documented_output_exists_nonempty,pass,reports/NON_HARDWARE_COMPLETE.md reference exists and is nonempty,1,1
+reports/NEURAL_WAM_INTERPRETATION.md,documented_output_in_artifact_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference artifact_manifest_missing=[],1,1
+reports/NEURAL_WAM_INTERPRETATION.md,documented_output_in_release_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference release_manifest_missing=[],1,1
+reports/REAL_VIDEO_WAM_READINESS.md,documented_output_exists_nonempty,pass,reports/NON_HARDWARE_COMPLETE.md reference exists and is nonempty,1,1
+reports/REAL_VIDEO_WAM_READINESS.md,documented_output_in_artifact_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference artifact_manifest_missing=[],1,1
+reports/REAL_VIDEO_WAM_READINESS.md,documented_output_in_release_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference release_manifest_missing=[],1,1
+reports/REAL_VIDEO_WAM_READINESS_TABLE.md,documented_output_exists_nonempty,pass,reports/NON_HARDWARE_COMPLETE.md reference exists and is nonempty,1,1
+reports/REAL_VIDEO_WAM_READINESS_TABLE.md,documented_output_in_artifact_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference artifact_manifest_missing=[],1,1
+reports/REAL_VIDEO_WAM_READINESS_TABLE.md,documented_output_in_release_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference release_manifest_missing=[],1,1
+reports/MUJOCO_RESIDUAL_POLICY_TABLE.md,documented_output_exists_nonempty,pass,reports/NON_HARDWARE_COMPLETE.md reference exists and is nonempty,1,1
+reports/MUJOCO_RESIDUAL_POLICY_TABLE.md,documented_output_in_artifact_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference artifact_manifest_missing=[],1,1
+reports/MUJOCO_RESIDUAL_POLICY_TABLE.md,documented_output_in_release_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference release_manifest_missing=[],1,1
+reports/MUJOCO_RESIDUAL_POLICY_WEIGHT_TABLE.md,documented_output_exists_nonempty,pass,reports/NON_HARDWARE_COMPLETE.md reference exists and is nonempty,1,1
+reports/MUJOCO_RESIDUAL_POLICY_WEIGHT_TABLE.md,documented_output_in_artifact_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference artifact_manifest_missing=[],1,1
+reports/MUJOCO_RESIDUAL_POLICY_WEIGHT_TABLE.md,documented_output_in_release_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference release_manifest_missing=[],1,1
+reports/MUJOCO_RESIDUAL_POLICY_GATE_ABLATION_TABLE.md,documented_output_exists_nonempty,pass,reports/NON_HARDWARE_COMPLETE.md reference exists and is nonempty,1,1
+reports/MUJOCO_RESIDUAL_POLICY_GATE_ABLATION_TABLE.md,documented_output_in_artifact_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference artifact_manifest_missing=[],1,1
+reports/MUJOCO_RESIDUAL_POLICY_GATE_ABLATION_TABLE.md,documented_output_in_release_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference release_manifest_missing=[],1,1
+reports/MUJOCO_RESIDUAL_POLICY_INTERPRETATION.md,documented_output_exists_nonempty,pass,reports/NON_HARDWARE_COMPLETE.md reference exists and is nonempty,1,1
+reports/MUJOCO_RESIDUAL_POLICY_INTERPRETATION.md,documented_output_in_artifact_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference artifact_manifest_missing=[],1,1
+reports/MUJOCO_RESIDUAL_POLICY_INTERPRETATION.md,documented_output_in_release_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference release_manifest_missing=[],1,1
+reports/TRAJECTORY_WAM_TABLE.md,documented_output_exists_nonempty,pass,reports/NON_HARDWARE_COMPLETE.md reference exists and is nonempty,1,1
+reports/TRAJECTORY_WAM_TABLE.md,documented_output_in_artifact_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference artifact_manifest_missing=[],1,1
+reports/TRAJECTORY_WAM_TABLE.md,documented_output_in_release_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference release_manifest_missing=[],1,1
+reports/TRAJECTORY_WAM_INTERPRETATION.md,documented_output_exists_nonempty,pass,reports/NON_HARDWARE_COMPLETE.md reference exists and is nonempty,1,1
+reports/TRAJECTORY_WAM_INTERPRETATION.md,documented_output_in_artifact_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference artifact_manifest_missing=[],1,1
+reports/TRAJECTORY_WAM_INTERPRETATION.md,documented_output_in_release_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference release_manifest_missing=[],1,1
+reports/CORRECTIVE_ADAPTATION_TABLE.md,documented_output_exists_nonempty,pass,reports/NON_HARDWARE_COMPLETE.md reference exists and is nonempty,1,1
+reports/CORRECTIVE_ADAPTATION_TABLE.md,documented_output_in_artifact_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference artifact_manifest_missing=[],1,1
+reports/CORRECTIVE_ADAPTATION_TABLE.md,documented_output_in_release_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference release_manifest_missing=[],1,1
+reports/CORRECTIVE_ADAPTATION_INTERPRETATION.md,documented_output_exists_nonempty,pass,reports/NON_HARDWARE_COMPLETE.md reference exists and is nonempty,1,1
+reports/CORRECTIVE_ADAPTATION_INTERPRETATION.md,documented_output_in_artifact_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference artifact_manifest_missing=[],1,1
+reports/CORRECTIVE_ADAPTATION_INTERPRETATION.md,documented_output_in_release_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference release_manifest_missing=[],1,1
+reports/CORRECTIVE_TRACE_READINESS.md,documented_output_exists_nonempty,pass,reports/NON_HARDWARE_COMPLETE.md reference exists and is nonempty,1,1
+reports/CORRECTIVE_TRACE_READINESS.md,documented_output_in_artifact_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference artifact_manifest_missing=[],1,1
+reports/CORRECTIVE_TRACE_READINESS.md,documented_output_in_release_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference release_manifest_missing=[],1,1
+reports/CORRECTIVE_TRACE_READINESS_TABLE.md,documented_output_exists_nonempty,pass,reports/NON_HARDWARE_COMPLETE.md reference exists and is nonempty,1,1
+reports/CORRECTIVE_TRACE_READINESS_TABLE.md,documented_output_in_artifact_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference artifact_manifest_missing=[],1,1
+reports/CORRECTIVE_TRACE_READINESS_TABLE.md,documented_output_in_release_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference release_manifest_missing=[],1,1
+reports/MUJOCO_PLANAR_METHOD_SUMMARY_TABLE.md,documented_output_exists_nonempty,pass,reports/NON_HARDWARE_COMPLETE.md reference exists and is nonempty,1,1
+reports/MUJOCO_PLANAR_METHOD_SUMMARY_TABLE.md,documented_output_in_artifact_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference artifact_manifest_missing=[],1,1
+reports/MUJOCO_PLANAR_METHOD_SUMMARY_TABLE.md,documented_output_in_release_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference release_manifest_missing=[],1,1
+reports/MUJOCO_PLANAR_PROBE_TABLE.md,documented_output_exists_nonempty,pass,reports/NON_HARDWARE_COMPLETE.md reference exists and is nonempty,1,1
+reports/MUJOCO_PLANAR_PROBE_TABLE.md,documented_output_in_artifact_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference artifact_manifest_missing=[],1,1
+reports/MUJOCO_PLANAR_PROBE_TABLE.md,documented_output_in_release_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference release_manifest_missing=[],1,1
+paper/bodyshield_non_hardware_draft.pdf,documented_output_exists_nonempty,pass,reports/NON_HARDWARE_COMPLETE.md reference exists and is nonempty,1,1
+paper/bodyshield_non_hardware_draft.pdf,documented_output_in_artifact_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference artifact_manifest_missing=[],1,1
+paper/bodyshield_non_hardware_draft.pdf,documented_output_in_release_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference release_manifest_missing=[],1,1
+release/bodyshield_non_hardware_release.zip,documented_output_exists_nonempty,pass,reports/NON_HARDWARE_COMPLETE.md reference exists and is nonempty,1,1
+release/bodyshield_non_hardware_release.zip,documented_output_in_artifact_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference artifact_manifest_missing=[],1,1
+release/bodyshield_non_hardware_release.zip,documented_output_in_release_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference release_manifest_missing=[],0,0
+release/RELEASE_BUNDLE_MANIFEST.csv,documented_output_exists_nonempty,pass,reports/NON_HARDWARE_COMPLETE.md reference exists and is nonempty,1,1
+release/RELEASE_BUNDLE_MANIFEST.csv,documented_output_in_artifact_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference artifact_manifest_missing=[],1,1
+release/RELEASE_BUNDLE_MANIFEST.csv,documented_output_in_release_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference release_manifest_missing=[],0,0
+release/RELEASE_BUNDLE_CHECKSUMS.txt,documented_output_exists_nonempty,pass,reports/NON_HARDWARE_COMPLETE.md reference exists and is nonempty,1,1
+release/RELEASE_BUNDLE_CHECKSUMS.txt,documented_output_in_artifact_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference artifact_manifest_missing=[],1,1
+release/RELEASE_BUNDLE_CHECKSUMS.txt,documented_output_in_release_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference release_manifest_missing=[],0,0
+release/RELEASE_README.md,documented_output_exists_nonempty,pass,reports/NON_HARDWARE_COMPLETE.md reference exists and is nonempty,1,1
+release/RELEASE_README.md,documented_output_in_artifact_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference artifact_manifest_missing=[],1,1
+release/RELEASE_README.md,documented_output_in_release_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference release_manifest_missing=[],0,0
+reports/CITATION_VERIFICATION_TABLE.md,documented_output_exists_nonempty,pass,reports/NON_HARDWARE_COMPLETE.md reference exists and is nonempty,1,1
+reports/CITATION_VERIFICATION_TABLE.md,documented_output_in_artifact_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference artifact_manifest_missing=[],1,1
+reports/CITATION_VERIFICATION_TABLE.md,documented_output_in_release_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference release_manifest_missing=[],1,1
+reports/SIM_ENV_AVAILABILITY.md,documented_output_exists_nonempty,pass,reports/NON_HARDWARE_COMPLETE.md reference exists and is nonempty,1,1
+reports/SIM_ENV_AVAILABILITY.md,documented_output_in_artifact_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference artifact_manifest_missing=[],1,1
+reports/SIM_ENV_AVAILABILITY.md,documented_output_in_release_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference release_manifest_missing=[],1,1
+reports/HIGH_FIDELITY_BENCHMARK_TABLE.md,documented_output_exists_nonempty,pass,reports/NON_HARDWARE_COMPLETE.md reference exists and is nonempty,1,1
+reports/HIGH_FIDELITY_BENCHMARK_TABLE.md,documented_output_in_artifact_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference artifact_manifest_missing=[],1,1
+reports/HIGH_FIDELITY_BENCHMARK_TABLE.md,documented_output_in_release_manifest_when_eligible,pass,reports/NON_HARDWARE_COMPLETE.md reference release_manifest_missing=[],1,1

@@ -1,0 +1,16 @@
+axis,coefficient,interpretation
+calibration_offset_mm,-1.2155058903566154,negative means predicted success decreases as severity increases
+action_noise_std,-1.165064179008826,negative means predicted success decreases as severity increases
+latency_ms,-0.8593305449134818,negative means predicted success decreases as severity increases
+joint_range_scale,-0.8195132885932908,negative means predicted success decreases as severity increases
+controller_rate_scale,-0.7673537488803749,negative means predicted success decreases as severity increases
+gripper_limit_scale,-0.7387242316457053,negative means predicted success decreases as severity increases
+acceleration_cap_scale,-0.5483237491378175,negative means predicted success decreases as severity increases
+speed_cap_scale,-0.5330636037239436,negative means predicted success decreases as severity increases
+camera_shift_px,0.0,negative means predicted success decreases as severity increases
+payload_g,0.0,negative means predicted success decreases as severity increases
+tool_extension_cm,0.0,negative means predicted success decreases as severity increases
+physical_gripper_restriction_mm,0.0,negative means predicted success decreases as severity increases
+obstacle_clearance_cm,0.0,negative means predicted success decreases as severity increases
+joint_lock,0.0,negative means predicted success decreases as severity increases
+friction_surface,0.0,negative means predicted success decreases as severity increases

@@ -1,0 +1,77 @@
+project: bodyshield_final
+date: 2026-07-05
+
+phases:
+  - id: phase_0_literature_and_claim_lock
+    hardware: false
+    tasks:
+      - verify_sources_and_citations
+      - build_related_work_table
+      - write_claim_boundary_doc
+
+  - id: phase_1_software_stack
+    hardware: false
+    tasks:
+      - implement_data_schema
+      - implement_perturbation_library
+      - implement_bodybreak_search
+      - implement_bodyshield_repair
+      - implement_baselines
+      - implement_plotting
+      - implement_stats
+
+  - id: phase_2_simulation
+    hardware: false
+    tasks:
+      - setup_sim_envs
+      - run_nominal_policies
+      - run_bodybreak_search
+      - run_bodyshield_repair
+      - run_domain_randomization_baselines
+      - run_sysid_retune_baseline
+      - run_epec_stress_test
+      - generate_sim_results
+
+  - id: phase_3_non_hardware_completion
+    hardware: false
+    tasks:
+      - generate_paper_skeleton
+      - generate_reviewer_attack_report
+      - generate_citation_verification_table
+      - create_reports_NON_HARDWARE_COMPLETE
+      - print_exact_completion_message
+
+  - id: phase_4_hardware_safety_setup
+    hardware: true
+    requires_user_confirmation: true
+    tasks:
+      - healthcheck
+      - safety_gate
+      - verifier_calibration
+      - noise_floor_calibration
+      - emergency_stop_test
+
+  - id: phase_5_hardware_bodybreak
+    hardware: true
+    tasks:
+      - run_hidden_brittleness_batches
+      - run_adversarial_search_batches
+      - run_oracle_feasibility_batches
+
+  - id: phase_6_hardware_bodyshield
+    hardware: true
+    tasks:
+      - run_repair_batches
+      - run_heldout_physical_modification_batches
+      - run_epec_stress_test_hardware
+      - generate_hardware_results
+
+  - id: phase_7_submission_pack
+    hardware: false
+    tasks:
+      - final_tables
+      - final_figures
+      - final_videos
+      - final_paper
+      - reproducibility_package
+      - final_reviewer_response_prebuttal

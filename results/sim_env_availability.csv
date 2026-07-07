@@ -1,0 +1,4 @@
+engine,import_name,installed,role,status
+mujoco,mujoco,True,high-fidelity contact/dynamics follow-up,available
+maniskill,mani_skill,True,manipulation benchmark follow-up,available
+gymnasium,gymnasium,True,common evaluation environment wrapper,available

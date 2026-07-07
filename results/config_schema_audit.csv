@@ -1,0 +1,41 @@
+artifact,check,status,detail,observed,expected
+config_schema_inputs,required_config_files_exist,pass,missing_or_empty=[],9,9
+pyproject.toml,pyproject_exists_nonempty,pass,pyproject.toml exists and is nonempty,533,>0 bytes
+pyproject.toml,pyproject_name_bodyshield,pass,project name is bodyshield,True,True
+pyproject.toml,pyproject_python_requires_declared,pass,requires-python lower bound is declared,True,>=3.10
+pyproject.toml,pyproject_required_dependencies_declared,pass,required dependencies missing=[],12,12
+pyproject.toml,pyproject_pytest_paths_declared,pass,pytest pythonpath and testpaths are declared,True,True
+data_schema.json,json_parse,pass,data schema JSON parses,,
+trial_schema.schema.json,json_parse,pass,trial JSON schema parses,,
+data_schema.json,data_schema_required_top_level_keys,pass,missing top-level keys=[],15,15
+data_schema.json,data_schema_required_perturbation_keys,pass,missing perturbation keys=[],15,15
+data_schema.json,data_schema_method_ids_documented,pass,missing method ids=[],10,10
+trial_schema.schema.json,trial_json_schema_required_top_level_keys,pass,missing top-level required keys=[],15,15
+trial_schema.schema.json,trial_json_schema_required_perturbation_keys,pass,missing perturbation required keys=[],15,15
+trial_schema.schema.json,trial_json_schema_method_ids_match_code,pass,missing method ids=[]; extra=[],10,10
+trial_schema.schema.json,trial_json_schema_matches_code_constant,pass,serialized schema matches bodyshield.schema.TRIAL_JSON_SCHEMA,True,True
+tasks.yaml,yaml_parse,pass,tasks.yaml parses,,
+tasks.yaml,phase_ids_match_expected,pass,"phase ids=['phase_0_literature_and_claim_lock', 'phase_1_software_stack', 'phase_2_simulation', 'phase_3_non_hardware_completion', 'phase_4_hardware_safety_setup', 'phase_5_hardware_bodybreak', 'phase_6_hardware_bodyshield', 'phase_7_submission_pack']","phase_0_literature_and_claim_lock,phase_1_software_stack,phase_2_simulation,phase_3_non_hardware_completion,phase_4_hardware_safety_setup,phase_5_hardware_bodybreak,phase_6_hardware_bodyshield,phase_7_submission_pack","phase_0_literature_and_claim_lock,phase_1_software_stack,phase_2_simulation,phase_3_non_hardware_completion,phase_4_hardware_safety_setup,phase_5_hardware_bodybreak,phase_6_hardware_bodyshield,phase_7_submission_pack"
+tasks.yaml,hardware_phase_flags_match_scope,pass,hardware flags are true only for hardware phases,True,True
+tasks.yaml,hardware_safety_phase_requires_confirmation,pass,hardware safety setup requires user confirmation and safety tasks,True,True
+configs/simulation_bodyshield_maxout.yaml,yaml_parse,pass,simulation maxout config parses,,
+configs/simulation_bodyshield_maxout.yaml,simulation_tasks_match_task_cards,pass,missing=[]; extra=[],8,8
+configs/simulation_bodyshield_maxout.yaml,simulation_methods_match_policies,pass,missing=[]; extra=[],10,10
+configs/simulation_bodyshield_maxout.yaml,simulation_robots_match_code,pass,missing=[]; extra=[],6,6
+configs/simulation_bodyshield_maxout.yaml,simulation_perturbation_axes_cover_code,pass,missing=[],14,>=14
+configs/hardware_push_block_phase2.yaml,yaml_parse,pass,hardware placeholder config parses,,
+configs/hardware_push_block_phase2.yaml,hardware_config_safety_gated,pass,"hardware config enforces safety gate, pause flags, speed cap, and batch cap",True,True
+configs/hardware_push_block_phase2.yaml,hardware_config_policy_bodyshield,pass,hardware placeholder policy remains BodyShield,bodyshield,bodyshield
+configs/hardware_push_block_phase2.yaml,hardware_config_logs_config_hash,pass,hardware placeholder saves config hash,True,True
+configs/external_policy_benchmark.example.json,readiness_spec_loader_accepts,pass,module readiness loader accepts example spec,,
+configs/external_policy_benchmark.example.json,readiness_spec_schema_version_and_path_base,pass,schema_version=1 and path_base is supported,schema=1; path_base=repo_root,schema=1; path_base in repo_root/spec_dir
+configs/external_policy_benchmark.example.json,readiness_spec_sources_cover_fixture_and_placeholder,pass,"sources=['external_checkpoint', 'fixture']","external_checkpoint,fixture","external_checkpoint,fixture"
+configs/external_policy_benchmark.example.json,readiness_spec_boundary_present,pass,readiness evidence boundary is explicit,Readiness/interface validation only; not an external full-scale trained-policy benchmark.,readiness/interface validation only; not ...
+configs/real_video_wam_readiness.example.json,readiness_spec_loader_accepts,pass,module readiness loader accepts example spec,,
+configs/real_video_wam_readiness.example.json,readiness_spec_schema_version_and_path_base,pass,schema_version=1 and path_base is supported,schema=1; path_base=repo_root,schema=1; path_base in repo_root/spec_dir
+configs/real_video_wam_readiness.example.json,readiness_spec_sources_cover_fixture_and_placeholder,pass,"sources=['fixture_sequence', 'real_video_dataset']","fixture_sequence,real_video_dataset","fixture_sequence,real_video_dataset"
+configs/real_video_wam_readiness.example.json,readiness_spec_boundary_present,pass,readiness evidence boundary is explicit,Readiness/interface validation only; not real-video or foundation-scale WAM evidence.,readiness/interface validation only; not ...
+configs/corrective_trace_readiness.example.json,readiness_spec_loader_accepts,pass,module readiness loader accepts example spec,,
+configs/corrective_trace_readiness.example.json,readiness_spec_schema_version_and_path_base,pass,schema_version=1 and path_base is supported,schema=1; path_base=repo_root,schema=1; path_base in repo_root/spec_dir
+configs/corrective_trace_readiness.example.json,readiness_spec_sources_cover_fixture_and_placeholder,pass,"sources=['fixture_corrective_traces', 'real_or_external_corrective_traces']","fixture_corrective_traces,real_or_external_corrective_traces","fixture_corrective_traces,real_or_external_corrective_traces"
+configs/corrective_trace_readiness.example.json,readiness_spec_boundary_present,pass,readiness evidence boundary is explicit,Readiness/interface validation only; not real corrective-trace adaptation or hardware evidence.,readiness/interface validation only; not ...

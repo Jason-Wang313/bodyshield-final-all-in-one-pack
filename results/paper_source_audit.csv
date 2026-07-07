@@ -1,0 +1,21 @@
+artifact,check,status,detail,observed,expected
+paper/main.tex,tex_exists_nonempty,pass,paper TeX source exists and is nonempty,10597,>0 bytes
+paper/references.bib,bib_exists_nonempty,pass,paper BibTeX source exists and is nonempty,2292,>0 bytes
+paper/main.tex,tex_citations_resolve,pass,citation keys missing from bibliography=[],"bahl2023vrb,cadene2024lerobot,chen2022domainrandomization,muratore2022randomizedsim,routray2025vipra,vuong2019pickdr",all cited keys in paper/references.bib
+paper/references.bib,bib_required_keys_present,pass,expected bibliography keys missing=[],6,6
+paper/main.tex,tex_bibliography_files_resolve,pass,bibliography declarations missing=[],references.bib,at least one existing .bib file
+paper/main.tex,tex_refs_resolve,pass,label references missing=[],"tab:analytic-success,tab:bodybreak-search,tab:mujoco-probe,tab:stress-family",all refs have labels
+paper/main.tex,tex_figure_paths_resolve,pass,includegraphics paths missing=[],0,0
+paper/main.tex,tex_local_paths_resolve,pass,local \path references missing=[],"data_schema.json,results/",all local paths exist
+paper/main.tex,tex_required_result_refs_present,pass,required local evidence refs missing from TeX=[],2,2
+paper/main.tex,tex_boundary_terms_present,pass,required TeX boundary terms missing=[],4,4
+paper/main.tex,tex_unresolved_markers_absent,pass,TeX unresolved markers=[],,none
+paper/main.tex,tex_tables_have_captions_and_labels,pass,tables missing caption or label=[],4,>=1
+reports/PAPER_BUILD_STATUS.json,paper_build_status_written,pass,paper build status JSON records the expected written output,status=written; output=paper\bodyshield_non_hardware_draft.pdf,status=written; output=paper\bodyshield_non_hardware_draft.pdf
+reports/PAPER_BUILD_LOG.txt,paper_build_log_clean,pass,build log unresolved/warning markers=[],0,0
+paper/bodyshield_non_hardware_draft.pdf,pdf_exists_nonempty,pass,paper PDF exists and is nonempty,117832,>0 bytes
+paper/bodyshield_non_hardware_draft.pdf,pdf_readable_pages,pass,paper PDF opens and has expected page count,3,3
+paper/bodyshield_non_hardware_draft.pdf,pdf_safe_structure,pass,paper PDF has no interactive/unsafe structure flags,,none
+paper/bodyshield_non_hardware_draft.pdf,pdf_unresolved_markers_absent,pass,PDF extracted text unresolved markers=[],,none
+paper/bodyshield_non_hardware_draft.pdf,pdf_boundary_terms_present,pass,required PDF boundary terms missing=[],5,5
+paper/bodyshield_non_hardware_draft.pdf,pdf_matches_build_output,pass,exported paper PDF matches paper/build/main.pdf when build output is available,7bbb13aebf594598ae18bf754edcd34925cf54d77372636d6cd533290e9f5e11,7bbb13aebf594598ae18bf754edcd34925cf54d77372636d6cd533290e9f5e11

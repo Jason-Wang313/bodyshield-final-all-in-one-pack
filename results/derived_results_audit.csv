@@ -1,0 +1,17 @@
+artifact,check,status,detail,observed,expected
+results/trials.csv,primary_trials_exists_nonempty,pass,primary trials CSV exists and was loaded,1152000,>0 rows
+results/summary_by_method_bucket.csv,derived_table_required_columns_present,pass,missing columns=[],11,11
+results/summary_by_method_bucket.csv,derived_table_key_set_matches,pass,missing_keys=[]; extra_keys=[],30,30
+results/summary_by_method_bucket.csv,derived_table_numeric_values_match,pass,bad numeric columns=[],n=0; successes=0; success_rate=1.11e-16; ci_low=0; ci_high=1.11e-16; mean_execution_time_s=4.44e-16; mean_path_length_m=5.55e-17; mean_retries=9.71e-17; workspace_violation_rate=9.71e-17,max_abs_diff<=1e-10
+results/robustness_profiles.csv,derived_table_required_columns_present,pass,missing columns=[],5,5
+results/robustness_profiles.csv,derived_table_key_set_matches,pass,missing_keys=[]; extra_keys=[],170,170
+results/robustness_profiles.csv,derived_table_numeric_values_match,pass,bad numeric columns=[],profile_auc=1.67e-16; bootstrap_low=1.11e-16; bootstrap_high=1.11e-16,max_abs_diff<=1e-10
+results/secondary_metrics_by_method.csv,derived_table_required_columns_present,pass,missing columns=[],8,8
+results/secondary_metrics_by_method.csv,derived_table_key_set_matches,pass,missing_keys=[]; extra_keys=[],10,10
+results/secondary_metrics_by_method.csv,derived_table_numeric_values_match,pass,bad numeric columns=[],mean_execution_time_s=4.44e-16; mean_path_length_m=5.55e-17; mean_retries=8.33e-17; mean_tracking_error=6.66e-17; mean_current_or_load=6.59e-17; workspace_violation_rate=8.93e-17; verifier_confidence=0,max_abs_diff<=1e-10
+results/failure_taxonomy_counts.csv,derived_table_required_columns_present,pass,missing columns=[],3,3
+results/failure_taxonomy_counts.csv,derived_table_key_set_matches,pass,missing_keys=[]; extra_keys=[],90,90
+results/failure_taxonomy_counts.csv,derived_table_numeric_values_match,pass,bad numeric columns=[],failures=0,max_abs_diff<=1e-10
+results/method_deltas_vs_bodyshield.csv,derived_table_required_columns_present,pass,missing columns=[],15,15
+results/method_deltas_vs_bodyshield.csv,derived_table_key_set_matches,pass,missing_keys=[]; extra_keys=[],27,27
+results/method_deltas_vs_bodyshield.csv,derived_table_numeric_values_match,pass,bad numeric columns=[],bodyshield_success_rate=0; baseline_success_rate=1.11e-16; delta_success_rate=9.71e-17; delta_ci_low=9.54e-17; delta_ci_high=8.33e-17; bodyshield_n=0; baseline_n=0; bodyshield_execution_time_s=0; baseline_execution_time_s=4.44e-16; delta_execution_time_s=9.71e-17; bodyshield_path_length_m=5.55e-17; baseline_path_length_m=5.55e-17; delta_path_length_m=9.71e-17,max_abs_diff<=1e-10

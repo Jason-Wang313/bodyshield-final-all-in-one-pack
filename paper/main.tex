@@ -1,0 +1,112 @@
+\documentclass[10pt,conference]{IEEEtran}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{url}
+\title{BodyShield: Falsifying and Repairing Hidden Embodiment Assumptions in Robot Policies}
+\author{Anonymous Authors}
+\begin{document}
+\maketitle
+\begin{abstract}
+Robot policies can succeed in nominal evaluations while relying on brittle hidden assumptions about latency, calibration, joint range, gripper authority, sensing geometry, payload, and contact. We introduce BodyBreak, an active falsification procedure that estimates the lowest-cost embodiment-control perturbation that breaks a policy under a fixed evaluator budget, and BodyShield, a falsification-guided repair method that optimizes robustness over discovered failures while tracking nominal retention and execution cost. This draft contains analytic-simulation evidence, tabular scalar, synthetic visual, NumPy neural visual-latent, synthetic trajectory, synthetic corrective-adaptation, learned MuJoCo gated residual-policy audits, bounded MuJoCo/ManiSkill probes, and external-checkpoint, real-video WAM, and corrective-trace readiness harnesses; real robot results and external full-scale trained-policy high-fidelity benchmarks remain future evidence tiers.
+\end{abstract}
+\section{Introduction}
+Nominal task success is not enough evidence that a robot policy has learned a transferable action representation. BodyShield treats embodiment-control shift as a diagnostic probe: find the smallest observed failure, attribute the failure axis, and repair the policy against the discovered assumption. The goal is not to replace system identification or domain randomization, but to test whether an apparently successful policy depends on a hidden body/control interface detail.
+\section{Related Work}
+This draft will cite verified sources only, including domain randomization and sim-to-real work~\cite{chen2022domainrandomization,vuong2019pickdr,muratore2022randomizedsim}, LeRobot/SO-101 infrastructure~\cite{cadene2024lerobot}, and human-video affordance policies such as VRB~\cite{bahl2023vrb} and ViPRA~\cite{routray2025vipra}.
+\section{Problem Formulation}
+Let $z \in \mathcal{Z}$ denote an embodiment-control perturbation and $\pi_\theta$ a policy. Each perturbation has a normalized cost $c(z)$ and an estimated success rate $S(\pi_\theta, \tau, r, z)$ for task $\tau$ and robot archetype $r$. BodyBreak estimates
+\[
+  z^\star = \arg\min_{z \in \mathcal{Z}} c(z)\quad \text{s.t.}\quad S(\pi_\theta,\tau,r,z) \leq \alpha,
+\]
+under a finite evaluator budget. BodyShield then optimizes a repaired policy against the discovered breaking set and predeclared training perturbations.
+\section{BodyBreak}
+BodyBreak compares random search, one-axis search, grid search, and adaptive compound search under a shared evaluator-call cap. The current CPU implementation uses a cost-ordered grid scaffold, then spends remaining calls on active-axis subset refinement, local scaling toward the nominal body, and lower-cost random challenges to refine the estimated radius. We report both found-break-only costs and no-break fallback rows, and include a post-hoc dense candidate-pool challenge for representative found breaks.
+\section{BodyShield}
+BodyShield repairs policy sensitivities along discovered failure axes and evaluates nominal retention, seen perturbations, held-out perturbation families, threshold sensitivity, secondary costs, and oracle feasibility. In this non-hardware execution, the policy family is analytic rather than neural; this is sufficient to test the software pipeline and claim accounting, not to claim physical deployment.
+\section{Experimental Setup}
+The local non-hardware run evaluates 10 policy families across 8 task cards, 6 robot archetypes, software/control perturbations, held-out physical-style perturbations, and compound perturbations. Trial logs follow \path{data_schema.json}; full flat logs, sampled nested JSONL records, confidence intervals, bootstrap profile summaries, threshold sensitivity, and failure taxonomy counts are emitted under \path{results/}. We also train a lightweight tabular outcome predictor, a rendered-frame visual predictor, a NumPy neural visual-latent dynamics predictor, a synthetic trajectory next-state predictor, and a residual corrective-action adapter on nominal/seen perturbation buckets and evaluate them on held-out buckets as WAM-style proxy audits. The pack exports three synthetic rollout GIFs for local visual inspection of nominal, BodyBreak, and repaired behavior, but these are generated frames rather than real camera videos. Separately, a local MuJoCo planar audit trains a ridge residual controller from simulator corrective labels, while external-checkpoint, real-video frame-manifest, and corrective-trace readiness harnesses validate future data interfaces without running trained-policy rollouts, real-video WAM training, or real corrective adaptation. These audits are not real-video world models or deployed robot policies.
+\section{WAM-Style Proxy Audits}
+The scalar audit predicts condition-level success from task, robot, policy, and perturbation features. The visual audit predicts next rendered observation frames under action-conditioned rollouts, and the neural audit trains a small nonlinear visual-latent dynamics model. The trajectory audit predicts next synthetic proprioceptive state and reports autoregressive held-out drift. The corrective audit trains a residual action adapter from generated corrective traces and evaluates whether held-out rollouts reduce drift. The MuJoCo gated residual-policy audit repeats the residual-action idea inside local 2-DOF MuJoCo dynamics with supervised corrective labels and a conservative application gate. These audits test whether BodyBreak perturbations can support learned outcome, visual, neural-latent dynamics, and adaptation machinery inside the local package, while leaving real-video WAM training, external robot-policy checkpoints, and real corrective-trace adaptation as future evidence tiers.
+\section{Simulation Results}
+\textbf{Main claim uses the analytic surrogate.} Table~\ref{tab:analytic-success} reports the main non-hardware success rates. BodyShield improves seen and held-out analytic perturbation success over domain randomization while retaining high nominal success; oracle rows estimate feasibility rather than deployable performance.
+\begin{table}[t]
+\caption{Analytic success rates by perturbation bucket.}
+\label{tab:analytic-success}
+\centering
+\footnotesize
+\begin{tabular}{lccc}
+\toprule
+Method & Nominal & Seen & Held-out \\
+\midrule
+Nominal & 0.872 & 0.757 & 0.761 \\
+Domain rand. & 0.844 & 0.748 & 0.742 \\
+SysID+retune & 0.825 & 0.761 & 0.729 \\
+BodyShield & 0.859 & 0.800 & 0.792 \\
+Oracle & 0.925 & 0.910 & 0.907 \\
+\bottomrule
+\end{tabular}
+\end{table}
+Table~\ref{tab:bodybreak-search} compares active search against equal-budget alternatives. BodyBreak is not optimized to maximize the number of failures found; it estimates low-cost breaking perturbations under a fixed evaluator budget. The report pack also logs a dense candidate-pool challenge that audits representative found breaks without claiming global optimality.
+\begin{table}[t]
+\caption{Equal-budget BodyBreak search comparison. Cost is averaged over found-break cases only.}
+\label{tab:bodybreak-search}
+\centering
+\footnotesize
+\begin{tabular}{lccc}
+\toprule
+Search & Break rate & Cost & Calls \\
+\midrule
+BodyBreak & 0.833 & 0.693 & 199.931 \\
+Grid & 0.708 & 0.704 & 161.000 \\
+One-axis & 0.653 & 0.874 & 49.000 \\
+Random & 0.903 & 0.628 & 200.000 \\
+\bottomrule
+\end{tabular}
+\end{table}
+\section{EPEC and Human-Effect Stress Test}
+Table~\ref{tab:stress-family} reports the planned human/effect-prior stress family. In this local execution these methods are analytic stress-test policies, not video-conditioned neural policies. The point is to check whether effect-preserving or human-prior action choices still expose hidden embodiment assumptions that BodyShield can repair against.
+\begin{table}[t]
+\caption{Human/effect-prior stress-test family in the analytic surrogate.}
+\label{tab:stress-family}
+\centering
+\footnotesize
+\begin{tabular}{lccc}
+\toprule
+Method & Nominal & Seen & Held-out \\
+\midrule
+Human/effect & 0.860 & 0.721 & 0.739 \\
+EPEC & 0.843 & 0.730 & 0.753 \\
+BodyShield & 0.859 & 0.800 & 0.792 \\
+\bottomrule
+\end{tabular}
+\end{table}
+\section{Bounded High-Fidelity Probes}
+Table~\ref{tab:mujoco-probe} reports bounded MuJoCo 1-DOF probes. The report pack additionally includes a 2-DOF MuJoCo planar end-effector suite and a learned gated residual-policy audit trained on simulator corrective labels. These checks exercise perturbation and control logic in a physics engine, but they do not model full robot perception, contact geometry, or reset.
+\begin{table}[t]
+\caption{Bounded MuJoCo probe summary. These are dynamics sanity checks, not full robot-policy benchmarks.}
+\label{tab:mujoco-probe}
+\centering
+\footnotesize
+\begin{tabular}{lccc}
+\toprule
+Method & Success & Tasks & Pert. \\
+\midrule
+Nominal & 0.402 & 8 & 7 \\
+Domain rand. & 0.482 & 8 & 7 \\
+BodyShield & 0.500 & 8 & 7 \\
+Oracle & 0.625 & 8 & 7 \\
+\bottomrule
+\end{tabular}
+\end{table}
+The ManiSkill compatibility tier executed 6/6 selected tabletop tasks with CPU \texttt{pd\_joint\_delta\_pos} random actions. It verifies environment availability and control-mode compatibility, not learned policy performance.
+\section{Ablations and Failure Analysis}
+The analysis pack separates robustness gains from conservatism, path-length growth, verifier uncertainty, and task-impossibility artifacts through generated failure-taxonomy, secondary-metric, and repair-axis summaries under \path{results/}.
+\section{Real Robot Results}
+\textbf{Hardware placeholder only. Do not fill until SO-ARM101/SO-101 safety gates pass.}
+\clearpage
+\section{Limitations}
+The current local run lacks hardware evidence, camera-verifier accuracy, reset reliability, noise-floor estimates, real-video or foundation-scale WAM training, real corrective-trace adaptation, and external/full-scale trained-policy MuJoCo/ManiSkill benchmarks. The scalar, visual, neural-latent, trajectory, corrective, local MuJoCo gated residual-policy, bounded simulator, external-checkpoint readiness, real-video WAM readiness, and corrective-trace readiness audits validate software execution only; none establishes physical transfer.
+\bibliographystyle{IEEEtran}
+\bibliography{references}
+\end{document}

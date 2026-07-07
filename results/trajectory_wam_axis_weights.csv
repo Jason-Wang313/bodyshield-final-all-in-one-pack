@@ -1,0 +1,16 @@
+axis,coefficient_l2,delta_x,delta_y,delta_vx,delta_vy,interpretation
+joint_range_scale,0.007367271198308809,-0.004937839228326287,0.00014318145104826632,-0.005465661310457163,-2.1775584492182126e-05,larger l2 means the trajectory model uses this severity more strongly
+acceleration_cap_scale,0.0038112356218522893,-0.0024100260283928276,-0.0011924071030366412,-0.0024235781806724193,-0.0011923613590439912,larger l2 means the trajectory model uses this severity more strongly
+gripper_limit_scale,0.0027535467550659125,0.0017830316943219246,0.0007154213172175411,0.0018142282474433906,0.0007743164175107646,larger l2 means the trajectory model uses this severity more strongly
+calibration_offset_mm,0.0024722554211995696,-0.0005821137970862052,-0.0016092888953707844,-0.0006106480457622674,-0.0016764511953336265,larger l2 means the trajectory model uses this severity more strongly
+controller_rate_scale,0.002421529567773999,0.0015416100238885098,0.0007340139451201705,0.0015656420901606631,0.0007051470454711361,larger l2 means the trajectory model uses this severity more strongly
+latency_ms,0.002270730614117366,0.0014473448872099413,0.0006765335711396694,0.0014735585058358084,0.0006575241108560336,larger l2 means the trajectory model uses this severity more strongly
+action_noise_std,0.0006642824293817725,0.0004037788994162314,0.0002583710311963459,0.00039178183469392374,0.00024080106024261256,larger l2 means the trajectory model uses this severity more strongly
+speed_cap_scale,0.0005211833012026793,-5.44566207727509e-05,-0.0003490718767012607,0.0003760277259755258,-7.361035321522502e-05,larger l2 means the trajectory model uses this severity more strongly
+camera_shift_px,0.0,0.0,0.0,0.0,0.0,larger l2 means the trajectory model uses this severity more strongly
+payload_g,0.0,0.0,0.0,0.0,0.0,larger l2 means the trajectory model uses this severity more strongly
+tool_extension_cm,0.0,0.0,0.0,0.0,0.0,larger l2 means the trajectory model uses this severity more strongly
+physical_gripper_restriction_mm,0.0,0.0,0.0,0.0,0.0,larger l2 means the trajectory model uses this severity more strongly
+obstacle_clearance_cm,0.0,0.0,0.0,0.0,0.0,larger l2 means the trajectory model uses this severity more strongly
+joint_lock,0.0,0.0,0.0,0.0,0.0,larger l2 means the trajectory model uses this severity more strongly
+friction_surface,0.0,0.0,0.0,0.0,0.0,larger l2 means the trajectory model uses this severity more strongly

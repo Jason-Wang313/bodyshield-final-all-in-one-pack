@@ -1,0 +1,25 @@
+{
+  "benchmark_name": "bodyshield_corrective_trace_readiness",
+  "datasets": [
+    {
+      "action_dim": 2,
+      "dataset_id": "fixture_corrective_trace_manifest",
+      "dataset_root": "",
+      "manifest_path": "",
+      "notes": "Deterministic generated corrective traces used to prove the ingestion and residual-fit path executes.",
+      "rows": 12,
+      "source": "fixture_corrective_traces"
+    },
+    {
+      "action_dim": 2,
+      "dataset_id": "replace_with_real_corrective_traces",
+      "dataset_root": "external_corrective_traces/replace_with_trace_dataset",
+      "manifest_path": "manifest.csv",
+      "notes": "Template row: replace with real robot or external high-fidelity corrective traces before claiming corrective-trace adaptation evidence.",
+      "source": "real_or_external_corrective_traces"
+    }
+  ],
+  "evidence_boundary": "Readiness/interface validation only; not real corrective-trace adaptation or hardware evidence.",
+  "path_base": "repo_root",
+  "schema_version": 1
+}

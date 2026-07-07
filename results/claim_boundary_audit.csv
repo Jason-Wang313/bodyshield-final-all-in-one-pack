@@ -1,0 +1,64 @@
+artifact,check,status,detail,observed,expected
+reports/CLAIM_BOUNDARY.md,document_exists_nonempty,pass,document exists and is nonempty,1498,>0 bytes
+reports/CLAIM_BOUNDARY.md,required_boundary_phrase,pass,required boundary phrase present,software and analytic-simulation claim only,
+reports/CLAIM_BOUNDARY.md,required_boundary_phrase,pass,required boundary phrase present,No real SO-ARM101/SO-101 hardware result has been run,
+reports/CLAIM_BOUNDARY.md,required_boundary_phrase,pass,required boundary phrase present,No external/full-scale robot-policy MuJoCo/ManiSkill benchmark suite has been run,
+reports/CLAIM_BOUNDARY.md,required_boundary_phrase,pass,required boundary phrase present,No real-camera or foundation-scale WAM training has been run,
+reports/CLAIM_BOUNDARY.md,required_boundary_phrase,pass,required boundary phrase present,No real/external corrective-trace adaptation has been run,
+reports/CLAIM_LEDGER.md,document_exists_nonempty,pass,document exists and is nonempty,9423,>0 bytes
+reports/CLAIM_LEDGER.md,required_boundary_phrase,pass,required boundary phrase present,do not claim physical transfer,
+reports/CLAIM_LEDGER.md,required_boundary_phrase,pass,required boundary phrase present,Do not present as real-video,
+reports/CLAIM_LEDGER.md,required_boundary_phrase,pass,required boundary phrase present,Do not present as external/full-scale trained-policy MuJoCo/ManiSkill rollout evidence,
+reports/CLAIM_LEDGER.md,required_boundary_phrase,pass,required boundary phrase present,does not replace external archival upload,
+reports/SIMULATION_SUMMARY.md,document_exists_nonempty,pass,document exists and is nonempty,4543,>0 bytes
+reports/SIMULATION_SUMMARY.md,required_boundary_phrase,pass,required boundary phrase present,must not be presented as real robot or high-fidelity physics evidence,
+reports/SIMULATION_SUMMARY.md,required_boundary_phrase,pass,required boundary phrase present,not external trained-policy benchmark evidence,
+reports/SIMULATION_SUMMARY.md,required_boundary_phrase,pass,required boundary phrase present,not real-video or foundation-scale WAM evidence,
+reports/SIMULATION_SUMMARY.md,required_boundary_phrase,pass,required boundary phrase present,not real corrective-trace adaptation evidence,
+reports/RELEASE_BUNDLE.md,document_exists_nonempty,pass,document exists and is nonempty,725,>0 bytes
+reports/RELEASE_BUNDLE.md,required_boundary_phrase,pass,required boundary phrase present,does not prove an external archival upload,
+reports/RELEASE_BUNDLE.md,required_boundary_phrase,pass,required boundary phrase present,real trained-policy checkpoint benchmark,
+reports/RELEASE_BUNDLE.md,required_boundary_phrase,pass,required boundary phrase present,real-video WAM training,
+reports/RELEASE_BUNDLE.md,required_boundary_phrase,pass,required boundary phrase present,real corrective-trace adaptation,
+reports/RELEASE_BUNDLE.md,required_boundary_phrase,pass,required boundary phrase present,hardware transfer,
+reports/EXTERNAL_POLICY_BENCHMARK_READINESS.md,document_exists_nonempty,pass,document exists and is nonempty,3901,>0 bytes
+reports/EXTERNAL_POLICY_BENCHMARK_READINESS.md,required_boundary_phrase,pass,required boundary phrase present,not external/full-scale MuJoCo or ManiSkill trained-policy evidence,
+reports/EXTERNAL_POLICY_BENCHMARK_READINESS.md,required_boundary_phrase,pass,required boundary phrase present,no external trained-policy checkpoint is present,
+reports/EXTERNAL_POLICY_BENCHMARK_READINESS.md,required_boundary_phrase,pass,required boundary phrase present,no external/full-scale trained-policy benchmark claim is supported,
+reports/REAL_VIDEO_WAM_READINESS.md,document_exists_nonempty,pass,document exists and is nonempty,3710,>0 bytes
+reports/REAL_VIDEO_WAM_READINESS.md,required_boundary_phrase,pass,required boundary phrase present,not real-video WAM evidence,
+reports/REAL_VIDEO_WAM_READINESS.md,required_boundary_phrase,pass,required boundary phrase present,no real camera dataset is present,
+reports/REAL_VIDEO_WAM_READINESS.md,required_boundary_phrase,pass,required boundary phrase present,no real-video or foundation-scale WAM claim is supported,
+reports/CORRECTIVE_TRACE_READINESS.md,document_exists_nonempty,pass,document exists and is nonempty,4015,>0 bytes
+reports/CORRECTIVE_TRACE_READINESS.md,required_boundary_phrase,pass,required boundary phrase present,not real corrective-trace adaptation,
+reports/CORRECTIVE_TRACE_READINESS.md,required_boundary_phrase,pass,required boundary phrase present,no real/external corrective trace dataset is present,
+reports/CORRECTIVE_TRACE_READINESS.md,required_boundary_phrase,pass,required boundary phrase present,no real corrective-trace adaptation claim is supported,
+paper/main.tex,document_exists_nonempty,pass,document exists and is nonempty,10597,>0 bytes
+paper/main.tex,required_boundary_phrase,pass,required boundary phrase present,real robot results and external full-scale trained-policy high-fidelity benchmarks remain future evidence tiers,
+paper/main.tex,required_boundary_phrase,pass,required boundary phrase present,generated frames rather than real camera videos,
+paper/main.tex,required_boundary_phrase,pass,required boundary phrase present,"without running trained-policy rollouts, real-video WAM training, or real corrective adaptation",
+paper/main.tex,required_boundary_phrase,pass,required boundary phrase present,none establishes physical transfer,
+README_EXECUTION.md,document_exists_nonempty,pass,document exists and is nonempty,4298,>0 bytes
+README_EXECUTION.md,required_boundary_phrase,pass,required boundary phrase present,This pack stops before hardware,
+README_EXECUTION.md,required_boundary_phrase,pass,required boundary phrase present,safety gate,
+README_EXECUTION.md,required_boundary_phrase,pass,required boundary phrase present,camera verifier,
+README_EXECUTION.md,required_boundary_phrase,pass,required boundary phrase present,emergency stop,
+paper/bodyshield_non_hardware_draft.pdf,pdf_extract_text,pass,PDF text extracted,3 pages,
+paper/bodyshield_non_hardware_draft.pdf,required_pdf_boundary_phrase,pass,required PDF boundary phrase present,real robot results,
+paper/bodyshield_non_hardware_draft.pdf,required_pdf_boundary_phrase,pass,required PDF boundary phrase present,generated frames,
+paper/bodyshield_non_hardware_draft.pdf,required_pdf_boundary_phrase,pass,required PDF boundary phrase present,real camera videos,
+paper/bodyshield_non_hardware_draft.pdf,required_pdf_boundary_phrase,pass,required PDF boundary phrase present,none establishes physical transfer,
+results/external_policy_benchmark_readiness.csv,required_statuses,pass,required status/artifact values present,"fixture_smoke_passed,missing_checkpoint","fixture_smoke_passed,missing_checkpoint"
+results/external_policy_benchmark_readiness.csv,required_boundary_phrase,pass,required CSV boundary phrase present,not external checkpoint evidence,not external checkpoint evidence
+results/external_policy_benchmark_readiness.csv,required_boundary_phrase,pass,required CSV boundary phrase present,No external trained-policy evidence was generated,No external trained-policy evidence was generated
+results/real_video_wam_readiness.csv,required_statuses,pass,required status/artifact values present,"fixture_training_smoke_passed,missing_dataset","fixture_training_smoke_passed,missing_dataset"
+results/real_video_wam_readiness.csv,required_boundary_phrase,pass,required CSV boundary phrase present,not real camera video,not real camera video
+results/real_video_wam_readiness.csv,required_boundary_phrase,pass,required CSV boundary phrase present,No real-video WAM evidence was generated,No real-video WAM evidence was generated
+results/corrective_trace_readiness.csv,required_statuses,pass,required status/artifact values present,"fixture_fit_smoke_passed,missing_dataset","fixture_fit_smoke_passed,missing_dataset"
+results/corrective_trace_readiness.csv,required_boundary_phrase,pass,required CSV boundary phrase present,not real robot,not real robot
+results/corrective_trace_readiness.csv,required_boundary_phrase,pass,required CSV boundary phrase present,No real corrective-trace evidence was generated,No real corrective-trace evidence was generated
+results/simulation_rollout_videos.csv,required_statuses,pass,required status/artifact values present,"bodybreak_failure,bodyshield_repair,nominal_reference","nominal_reference,bodybreak_failure,bodyshield_repair"
+results/simulation_rollout_videos.csv,required_boundary_phrase,pass,required CSV boundary phrase present,Synthetic generated rollout only,Synthetic generated rollout only
+results/simulation_rollout_videos.csv,required_boundary_phrase,pass,required CSV boundary phrase present,not real video,not real video
+results/simulation_rollout_videos.csv,required_boundary_phrase,pass,required CSV boundary phrase present,"not real video, camera verification, hardware","not real video, camera verification, hardware"
+text_claim_scan,forbidden_overclaim_phrases,pass,no unsupported overclaim phrases found,94,

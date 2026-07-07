@@ -1,0 +1,64 @@
+{
+  "trial_id": "string",
+  "timestamp": "ISO8601 string",
+  "phase": "simulation|hardware",
+  "task_id": "string",
+  "robot_id": "string",
+  "policy_id": "string",
+  "method_id": "nominal|random_tuning|domain_randomization|grid_worstcase|robust_control|sysid_retune|oracle|human_effect_prior|epec|bodyshield",
+  "perturbation": {
+    "latency_ms": "number",
+    "action_noise_std": "number",
+    "joint_range_scale": "number",
+    "joint_lock": "string|null",
+    "gripper_limit_scale": "number",
+    "speed_cap_scale": "number",
+    "acceleration_cap_scale": "number",
+    "calibration_offset_mm": "number",
+    "camera_shift_px": "number",
+    "controller_rate_scale": "number",
+    "payload_g": "number",
+    "tool_extension_cm": "number",
+    "physical_gripper_restriction_mm": "number",
+    "obstacle_clearance_cm": "number",
+    "friction_surface": "string|null"
+  },
+  "initial_state": {
+    "object_pose": "array|null",
+    "robot_joint_state": "array|null",
+    "camera_frame_path": "string|null"
+  },
+  "action_trace_path": "string",
+  "joint_log_path": "string|null",
+  "video_path": "string|null",
+  "verifier": {
+    "label": "success|failure|uncertain",
+    "confidence": "number",
+    "raw_measurement": "object",
+    "verifier_version": "string"
+  },
+  "human_audit": {
+    "label": "success|failure|uncertain|null",
+    "auditor_id": "string|null",
+    "notes": "string|null"
+  },
+  "safety": {
+    "stop_triggered": "boolean",
+    "stop_reason": "string|null",
+    "max_tracking_error": "number|null",
+    "max_current_or_load": "number|null",
+    "workspace_violation": "boolean"
+  },
+  "result": {
+    "success": "boolean",
+    "failure_category": "unreachable|joint_limit|collision|slip|tracking_error|verifier_uncertain|reset_failure|mechanical_fault|other|null",
+    "execution_time_s": "number|null",
+    "path_length_m": "number|null",
+    "retries": "integer"
+  },
+  "metadata": {
+    "config_hash": "string",
+    "code_commit_hash": "string",
+    "notes": "string"
+  }
+}

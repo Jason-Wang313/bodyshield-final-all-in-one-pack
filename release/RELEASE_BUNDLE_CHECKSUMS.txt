@@ -1,0 +1,2 @@
+9c355589957e2e6754998f7a1ec5c2a0f923e65afc8a48f9d6e3aee76dcbf817  release/bodyshield_non_hardware_release.zip
+57d7e3fde4bf0673af08f92f117686ab953facd8d0e59bedf3776d6feec78ec3  release/RELEASE_BUNDLE_MANIFEST.csv

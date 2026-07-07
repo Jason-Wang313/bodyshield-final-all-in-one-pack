@@ -1,0 +1,27 @@
+[project]
+name = "bodyshield"
+version = "0.1.0"
+description = "BodyShield non-hardware falsification and repair stack."
+requires-python = ">=3.10"
+dependencies = [
+  "numpy",
+  "pandas",
+  "matplotlib",
+  "pillow",
+  "pyarrow",
+  "pypdf",
+  "pyyaml",
+  "tabulate",
+  "pytest",
+  "mujoco",
+  "mani-skill",
+  "gymnasium",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+filterwarnings = [
+  "ignore:pinnochio package is not installed:UserWarning",
+  "ignore:The 'warn' method is deprecated:DeprecationWarning",
+]

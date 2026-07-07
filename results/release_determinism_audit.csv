@@ -1,0 +1,18 @@
+artifact,check,status,detail,observed,expected
+release,release_control_files_exist,pass,missing_or_empty=[],4,4
+release/RELEASE_BUNDLE_MANIFEST.csv,release_manifest_parse_nonempty,pass,release payload manifest parses and has rows,252,>0
+release/RELEASE_BUNDLE_MANIFEST.csv,manifest_paths_unique_safe,pass,manifest paths are unique and relative-safe,unique=252; rows=252,unique and safe
+release/RELEASE_BUNDLE_MANIFEST.csv,pack_side_dynamic_outputs_excluded,pass,pack-side dynamic outputs in payload=[],0,0
+release/RELEASE_BUNDLE_MANIFEST.csv,current_payload_files_exist,pass,missing_payload=[],252,252
+release/RELEASE_BUNDLE_MANIFEST.csv,current_payload_hashes_match_manifest,pass,hash_mismatches=[]; size_mismatches=[],hash=0; size=0,0
+release/RELEASE_BUNDLE_MANIFEST.csv,generated_manifest_bytes_match_file,pass,deterministic manifest writer reproduces release manifest bytes,57d7e3fde4bf0673af08f92f117686ab953facd8d0e59bedf3776d6feec78ec3,57d7e3fde4bf0673af08f92f117686ab953facd8d0e59bedf3776d6feec78ec3
+release/RELEASE_README.md,generated_readme_bytes_match_file,pass,deterministic release README writer reproduces release README bytes,9d578fb1d6770837bf9741c9f03df83a9e28c6db0cf0a68af4c41e92d005b97d,9d578fb1d6770837bf9741c9f03df83a9e28c6db0cf0a68af4c41e92d005b97d
+release/bodyshield_non_hardware_release.zip,zip_metadata_readable,pass,release ZIP metadata is readable,254,
+release/bodyshield_non_hardware_release.zip,zip_entry_order_matches_manifest,pass,"ZIP entry order is deterministic README, manifest, then manifest rows",254,254
+release/bodyshield_non_hardware_release.zip,zip_fixed_timestamps,pass,ZIP entries use fixed timestamp,True,"(1980, 1, 1, 0, 0, 0)"
+release/bodyshield_non_hardware_release.zip,zip_fixed_external_attr,pass,ZIP entries use fixed file permissions,True,27525120
+release/bodyshield_non_hardware_release.zip,zip_no_directory_entries,pass,ZIP contains only file entries,True,True
+release/bodyshield_non_hardware_release.zip,zip_control_entries_match_files,pass,control entries inside ZIP match release control files,readme=9d578fb1d6770837bf9741c9f03df83a9e28c6db0cf0a68af4c41e92d005b97d; manifest=57d7e3fde4bf0673af08f92f117686ab953facd8d0e59bedf3776d6feec78ec3,control file hashes
+release/bodyshield_non_hardware_release.zip,reconstructed_zip_sha256_matches,pass,reconstructed ZIP SHA-256 matches release ZIP,9c355589957e2e6754998f7a1ec5c2a0f923e65afc8a48f9d6e3aee76dcbf817,9c355589957e2e6754998f7a1ec5c2a0f923e65afc8a48f9d6e3aee76dcbf817
+release/bodyshield_non_hardware_release.zip,reconstructed_zip_bytes_match,pass,reconstructed ZIP bytes exactly match release ZIP bytes,14051127,14051127
+release/RELEASE_BUNDLE_CHECKSUMS.txt,checksums_file_matches_release_files,pass,checksums file contains current release ZIP and manifest hashes,9c355589957e2e6754998f7a1ec5c2a0f923e65afc8a48f9d6e3aee76dcbf817  release/bodyshield_non_hardware_release.zip|57d7e3fde4bf0673af08f92f117686ab953facd8d0e59bedf3776d6feec78ec3  release/RELEASE_BUNDLE_MANIFEST.csv,both checksum lines

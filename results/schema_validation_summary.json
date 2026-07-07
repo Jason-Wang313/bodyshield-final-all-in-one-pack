@@ -1,0 +1,6 @@
+{
+  "jsonschema_validated_sample_records": 200,
+  "lightweight_validated_records": 1152000,
+  "parquet_status": "written",
+  "trial_json_schema_path": "trial_schema.schema.json"
+}

@@ -1,0 +1,223 @@
+# Non-Hardware Complete
+
+Code version: `b283a7c310f9ae04`
+
+## Completed software modules
+- `bodyshield.perturbations`
+- `bodyshield.sim`
+- `bodyshield.bodybreak_search`
+- `bodyshield.bodyshield_repair`
+- `bodyshield.stats`
+- `bodyshield.plotting`
+- `bodyshield.schema`
+- `bodyshield.claim_boundary_audit`
+- `bodyshield.command_surface_audit`
+- `bodyshield.corrective_trace_readiness`
+- `bodyshield.evidence_consistency`
+- `bodyshield.environment_audit`
+- `bodyshield.config_schema_audit`
+- `bodyshield.source_import_audit`
+- `bodyshield.artifact_inventory_audit`
+- `bodyshield.derived_results_audit`
+- `bodyshield.results_integrity`
+- `bodyshield.paper_source_audit`
+- `bodyshield.portable_hygiene_audit`
+- `bodyshield.high_fidelity_learning`
+- `bodyshield.external_policy_benchmark`
+- `bodyshield.real_video_wam_readiness`
+- `bodyshield.release_bundle`
+- `bodyshield.release_determinism_audit`
+- `bodyshield.release_payload_audit`
+- `bodyshield.release_runtime_audit`
+- `bodyshield.sim_videos`
+- `bodyshield.visual_artifact_audit`
+- `bodyshield.pack_verification`
+- `bodyshield.robot.*` safety-gated hardware stubs
+
+## Completed simulation experiments
+- Hidden brittleness profiles across 8 tasks, 6 robot archetypes, 10 methods, and one-axis/compound perturbation families.
+- Added explicit acceleration-cap, controller-update-rate, physical gripper restriction, and workspace-obstacle perturbations.
+- BodyBreak adversarial search compared with random, one-axis, and grid baselines, plus dense post-hoc minimality challenge for representative found breaks.
+- BodyShield repair evaluated on nominal, seen, and held-out perturbation buckets.
+- Oracle feasibility baseline included for analytic-simulation perturbations.
+- Threshold sensitivity generated for absolute and relative success-drop definitions.
+- Corrective-trace readiness harness validates manifest ingestion, residual labels, missing dataset detection, and deterministic residual-fit smoke without claiming real corrective adaptation.
+- External trained-policy readiness harness validates specs, checkpoint presence, and deterministic interface smoke without claiming external rollout evidence.
+- Real-video WAM readiness harness validates frame manifests, action labels, missing dataset detection, and deterministic fit smoke without claiming real-camera or foundation-scale evidence.
+- Portable release bundle generated with payload manifest, checksums, and verifier inspection; external archival upload remains separate.
+- Release-payload audit safely extracts the portable ZIP and runs the bundled verifier from the extracted archive.
+- Release-determinism audit rebuilds the portable ZIP from current payload files and verifies exact byte equality, fixed timestamps, fixed permissions, and deterministic entry order.
+- Release-runtime audit safely extracts the portable ZIP and runs the bundled pytest suite from inside the extracted archive.
+- Evidence-consistency audit validates that the main claim, trace, reproducibility, completion, simulation-summary, README, and release-bundle documents cite existing local artifacts.
+- Environment dependency audit records Python/platform state, required packages, output-format packages, bounded-simulator packages, test package, and PDF/system-tool availability.
+- Config-schema audit checks TOML/JSON/YAML parseability, code/config ID synchronization, readiness spec boundaries, and safety-gated hardware placeholders.
+- Source/import audit checks Python compileability, bodyshield module imports in a fresh subprocess, script entry-point guards, and refusal-only hardware stubs.
+- Artifact-inventory audit checks documented output references, artifact-manifest coverage, and release-manifest coverage after final bundle creation.
+- Derived-results audit recomputes summary, robustness-profile, secondary-metric, failure-taxonomy, and BodyShield delta tables from primary trial rows.
+- Results-integrity audit checks generated tables, JSONL samples, schema-summary counts, and Parquet row-count agreement.
+- Paper-source audit checks TeX/Bib/PDF/build consistency, citations, labels, local evidence paths, table captions, and paper boundary wording.
+- Portable-hygiene audit checks local absolute path leakage, temporary extraction traces, unsafe archive paths, and dynamic verifier-output exclusion from the release ZIP.
+- Claim-boundary audit checks paper, report, readiness, and release wording against unsupported hardware, real-video, external-checkpoint, corrective-trace, and archival overclaims.
+- Command-surface audit checks README/repro/release command synchronization, script targets, py-compile, guarded entry points, and safe CLI `--help` behavior.
+- Visual-artifact audit checks generated figure PDF/PNG pairs, nonblank PNGs, safe one-page PDFs, caption coverage, and synthetic GIF frame count/dimensions/motion.
+
+## Baselines completed
+- nominal
+- random perturbation tuning
+- domain randomization
+- worst-case grid tuning
+- robust/conservative control
+- sysID+retune
+- oracle feasibility
+- Pathak-style human/effect-prior stress-test policy
+- EPEC-style effect-preserving alternatives
+- BodyShield
+
+## Tables and plots generated
+- `results/trials.csv`
+- `results/trials.parquet`
+- `results/trials_sample.jsonl`
+- `results/schema_validation_summary.json`
+- `results/breaking_search.csv`
+- `results/bodybreak_minimality_audit.csv`
+- `results/summary_by_method_bucket.csv`
+- `results/robustness_profiles.csv`
+- `results/threshold_sensitivity.csv`
+- `results/oracle_feasibility.csv`
+- `results/method_deltas_vs_bodyshield.csv`
+- `results/learned_outcome_model_eval.csv`
+- `results/learned_outcome_axis_weights.csv`
+- `results/learned_outcome_predictions.csv`
+- `results/visual_wam_eval.csv`
+- `results/visual_wam_feature_weights.csv`
+- `results/visual_wam_rollouts.csv`
+- `results/visual_wam_trace_sample.jsonl`
+- `results/neural_wam_eval.csv`
+- `results/neural_wam_rollouts.csv`
+- `results/neural_wam_training_curve.csv`
+- `results/neural_wam_trace_sample.jsonl`
+- `results/real_video_wam_readiness.csv`
+- `results/mujoco_residual_policy_eval.csv`
+- `results/mujoco_residual_policy_rollouts.csv`
+- `results/mujoco_residual_policy_weights.csv`
+- `results/mujoco_residual_policy_gate_ablation.csv`
+- `results/mujoco_residual_policy_trace_sample.jsonl`
+- `results/trajectory_wam_eval.csv`
+- `results/trajectory_wam_axis_weights.csv`
+- `results/trajectory_wam_rollouts.csv`
+- `results/trajectory_wam_trace_sample.jsonl`
+- `results/corrective_adaptation_eval.csv`
+- `results/corrective_adaptation_residual_weights.csv`
+- `results/corrective_adaptation_rollouts.csv`
+- `results/corrective_adaptation_trace_sample.jsonl`
+- `results/corrective_trace_readiness.csv`
+- `results/evidence_consistency_audit.csv`
+- `results/artifact_inventory_audit.csv`
+- `results/claim_boundary_audit.csv`
+- `results/command_surface_audit.csv`
+- `results/environment_dependency_audit.csv`
+- `results/environment_snapshot.json`
+- `results/config_schema_audit.csv`
+- `results/derived_results_audit.csv`
+- `results/source_import_audit.csv`
+- `results/results_integrity_audit.csv`
+- `results/paper_source_audit.csv`
+- `results/portable_hygiene_audit.csv`
+- `results/visual_artifact_audit.csv`
+- `results/release_payload_audit.csv`
+- `results/release_determinism_audit.csv`
+- `results/release_runtime_audit.csv`
+- `results/simulation_rollout_videos.csv`
+- `results/videos/bodyshield_synthetic_nominal_reference.gif`
+- `results/videos/bodyshield_synthetic_bodybreak_failure.gif`
+- `results/videos/bodyshield_synthetic_bodyshield_repair.gif`
+- `results/secondary_metrics_by_method.csv`
+- `results/failure_taxonomy_counts.csv`
+- `results/task_suite_cards.csv`
+- `results/sim_env_availability.csv`
+- `results/high_fidelity_benchmark.csv`
+- `results/external_policy_benchmark_readiness.csv`
+- `trial_schema.schema.json`
+- `results/nominal_vs_robustness_radius.csv`
+- `results/figures/bodyshield_mechanism.pdf`
+- `results/figures/breaking_search_comparison.pdf`
+- `results/figures/bodybreak_minimality_audit.pdf`
+- `results/figures/repair_seen_heldout.pdf`
+- `results/figures/nominal_vs_radius.pdf`
+- `results/figures/high_fidelity_summary.pdf`
+- `results/figures/visual_wam_summary.pdf`
+- `results/figures/neural_wam_summary.pdf`
+- `results/figures/mujoco_residual_policy_summary.pdf`
+- `results/figures/mujoco_residual_gate_ablation.pdf`
+- `results/figures/trajectory_wam_summary.pdf`
+- `results/figures/corrective_adaptation_summary.pdf`
+- `reports/FIGURE_CAPTIONS.md`
+- `reports/PACK_VERIFICATION.md`
+- `reports/PACK_VERIFICATION.json`
+- `reports/RELEASE_BUNDLE.md`
+- `reports/RELEASE_DETERMINISM_AUDIT.md`
+- `reports/RELEASE_PAYLOAD_AUDIT.md`
+- `reports/RELEASE_RUNTIME_AUDIT.md`
+- `reports/EVIDENCE_CONSISTENCY_AUDIT.md`
+- `reports/ARTIFACT_INVENTORY_AUDIT.md`
+- `reports/ENVIRONMENT_DEPENDENCY_AUDIT.md`
+- `reports/CONFIG_SCHEMA_AUDIT.md`
+- `reports/DERIVED_RESULTS_AUDIT.md`
+- `reports/SOURCE_IMPORT_AUDIT.md`
+- `reports/PAPER_SOURCE_AUDIT.md`
+- `reports/PORTABLE_HYGIENE_AUDIT.md`
+- `reports/HIGH_FIDELITY_INTERPRETATION.md`
+- `reports/EXTERNAL_POLICY_BENCHMARK_READINESS.md`
+- `reports/EXTERNAL_POLICY_BENCHMARK_READINESS_TABLE.md`
+- `reports/NON_HARDWARE_REQUIREMENTS_TRACE.md`
+- `reports/BUDGET_AND_FAIRNESS_AUDIT.md`
+- `reports/BODYBREAK_MINIMALITY_AUDIT.md`
+- `reports/BODYBREAK_MINIMALITY_AUDIT_TABLE.md`
+- `reports/METHOD_DELTA_TABLE.md`
+- `reports/AGENDA_FIT_MEMO.md`
+- `reports/LEARNED_OUTCOME_MODEL_TABLE.md`
+- `reports/LEARNED_OUTCOME_MODEL_INTERPRETATION.md`
+- `reports/VISUAL_WAM_TABLE.md`
+- `reports/VISUAL_WAM_INTERPRETATION.md`
+- `reports/SIMULATION_ROLLOUT_VIDEOS.md`
+- `reports/NEURAL_WAM_TABLE.md`
+- `reports/NEURAL_WAM_TRAINING_CURVE.md`
+- `reports/NEURAL_WAM_INTERPRETATION.md`
+- `reports/REAL_VIDEO_WAM_READINESS.md`
+- `reports/REAL_VIDEO_WAM_READINESS_TABLE.md`
+- `reports/MUJOCO_RESIDUAL_POLICY_TABLE.md`
+- `reports/MUJOCO_RESIDUAL_POLICY_WEIGHT_TABLE.md`
+- `reports/MUJOCO_RESIDUAL_POLICY_GATE_ABLATION_TABLE.md`
+- `reports/MUJOCO_RESIDUAL_POLICY_INTERPRETATION.md`
+- `reports/TRAJECTORY_WAM_TABLE.md`
+- `reports/TRAJECTORY_WAM_INTERPRETATION.md`
+- `reports/CORRECTIVE_ADAPTATION_TABLE.md`
+- `reports/CORRECTIVE_ADAPTATION_INTERPRETATION.md`
+- `reports/CORRECTIVE_TRACE_READINESS.md`
+- `reports/CORRECTIVE_TRACE_READINESS_TABLE.md`
+- `reports/MUJOCO_PLANAR_METHOD_SUMMARY_TABLE.md`
+- `reports/MUJOCO_PLANAR_PROBE_TABLE.md`
+- `paper/bodyshield_non_hardware_draft.pdf`
+- `release/bodyshield_non_hardware_release.zip`
+- `release/RELEASE_BUNDLE_MANIFEST.csv`
+- `release/RELEASE_BUNDLE_CHECKSUMS.txt`
+- `release/RELEASE_README.md`
+
+## Citation verification status
+Verified citation/source table created at `reports/CITATION_VERIFICATION_TABLE.md`.
+
+## Remaining hardware-only tasks
+- SO-ARM101/SO-101 assembly confirmation.
+- Physical emergency stop confirmation.
+- `python -m bodyshield.robot.healthcheck`.
+- `python -m bodyshield.robot.safety_gate --check-all`.
+- Camera verifier calibration and human-label agreement audit.
+- Hardware noise-floor, reset reliability, safety-event, and real failure/recovery logs.
+
+## Known risks before hardware execution
+- The main experiment matrix used a CPU analytic surrogate; the learned outcome model is tabular, the visual/trajectory WAM and corrective-adaptation proxies are synthetic only, and the learned MuJoCo gated residual policy plus external-policy, real-video, and corrective-trace readiness harnesses are not external/full-scale trained robot-policy, real-video WAM, or real corrective-trace evidence.
+- The rollout GIFs are generated synthetic media for local inspection only, not real camera/video-verifier evidence.
+- Real held-out physical modification evidence remains uncollected; analytic physical-style perturbation families are generated.
+- Automatic verifier and reset protocol are not validated.
+- The paper must clearly distinguish software/simulation evidence from real robot evidence.
+- High-fidelity simulator packages are probed in `reports/SIM_ENV_AVAILABILITY.md`; bounded benchmark runs are logged in `reports/HIGH_FIDELITY_BENCHMARK_TABLE.md`.

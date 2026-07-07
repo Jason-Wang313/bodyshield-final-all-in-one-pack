@@ -1,0 +1,265 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "properties": {
+    "action_trace_path": {
+      "type": "string"
+    },
+    "human_audit": {
+      "type": "object"
+    },
+    "initial_state": {
+      "type": "object"
+    },
+    "joint_log_path": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "metadata": {
+      "type": "object"
+    },
+    "method_id": {
+      "enum": [
+        "bodyshield",
+        "domain_randomization",
+        "epec",
+        "grid_worstcase",
+        "human_effect_prior",
+        "nominal",
+        "oracle",
+        "random_tuning",
+        "robust_control",
+        "sysid_retune"
+      ]
+    },
+    "perturbation": {
+      "additionalProperties": true,
+      "properties": {
+        "acceleration_cap_scale": {
+          "type": "number"
+        },
+        "action_noise_std": {
+          "type": "number"
+        },
+        "calibration_offset_mm": {
+          "type": "number"
+        },
+        "camera_shift_px": {
+          "type": "number"
+        },
+        "controller_rate_scale": {
+          "type": "number"
+        },
+        "friction_surface": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "gripper_limit_scale": {
+          "type": "number"
+        },
+        "joint_lock": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "joint_range_scale": {
+          "type": "number"
+        },
+        "latency_ms": {
+          "type": "number"
+        },
+        "obstacle_clearance_cm": {
+          "type": "number"
+        },
+        "payload_g": {
+          "type": "number"
+        },
+        "physical_gripper_restriction_mm": {
+          "type": "number"
+        },
+        "speed_cap_scale": {
+          "type": "number"
+        },
+        "tool_extension_cm": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "acceleration_cap_scale",
+        "action_noise_std",
+        "calibration_offset_mm",
+        "camera_shift_px",
+        "controller_rate_scale",
+        "friction_surface",
+        "gripper_limit_scale",
+        "joint_lock",
+        "joint_range_scale",
+        "latency_ms",
+        "obstacle_clearance_cm",
+        "payload_g",
+        "physical_gripper_restriction_mm",
+        "speed_cap_scale",
+        "tool_extension_cm"
+      ],
+      "type": "object"
+    },
+    "phase": {
+      "enum": [
+        "simulation",
+        "hardware"
+      ]
+    },
+    "policy_id": {
+      "type": "string"
+    },
+    "result": {
+      "properties": {
+        "execution_time_s": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "failure_category": {
+          "enum": [
+            "unreachable",
+            "joint_limit",
+            "collision",
+            "slip",
+            "tracking_error",
+            "verifier_uncertain",
+            "reset_failure",
+            "mechanical_fault",
+            "other",
+            null
+          ]
+        },
+        "path_length_m": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "retries": {
+          "minimum": 0,
+          "type": "integer"
+        },
+        "success": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "success",
+        "failure_category",
+        "execution_time_s",
+        "path_length_m",
+        "retries"
+      ],
+      "type": "object"
+    },
+    "robot_id": {
+      "type": "string"
+    },
+    "safety": {
+      "properties": {
+        "max_current_or_load": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "max_tracking_error": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "stop_reason": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "stop_triggered": {
+          "type": "boolean"
+        },
+        "workspace_violation": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "stop_triggered",
+        "workspace_violation"
+      ],
+      "type": "object"
+    },
+    "task_id": {
+      "type": "string"
+    },
+    "timestamp": {
+      "type": "string"
+    },
+    "trial_id": {
+      "type": "string"
+    },
+    "verifier": {
+      "properties": {
+        "confidence": {
+          "maximum": 1,
+          "minimum": 0,
+          "type": "number"
+        },
+        "label": {
+          "enum": [
+            "success",
+            "failure",
+            "uncertain"
+          ]
+        },
+        "raw_measurement": {
+          "type": "object"
+        },
+        "verifier_version": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "label",
+        "confidence",
+        "raw_measurement",
+        "verifier_version"
+      ],
+      "type": "object"
+    },
+    "video_path": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "required": [
+    "action_trace_path",
+    "human_audit",
+    "initial_state",
+    "metadata",
+    "method_id",
+    "perturbation",
+    "phase",
+    "policy_id",
+    "result",
+    "robot_id",
+    "safety",
+    "task_id",
+    "timestamp",
+    "trial_id",
+    "verifier"
+  ],
+  "title": "BodyShieldTrial",
+  "type": "object"
+}

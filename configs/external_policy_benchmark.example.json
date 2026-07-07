@@ -1,0 +1,29 @@
+{
+  "benchmark_name": "bodyshield_external_policy_benchmark_readiness",
+  "evidence_boundary": "Readiness/interface validation only; not an external full-scale trained-policy benchmark.",
+  "path_base": "repo_root",
+  "policies": [
+    {
+      "adapter": "fixture:proportional",
+      "engine": "interface_smoke",
+      "expected_action_dim": 2,
+      "notes": "Deterministic local smoke policy used to prove the harness path executes.",
+      "observation_dim": 6,
+      "policy_id": "fixture_proportional_planar",
+      "source": "fixture",
+      "task_id": "planar_reach_fixture"
+    },
+    {
+      "adapter": "your_policy_module:load_policy",
+      "checkpoint_path": "external_checkpoints/replace_with_trained_policy.ckpt",
+      "engine": "maniskill",
+      "expected_action_dim": 7,
+      "notes": "Template row: replace with a real checkpoint and adapter before claiming external policy evidence.",
+      "observation_dim": 16,
+      "policy_id": "replace_with_external_maniskill_checkpoint",
+      "source": "external_checkpoint",
+      "task_id": "PushCube-v1"
+    }
+  ],
+  "schema_version": 1
+}
