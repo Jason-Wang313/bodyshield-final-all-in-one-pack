@@ -1,0 +1,31 @@
+\documentclass[10pt]{article}
+\usepackage{booktabs}
+\usepackage{url}
+\title{BodyShield Supplementary Material}
+\author{Anonymous Authors}
+\begin{document}
+\maketitle
+
+\section{Artifact Map}
+The non-hardware artifact includes source code, analytic-simulation results,
+bounded simulator probes, claim ledgers, and verification reports. The primary
+entry points are \texttt{reports/PACK_VERIFICATION.md},
+\texttt{reports/claim_ledger.csv}, and
+\texttt{reports/final_artifact_manifest.json}.
+
+\section{Evidence Boundary}
+All current results are analytic-simulation or bounded-probe evidence. Hardware
+noise floor, camera-verifier agreement, reset reliability, and physical
+held-out modification results are pending.
+
+\section{Reproduction Commands}
+\begin{verbatim}
+make smoke
+make test
+make reproduce-minimal
+make reproduce-main-figures
+make paper
+make package-artifacts
+\end{verbatim}
+
+\end{document}

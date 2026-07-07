@@ -15,8 +15,8 @@ This audit safely extracts the portable release ZIP and runs the bundled pytest 
 
 | artifact                                    | check                                | status   | detail                                             | observed     | expected     |
 |:--------------------------------------------|:-------------------------------------|:---------|:---------------------------------------------------|:-------------|:-------------|
-| release/bodyshield_non_hardware_release.zip | release_zip_exists_nonempty          | pass     | release ZIP exists and is nonempty                 | 14051127     | >0 bytes     |
-| release/bodyshield_non_hardware_release.zip | zip_extracts_safely                  | pass     | release ZIP entries extract without unsafe paths   | 254          | >0 entries   |
+| release/bodyshield_non_hardware_release.zip | release_zip_exists_nonempty          | pass     | release ZIP exists and is nonempty                 | 14198187     | >0 bytes     |
+| release/bodyshield_non_hardware_release.zip | zip_extracts_safely                  | pass     | release ZIP entries extract without unsafe paths   | 283          | >0 entries   |
 | tests                                       | extracted_tests_present              | pass     | extracted release contains pytest tests            | 1            | >0           |
 | tests                                       | extracted_pytest_returncode          | pass     | pytest exits successfully inside extracted release | returncode=0 | returncode=0 |
 | tests                                       | extracted_pytest_passed_count        | pass     | pytest output reports passing tests                | 54           | >0           |

@@ -748,7 +748,7 @@ def write_markdown_table(path: Path, df: pd.DataFrame, float_digits: int = 3) ->
 
 
 def write_artifact_manifest(code_version: str, include_release: bool = True) -> pd.DataFrame:
-    roots = [RESULTS, REPORTS, PAPER]
+    roots = [RESULTS, REPORTS, PAPER, ROOT / "videos"]
     if include_release:
         roots.append(RELEASE)
     root_artifacts = [
@@ -767,6 +767,8 @@ def write_artifact_manifest(code_version: str, include_release: bool = True) -> 
         "RELEASE_DETERMINISM_AUDIT.md",
         "RELEASE_PAYLOAD_AUDIT.md",
         "RELEASE_RUNTIME_AUDIT.md",
+        "final_artifact_manifest.json",
+        "final_artifact_manifest_nonhardware.json",
         "artifact_inventory_audit.csv",
         "portable_hygiene_audit.csv",
         "release_determinism_audit.csv",

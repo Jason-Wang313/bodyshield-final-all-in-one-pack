@@ -1,12 +1,12 @@
 {
   "checks": [
     {
-      "detail": "63 required artifacts exist and are nonempty",
+      "detail": "79 required artifacts exist and are nonempty",
       "name": "required_artifacts",
       "status": "pass"
     },
     {
-      "detail": "rows=178; code_version=b283a7c310f9ae04; hashes and required rows match",
+      "detail": "rows=195; code_version=2b907e62fe5a5d47; hashes and required rows match",
       "name": "artifact_manifest",
       "status": "pass"
     },
@@ -46,7 +46,7 @@
       "status": "pass"
     },
     {
-      "detail": "payload_files=252; zip_bytes=14051127; zip_sha256=9c355589957e2e6754998f7a1ec5c2a0f923e65afc8a48f9d6e3aee76dcbf817",
+      "detail": "payload_files=281; zip_bytes=14198187; zip_sha256=f2aa40548595bba10fa00e0e91b6798253a29805b7a699c60f53c50bd2446deb",
       "name": "release_bundle",
       "status": "pass"
     },
@@ -76,7 +76,7 @@
       "status": "pass"
     },
     {
-      "detail": "checks=157; artifacts=113; source compile/import and hardware-stub safety pass",
+      "detail": "checks=171; artifacts=124; source compile/import and hardware-stub safety pass",
       "name": "source_import_audit",
       "status": "pass"
     },
@@ -126,12 +126,12 @@
       "status": "pass"
     },
     {
-      "detail": "no stale downgrade phrases in 160 text files",
+      "detail": "no stale downgrade phrases in 184 text files",
       "name": "stale_phrases",
       "status": "pass"
     }
   ],
-  "code_version": "b283a7c310f9ae04",
+  "code_version": "2b907e62fe5a5d47",
   "manifest_note": "PACK_VERIFICATION, ARTIFACT_INVENTORY_AUDIT, PORTABLE_HYGIENE_AUDIT, RELEASE_PAYLOAD_AUDIT, RELEASE_DETERMINISM_AUDIT, and RELEASE_RUNTIME_AUDIT reports are excluded from ARTIFACT_MANIFEST to avoid self-referential hash churn.",
   "status": "pass"
 }

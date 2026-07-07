@@ -290,7 +290,7 @@ reports/NON_HARDWARE_REQUIREMENTS_TRACE.md,data_schema.json,ok,file exists and i
 reports/NON_HARDWARE_REQUIREMENTS_TRACE.md,trial_schema.schema.json,ok,file exists and is nonempty,1
 reports/NON_HARDWARE_REQUIREMENTS_TRACE.md,tasks.yaml,ok,file exists and is nonempty,1
 reports/NON_HARDWARE_REQUIREMENTS_TRACE.md,configs/*.json,ok,glob matched 3 file(s),3
-reports/NON_HARDWARE_REQUIREMENTS_TRACE.md,configs/*.yaml,ok,glob matched 2 file(s),2
+reports/NON_HARDWARE_REQUIREMENTS_TRACE.md,configs/*.yaml,ok,glob matched 3 file(s),3
 reports/NON_HARDWARE_REQUIREMENTS_TRACE.md,bodyshield/source_import_audit.py,ok,file exists and is nonempty,1
 reports/NON_HARDWARE_REQUIREMENTS_TRACE.md,scripts/run_source_import_audit.py,ok,file exists and is nonempty,1
 reports/NON_HARDWARE_REQUIREMENTS_TRACE.md,results/source_import_audit.csv,ok,file exists and is nonempty,1

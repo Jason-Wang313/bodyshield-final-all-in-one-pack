@@ -1,6 +1,6 @@
 # BodyShield Non-Hardware Execution
 
-Current code version: `b283a7c310f9ae04`
+Current code version: `2b907e62fe5a5d47`
 
 Run:
 ```powershell

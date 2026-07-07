@@ -100,7 +100,7 @@ README_EXECUTION.md,python scripts/run_release_runtime_audit.py,scripts/run_rele
 README_EXECUTION.md,python scripts/run_release_runtime_audit.py,scripts/run_release_runtime_audit.py,script_has_main_guard,pass,script has a guarded CLI entry point,,
 README_EXECUTION.md,python scripts/run_release_runtime_audit.py,scripts/run_release_runtime_audit.py,script_help_callable,pass,script --help exits successfully,returncode=0,returncode=0
 README_EXECUTION.md,python scripts/run_non_hardware.py,scripts/run_non_hardware.py,command_target_recognized,pass,command target recognized,,
-README_EXECUTION.md,python scripts/run_non_hardware.py,scripts/run_non_hardware.py,script_exists_nonempty,pass,script target exists and is nonempty,188113,>0 bytes
+README_EXECUTION.md,python scripts/run_non_hardware.py,scripts/run_non_hardware.py,script_exists_nonempty,pass,script target exists and is nonempty,188222,>0 bytes
 README_EXECUTION.md,python scripts/run_non_hardware.py,scripts/run_non_hardware.py,script_py_compile,pass,script compiles,,
 README_EXECUTION.md,python scripts/run_non_hardware.py,scripts/run_non_hardware.py,script_has_main_guard,pass,script has a guarded CLI entry point,,
 README_EXECUTION.md,python scripts/run_non_hardware.py,scripts/run_non_hardware.py,script_help_not_required,pass,script is intentionally not help-probed by this audit,,
@@ -212,7 +212,7 @@ reports/REPRODUCIBILITY_MANIFEST.md,python scripts/run_release_runtime_audit.py,
 reports/REPRODUCIBILITY_MANIFEST.md,python scripts/run_release_runtime_audit.py,scripts/run_release_runtime_audit.py,script_has_main_guard,pass,script has a guarded CLI entry point,,
 reports/REPRODUCIBILITY_MANIFEST.md,python scripts/run_release_runtime_audit.py,scripts/run_release_runtime_audit.py,script_help_callable,pass,script --help exits successfully,returncode=0,returncode=0
 reports/REPRODUCIBILITY_MANIFEST.md,python scripts/run_non_hardware.py,scripts/run_non_hardware.py,command_target_recognized,pass,command target recognized,,
-reports/REPRODUCIBILITY_MANIFEST.md,python scripts/run_non_hardware.py,scripts/run_non_hardware.py,script_exists_nonempty,pass,script target exists and is nonempty,188113,>0 bytes
+reports/REPRODUCIBILITY_MANIFEST.md,python scripts/run_non_hardware.py,scripts/run_non_hardware.py,script_exists_nonempty,pass,script target exists and is nonempty,188222,>0 bytes
 reports/REPRODUCIBILITY_MANIFEST.md,python scripts/run_non_hardware.py,scripts/run_non_hardware.py,script_py_compile,pass,script compiles,,
 reports/REPRODUCIBILITY_MANIFEST.md,python scripts/run_non_hardware.py,scripts/run_non_hardware.py,script_has_main_guard,pass,script has a guarded CLI entry point,,
 reports/REPRODUCIBILITY_MANIFEST.md,python scripts/run_non_hardware.py,scripts/run_non_hardware.py,script_help_not_required,pass,script is intentionally not help-probed by this audit,,

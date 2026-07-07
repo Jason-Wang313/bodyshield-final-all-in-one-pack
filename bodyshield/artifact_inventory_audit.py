@@ -17,7 +17,7 @@ DOCUMENTED_OUTPUT_DOCS: tuple[str, ...] = (
     "reports/REPRODUCIBILITY_MANIFEST.md",
     "reports/NON_HARDWARE_COMPLETE.md",
 )
-ARTIFACT_ROOTS: tuple[str, ...] = ("results", "reports", "paper", "release")
+ARTIFACT_ROOTS: tuple[str, ...] = ("results", "reports", "paper", "release", "videos")
 ARTIFACT_ROOT_FILES: tuple[str, ...] = (
     "trial_schema.schema.json",
     "data_schema.json",
@@ -33,6 +33,8 @@ ARTIFACT_MANIFEST_EXCLUDED_NAMES: tuple[str, ...] = (
     "RELEASE_DETERMINISM_AUDIT.md",
     "RELEASE_PAYLOAD_AUDIT.md",
     "RELEASE_RUNTIME_AUDIT.md",
+    "final_artifact_manifest.json",
+    "final_artifact_manifest_nonhardware.json",
     "artifact_inventory_audit.csv",
     "portable_hygiene_audit.csv",
     "release_determinism_audit.csv",

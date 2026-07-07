@@ -1,6 +1,6 @@
 # Reproducibility Manifest
 
-Code version: `b283a7c310f9ae04`
+Code version: `2b907e62fe5a5d47`
 
 Python: `3.10.11`
 

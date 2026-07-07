@@ -1,0 +1,18 @@
+\begin{table*}[t]
+\caption{Related-work positioning. BodyShield is framed as falsification-guided embodiment-control repair, not as a replacement for broad randomized training, formal safety control, or cross-embodiment foundation policies.}
+\label{tab:related-work-positioning}
+\centering
+\footnotesize
+\begin{tabular}{p{0.18\linewidth}p{0.36\linewidth}p{0.36\linewidth}}
+\toprule
+Area & Prior focus & BodyShield focus \\
+\midrule
+Domain randomization & Train over sampled randomized simulator parameters. & Search for low-cost perturbations that actually break the current policy, then repair against discovered counterexamples. \\
+Robust/adversarial RL & Train against disturbances or adversarial forces. & Treat latency, calibration, actuation limits, sensing shifts, payload, tool geometry, and contact as auditable embodiment-control axes. \\
+Counterexample-guided repair & Repair safety or state-space violations found by a verifier. & Repair hidden body/control assumptions and require oracle feasibility for claimed breaking perturbations. \\
+SysID and retuning & Estimate model parameters and retune control. & Diagnose which body/control changes expose brittleness even when the task remains feasible. \\
+CBF/MPC/reachability & Provide controller-level safety or robust feasibility guarantees. & Provide empirical falsification and repair machinery; no formal safety certificate is claimed. \\
+Cross-embodiment policies & Train broad policies across robots or datasets. & Supply a stress-test and repair protocol for scoped embodiment shifts, without claiming foundation-policy generality. \\
+\bottomrule
+\end{tabular}
+\end{table*}

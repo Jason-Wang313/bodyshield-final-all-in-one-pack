@@ -1,0 +1,32 @@
+bodybreak_search:
+  evaluator_budget: [50, 100, 150, 200]
+  failure_threshold: [0.4, 0.5, 0.6]
+  modes:
+    - random
+    - one_axis
+    - grid
+    - bodybreak
+  seeds: 20
+
+bodyshield_repair:
+  candidate_budget: [80, 160, 240]
+  nominal_penalty_weight: [0.05, 0.1, 0.2]
+  train_sets:
+    - discovered_breaks
+    - discovered_breaks_plus_seen
+    - discovered_breaks_plus_seen_plus_proxy_heldout
+
+baseline_tuning:
+  same_trial_budget: true
+  same_success_verifier: true
+  same_train_validation_test_split: true
+  methods:
+    - random_tuning
+    - domain_randomization
+    - grid_worstcase
+    - robust_control
+    - sysid_retune
+
+hardware_pending:
+  enabled: false
+  reason: explicit_user_confirmation_and_safety_gate_required

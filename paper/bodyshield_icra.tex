@@ -1,0 +1,84 @@
+\documentclass[10pt,conference]{IEEEtran}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{url}
+
+\title{BodyShield: Falsifying and Repairing Hidden Embodiment Assumptions in Robot Policies}
+\author{Anonymous Authors}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Robot policies can succeed in nominal evaluations while relying on brittle hidden assumptions about latency, calibration, joint range, gripper authority, sensing geometry, payload, tools, and contact. We introduce BodyBreak, an active falsification procedure that estimates low-cost embodiment-control perturbations that break a policy under a fixed evaluator budget, and BodyShield, a falsification-guided repair method that optimizes robustness over discovered failures while tracking nominal retention and execution cost. In the current non-hardware artifact, BodyShield improves analytic-simulation success over domain randomization by 0.052 on seen perturbations and 0.049 on held-out perturbations while retaining 0.859 nominal success. The package also includes oracle-feasibility checks, threshold sensitivity, secondary metrics, synthetic rollout media, bounded MuJoCo/ManiSkill probes, and readiness harnesses for external policies, real-video WAM data, and corrective traces. Real robot results remain pending and are not claimed.
+\end{abstract}
+
+\section{Introduction}
+Nominal robot success can hide dependence on the body-control interface. A policy may work with one latency, calibration, gripper range, speed cap, camera pose, payload, or contact surface, then fail under a small change even when the task remains feasible. BodyShield turns this observation into a falsification-to-repair loop: search for the lowest-cost breaking perturbation found under a budget, diagnose the failure axis, repair the policy/action representation against discovered counterexamples, and evaluate nominal retention plus seen and held-out robustness.
+
+\section{Related Work}
+Domain randomization trains over sampled simulator variation~\cite{chen2022domainrandomization,vuong2019pickdr,muratore2022randomizedsim}; BodyShield instead searches for perturbations that break the current policy and feeds those counterexamples into repair. Human-video and effect-prior policies such as VRB~\cite{bahl2023vrb} and ViPRA~\cite{routray2025vipra} motivate stress-test policy families, but are not the novelty. LeRobot and SO-101 infrastructure~\cite{cadene2024lerobot} define the intended future hardware interface. Table~\ref{tab:related-work-positioning} summarizes the bounded positioning.
+
+\input{paper/related_work_table}
+
+\section{Problem Formulation}
+Let $\pi_\theta$ be a policy, $\tau$ a task instance, and $z \in \mathcal{Z}$ an embodiment-control perturbation. The success indicator is $S(\pi_\theta,\tau,z) \in \{0,1\}$. Perturbations include latency, action noise, joint range, joint lock, gripper limit, speed and acceleration caps, calibration offset, camera shift, controller-rate change, payload, tool extension, physical gripper restriction, friction surface, workspace obstacle, and compounds. The normalized perturbation cost is
+\[
+C(z)=\sum_k w_k \bar{z}_k,
+\]
+where $\bar{z}_k$ is a normalized magnitude and raw units are reported separately. BodyBreak estimates
+\[
+z_{\mathrm{break}}=\arg\min_z C(z) \quad \textrm{s.t.} \quad \widehat{\mathrm{SuccessRate}}(\pi_\theta,\tau,z) \leq \beta
+\]
+under a finite search budget. Because exact global minimization is not certified, the paper uses "estimated breaking perturbation" language.
+
+\section{BodyBreak}
+BodyBreak implements random search, one-axis search, grid search, and active compound search. The current CPU implementation uses a cost-ordered scaffold, active-axis local refinement, and lower-cost challenge sampling. Outputs include estimated perturbation, search budget, success estimate, failure category, and oracle-feasibility status.
+
+\section{BodyShield}
+BodyShield repairs against the discovered break set while penalizing nominal degradation. The implemented analytic repair searches per-axis robustness multipliers, and the broader package includes action-selection and corrective-adaptation proxies. The unified objective is to improve worst-case success on discovered and training perturbations while preserving nominal behavior:
+\[
+\theta_{\mathrm{new}} = \arg\min_\theta \mathbb{E}[\max_z \mathrm{FailureLoss}(\pi_\theta,\tau,z)] + \lambda \mathrm{NominalCost}(\pi_\theta).
+\]
+
+\section{Simulation Experiments}
+The non-hardware run evaluates 8 task cards, 6 robot archetypes, 10 policy/method families, one-axis and compound perturbations, and 50 analytic trials per feasible condition. The artifact reports confidence intervals, robustness profiles, threshold sensitivity, failure taxonomy, secondary metrics, oracle feasibility, and release/package audits.
+
+\begin{table}[t]
+\caption{Analytic success rates by perturbation bucket.}
+\label{tab:analytic-success}
+\centering
+\footnotesize
+\begin{tabular}{lccc}
+\toprule
+Method & Nominal & Seen & Held-out \\
+\midrule
+Nominal & 0.872 & 0.757 & 0.761 \\
+Domain rand. & 0.844 & 0.748 & 0.742 \\
+SysID+retune & 0.825 & 0.761 & 0.729 \\
+BodyShield & 0.859 & 0.800 & 0.792 \\
+Oracle & 0.925 & 0.910 & 0.907 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Real Robot Experiments}
+Hardware is intentionally not filled in this artifact. The SO-ARM101/SO-101 phase must wait for explicit user confirmation of robot setup, camera, workspace, emergency stop, reset protocol, and bounded safe API. Hardware results, noise floor, verifier agreement, reset reliability, and physical-modification transfer are not claimed.
+
+\section{EPEC and Human-Effect Stress Test}
+Human/effect-prior and EPEC-style policies are analytic stress-test families in the current pack. They help test whether effect-preserving or human-prior action choices still expose hidden embodiment assumptions, but they are not presented as full video-conditioned neural policies.
+
+\section{Ablations and Failure Analysis}
+The pack reports search-budget sensitivity, threshold sensitivity, dense BodyBreak minimality challenge, residual gate ablation, secondary metrics, failure taxonomy, and oracle feasibility. These analyses are intended to separate robustness gains from conservatism, task impossibility, and measurement artifacts.
+
+\section{Limitations}
+The current evidence is non-hardware. It lacks real robot trials, hardware noise floor, verifier audit, reset reliability, full external trained-policy benchmark rollouts, real-video WAM training, and real corrective-trace adaptation. The bounded MuJoCo/ManiSkill rows are compatibility and dynamics probes, not leaderboard-grade policy benchmarks.
+
+\section{Conclusion}
+BodyShield provides a scoped mechanism for finding and repairing hidden embodiment-control brittleness. The current package is a reproducible non-hardware artifact with strong claim boundaries; the final hardware paper requires safety-gated SO-ARM101/SO-101 experiments before submission claims can be expanded.
+
+\bibliographystyle{IEEEtran}
+\bibliography{references}
+\end{document}

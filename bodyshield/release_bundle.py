@@ -18,7 +18,7 @@ README_NAME = "RELEASE_README.md"
 REPORT_NAME = "RELEASE_BUNDLE.md"
 FIXED_ZIP_TIMESTAMP = (1980, 1, 1, 0, 0, 0)
 
-PAYLOAD_ROOTS = {"bodyshield", "configs", "paper", "reports", "results", "scripts", "tests"}
+PAYLOAD_ROOTS = {"bodyshield", "configs", "paper", "reports", "results", "scripts", "tests", "videos", ".github"}
 ROOT_PAYLOAD_NAMES = {
     "BODYSHIELD_FINAL_PLAN.md",
     "CLI_AGENT_MASTER_PROMPT.md",
@@ -29,8 +29,11 @@ ROOT_PAYLOAD_NAMES = {
     "NO_HARDWARE_AND_THEORY_DECISION_MEMO.md",
     "NON_HARDWARE_COMPLETION_PROTOCOL.md",
     "pyproject.toml",
+    "Makefile",
+    "README.md",
     "README_EXECUTION.md",
     "README_FIRST.md",
+    "GITHUB_REPO_NOTE.md",
     "REVIEWER_ATTACK_CLOSURE_MATRIX.md",
     "SAFE_ROBOT_API_SPEC.md",
     "SOURCE_NOTES_FOR_VERIFICATION.md",
@@ -49,6 +52,8 @@ SKIP_REPORTS = {
     "RELEASE_DETERMINISM_AUDIT.md",
     "RELEASE_PAYLOAD_AUDIT.md",
     "RELEASE_RUNTIME_AUDIT.md",
+    "final_artifact_manifest.json",
+    "final_artifact_manifest_nonhardware.json",
     REPORT_NAME,
 }
 SKIP_RESULTS = {
@@ -60,6 +65,8 @@ SKIP_RESULTS = {
 }
 REQUIRED_PAYLOADS = (
     "README_EXECUTION.md",
+    "README.md",
+    "Makefile",
     "pyproject.toml",
     "bodyshield/pack_verification.py",
     "bodyshield/paper_source_audit.py",
@@ -94,11 +101,15 @@ REQUIRED_PAYLOADS = (
     "scripts/run_source_import_audit.py",
     "scripts/run_visual_artifact_audit.py",
     "scripts/run_non_hardware.py",
+    "scripts/build_bodyshield_icra_paper.py",
+    "scripts/finalize_maxout_artifacts.py",
+    "scripts/smoke_check.py",
     "scripts/verify_release_payload.py",
     "scripts/verify_non_hardware_pack.py",
     "configs/external_policy_benchmark.example.json",
     "configs/real_video_wam_readiness.example.json",
     "configs/corrective_trace_readiness.example.json",
+    "configs/hyperparameter_sweeps.yaml",
     "results/trials.csv",
     "results/trials.parquet",
     "results/high_fidelity_benchmark.csv",
@@ -117,6 +128,14 @@ REQUIRED_PAYLOADS = (
     "results/paper_source_audit.csv",
     "results/visual_artifact_audit.csv",
     "reports/CLAIM_LEDGER.md",
+    "reports/claim_ledger.csv",
+    "reports/NOT_READY_REASON.md",
+    "reports/PAPER_WRAPPED_COMPLETE.md",
+    "reports/baseline_fairness_protocol.md",
+    "reports/final_reviewer_prebuttal.md",
+    "reports/final_submission_readiness_report.md",
+    "reports/related_work_audit.md",
+    "reports/theory_moat_report.md",
     "reports/CLAIM_BOUNDARY_AUDIT.md",
     "reports/COMMAND_SURFACE_AUDIT.md",
     "reports/CONFIG_SCHEMA_AUDIT.md",
@@ -129,8 +148,14 @@ REQUIRED_PAYLOADS = (
     "reports/VISUAL_ARTIFACT_AUDIT.md",
     "reports/REPRODUCIBILITY_MANIFEST.md",
     "paper/main.tex",
+    "paper/bodyshield_icra.tex",
+    "paper/related_work_table.tex",
+    "paper/supplementary.tex",
+    "paper/appendix_reviewer_prebuttal.tex",
+    "paper/video_index.md",
     "paper/references.bib",
     "paper/bodyshield_non_hardware_draft.pdf",
+    "videos/video_index.md",
 )
 
 

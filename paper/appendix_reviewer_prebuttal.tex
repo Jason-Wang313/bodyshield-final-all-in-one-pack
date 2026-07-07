@@ -1,0 +1,23 @@
+\documentclass[10pt]{article}
+\usepackage{url}
+\title{BodyShield Reviewer Prebuttal Appendix}
+\author{Anonymous Authors}
+\begin{document}
+\maketitle
+
+\section{Scope}
+This appendix records anticipated reviewer concerns. The current artifact is
+non-hardware and should not be read as a final hardware-result submission.
+
+\section{Key Replies}
+BodyShield is distinct from domain randomization because it searches for
+policy-specific breaking perturbations before repair. It is distinct from
+generic counterexample-guided repair because the counterexamples are
+body/control changes whose feasibility is checked with an oracle policy.
+
+\section{Remaining Risks}
+The largest risk is transfer from analytic and bounded simulator evidence to
+real contact-rich hardware. The paper should remain scoped until hardware
+results, verifier audits, reset reliability, and noise-floor measurements exist.
+
+\end{document}
