@@ -18,4 +18,4 @@ paper/bodyshield_non_hardware_draft.pdf,pdf_readable_pages,pass,paper PDF opens 
 paper/bodyshield_non_hardware_draft.pdf,pdf_safe_structure,pass,paper PDF has no interactive/unsafe structure flags,,none
 paper/bodyshield_non_hardware_draft.pdf,pdf_unresolved_markers_absent,pass,PDF extracted text unresolved markers=[],,none
 paper/bodyshield_non_hardware_draft.pdf,pdf_boundary_terms_present,pass,required PDF boundary terms missing=[],5,5
-paper/bodyshield_non_hardware_draft.pdf,pdf_matches_build_output,pass,exported paper PDF matches paper/build/main.pdf when build output is available,5ba152cf19a9a64957c0d23d583478ffd281c61b5c3f8531030541954b4be23a,5ba152cf19a9a64957c0d23d583478ffd281c61b5c3f8531030541954b4be23a
+paper/bodyshield_non_hardware_draft.pdf,pdf_matches_build_output,pass,exported paper PDF matches paper/build/main.pdf when build output is available,07d53add629421d71f1124375de444130e750b410ca7206e241d9a50593254e8,07d53add629421d71f1124375de444130e750b410ca7206e241d9a50593254e8

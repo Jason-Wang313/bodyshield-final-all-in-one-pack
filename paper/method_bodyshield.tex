@@ -1,0 +1,16 @@
+\section{Method: BodyBreak and BodyShield}
+
+Let \(z\) denote a robot body/control perturbation vector, \(\mathcal{Z}\)
+the perturbation family, \(\pi_\theta\) a policy, and \(\mathcal{T}\) a task
+distribution. BodyBreak estimates the lowest-cost perturbation found under
+budget that drops success below a threshold. BodyShield then repairs using
+the discovered break set, training perturbations, and near-boundary cases:
+\[
+\theta^*=\arg\max_\theta \min_{z\in Z_{\mathrm{break}}(\theta_{\mathrm{old}})
+\cup Z_{\mathrm{train}}\cup Z_{\mathrm{near}}} \mathrm{Success}(\pi_\theta,\tau,z).
+\]
+The implementation reports estimated minimality only, includes search budgets
+and threshold sensitivity, and requires oracle feasibility before a perturbation
+supports a brittleness claim. Repair modes are BodyShield-BO/CMAES-style
+parameter search, BodyShield-Predictor action selection, and a failure-axis
+repair library.

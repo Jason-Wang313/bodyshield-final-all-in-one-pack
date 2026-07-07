@@ -93,7 +93,21 @@ def _write_video_indexes() -> int:
 
 
 def _manifest() -> dict[str, object]:
-    roots = ["bodyshield", "configs", "paper", "release", "reports", "results", "scripts", "tests", "videos"]
+    roots = [
+        "bodyshield",
+        "configs",
+        "paper",
+        "release",
+        "reports",
+        "results",
+        "scripts",
+        "tests",
+        "videos",
+        "logs",
+        "figures",
+        "tables",
+        ".github",
+    ]
     entries: list[dict[str, object]] = []
     for root_name in roots:
         root = ROOT / root_name

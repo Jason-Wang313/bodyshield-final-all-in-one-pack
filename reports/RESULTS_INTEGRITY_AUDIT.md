@@ -71,7 +71,7 @@ This audit checks generated result tables for parseability, nonempty rows, dupli
 | results/failure_taxonomy_counts.csv                | csv_parse           | pass     | CSV parsed                 | 90 rows; 3 columns     |            |
 | results/failure_taxonomy_counts.csv                | csv_nonempty_rows   | pass     | CSV has data rows          | 90                     | >0         |
 | results/failure_taxonomy_counts.csv                | csv_unique_columns  | pass     | column names are unique    |                        |            |
-| results/high_fidelity_benchmark.csv                | csv_exists_nonempty | pass     | CSV exists and is nonempty | 126793                 | >0 bytes   |
+| results/high_fidelity_benchmark.csv                | csv_exists_nonempty | pass     | CSV exists and is nonempty | 126789                 | >0 bytes   |
 | results/high_fidelity_benchmark.csv                | csv_parse           | pass     | CSV parsed                 | 594 rows; 19 columns   |            |
 | results/high_fidelity_benchmark.csv                | csv_nonempty_rows   | pass     | CSV has data rows          | 594                    | >0         |
 | results/high_fidelity_benchmark.csv                | csv_unique_columns  | pass     | column names are unique    |                        |            |

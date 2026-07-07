@@ -748,13 +748,18 @@ def write_markdown_table(path: Path, df: pd.DataFrame, float_digits: int = 3) ->
 
 
 def write_artifact_manifest(code_version: str, include_release: bool = True) -> pd.DataFrame:
-    roots = [RESULTS, REPORTS, PAPER, ROOT / "videos"]
+    roots = [RESULTS, REPORTS, PAPER, ROOT / "videos", ROOT / "logs", ROOT / "figures", ROOT / "tables"]
     if include_release:
         roots.append(RELEASE)
     root_artifacts = [
         ROOT / "trial_schema.schema.json",
         ROOT / "data_schema.json",
         ROOT / "README_EXECUTION.md",
+        ROOT / "README.md",
+        ROOT / "Makefile",
+        ROOT / "environment.yml",
+        ROOT / "LICENSE",
+        ROOT / "CITATION.cff",
     ]
     rows = []
     excluded = {

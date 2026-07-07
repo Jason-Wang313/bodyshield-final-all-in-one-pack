@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import json
+import re
 import shutil
 import subprocess
 from pathlib import Path
@@ -11,6 +12,14 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 PAPER = ROOT / "paper"
 REPORTS = ROOT / "reports"
+
+
+def _redact(text: str) -> str:
+    redacted = text.replace(str(ROOT), "<PACK_ROOT>").replace(ROOT.as_posix(), "<PACK_ROOT>")
+    redacted = redacted.replace(str(Path.home()), "<USER_HOME>").replace(Path.home().as_posix(), "<USER_HOME>")
+    redacted = re.sub(r"[A-Za-z]:[\\/]+Users[\\/][A-Za-z0-9_.-]+", "<USER_HOME>", redacted)
+    redacted = re.sub(r"/Users/[A-Za-z0-9_.-]+", "<USER_HOME>", redacted)
+    return redacted
 
 
 def _run(cmd: list[str], cwd: Path, log_parts: list[str]) -> int:
@@ -57,7 +66,7 @@ def main() -> int:
         elif ok:
             status["reason"] = "LaTeX ran but output PDF was missing"
     (REPORTS / "BODYSHIELD_ICRA_BUILD_STATUS.json").write_text(json.dumps(status, indent=2, sort_keys=True), encoding="utf-8")
-    (REPORTS / "BODYSHIELD_ICRA_BUILD_LOG.txt").write_text("\n".join(log_parts), encoding="utf-8", errors="ignore")
+    (REPORTS / "BODYSHIELD_ICRA_BUILD_LOG.txt").write_text(_redact("\n".join(log_parts)), encoding="utf-8", errors="ignore")
     print(f"BODYSHIELD_ICRA_BUILD_STATUS={status['status']}")
     print(f"OUTPUT={status['output']}")
     if status["status"] != "written":

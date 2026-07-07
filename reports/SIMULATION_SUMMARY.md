@@ -1,6 +1,6 @@
 # Simulation Summary
 
-Code version: `2b907e62fe5a5d47`
+Code version: `9bcba4e9c35077af`
 
 Generated artifacts:
 - Flat trial table: `results/trials.csv`

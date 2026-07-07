@@ -295,7 +295,7 @@ reports/NON_HARDWARE_REQUIREMENTS_TRACE.md,bodyshield/source_import_audit.py,ok,
 reports/NON_HARDWARE_REQUIREMENTS_TRACE.md,scripts/run_source_import_audit.py,ok,file exists and is nonempty,1
 reports/NON_HARDWARE_REQUIREMENTS_TRACE.md,results/source_import_audit.csv,ok,file exists and is nonempty,1
 reports/NON_HARDWARE_REQUIREMENTS_TRACE.md,reports/SOURCE_IMPORT_AUDIT.md,ok,file exists and is nonempty,1
-reports/NON_HARDWARE_REQUIREMENTS_TRACE.md,bodyshield/robot/*.py,ok,glob matched 4 file(s),4
+reports/NON_HARDWARE_REQUIREMENTS_TRACE.md,bodyshield/robot/*.py,ok,glob matched 8 file(s),8
 reports/NON_HARDWARE_REQUIREMENTS_TRACE.md,bodyshield/safe_robot_runner.py,ok,file exists and is nonempty,1
 reports/NON_HARDWARE_REQUIREMENTS_TRACE.md,bodyshield/artifact_inventory_audit.py,ok,file exists and is nonempty,1
 reports/NON_HARDWARE_REQUIREMENTS_TRACE.md,scripts/run_artifact_inventory_audit.py,ok,file exists and is nonempty,1

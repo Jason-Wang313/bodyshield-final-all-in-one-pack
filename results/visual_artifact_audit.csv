@@ -51,15 +51,15 @@ results/figures/nominal_vs_radius.png,png_readable,pass,PNG opens successfully,1
 results/figures/nominal_vs_radius.png,png_min_dimensions,pass,PNG dimensions are large enough for inspection,1281x975,>=300x150
 results/figures/nominal_vs_radius.png,png_nonblank_variance,pass,PNG has nonblank pixel variation,"variance=1774.989; extrema=(0, 255)",variance>=10 and range>=10
 results/figures/high_fidelity_summary,pdf_png_pair_exists,pass,figure has both PDF and PNG exports,pdf=True; png=True,pdf=True; png=True
-results/figures/high_fidelity_summary.pdf,pdf_exists_nonempty,pass,PDF exists and is nonempty,15222,>0 bytes
+results/figures/high_fidelity_summary.pdf,pdf_exists_nonempty,pass,PDF exists and is nonempty,15272,>0 bytes
 results/figures/high_fidelity_summary.pdf,pdf_readable,pass,PDF opens successfully,pages=1,
 results/figures/high_fidelity_summary.pdf,pdf_one_page,pass,figure PDF has exactly one page,1,1
 results/figures/high_fidelity_summary.pdf,pdf_safe_structure,pass,PDF has no interactive/unsafe structure flags,,none
-results/figures/high_fidelity_summary.pdf,pdf_min_dimensions,pass,PDF media box is inspectable,856.8x302.8,>=100x100 pt
-results/figures/high_fidelity_summary.png,png_exists_nonempty,pass,PNG exists and is nonempty,113273,>0 bytes
-results/figures/high_fidelity_summary.png,png_readable,pass,PNG opens successfully,2856x1010,
-results/figures/high_fidelity_summary.png,png_min_dimensions,pass,PNG dimensions are large enough for inspection,2856x1010,>=300x150
-results/figures/high_fidelity_summary.png,png_nonblank_variance,pass,PNG has nonblank pixel variation,"variance=4344.429; extrema=(0, 255)",variance>=10 and range>=10
+results/figures/high_fidelity_summary.pdf,pdf_min_dimensions,pass,PDF media box is inspectable,857.0x302.8,>=100x100 pt
+results/figures/high_fidelity_summary.png,png_exists_nonempty,pass,PNG exists and is nonempty,113420,>0 bytes
+results/figures/high_fidelity_summary.png,png_readable,pass,PNG opens successfully,2857x1010,
+results/figures/high_fidelity_summary.png,png_min_dimensions,pass,PNG dimensions are large enough for inspection,2857x1010,>=300x150
+results/figures/high_fidelity_summary.png,png_nonblank_variance,pass,PNG has nonblank pixel variation,"variance=4526.377; extrema=(0, 255)",variance>=10 and range>=10
 results/figures/trajectory_wam_summary,pdf_png_pair_exists,pass,figure has both PDF and PNG exports,pdf=True; png=True,pdf=True; png=True
 results/figures/trajectory_wam_summary.pdf,pdf_exists_nonempty,pass,PDF exists and is nonempty,346436,>0 bytes
 results/figures/trajectory_wam_summary.pdf,pdf_readable,pass,PDF opens successfully,pages=1,

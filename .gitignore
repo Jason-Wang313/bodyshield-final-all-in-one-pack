@@ -11,6 +11,7 @@ tmp/
 # LaTeX build intermediates
 paper/build/
 paper/build_icra/
+paper/build_supplement/
 paper/*.aux
 paper/*.bbl
 paper/*.blg

@@ -1,0 +1,36 @@
+$ <USER_HOME>\.local\bin\pdflatex.CMD -interaction=nonstopmode -halt-on-error -output-directory=<PACK_ROOT>\paper\build_supplement <PACK_ROOT>\paper\supplement.tex
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex.fmt)
+ restricted \write18 enabled.
+entering extended mode
+
+(<PACK_ROOT>/paper/supplement.tex
+LaTeX2e <2025-11-01>
+L3 programming layer <2025-12-24>
+(<USER_HOME>\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
+Document Class: article 2025/01/22 v1.4n Standard LaTeX document class
+(<USER_HOME>\AppData\Local\Programs\MiKTeX\tex/latex/base\size10.clo))
+(<USER_HOME>\AppData\Local\Programs\MiKTeX\tex/latex/booktabs\booktabs.sty)
+(<USER_HOME>\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty)
+(<USER_HOME>\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
+tex.def)
+No file supplement.aux.
+
+Overfull \hbox (2.6133pt too wide) in paragraph at lines 10--15
+\OT1/cmr/m/n/10 en-try points are \OT1/cmtt/m/n/10 reports/PACK[]VERIFICATION.m
+d\OT1/cmr/m/n/10 , \OT1/cmtt/m/n/10 reports/claim[]ledger.csv\OT1/cmr/m/n/10 ,
+[1{<USER_HOME>/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
+(<PACK_ROOT>\paper\build_suppleme
+nt\supplement.aux) )
+(see the transcript file for additional information)<<USER_HOME>/AppData/Loc
+al/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><<USER_HOME>/Ap
+pData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/
+wangz/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C
+:<USER_HOME>/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr1
+7.pfb><<USER_HOME>/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts
+/cm/cmtt10.pfb>
+Output written on <PACK_ROOT>\pap
+er\build_supplement\supplement.pdf (1 page, 70709 bytes).
+Transcript written on <PACK_ROOT>
+\paper\build_supplement\supplement.log.
+
+pdflatex: major issue: So far, you have not checked for MiKTeX updates.

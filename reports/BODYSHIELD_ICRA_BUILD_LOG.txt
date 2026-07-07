@@ -1,50 +1,50 @@
-$ C:\Users\wangz\.local\bin\pdflatex.CMD -interaction=nonstopmode -halt-on-error -output-directory=C:\Users\wangz\Downloads\bodyshield_final_all_in_one_pack\paper\build_icra C:\Users\wangz\Downloads\bodyshield_final_all_in_one_pack\paper\bodyshield_icra.tex
+$ <USER_HOME>\.local\bin\pdflatex.CMD -interaction=nonstopmode -halt-on-error -output-directory=<PACK_ROOT>\paper\build_icra <PACK_ROOT>\paper\bodyshield_icra.tex
 This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex.fmt)
  restricted \write18 enabled.
 entering extended mode
 
-(C:/Users/wangz/Downloads/bodyshield_final_all_in_one_pack/paper/bodyshield_icr
+(<PACK_ROOT>/paper/bodyshield_icr
 a.tex
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
-(C:\Users\wangz\AppData\Local\Programs\MiKTeX\tex/latex/ieeetran\IEEEtran.cls
+(<USER_HOME>\AppData\Local\Programs\MiKTeX\tex/latex/ieeetran\IEEEtran.cls
 Document Class: IEEEtran 2015/08/26 V1.8b by Michael Shell
 -- See the "IEEEtran_HOWTO" manual for usage information.
 -- http://www.michaelshell.org/tex/ieeetran/
-(C:\Users\wangz\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ptm.fd)
+(<USER_HOME>\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ptm.fd)
 -- Using 8.5in x 11in (letter) paper.
 -- Using PDF output.
 -- This is a 10 point document.
-) (C:\Users\wangz\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
-(C:\Users\wangz\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty)
-(C:\Users\wangz\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
-(C:\Users\wangz\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty)
-(C:\Users\wangz\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.c
+) (<USER_HOME>\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+(<USER_HOME>\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty)
+(<USER_HOME>\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+(<USER_HOME>\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty)
+(<USER_HOME>\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.c
 fg)
-(C:\Users\wangz\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
+(<USER_HOME>\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
 )))
-(C:\Users\wangz\AppData\Local\Programs\MiKTeX\tex/latex/booktabs\booktabs.sty)
-(C:\Users\wangz\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
+(<USER_HOME>\AppData\Local\Programs\MiKTeX\tex/latex/booktabs\booktabs.sty)
+(<USER_HOME>\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
 For additional information on amsmath, use the `?' option.
-(C:\Users\wangz\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
-(C:\Users\wangz\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty))
-(C:\Users\wangz\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty)
-(C:\Users\wangz\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty))
-(C:\Users\wangz\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
-(C:\Users\wangz\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty))
- (C:\Users\wangz\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty)
-(C:\Users\wangz\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
+(<USER_HOME>\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
+(<USER_HOME>\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty))
+(<USER_HOME>\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty)
+(<USER_HOME>\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty))
+(<USER_HOME>\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
+(<USER_HOME>\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty))
+ (<USER_HOME>\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty)
+(<USER_HOME>\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
 tex.def)
 No file bodyshield_icra.aux.
 -- Lines per column: 56 (exact).
 
-(C:\Users\wangz\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
+(<USER_HOME>\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
 ii
 [Loading MPS to PDF converter (version 2006.09.02).]
 )
-(C:\Users\wangz\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
+(<USER_HOME>\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
 ase.sty
-(C:\Users\wangz\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.c
+(<USER_HOME>\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.c
 fg))
 
 LaTeX Warning: Citation `chen2022domainrandomization' on page 1 undefined on in
@@ -74,8 +74,8 @@ LaTeX Warning: Reference `tab:related-work-positioning' on page 1 undefined on
 input line 22.
 
 (paper/related_work_table.tex
-(C:\Users\wangz\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd)
-(C:\Users\wangz\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd)
+(<USER_HOME>\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd)
+(<USER_HOME>\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd)
 Underfull \hbox (badness 4229) in paragraph at lines 11--12
 []\OT1/ptm/m/n/8 Treat la-tency, cal-i-bra-tion, ac-tu-a-tion lim-its, sens-ing
 
@@ -87,7 +87,7 @@ Overfull \hbox (24.49799pt too wide) detected at line 44
 \OML/cmm/m/it/10 ^^R[] \OT1/cmr/m/n/10 = [] [] \U/msb/m/n/10 E\OT1/cmr/m/n/10 [
 [] [](\OML/cmm/m/it/10 ^^Y[]; ^^\; z\OT1/cmr/m/n/10 )] + \OML/cmm/m/it/10 ^^U[]
 \OT1/cmr/m/n/10 (\OML/cmm/m/it/10 ^^Y[]\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 :
-[1{C:/Users/wangz/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/wa
+[1{<USER_HOME>/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{<USER_HOME>
 ngz/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}]
 Underfull \hbox (badness 1371) in paragraph at lines 77--78
 \OT1/ptm/m/n/10 WAM train-ing, and real corrective-trace adap-ta-tion. The
@@ -104,7 +104,7 @@ Before submitting the final camera ready copy, remember to:
  process uses the appropriate paper size.
 
 [2]
-(C:\Users\wangz\Downloads\bodyshield_final_all_in_one_pack\paper\build_icra\bod
+(<PACK_ROOT>\paper\build_icra\bod
 yshield_icra.aux)
 
 LaTeX Warning: There were undefined references.
@@ -113,26 +113,26 @@ LaTeX Warning: There were undefined references.
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  )
-(see the transcript file for additional information)<C:/Users/wangz/AppData/Loc
-al/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/wangz/Ap
+(see the transcript file for additional information)<<USER_HOME>/AppData/Loc
+al/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><<USER_HOME>/Ap
 pData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users
 /wangz/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><
-C:/Users/wangz/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr
-10.pfb><C:/Users/wangz/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfont
-s/cm/cmr7.pfb><C:/Users/wangz/AppData/Local/Programs/MiKTeX/fonts/type1/public/
-amsfonts/cm/cmsy10.pfb><C:/Users/wangz/AppData/Local/Programs/MiKTeX/fonts/type
-1/public/amsfonts/symbols/msbm10.pfb><C:/Users/wangz/AppData/Local/Programs/MiK
-TeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/wangz/AppData/Local/Programs/MiK
-TeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/wangz/AppData/Local/Programs/Mi
+<USER_HOME>/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr
+10.pfb><<USER_HOME>/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfont
+s/cm/cmr7.pfb><<USER_HOME>/AppData/Local/Programs/MiKTeX/fonts/type1/public/
+amsfonts/cm/cmsy10.pfb><<USER_HOME>/AppData/Local/Programs/MiKTeX/fonts/type
+1/public/amsfonts/symbols/msbm10.pfb><<USER_HOME>/AppData/Local/Programs/MiK
+TeX/fonts/type1/urw/times/utmb8a.pfb><<USER_HOME>/AppData/Local/Programs/MiK
+TeX/fonts/type1/urw/times/utmbi8a.pfb><<USER_HOME>/AppData/Local/Programs/Mi
 KTeX/fonts/type1/urw/times/utmr8a.pfb>
-Output written on C:\Users\wangz\Downloads\bodyshield_final_all_in_one_pack\pap
+Output written on <PACK_ROOT>\pap
 er\build_icra\bodyshield_icra.pdf (2 pages, 121477 bytes).
-Transcript written on C:\Users\wangz\Downloads\bodyshield_final_all_in_one_pack
+Transcript written on <PACK_ROOT>
 \paper\build_icra\bodyshield_icra.log.
 
 pdflatex: major issue: So far, you have not checked for MiKTeX updates.
 
-$ C:\Users\wangz\AppData\Local\Programs\MiKTeX\miktex\bin\x64\bibtex.EXE bodyshield_icra
+$ <USER_HOME>\AppData\Local\Programs\MiKTeX\miktex\bin\x64\bibtex.EXE bodyshield_icra
 This is BibTeX, Version 0.99e (MiKTeX 25.12)
 The top-level auxiliary file: bodyshield_icra.aux
 The style file: IEEEtran.bst
@@ -145,54 +145,54 @@ Done.
 
 bibtex: major issue: So far, you have not checked for MiKTeX updates.
 
-$ C:\Users\wangz\.local\bin\pdflatex.CMD -interaction=nonstopmode -halt-on-error -output-directory=C:\Users\wangz\Downloads\bodyshield_final_all_in_one_pack\paper\build_icra C:\Users\wangz\Downloads\bodyshield_final_all_in_one_pack\paper\bodyshield_icra.tex
+$ <USER_HOME>\.local\bin\pdflatex.CMD -interaction=nonstopmode -halt-on-error -output-directory=<PACK_ROOT>\paper\build_icra <PACK_ROOT>\paper\bodyshield_icra.tex
 This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex.fmt)
  restricted \write18 enabled.
 entering extended mode
 
-(C:/Users/wangz/Downloads/bodyshield_final_all_in_one_pack/paper/bodyshield_icr
+(<PACK_ROOT>/paper/bodyshield_icr
 a.tex
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
-(C:\Users\wangz\AppData\Local\Programs\MiKTeX\tex/latex/ieeetran\IEEEtran.cls
+(<USER_HOME>\AppData\Local\Programs\MiKTeX\tex/latex/ieeetran\IEEEtran.cls
 Document Class: IEEEtran 2015/08/26 V1.8b by Michael Shell
 -- See the "IEEEtran_HOWTO" manual for usage information.
 -- http://www.michaelshell.org/tex/ieeetran/
-(C:\Users\wangz\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ptm.fd)
+(<USER_HOME>\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ptm.fd)
 -- Using 8.5in x 11in (letter) paper.
 -- Using PDF output.
 -- This is a 10 point document.
-) (C:\Users\wangz\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
-(C:\Users\wangz\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty)
-(C:\Users\wangz\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
-(C:\Users\wangz\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty)
-(C:\Users\wangz\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.c
+) (<USER_HOME>\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+(<USER_HOME>\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty)
+(<USER_HOME>\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+(<USER_HOME>\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty)
+(<USER_HOME>\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.c
 fg)
-(C:\Users\wangz\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
+(<USER_HOME>\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
 )))
-(C:\Users\wangz\AppData\Local\Programs\MiKTeX\tex/latex/booktabs\booktabs.sty)
-(C:\Users\wangz\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
+(<USER_HOME>\AppData\Local\Programs\MiKTeX\tex/latex/booktabs\booktabs.sty)
+(<USER_HOME>\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
 For additional information on amsmath, use the `?' option.
-(C:\Users\wangz\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
-(C:\Users\wangz\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty))
-(C:\Users\wangz\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty)
-(C:\Users\wangz\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty))
-(C:\Users\wangz\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
-(C:\Users\wangz\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty))
- (C:\Users\wangz\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty)
-(C:\Users\wangz\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
+(<USER_HOME>\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
+(<USER_HOME>\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty))
+(<USER_HOME>\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty)
+(<USER_HOME>\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty))
+(<USER_HOME>\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
+(<USER_HOME>\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty))
+ (<USER_HOME>\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty)
+(<USER_HOME>\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
 tex.def)
-(C:\Users\wangz\Downloads\bodyshield_final_all_in_one_pack\paper\build_icra\bod
+(<PACK_ROOT>\paper\build_icra\bod
 yshield_icra.aux)
 -- Lines per column: 56 (exact).
 
-(C:\Users\wangz\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
+(<USER_HOME>\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
 ii
 [Loading MPS to PDF converter (version 2006.09.02).]
 )
-(C:\Users\wangz\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
+(<USER_HOME>\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
 ase.sty
-(C:\Users\wangz\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.c
+(<USER_HOME>\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.c
 fg))
 
 LaTeX Warning: Citation `chen2022domainrandomization' on page 1 undefined on in
@@ -218,8 +218,8 @@ LaTeX Warning: Citation `cadene2024lerobot' on page 1 undefined on input line 2
 2.
 
 (paper/related_work_table.tex
-(C:\Users\wangz\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd)
-(C:\Users\wangz\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd)
+(<USER_HOME>\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd)
+(<USER_HOME>\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd)
 Underfull \hbox (badness 4229) in paragraph at lines 11--12
 []\OT1/ptm/m/n/8 Treat la-tency, cal-i-bra-tion, ac-tu-a-tion lim-its, sens-ing
 
@@ -231,12 +231,12 @@ Overfull \hbox (24.49799pt too wide) detected at line 44
 \OML/cmm/m/it/10 ^^R[] \OT1/cmr/m/n/10 = [] [] \U/msb/m/n/10 E\OT1/cmr/m/n/10 [
 [] [](\OML/cmm/m/it/10 ^^Y[]; ^^\; z\OT1/cmr/m/n/10 )] + \OML/cmm/m/it/10 ^^U[]
 \OT1/cmr/m/n/10 (\OML/cmm/m/it/10 ^^Y[]\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 :
-[1{C:/Users/wangz/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/wa
+[1{<USER_HOME>/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{<USER_HOME>
 ngz/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}]
 Underfull \hbox (badness 1371) in paragraph at lines 77--78
 \OT1/ptm/m/n/10 WAM train-ing, and real corrective-trace adap-ta-tion. The
 
-(C:\Users\wangz\Downloads\bodyshield_final_all_in_one_pack\paper\build_icra\bod
+(<PACK_ROOT>\paper\build_icra\bod
 yshield_icra.bbl)
 
 ** Conference Paper **
@@ -250,7 +250,7 @@ Before submitting the final camera ready copy, remember to:
  process uses the appropriate paper size.
 
 [2]
-(C:\Users\wangz\Downloads\bodyshield_final_all_in_one_pack\paper\build_icra\bod
+(<PACK_ROOT>\paper\build_icra\bod
 yshield_icra.aux)
 
 LaTeX Warning: There were undefined references.
@@ -259,76 +259,76 @@ LaTeX Warning: There were undefined references.
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  )
-(see the transcript file for additional information)<C:/Users/wangz/AppData/Loc
-al/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/wangz/Ap
+(see the transcript file for additional information)<<USER_HOME>/AppData/Loc
+al/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><<USER_HOME>/Ap
 pData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users
 /wangz/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><
-C:/Users/wangz/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr
-10.pfb><C:/Users/wangz/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfont
-s/cm/cmr7.pfb><C:/Users/wangz/AppData/Local/Programs/MiKTeX/fonts/type1/public/
-amsfonts/cm/cmsy10.pfb><C:/Users/wangz/AppData/Local/Programs/MiKTeX/fonts/type
-1/public/amsfonts/symbols/msbm10.pfb><C:/Users/wangz/AppData/Local/Programs/MiK
-TeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/wangz/AppData/Local/Programs/MiK
-TeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/wangz/AppData/Local/Programs/Mi
+<USER_HOME>/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr
+10.pfb><<USER_HOME>/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfont
+s/cm/cmr7.pfb><<USER_HOME>/AppData/Local/Programs/MiKTeX/fonts/type1/public/
+amsfonts/cm/cmsy10.pfb><<USER_HOME>/AppData/Local/Programs/MiKTeX/fonts/type
+1/public/amsfonts/symbols/msbm10.pfb><<USER_HOME>/AppData/Local/Programs/MiK
+TeX/fonts/type1/urw/times/utmb8a.pfb><<USER_HOME>/AppData/Local/Programs/MiK
+TeX/fonts/type1/urw/times/utmbi8a.pfb><<USER_HOME>/AppData/Local/Programs/Mi
 KTeX/fonts/type1/urw/times/utmr8a.pfb>
-Output written on C:\Users\wangz\Downloads\bodyshield_final_all_in_one_pack\pap
+Output written on <PACK_ROOT>\pap
 er\build_icra\bodyshield_icra.pdf (2 pages, 123106 bytes).
-Transcript written on C:\Users\wangz\Downloads\bodyshield_final_all_in_one_pack
+Transcript written on <PACK_ROOT>
 \paper\build_icra\bodyshield_icra.log.
 
 pdflatex: major issue: So far, you have not checked for MiKTeX updates.
 
-$ C:\Users\wangz\.local\bin\pdflatex.CMD -interaction=nonstopmode -halt-on-error -output-directory=C:\Users\wangz\Downloads\bodyshield_final_all_in_one_pack\paper\build_icra C:\Users\wangz\Downloads\bodyshield_final_all_in_one_pack\paper\bodyshield_icra.tex
+$ <USER_HOME>\.local\bin\pdflatex.CMD -interaction=nonstopmode -halt-on-error -output-directory=<PACK_ROOT>\paper\build_icra <PACK_ROOT>\paper\bodyshield_icra.tex
 This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex.fmt)
  restricted \write18 enabled.
 entering extended mode
 
-(C:/Users/wangz/Downloads/bodyshield_final_all_in_one_pack/paper/bodyshield_icr
+(<PACK_ROOT>/paper/bodyshield_icr
 a.tex
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
-(C:\Users\wangz\AppData\Local\Programs\MiKTeX\tex/latex/ieeetran\IEEEtran.cls
+(<USER_HOME>\AppData\Local\Programs\MiKTeX\tex/latex/ieeetran\IEEEtran.cls
 Document Class: IEEEtran 2015/08/26 V1.8b by Michael Shell
 -- See the "IEEEtran_HOWTO" manual for usage information.
 -- http://www.michaelshell.org/tex/ieeetran/
-(C:\Users\wangz\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ptm.fd)
+(<USER_HOME>\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ptm.fd)
 -- Using 8.5in x 11in (letter) paper.
 -- Using PDF output.
 -- This is a 10 point document.
-) (C:\Users\wangz\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
-(C:\Users\wangz\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty)
-(C:\Users\wangz\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
-(C:\Users\wangz\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty)
-(C:\Users\wangz\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.c
+) (<USER_HOME>\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+(<USER_HOME>\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty)
+(<USER_HOME>\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+(<USER_HOME>\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty)
+(<USER_HOME>\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.c
 fg)
-(C:\Users\wangz\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
+(<USER_HOME>\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
 )))
-(C:\Users\wangz\AppData\Local\Programs\MiKTeX\tex/latex/booktabs\booktabs.sty)
-(C:\Users\wangz\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
+(<USER_HOME>\AppData\Local\Programs\MiKTeX\tex/latex/booktabs\booktabs.sty)
+(<USER_HOME>\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
 For additional information on amsmath, use the `?' option.
-(C:\Users\wangz\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
-(C:\Users\wangz\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty))
-(C:\Users\wangz\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty)
-(C:\Users\wangz\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty))
-(C:\Users\wangz\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
-(C:\Users\wangz\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty))
- (C:\Users\wangz\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty)
-(C:\Users\wangz\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
+(<USER_HOME>\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
+(<USER_HOME>\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty))
+(<USER_HOME>\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty)
+(<USER_HOME>\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty))
+(<USER_HOME>\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
+(<USER_HOME>\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty))
+ (<USER_HOME>\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty)
+(<USER_HOME>\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
 tex.def)
-(C:\Users\wangz\Downloads\bodyshield_final_all_in_one_pack\paper\build_icra\bod
+(<PACK_ROOT>\paper\build_icra\bod
 yshield_icra.aux)
 -- Lines per column: 56 (exact).
 
-(C:\Users\wangz\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
+(<USER_HOME>\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
 ii
 [Loading MPS to PDF converter (version 2006.09.02).]
 )
-(C:\Users\wangz\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
+(<USER_HOME>\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
 ase.sty
-(C:\Users\wangz\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.c
+(<USER_HOME>\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.c
 fg)) (paper/related_work_table.tex
-(C:\Users\wangz\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd)
-(C:\Users\wangz\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd)
+(<USER_HOME>\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd)
+(<USER_HOME>\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd)
 Underfull \hbox (badness 4229) in paragraph at lines 11--12
 []\OT1/ptm/m/n/8 Treat la-tency, cal-i-bra-tion, ac-tu-a-tion lim-its, sens-ing
 
@@ -340,12 +340,12 @@ Overfull \hbox (24.49799pt too wide) detected at line 44
 \OML/cmm/m/it/10 ^^R[] \OT1/cmr/m/n/10 = [] [] \U/msb/m/n/10 E\OT1/cmr/m/n/10 [
 [] [](\OML/cmm/m/it/10 ^^Y[]; ^^\; z\OT1/cmr/m/n/10 )] + \OML/cmm/m/it/10 ^^U[]
 \OT1/cmr/m/n/10 (\OML/cmm/m/it/10 ^^Y[]\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 :
-[1{C:/Users/wangz/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/wa
+[1{<USER_HOME>/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{<USER_HOME>
 ngz/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}]
 Underfull \hbox (badness 1371) in paragraph at lines 77--78
 \OT1/ptm/m/n/10 WAM train-ing, and real corrective-trace adap-ta-tion. The
 
-(C:\Users\wangz\Downloads\bodyshield_final_all_in_one_pack\paper\build_icra\bod
+(<PACK_ROOT>\paper\build_icra\bod
 yshield_icra.bbl)
 
 ** Conference Paper **
@@ -359,23 +359,23 @@ Before submitting the final camera ready copy, remember to:
  process uses the appropriate paper size.
 
 [2]
-(C:\Users\wangz\Downloads\bodyshield_final_all_in_one_pack\paper\build_icra\bod
+(<PACK_ROOT>\paper\build_icra\bod
 yshield_icra.aux) )
-(see the transcript file for additional information)<C:/Users/wangz/AppData/Loc
-al/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/wangz/Ap
+(see the transcript file for additional information)<<USER_HOME>/AppData/Loc
+al/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><<USER_HOME>/Ap
 pData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users
 /wangz/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><
-C:/Users/wangz/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr
-10.pfb><C:/Users/wangz/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfont
-s/cm/cmr7.pfb><C:/Users/wangz/AppData/Local/Programs/MiKTeX/fonts/type1/public/
-amsfonts/cm/cmsy10.pfb><C:/Users/wangz/AppData/Local/Programs/MiKTeX/fonts/type
-1/public/amsfonts/symbols/msbm10.pfb><C:/Users/wangz/AppData/Local/Programs/MiK
-TeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/wangz/AppData/Local/Programs/MiK
-TeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/wangz/AppData/Local/Programs/Mi
+<USER_HOME>/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr
+10.pfb><<USER_HOME>/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfont
+s/cm/cmr7.pfb><<USER_HOME>/AppData/Local/Programs/MiKTeX/fonts/type1/public/
+amsfonts/cm/cmsy10.pfb><<USER_HOME>/AppData/Local/Programs/MiKTeX/fonts/type
+1/public/amsfonts/symbols/msbm10.pfb><<USER_HOME>/AppData/Local/Programs/MiK
+TeX/fonts/type1/urw/times/utmb8a.pfb><<USER_HOME>/AppData/Local/Programs/MiK
+TeX/fonts/type1/urw/times/utmbi8a.pfb><<USER_HOME>/AppData/Local/Programs/Mi
 KTeX/fonts/type1/urw/times/utmr8a.pfb>
-Output written on C:\Users\wangz\Downloads\bodyshield_final_all_in_one_pack\pap
+Output written on <PACK_ROOT>\pap
 er\build_icra\bodyshield_icra.pdf (2 pages, 122717 bytes).
-Transcript written on C:\Users\wangz\Downloads\bodyshield_final_all_in_one_pack
+Transcript written on <PACK_ROOT>
 \paper\build_icra\bodyshield_icra.log.
 
 pdflatex: major issue: So far, you have not checked for MiKTeX updates.

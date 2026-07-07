@@ -1,15 +1,21 @@
 artifact,check,status,detail,observed,expected
 bodyshield,source_root_exists,pass,source root exists,True,True
-bodyshield,source_python_files_discovered,pass,Python source files discovered under root,48,>0
+bodyshield,source_python_files_discovered,pass,Python source files discovered under root,66,>0
 scripts,source_root_exists,pass,source root exists,True,True
-scripts,source_python_files_discovered,pass,Python source files discovered under root,25,>0
+scripts,source_python_files_discovered,pass,Python source files discovered under root,30,>0
 tests,source_root_exists,pass,source root exists,True,True
-tests,source_python_files_discovered,pass,Python source files discovered under root,1,>0
-bodyshield,bodyshield_modules_discovered,pass,importable bodyshield modules discovered,48,>0
+tests,source_python_files_discovered,pass,Python source files discovered under root,9,>0
+bodyshield,bodyshield_modules_discovered,pass,importable bodyshield modules discovered,65,>0
 bodyshield/__init__.py,python_file_py_compile,pass,Python source compiles,,
 bodyshield/analysis/__init__.py,python_file_py_compile,pass,Python source compiles,,
+bodyshield/analysis/audit_videos.py,python_file_py_compile,pass,Python source compiles,,
+bodyshield/analysis/make_figures.py,python_file_py_compile,pass,Python source compiles,,
+bodyshield/analysis/make_tables.py,python_file_py_compile,pass,Python source compiles,,
+bodyshield/analysis/summarize_batch.py,python_file_py_compile,pass,Python source compiles,,
 bodyshield/artifact_inventory_audit.py,python_file_py_compile,pass,Python source compiles,,
+bodyshield/bodybreak.py,python_file_py_compile,pass,Python source compiles,,
 bodyshield/bodybreak_search.py,python_file_py_compile,pass,Python source compiles,,
+bodyshield/bodyshield.py,python_file_py_compile,pass,Python source compiles,,
 bodyshield/bodyshield_repair.py,python_file_py_compile,pass,Python source compiles,,
 bodyshield/claim_boundary_audit.py,python_file_py_compile,pass,Python source compiles,,
 bodyshield/command_surface_audit.py,python_file_py_compile,pass,Python source compiles,,
@@ -24,6 +30,8 @@ bodyshield/falsification/__init__.py,python_file_py_compile,pass,Python source c
 bodyshield/high_fidelity.py,python_file_py_compile,pass,Python source compiles,,
 bodyshield/high_fidelity_learning.py,python_file_py_compile,pass,Python source compiles,,
 bodyshield/learned_outcome_model.py,python_file_py_compile,pass,Python source compiles,,
+bodyshield/logging_utils.py,python_file_py_compile,pass,Python source compiles,,
+bodyshield/metrics.py,python_file_py_compile,pass,Python source compiles,,
 bodyshield/neural_wam.py,python_file_py_compile,pass,Python source compiles,,
 bodyshield/pack_verification.py,python_file_py_compile,pass,Python source compiles,,
 bodyshield/paper/__init__.py,python_file_py_compile,pass,Python source compiles,,
@@ -38,16 +46,26 @@ bodyshield/release_determinism_audit.py,python_file_py_compile,pass,Python sourc
 bodyshield/release_payload_audit.py,python_file_py_compile,pass,Python source compiles,,
 bodyshield/release_runtime_audit.py,python_file_py_compile,pass,Python source compiles,,
 bodyshield/repair/__init__.py,python_file_py_compile,pass,Python source compiles,,
+bodyshield/repair.py,python_file_py_compile,pass,Python source compiles,,
 bodyshield/results_integrity.py,python_file_py_compile,pass,Python source compiles,,
 bodyshield/robot/__init__.py,python_file_py_compile,pass,Python source compiles,,
+bodyshield/robot/calibrate_noise_floor.py,python_file_py_compile,pass,Python source compiles,,
+bodyshield/robot/emergency_stop_monitor.py,python_file_py_compile,pass,Python source compiles,,
 bodyshield/robot/healthcheck.py,python_file_py_compile,pass,Python source compiles,,
 bodyshield/robot/run_batch.py,python_file_py_compile,pass,Python source compiles,,
+bodyshield/robot/safe_api.py,python_file_py_compile,pass,Python source compiles,,
 bodyshield/robot/safety_gate.py,python_file_py_compile,pass,Python source compiles,,
+bodyshield/robot/verifier.py,python_file_py_compile,pass,Python source compiles,,
 bodyshield/safe_robot_runner.py,python_file_py_compile,pass,Python source compiles,,
 bodyshield/schema.py,python_file_py_compile,pass,Python source compiles,,
 bodyshield/sim.py,python_file_py_compile,pass,Python source compiles,,
 bodyshield/sim_envs.py,python_file_py_compile,pass,Python source compiles,,
 bodyshield/sim_videos.py,python_file_py_compile,pass,Python source compiles,,
+bodyshield/simulation/__init__.py,python_file_py_compile,pass,Python source compiles,,
+bodyshield/simulation/envs.py,python_file_py_compile,pass,Python source compiles,,
+bodyshield/simulation/robots.py,python_file_py_compile,pass,Python source compiles,,
+bodyshield/simulation/tasks.py,python_file_py_compile,pass,Python source compiles,,
+bodyshield/simulation/wrappers.py,python_file_py_compile,pass,Python source compiles,,
 bodyshield/source_import_audit.py,python_file_py_compile,pass,Python source compiles,,
 bodyshield/stats.py,python_file_py_compile,pass,Python source compiles,,
 bodyshield/tasks.py,python_file_py_compile,pass,Python source compiles,,
@@ -55,8 +73,10 @@ bodyshield/trajectory_wam.py,python_file_py_compile,pass,Python source compiles,
 bodyshield/visual_artifact_audit.py,python_file_py_compile,pass,Python source compiles,,
 bodyshield/visual_wam.py,python_file_py_compile,pass,Python source compiles,,
 scripts/build_bodyshield_icra_paper.py,python_file_py_compile,pass,Python source compiles,,
+scripts/build_paper_targets.py,python_file_py_compile,pass,Python source compiles,,
 scripts/build_release_bundle.py,python_file_py_compile,pass,Python source compiles,,
 scripts/finalize_maxout_artifacts.py,python_file_py_compile,pass,Python source compiles,,
+scripts/finalize_nonrejectable_artifacts.py,python_file_py_compile,pass,Python source compiles,,
 scripts/run_artifact_inventory_audit.py,python_file_py_compile,pass,Python source compiles,,
 scripts/run_claim_boundary_audit.py,python_file_py_compile,pass,Python source compiles,,
 scripts/run_command_surface_audit.py,python_file_py_compile,pass,Python source compiles,,
@@ -77,12 +97,25 @@ scripts/run_results_integrity_audit.py,python_file_py_compile,pass,Python source
 scripts/run_source_import_audit.py,python_file_py_compile,pass,Python source compiles,,
 scripts/run_visual_artifact_audit.py,python_file_py_compile,pass,Python source compiles,,
 scripts/smoke_check.py,python_file_py_compile,pass,Python source compiles,,
+scripts/verify_citations.py,python_file_py_compile,pass,Python source compiles,,
+scripts/verify_claims.py,python_file_py_compile,pass,Python source compiles,,
 scripts/verify_non_hardware_pack.py,python_file_py_compile,pass,Python source compiles,,
 scripts/verify_release_payload.py,python_file_py_compile,pass,Python source compiles,,
+scripts/verify_reproducibility.py,python_file_py_compile,pass,Python source compiles,,
+tests/test_bodybreak_search.py,python_file_py_compile,pass,Python source compiles,,
 tests/test_bodyshield.py,python_file_py_compile,pass,Python source compiles,,
+tests/test_bodyshield_repair.py,python_file_py_compile,pass,Python source compiles,,
+tests/test_data_schema.py,python_file_py_compile,pass,Python source compiles,,
+tests/test_metrics.py,python_file_py_compile,pass,Python source compiles,,
+tests/test_no_raw_motor_commands.py,python_file_py_compile,pass,Python source compiles,,
+tests/test_perturbations.py,python_file_py_compile,pass,Python source compiles,,
+tests/test_reproducibility_manifest.py,python_file_py_compile,pass,Python source compiles,,
+tests/test_safe_api_contract.py,python_file_py_compile,pass,Python source compiles,,
 scripts/build_bodyshield_icra_paper.py,script_has_main_guard,pass,script has a guarded CLI entry point,,
+scripts/build_paper_targets.py,script_has_main_guard,pass,script has a guarded CLI entry point,,
 scripts/build_release_bundle.py,script_has_main_guard,pass,script has a guarded CLI entry point,,
 scripts/finalize_maxout_artifacts.py,script_has_main_guard,pass,script has a guarded CLI entry point,,
+scripts/finalize_nonrejectable_artifacts.py,script_has_main_guard,pass,script has a guarded CLI entry point,,
 scripts/run_artifact_inventory_audit.py,script_has_main_guard,pass,script has a guarded CLI entry point,,
 scripts/run_claim_boundary_audit.py,script_has_main_guard,pass,script has a guarded CLI entry point,,
 scripts/run_command_surface_audit.py,script_has_main_guard,pass,script has a guarded CLI entry point,,
@@ -103,12 +136,21 @@ scripts/run_results_integrity_audit.py,script_has_main_guard,pass,script has a g
 scripts/run_source_import_audit.py,script_has_main_guard,pass,script has a guarded CLI entry point,,
 scripts/run_visual_artifact_audit.py,script_has_main_guard,pass,script has a guarded CLI entry point,,
 scripts/smoke_check.py,script_has_main_guard,pass,script has a guarded CLI entry point,,
+scripts/verify_citations.py,script_has_main_guard,pass,script has a guarded CLI entry point,,
+scripts/verify_claims.py,script_has_main_guard,pass,script has a guarded CLI entry point,,
 scripts/verify_non_hardware_pack.py,script_has_main_guard,pass,script has a guarded CLI entry point,,
 scripts/verify_release_payload.py,script_has_main_guard,pass,script has a guarded CLI entry point,,
+scripts/verify_reproducibility.py,script_has_main_guard,pass,script has a guarded CLI entry point,,
 bodyshield,bodyshield_module_imports_in_subprocess,pass,module imported,,import succeeds
 bodyshield.analysis,bodyshield_module_imports_in_subprocess,pass,module imported,,import succeeds
+bodyshield.analysis.audit_videos,bodyshield_module_imports_in_subprocess,pass,module imported,,import succeeds
+bodyshield.analysis.make_figures,bodyshield_module_imports_in_subprocess,pass,module imported,,import succeeds
+bodyshield.analysis.make_tables,bodyshield_module_imports_in_subprocess,pass,module imported,,import succeeds
+bodyshield.analysis.summarize_batch,bodyshield_module_imports_in_subprocess,pass,module imported,,import succeeds
 bodyshield.artifact_inventory_audit,bodyshield_module_imports_in_subprocess,pass,module imported,,import succeeds
+bodyshield.bodybreak,bodyshield_module_imports_in_subprocess,pass,module imported,,import succeeds
 bodyshield.bodybreak_search,bodyshield_module_imports_in_subprocess,pass,module imported,,import succeeds
+bodyshield.bodyshield,bodyshield_module_imports_in_subprocess,pass,module imported,,import succeeds
 bodyshield.bodyshield_repair,bodyshield_module_imports_in_subprocess,pass,module imported,,import succeeds
 bodyshield.claim_boundary_audit,bodyshield_module_imports_in_subprocess,pass,module imported,,import succeeds
 bodyshield.command_surface_audit,bodyshield_module_imports_in_subprocess,pass,module imported,,import succeeds
@@ -123,6 +165,8 @@ bodyshield.falsification,bodyshield_module_imports_in_subprocess,pass,module imp
 bodyshield.high_fidelity,bodyshield_module_imports_in_subprocess,pass,module imported,,import succeeds
 bodyshield.high_fidelity_learning,bodyshield_module_imports_in_subprocess,pass,module imported,,import succeeds
 bodyshield.learned_outcome_model,bodyshield_module_imports_in_subprocess,pass,module imported,,import succeeds
+bodyshield.logging_utils,bodyshield_module_imports_in_subprocess,pass,module imported,,import succeeds
+bodyshield.metrics,bodyshield_module_imports_in_subprocess,pass,module imported,,import succeeds
 bodyshield.neural_wam,bodyshield_module_imports_in_subprocess,pass,module imported,,import succeeds
 bodyshield.pack_verification,bodyshield_module_imports_in_subprocess,pass,module imported,,import succeeds
 bodyshield.paper,bodyshield_module_imports_in_subprocess,pass,module imported,,import succeeds
@@ -139,14 +183,23 @@ bodyshield.release_runtime_audit,bodyshield_module_imports_in_subprocess,pass,mo
 bodyshield.repair,bodyshield_module_imports_in_subprocess,pass,module imported,,import succeeds
 bodyshield.results_integrity,bodyshield_module_imports_in_subprocess,pass,module imported,,import succeeds
 bodyshield.robot,bodyshield_module_imports_in_subprocess,pass,module imported,,import succeeds
+bodyshield.robot.calibrate_noise_floor,bodyshield_module_imports_in_subprocess,pass,module imported,,import succeeds
+bodyshield.robot.emergency_stop_monitor,bodyshield_module_imports_in_subprocess,pass,module imported,,import succeeds
 bodyshield.robot.healthcheck,bodyshield_module_imports_in_subprocess,pass,module imported,,import succeeds
 bodyshield.robot.run_batch,bodyshield_module_imports_in_subprocess,pass,module imported,,import succeeds
+bodyshield.robot.safe_api,bodyshield_module_imports_in_subprocess,pass,module imported,,import succeeds
 bodyshield.robot.safety_gate,bodyshield_module_imports_in_subprocess,pass,module imported,,import succeeds
+bodyshield.robot.verifier,bodyshield_module_imports_in_subprocess,pass,module imported,,import succeeds
 bodyshield.safe_robot_runner,bodyshield_module_imports_in_subprocess,pass,module imported,,import succeeds
 bodyshield.schema,bodyshield_module_imports_in_subprocess,pass,module imported,,import succeeds
 bodyshield.sim,bodyshield_module_imports_in_subprocess,pass,module imported,,import succeeds
 bodyshield.sim_envs,bodyshield_module_imports_in_subprocess,pass,module imported,,import succeeds
 bodyshield.sim_videos,bodyshield_module_imports_in_subprocess,pass,module imported,,import succeeds
+bodyshield.simulation,bodyshield_module_imports_in_subprocess,pass,module imported,,import succeeds
+bodyshield.simulation.envs,bodyshield_module_imports_in_subprocess,pass,module imported,,import succeeds
+bodyshield.simulation.robots,bodyshield_module_imports_in_subprocess,pass,module imported,,import succeeds
+bodyshield.simulation.tasks,bodyshield_module_imports_in_subprocess,pass,module imported,,import succeeds
+bodyshield.simulation.wrappers,bodyshield_module_imports_in_subprocess,pass,module imported,,import succeeds
 bodyshield.source_import_audit,bodyshield_module_imports_in_subprocess,pass,module imported,,import succeeds
 bodyshield.stats,bodyshield_module_imports_in_subprocess,pass,module imported,,import succeeds
 bodyshield.tasks,bodyshield_module_imports_in_subprocess,pass,module imported,,import succeeds

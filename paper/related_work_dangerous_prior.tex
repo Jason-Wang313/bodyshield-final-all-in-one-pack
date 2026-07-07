@@ -1,0 +1,20 @@
+\begin{table*}[t]
+\caption{Dangerous related-work buckets and the bounded BodyShield distinction.}
+\label{tab:dangerous-prior}
+\centering\footnotesize
+\begin{tabular}{p{0.18\linewidth}p{0.30\linewidth}p{0.42\linewidth}}
+\toprule
+Bucket & Prior anchor & BodyShield distinction \\
+\midrule
+domain randomization & Tobin et al. / OpenAI ADR / Muratore review & BodyShield actively searches for discovered breaking body/control perturbations before repair. \\
+cross embodiment & Open X-Embodiment / RT-X & BodyShield audits and repairs hidden body assumptions for scoped policies. \\
+xmop & XMoP & BodyShield is a falsification-to-repair layer rather than a planner trained across embodiments. \\
+umi on air & UMI-on-Air & BodyShield measures which hidden body/control assumption breaks a deployed policy. \\
+embodisteer & EmbodiSteer & BodyShield reports breaking perturbations, repair, and held-out tests without claiming foundation generality. \\
+counterexample guided & Symbolic-geometric action abstraction repair & BodyShield targets continuous embodiment-control perturbations and oracle feasibility. \\
+safe rl falsification & Verification-guided falsification for safe RL & BodyShield is robot embodiment-control falsification plus repair. \\
+robust mpc cbf & MPC-CBF / reachability literature & BodyShield identifies actual hidden assumptions and compares robust baselines under budget. \\
+human effect priors & VRB / ViPRA & Included only as a stress-test family, not the headline novelty. \\
+\bottomrule
+\end{tabular}
+\end{table*}

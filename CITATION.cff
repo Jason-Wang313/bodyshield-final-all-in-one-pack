@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+title: "BodyShield: Falsifying and Repairing Hidden Embodiment Assumptions in Robot Policies"
+message: "If you use this non-hardware artifact, cite the repository and paper draft."
+type: software
+authors:
+  - name: "Anonymous BodyShield Contributors"
+repository-code: "https://github.com/Jason-Wang313/bodyshield-final-all-in-one-pack"
+version: "0.1.0"
+date-released: "2026-07-07"
