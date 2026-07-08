@@ -1,0 +1,2 @@
+measurement,status,n_resets,success_rate,missing_item
+reset_reliability,blocked_by_hardware,0,,physical reset attempts

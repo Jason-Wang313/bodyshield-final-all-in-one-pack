@@ -42,6 +42,25 @@ NONHARDWARE_REQUIRED = (
     "videos/index.md",
 )
 
+POST_NONHARDWARE_REQUIRED = (
+    "scripts/finalize_v3_artifacts.py",
+    "reports/POST_NON_HARDWARE_REPO_AUDIT.md",
+    "reports/METHOD_THEORY_STRENGTHENING.md",
+    "reports/FULL_REVIEWER_PREBUTTAL.md",
+    "reports/SUBMISSION_READY_AUDIT.md",
+    "reports/HARDWARE_BLOCKER.md",
+    "reports/EXTERNAL_POLICY_BENCHMARK.md",
+    "reports/HIGH_FIDELITY_POLICY_RESULTS.md",
+    "results/external_policy_benchmark.csv",
+    "results/high_fidelity_policy_results.csv",
+    "results/submission_ready_audit.csv",
+    "paper/bodyshield_full_paper.pdf",
+    "paper/bodyshield_supplement.pdf",
+    "figures/external_policy_bodyshield_delta.pdf",
+    "figures/high_fidelity_heldout_success.pdf",
+    "videos/hardware/index.md",
+)
+
 HARDWARE_REQUIRED = (
     "reports/hardware_noise_floor.md",
     "reports/verifier_audit.md",
@@ -118,6 +137,9 @@ def verify(root: Path = ROOT, require_submission_ready: bool = False) -> dict[st
     for rel_path in NONHARDWARE_REQUIRED:
         if not _exists_nonempty(root, rel_path):
             problems.append(f"missing_or_empty:{rel_path}")
+    for rel_path in POST_NONHARDWARE_REQUIRED:
+        if not _exists_nonempty(root, rel_path):
+            problems.append(f"missing_or_empty:{rel_path}")
 
     problems.extend(f"claim_ledger:{item}" for item in validate_claim_ledger(root / "reports" / "claim_ledger.csv"))
 
@@ -185,4 +207,3 @@ def main(argv: list[str] | None = None) -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
-

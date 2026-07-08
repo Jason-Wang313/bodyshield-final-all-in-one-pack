@@ -3,54 +3,75 @@
 \usepackage{booktabs}
 \usepackage{amsmath}
 \usepackage{url}
-\title{BodyShield: Falsifying and Repairing Hidden Embodiment-Control Assumptions in Robot Policies}
+\title{BodyShield: An Analytic-Simulation Study of Falsifying and Repairing Hidden Embodiment-Control Assumptions}
 \author{Anonymous Authors}
 \begin{document}
 \maketitle
 \begin{abstract}
-Robot policies can succeed in nominal evaluations while relying on brittle hidden assumptions about latency, calibration, joint range, gripper authority, sensing geometry, payload, and contact. BodyShield exposes and repairs hidden embodiment-control assumptions. This draft contains analytic-simulation evidence, generated frames rather than real camera videos, synthetic visual and trajectory proxy audits, bounded MuJoCo/ManiSkill probes, and release/package verification; external full-scale trained-policy high-fidelity benchmarks remain future evidence tiers, and real robot results are blocked until safety gates pass.
+Robot policies can pass nominal tests while relying on hidden assumptions about latency, calibration, joint range, gripper authority, sensing geometry, payload, and contact. BodyShield is a falsification-to-repair workflow: BodyBreak searches for low-cost embodiment-control perturbations that break a policy, then BodyShield repairs against discovered failures and evaluates held-out perturbation families. This paper is explicitly an analytic/simulation study. It contains analytic-simulation evidence, generated frames rather than real camera videos, bounded MuJoCo/ManiSkill probes, local surrogate policy repair results, audits, and release verification; real robot results and external full-scale trained-policy high-fidelity benchmarks remain future evidence tiers. The package stops without running trained-policy rollouts, real-video WAM training, or real corrective adaptation, and none establishes physical transfer.
 \end{abstract}
+
 \section{Introduction}
-Nominal success is a weak certificate for robot policies because the policy may depend on a hidden body/control interface detail. BodyShield is a falsification-to-repair method: BodyBreak searches for low-cost embodiment-control perturbations that break a policy, then BodyShield repairs the action representation or policy parameters against discovered failures and evaluates held-out perturbations. The goal is adaptive embodied-intelligence evidence about failure diagnosis and repair, not a cheap-arm demo or a broad cross-embodiment-transfer claim.
+Nominal robot success is a weak certificate because a policy may depend on a hidden body or controller detail. A policy that looks competent on the unmodified setup may fail under modest latency, calibration, gripper, range, rate, payload, sensing, or contact shifts. BodyShield targets this failure mode by making hidden embodiment-control assumptions observable, repairable, and auditable.
+
+This paper is framed for adaptive embodied intelligence: the main contribution is a failure-diagnosis and repair loop for policies, not a cheap-arm demonstration and not a broad cross-embodiment-transfer claim.
+
 \section{Related Work}
-Domain randomization and dynamics randomization sample broad distributions for sim-to-real transfer \cite{tobin2017domainrandomization,peng2018dynamicsrandomization,openai2018dexterous,openai2019rubiks}. Embodiment-aware deployment methods such as UMI-on-Air and EmbodiSteer steer policies toward target-body feasibility \cite{gupta2025umionair,wang2026embodisteer}. Counterexample-guided and verification-guided safe-RL methods search for violations and sometimes repair or shield policies \cite{karunakaran2020counterexampleguided,le2025verificationguided}. MPC-CBF and sim-to-real correction methods address safety, feasibility, or transfer through control and correction layers \cite{zeng2021mpccbf,jiang2024transic}. BodyShield is distinct only in the bounded sense used here: it searches embodiment-control perturbations, repairs against discovered failures, and demands held-out and hardware-gated evidence before final claims.
+Domain randomization and dynamics randomization remain the strongest dangerous baselines for this work because they directly address sim-to-real transfer by broadening training distributions \cite{tobin2017domainrandomization,peng2018dynamicsrandomization,openai2018dexterous,openai2019rubiks}. Embodiment-aware deployment methods such as UMI-on-Air and EmbodiSteer adapt or steer policy execution toward a target body \cite{gupta2025umionair,wang2026embodisteer}. Counterexample-guided and verification-guided safe RL search for violations and may guide shielding or repair \cite{karunakaran2020counterexampleguided,le2025verificationguided}. MPC-CBF, robust MPC, reachability, sysID, and online correction methods address safety, model mismatch, or adaptation from different starting assumptions \cite{zeng2021mpccbf,jiang2024transic}.
+
+BodyShield is distinct only in the bounded sense tested here: it searches embodiment-control perturbations, repairs against discovered failures, and requires held-out and hardware-gated evidence before stronger claims.
+
 \section{Problem Formulation}
-Let \(z\in\mathcal{Z}\) be an embodiment-control perturbation and \(c(z)\) a normalized cost. For policy \(\pi_\theta\), task \(\tau\), and robot archetype \(r\), BodyBreak estimates \(z^\star=\arg\min c(z)\) subject to \(S(\pi_\theta,\tau,r,z)\leq\alpha\) under a finite evaluator budget. BodyShield then optimizes a repaired policy over the discovered break set, training perturbations, and near-boundary cases.
-\section{BodyBreak Method}
-BodyBreak compares random, one-axis, grid, and compound adversarial search. It reports evaluator-call budgets, estimated breaking cost, threshold sensitivity, and dense post-hoc challenges. It does not claim global minimality.
-\section{BodyShield Repair Method}
-BodyShield uses discovered failure axes to allocate repair capacity, then evaluates nominal retention, seen perturbations, held-out perturbation families, physical-style proxy shifts, secondary costs, and oracle feasibility. The current policy family is analytic and CPU-only; it validates the pipeline, not hardware deployment.
-\section{Simulation Experiments}
-The local run evaluates eight tasks, six robot/body archetypes, ten policy families, major embodiment-control perturbation families, compound perturbations, confidence intervals, and threshold sensitivity. Table~\ref{tab:analytic-success} summarizes the main analytic buckets. Evidence lives in \path{results/}, \path{logs/sim/results.jsonl}, \path{tables/sim_main_results.csv}, and \path{tables/sim_budget_matched_results.csv}.
+Let \(z\in\mathcal{Z}\) denote a bounded embodiment-control perturbation with normalized cost \(c(z)\). For policy \(\pi_\theta\), task \(\tau\), and robot archetype \(r\), BodyBreak estimates
+\[
+z^\star_B = \arg\min_{z\in\mathcal{Z}_B} c(z) \quad \mathrm{s.t.}\quad S(\pi_\theta,\tau,r,z)\leq \alpha,
+\]
+where \(\mathcal{Z}_B\) is the finite candidate set available under evaluator budget \(B\). This is an estimated finite-budget break, not a global minimality proof.
+
+\section{Method}
+BodyBreak compares random, one-axis, grid, and compound adversarial search. BodyShield then uses the discovered break axes to allocate repair capacity while retaining nominal behavior. The repair objective combines nominal retention, discovered break recovery, held-out perturbation performance, and secondary execution costs. The method evidence map is summarized in Table~\ref{tab:evidence}.
+
 \begin{table}[t]
-\caption{Analytic success rates by perturbation bucket.}
-\label{tab:analytic-success}
+\caption{Evidence tiers after the post-nonhardware v3 pass.}
+\label{tab:evidence}
 \centering\footnotesize
-\begin{tabular}{lccc}
+\begin{tabular}{lll}
 \toprule
-Method & Nominal & Seen & Held-out \\
+Tier & Status & Artifact \\
 \midrule
-Nominal & 0.872 & 0.757 & 0.761 \\
-Domain rand. & 0.844 & 0.748 & 0.742 \\
-BodyShield & 0.859 & 0.800 & 0.792 \\
-Oracle & 0.925 & 0.910 & 0.907 \\
+Analytic simulation & Complete & \path{results/trials.parquet} \\
+High-fidelity probes & Bounded surrogate & \path{results/high_fidelity_policy_results.csv} \\
+External checkpoints & Blocked & \path{reports/EXTERNAL_CHECKPOINT_BLOCKER.md} \\
+Hardware & Blocked & \path{reports/HARDWARE_BLOCKER.md} \\
 \bottomrule
 \end{tabular}
 \end{table}
+
+\section{Experiments}
+The completed package evaluates analytic tasks, robot archetypes, perturbation families, search modes, repair variants, robustness profiles, oracle feasibility, and bounded simulator probes. Evidence lives in \path{results/}, \path{logs/sim/results.jsonl}, \path{tables/sim_main_results.csv}, \path{tables/sim_budget_matched_results.csv}, and \path{data_schema.json}. Figure~\ref{fig:repair} points to the main analytic before/after repair visualization.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=.95\linewidth]{figures/bodyshield_before_after.pdf}
+\caption{Analytic before/after repair summary. This is not a hardware result.}
+\label{fig:repair}
+\end{figure}
+
+\section{Results}
+The analytic package supports bounded statements: BodyShield improves specific held-out perturbation families under the local budgeted simulation protocol, and bounded high-fidelity probes are exported as stress evidence. The v3 package adds `results/external_policy_benchmark.csv` and `results/high_fidelity_policy_results.csv`, but the external checkpoint row is explicitly blocked.
+
 \section{Real Robot Experiments}
-\textbf{Hardware placeholder only. Do not fill until SO-ARM101/SO-101 safety gates pass.} Required hardware evidence includes noise floor, verifier agreement, reset reliability, emergency-stop test, all-trials logs, videos with failures and ambiguous cases, held-out physical modifications, and oracle feasibility.
-\section{EPEC and Human-Effect Stress Test}
-Human/effect and EPEC-style policies are included only as stress-test alternatives. They are not the main method and are not used to claim human-video or foundation-policy superiority.
-\section{Ablations}
-Ablations cover search mode, repair baseline, threshold, secondary execution costs, and conservative behavior. They are logged in \path{results/breaking_search.csv}, \path{results/threshold_sensitivity.csv}, and \path{results/secondary_metrics_by_method.csv}.
-\section{Failure Analysis}
-Failure categories include tracking error, calibration error, joint limit, collision, slip, unreachable pose, verifier uncertainty, and mechanical proxy faults. The paper must keep these tied to analytic simulation until hardware logs exist.
+\textbf{Hardware placeholder only. Do not fill until SO-ARM101/SO-101 safety gates pass.} Required hardware evidence includes measured noise floor, camera-verifier agreement, reset reliability, emergency-stop test, all-trials logs, all-trials videos, held-out physical modifications, and physical oracle feasibility.
+
 \section{Limitations}
-The current package lacks hardware noise floor, camera verifier accuracy, reset reliability, real held-out physical modifications, all-trials hardware videos, external trained-policy rollouts, and real corrective-trace adaptation.
-\section{Reproducibility Statement}
-The package includes tests, CI, manifests, release ZIP, claim ledger, citation verification, and `python -m bodyshield.analysis.verify_package --json`. Trial fields follow \path{data_schema.json}.
-\section{Ethics and Safety Statement}
-The repository forbids raw hardware command paths and exposes only bounded primitives that refuse to run before explicit physical safety confirmation. This does not guarantee hardware safety.
+The current repository lacks hardware noise floor, camera verifier accuracy, reset reliability, real held-out physical modifications, all-trials hardware videos, external trained-policy rollouts, real-video WAM datasets, and real corrective-trace datasets. BodyBreak minimality is estimated over evaluated candidates only.
+
+\section{Reproducibility and Safety}
+The package includes tests, claim ledger, citation verification, source audits, release bundle, and `python -m bodyshield.analysis.verify_package --json`. The robot modules expose bounded safe primitives and refuse to run before explicit physical readiness checks. This software boundary does not guarantee hardware safety.
+
+\section{Conclusion}
+BodyShield is best read as a falsification-to-repair protocol for hidden embodiment-control assumptions. The non-hardware package is complete under analytic/synthetic scope, while the paper is not ready for final submission until the blocked evidence tiers are closed.
+
 \bibliographystyle{IEEEtran}
 \bibliography{references}
 \end{document}

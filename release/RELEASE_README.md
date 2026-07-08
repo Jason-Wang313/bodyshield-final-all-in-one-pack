@@ -14,6 +14,6 @@ python -m pytest -q
 ```
 
 Payload summary:
-- Payload files: 432
-- Payload bytes: 372459155
+- Payload files: 473
+- Payload bytes: 372389297
 - Manifest: `RELEASE_BUNDLE_MANIFEST.csv`

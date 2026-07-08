@@ -1,6 +1,6 @@
 PYTHON ?= python
 
-.PHONY: smoke test nonhardware reproduce-minimal reproduce-sim-main reproduce-main-figures sim-minimal sim-full paper verify package-artifacts final-check
+.PHONY: smoke test nonhardware post-nonhardware reproduce-minimal reproduce-sim-main reproduce-main-figures sim-minimal sim-full paper verify package-artifacts final-check
 
 smoke:
 	$(PYTHON) scripts/smoke_check.py
@@ -31,6 +31,10 @@ reproduce-sim-main:
 
 nonhardware: reproduce-sim-main
 
+post-nonhardware:
+	$(PYTHON) scripts/finalize_v3_artifacts.py
+	$(PYTHON) -m bodyshield.analysis.verify_package --json
+
 sim-minimal: reproduce-minimal
 
 sim-full: reproduce-sim-main
@@ -55,6 +59,7 @@ package-artifacts:
 	$(PYTHON) scripts/finalize_nonrejectable_artifacts.py
 	$(PYTHON) scripts/finalize_maxout_artifacts.py
 	$(PYTHON) scripts/finalize_v2_artifacts.py
+	$(PYTHON) scripts/finalize_v3_artifacts.py
 	$(PYTHON) -c "import shutil; shutil.rmtree('paper/build_icra', ignore_errors=True)"
 	$(PYTHON) scripts/build_release_bundle.py --json
 	$(PYTHON) scripts/run_release_payload_audit.py --json

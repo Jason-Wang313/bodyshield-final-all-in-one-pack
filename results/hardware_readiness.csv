@@ -1,0 +1,8 @@
+gate,status,missing_item,evidence_artifact,allowed_wording
+robot_setup_confirmation,blocked_by_hardware,"explicit user confirmation of robot, workspace, camera, reset, and emergency stop",HARDWARE_AUTONOMOUS_CLI_RUNBOOK.md,hardware phase not started
+safety_gate,blocked_by_hardware,bounded safe primitive healthcheck on the physical arm,SAFE_ROBOT_API_SPEC.md,software safety gate exists; physical gate not run
+noise_floor,blocked_by_hardware,repeatability measurements for safe primitives,results/hardware_noise_floor.csv,not measured
+camera_verifier,blocked_by_hardware,manual labels and agreement audit,results/verifier_calibration.csv,not measured
+reset_reliability,blocked_by_hardware,reset success/failure logs across trials,results/reset_reliability.csv,not measured
+heldout_physical_modifications,blocked_by_hardware,real payload/tool/gripper/surface/obstacle modifications,results/hardware_heldout_physical_mods.csv,not run
+hardware_videos,blocked_by_hardware,all-trials real-camera videos,videos/hardware/index.md,not recorded

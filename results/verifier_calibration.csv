@@ -1,0 +1,2 @@
+measurement,status,n_labels,accuracy,ambiguous_rate,missing_item
+camera_verifier_agreement,blocked_by_hardware,0,,,manual labels and camera frames

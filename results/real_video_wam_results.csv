@@ -1,0 +1,3 @@
+dataset,status,required_item,available_artifact,allowed_wording
+real_video_wam,readiness_only_blocked_missing_dataset,real camera/video rollouts with train/validation/test split,results/real_video_wam_readiness.csv,The repository defines the schema and readiness check only.
+real_video_wam,readiness_only_blocked_missing_dataset,"frame timestamps, task labels, verifier labels, and perturbation metadata",configs/real_video_wam_readiness.example.json,Do not claim real-video WAM performance.

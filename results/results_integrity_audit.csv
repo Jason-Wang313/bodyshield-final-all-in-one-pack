@@ -7,7 +7,7 @@ results/breaking_search.csv,csv_exists_nonempty,pass,CSV exists and is nonempty,
 results/breaking_search.csv,csv_parse,pass,CSV parsed,288 rows; 10 columns,
 results/breaking_search.csv,csv_nonempty_rows,pass,CSV has data rows,288,>0
 results/breaking_search.csv,csv_unique_columns,pass,column names are unique,,
-results/claim_boundary_audit.csv,csv_exists_nonempty,pass,CSV exists and is nonempty,9038,>0 bytes
+results/claim_boundary_audit.csv,csv_exists_nonempty,pass,CSV exists and is nonempty,9037,>0 bytes
 results/claim_boundary_audit.csv,csv_parse,pass,CSV parsed,63 rows; 6 columns,
 results/claim_boundary_audit.csv,csv_nonempty_rows,pass,CSV has data rows,63,>0
 results/claim_boundary_audit.csv,csv_unique_columns,pass,column names are unique,,
@@ -35,6 +35,10 @@ results/corrective_trace_readiness.csv,csv_exists_nonempty,pass,CSV exists and i
 results/corrective_trace_readiness.csv,csv_parse,pass,CSV parsed,2 rows; 16 columns,
 results/corrective_trace_readiness.csv,csv_nonempty_rows,pass,CSV has data rows,2,>0
 results/corrective_trace_readiness.csv,csv_unique_columns,pass,column names are unique,,
+results/corrective_trace_results.csv,csv_exists_nonempty,pass,CSV exists and is nonempty,497,>0 bytes
+results/corrective_trace_results.csv,csv_parse,pass,CSV parsed,2 rows; 5 columns,
+results/corrective_trace_results.csv,csv_nonempty_rows,pass,CSV has data rows,2,>0
+results/corrective_trace_results.csv,csv_unique_columns,pass,column names are unique,,
 results/derived_results_audit.csv,csv_exists_nonempty,pass,CSV exists and is nonempty,2679,>0 bytes
 results/derived_results_audit.csv,csv_parse,pass,CSV parsed,16 rows; 6 columns,
 results/derived_results_audit.csv,csv_nonempty_rows,pass,CSV has data rows,16,>0
@@ -43,10 +47,14 @@ results/environment_dependency_audit.csv,csv_exists_nonempty,pass,CSV exists and
 results/environment_dependency_audit.csv,csv_parse,pass,CSV parsed,16 rows; 11 columns,
 results/environment_dependency_audit.csv,csv_nonempty_rows,pass,CSV has data rows,16,>0
 results/environment_dependency_audit.csv,csv_unique_columns,pass,column names are unique,,
-results/evidence_consistency_audit.csv,csv_exists_nonempty,pass,CSV exists and is nonempty,70495,>0 bytes
-results/evidence_consistency_audit.csv,csv_parse,pass,CSV parsed,681 rows; 5 columns,
-results/evidence_consistency_audit.csv,csv_nonempty_rows,pass,CSV has data rows,681,>0
+results/evidence_consistency_audit.csv,csv_exists_nonempty,pass,CSV exists and is nonempty,62709,>0 bytes
+results/evidence_consistency_audit.csv,csv_parse,pass,CSV parsed,599 rows; 5 columns,
+results/evidence_consistency_audit.csv,csv_nonempty_rows,pass,CSV has data rows,599,>0
 results/evidence_consistency_audit.csv,csv_unique_columns,pass,column names are unique,,
+results/external_policy_benchmark.csv,csv_exists_nonempty,pass,CSV exists and is nonempty,1468,>0 bytes
+results/external_policy_benchmark.csv,csv_parse,pass,CSV parsed,4 rows; 14 columns,
+results/external_policy_benchmark.csv,csv_nonempty_rows,pass,CSV has data rows,4,>0
+results/external_policy_benchmark.csv,csv_unique_columns,pass,column names are unique,,
 results/external_policy_benchmark_readiness.csv,csv_exists_nonempty,pass,CSV exists and is nonempty,1239,>0 bytes
 results/external_policy_benchmark_readiness.csv,csv_parse,pass,CSV parsed,2 rows; 20 columns,
 results/external_policy_benchmark_readiness.csv,csv_nonempty_rows,pass,CSV has data rows,2,>0
@@ -55,10 +63,38 @@ results/failure_taxonomy_counts.csv,csv_exists_nonempty,pass,CSV exists and is n
 results/failure_taxonomy_counts.csv,csv_parse,pass,CSV parsed,90 rows; 3 columns,
 results/failure_taxonomy_counts.csv,csv_nonempty_rows,pass,CSV has data rows,90,>0
 results/failure_taxonomy_counts.csv,csv_unique_columns,pass,column names are unique,,
+results/hardware_bodybreak_search.csv,csv_exists_nonempty,pass,CSV exists and is nonempty,135,>0 bytes
+results/hardware_bodybreak_search.csv,csv_parse,pass,CSV parsed,1 rows; 5 columns,
+results/hardware_bodybreak_search.csv,csv_nonempty_rows,pass,CSV has data rows,1,>0
+results/hardware_bodybreak_search.csv,csv_unique_columns,pass,column names are unique,,
+results/hardware_bodyshield_repair.csv,csv_exists_nonempty,pass,CSV exists and is nonempty,145,>0 bytes
+results/hardware_bodyshield_repair.csv,csv_parse,pass,CSV parsed,1 rows; 5 columns,
+results/hardware_bodyshield_repair.csv,csv_nonempty_rows,pass,CSV has data rows,1,>0
+results/hardware_bodyshield_repair.csv,csv_unique_columns,pass,column names are unique,,
+results/hardware_heldout_physical_mods.csv,csv_exists_nonempty,pass,CSV exists and is nonempty,137,>0 bytes
+results/hardware_heldout_physical_mods.csv,csv_parse,pass,CSV parsed,1 rows; 5 columns,
+results/hardware_heldout_physical_mods.csv,csv_nonempty_rows,pass,CSV has data rows,1,>0
+results/hardware_heldout_physical_mods.csv,csv_unique_columns,pass,column names are unique,,
+results/hardware_noise_floor.csv,csv_exists_nonempty,pass,CSV exists and is nonempty,128,>0 bytes
+results/hardware_noise_floor.csv,csv_parse,pass,CSV parsed,1 rows; 7 columns,
+results/hardware_noise_floor.csv,csv_nonempty_rows,pass,CSV has data rows,1,>0
+results/hardware_noise_floor.csv,csv_unique_columns,pass,column names are unique,,
+results/hardware_oracle_feasibility.csv,csv_exists_nonempty,pass,CSV exists and is nonempty,133,>0 bytes
+results/hardware_oracle_feasibility.csv,csv_parse,pass,CSV parsed,1 rows; 5 columns,
+results/hardware_oracle_feasibility.csv,csv_nonempty_rows,pass,CSV has data rows,1,>0
+results/hardware_oracle_feasibility.csv,csv_unique_columns,pass,column names are unique,,
+results/hardware_readiness.csv,csv_exists_nonempty,pass,CSV exists and is nonempty,1045,>0 bytes
+results/hardware_readiness.csv,csv_parse,pass,CSV parsed,7 rows; 5 columns,
+results/hardware_readiness.csv,csv_nonempty_rows,pass,CSV has data rows,7,>0
+results/hardware_readiness.csv,csv_unique_columns,pass,column names are unique,,
 results/high_fidelity_benchmark.csv,csv_exists_nonempty,pass,CSV exists and is nonempty,126789,>0 bytes
 results/high_fidelity_benchmark.csv,csv_parse,pass,CSV parsed,594 rows; 19 columns,
 results/high_fidelity_benchmark.csv,csv_nonempty_rows,pass,CSV has data rows,594,>0
 results/high_fidelity_benchmark.csv,csv_unique_columns,pass,column names are unique,,
+results/high_fidelity_policy_results.csv,csv_exists_nonempty,pass,CSV exists and is nonempty,62830,>0 bytes
+results/high_fidelity_policy_results.csv,csv_parse,pass,CSV parsed,336 rows; 10 columns,
+results/high_fidelity_policy_results.csv,csv_nonempty_rows,pass,CSV has data rows,336,>0
+results/high_fidelity_policy_results.csv,csv_unique_columns,pass,column names are unique,,
 results/learned_outcome_axis_weights.csv,csv_exists_nonempty,pass,CSV exists and is nonempty,1485,>0 bytes
 results/learned_outcome_axis_weights.csv,csv_parse,pass,CSV parsed,15 rows; 3 columns,
 results/learned_outcome_axis_weights.csv,csv_nonempty_rows,pass,CSV has data rows,15,>0
@@ -111,7 +147,7 @@ results/oracle_feasibility.csv,csv_exists_nonempty,pass,CSV exists and is nonemp
 results/oracle_feasibility.csv,csv_parse,pass,CSV parsed,60 rows; 7 columns,
 results/oracle_feasibility.csv,csv_nonempty_rows,pass,CSV has data rows,60,>0
 results/oracle_feasibility.csv,csv_unique_columns,pass,column names are unique,,
-results/paper_source_audit.csv,csv_exists_nonempty,pass,CSV exists and is nonempty,2701,>0 bytes
+results/paper_source_audit.csv,csv_exists_nonempty,pass,CSV exists and is nonempty,2979,>0 bytes
 results/paper_source_audit.csv,csv_parse,pass,CSV parsed,20 rows; 6 columns,
 results/paper_source_audit.csv,csv_nonempty_rows,pass,CSV has data rows,20,>0
 results/paper_source_audit.csv,csv_unique_columns,pass,column names are unique,,
@@ -119,6 +155,10 @@ results/real_video_wam_readiness.csv,csv_exists_nonempty,pass,CSV exists and is 
 results/real_video_wam_readiness.csv,csv_parse,pass,CSV parsed,2 rows; 17 columns,
 results/real_video_wam_readiness.csv,csv_nonempty_rows,pass,CSV has data rows,2,>0
 results/real_video_wam_readiness.csv,csv_unique_columns,pass,column names are unique,,
+results/real_video_wam_results.csv,csv_exists_nonempty,pass,CSV exists and is nonempty,495,>0 bytes
+results/real_video_wam_results.csv,csv_parse,pass,CSV parsed,2 rows; 5 columns,
+results/real_video_wam_results.csv,csv_nonempty_rows,pass,CSV has data rows,2,>0
+results/real_video_wam_results.csv,csv_unique_columns,pass,column names are unique,,
 results/repair_axis_importance.csv,csv_exists_nonempty,pass,CSV exists and is nonempty,818,>0 bytes
 results/repair_axis_importance.csv,csv_parse,pass,CSV parsed,15 rows; 3 columns,
 results/repair_axis_importance.csv,csv_nonempty_rows,pass,CSV has data rows,15,>0
@@ -127,6 +167,10 @@ results/repair_history.csv,csv_exists_nonempty,pass,CSV exists and is nonempty,7
 results/repair_history.csv,csv_parse,pass,CSV parsed,160 rows; 3 columns,
 results/repair_history.csv,csv_nonempty_rows,pass,CSV has data rows,160,>0
 results/repair_history.csv,csv_unique_columns,pass,column names are unique,,
+results/reset_reliability.csv,csv_exists_nonempty,pass,CSV exists and is nonempty,121,>0 bytes
+results/reset_reliability.csv,csv_parse,pass,CSV parsed,1 rows; 5 columns,
+results/reset_reliability.csv,csv_nonempty_rows,pass,CSV has data rows,1,>0
+results/reset_reliability.csv,csv_unique_columns,pass,column names are unique,,
 results/robustness_profiles.csv,csv_exists_nonempty,pass,CSV exists and is nonempty,13594,>0 bytes
 results/robustness_profiles.csv,csv_parse,pass,CSV parsed,170 rows; 5 columns,
 results/robustness_profiles.csv,csv_nonempty_rows,pass,CSV has data rows,170,>0
@@ -143,10 +187,14 @@ results/simulation_rollout_videos.csv,csv_exists_nonempty,pass,CSV exists and is
 results/simulation_rollout_videos.csv,csv_parse,pass,CSV parsed,3 rows; 14 columns,
 results/simulation_rollout_videos.csv,csv_nonempty_rows,pass,CSV has data rows,3,>0
 results/simulation_rollout_videos.csv,csv_unique_columns,pass,column names are unique,,
-results/source_import_audit.csv,csv_exists_nonempty,pass,CSV exists and is nonempty,22041,>0 bytes
-results/source_import_audit.csv,csv_parse,pass,CSV parsed,224 rows; 6 columns,
-results/source_import_audit.csv,csv_nonempty_rows,pass,CSV has data rows,224,>0
+results/source_import_audit.csv,csv_exists_nonempty,pass,CSV exists and is nonempty,28735,>0 bytes
+results/source_import_audit.csv,csv_parse,pass,CSV parsed,295 rows; 6 columns,
+results/source_import_audit.csv,csv_nonempty_rows,pass,CSV has data rows,295,>0
 results/source_import_audit.csv,csv_unique_columns,pass,column names are unique,,
+results/submission_ready_audit.csv,csv_exists_nonempty,pass,CSV exists and is nonempty,1578,>0 bytes
+results/submission_ready_audit.csv,csv_parse,pass,CSV parsed,13 rows; 5 columns,
+results/submission_ready_audit.csv,csv_nonempty_rows,pass,CSV has data rows,13,>0
+results/submission_ready_audit.csv,csv_unique_columns,pass,column names are unique,,
 results/summary_by_method_bucket.csv,csv_exists_nonempty,pass,CSV exists and is nonempty,4571,>0 bytes
 results/summary_by_method_bucket.csv,csv_parse,pass,CSV parsed,30 rows; 11 columns,
 results/summary_by_method_bucket.csv,csv_nonempty_rows,pass,CSV has data rows,30,>0
@@ -175,6 +223,10 @@ results/trials.csv,csv_exists_nonempty,pass,CSV exists and is nonempty,344431261
 results/trials.csv,csv_parse,pass,CSV parsed,1152000 rows; 33 columns,
 results/trials.csv,csv_nonempty_rows,pass,CSV has data rows,1152000,>0
 results/trials.csv,csv_unique_columns,pass,column names are unique,,
+results/verifier_calibration.csv,csv_exists_nonempty,pass,CSV exists and is nonempty,149,>0 bytes
+results/verifier_calibration.csv,csv_parse,pass,CSV parsed,1 rows; 6 columns,
+results/verifier_calibration.csv,csv_nonempty_rows,pass,CSV has data rows,1,>0
+results/verifier_calibration.csv,csv_unique_columns,pass,column names are unique,,
 results/visual_artifact_audit.csv,csv_exists_nonempty,pass,CSV exists and is nonempty,19709,>0 bytes
 results/visual_artifact_audit.csv,csv_parse,pass,CSV parsed,156 rows; 6 columns,
 results/visual_artifact_audit.csv,csv_nonempty_rows,pass,CSV has data rows,156,>0
@@ -289,7 +341,7 @@ results/config_schema_audit.csv,required_columns,pass,required columns present,6
 results/config_schema_audit.csv,minimum_row_count,pass,row count meets minimum,40,>=30
 results/config_schema_audit.csv,required_values:status,pass,required values present,pass,pass
 results/source_import_audit.csv,required_columns,pass,required columns present,6,
-results/source_import_audit.csv,minimum_row_count,pass,row count meets minimum,224,>=100
+results/source_import_audit.csv,minimum_row_count,pass,row count meets minimum,295,>=100
 results/source_import_audit.csv,required_values:status,pass,required values present,pass,pass
 results/derived_results_audit.csv,required_columns,pass,required columns present,6,
 results/derived_results_audit.csv,minimum_row_count,pass,row count meets minimum,16,>=10
@@ -297,6 +349,6 @@ results/derived_results_audit.csv,required_values:status,pass,required values pr
 results/trials_sample.jsonl,jsonl_parse_and_shape,pass,JSONL sample parsed with nested keys,2000,
 results/trials_sample.jsonl,jsonl_exact_rows,pass,sample row count,2000,2000
 results/trials_sample.jsonl,jsonl_unique_trial_ids,pass,sample trial IDs are unique,2000,2000
-results/trials_sample.jsonl,jsonl_metadata_code_hash,pass,sample metadata code hash matches current source tree,9bcba4e9c35077af,9bcba4e9c35077af
+results/trials_sample.jsonl,jsonl_metadata_code_hash,pass,sample metadata code hash matches current source tree,212b65210a58a1ce,212b65210a58a1ce
 results/schema_validation_summary.json,schema_summary_values,pass,schema validation summary has expected counts/status,"{""jsonschema_validated_sample_records"": 200, ""lightweight_validated_records"": 1152000, ""parquet_status"": ""written"", ""trial_json_schema_path"": ""trial_schema.schema.json""}","1,152,000 lightweight; 200 jsonschema; parquet written"
 results/trials.parquet,parquet_rows_match_trials_csv,pass,Parquet metadata row count matches trials.csv,parquet=1152000; csv=1152000,1152000

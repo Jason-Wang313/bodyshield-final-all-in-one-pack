@@ -6,10 +6,10 @@ This audit checks that every shipped Python source file under `bodyshield/`, `sc
 
 | metric | value |
 |---|---:|
-| checks | 293 |
-| passed | 293 |
+| checks | 295 |
+| passed | 295 |
 | failed | 0 |
-| artifacts audited | 240 |
+| artifacts audited | 241 |
 
 ## Display Rows
 
@@ -18,7 +18,7 @@ This audit checks that every shipped Python source file under `bodyshield/`, `sc
 | bodyshield                                  | source_root_exists             | pass     | source root exists                        |       True | True       |
 | bodyshield                                  | source_python_files_discovered | pass     | Python source files discovered under root |         98 | >0         |
 | scripts                                     | source_root_exists             | pass     | source root exists                        |       True | True       |
-| scripts                                     | source_python_files_discovered | pass     | Python source files discovered under root |         31 | >0         |
+| scripts                                     | source_python_files_discovered | pass     | Python source files discovered under root |         32 | >0         |
 | tests                                       | source_root_exists             | pass     | source root exists                        |       True | True       |
 | tests                                       | source_python_files_discovered | pass     | Python source files discovered under root |         14 | >0         |
 | bodyshield                                  | bodyshield_modules_discovered  | pass     | importable bodyshield modules discovered  |         95 | >0         |
@@ -126,6 +126,7 @@ This audit checks that every shipped Python source file under `bodyshield/`, `sc
 | scripts/finalize_maxout_artifacts.py        | python_file_py_compile         | pass     | Python source compiles                    |            |            |
 | scripts/finalize_nonrejectable_artifacts.py | python_file_py_compile         | pass     | Python source compiles                    |            |            |
 | scripts/finalize_v2_artifacts.py            | python_file_py_compile         | pass     | Python source compiles                    |            |            |
+| scripts/finalize_v3_artifacts.py            | python_file_py_compile         | pass     | Python source compiles                    |            |            |
 | scripts/run_artifact_inventory_audit.py     | python_file_py_compile         | pass     | Python source compiles                    |            |            |
 | scripts/run_claim_boundary_audit.py         | python_file_py_compile         | pass     | Python source compiles                    |            |            |
 | scripts/run_command_surface_audit.py        | python_file_py_compile         | pass     | Python source compiles                    |            |            |
@@ -134,4 +135,3 @@ This audit checks that every shipped Python source file under `bodyshield/`, `sc
 | scripts/run_derived_results_audit.py        | python_file_py_compile         | pass     | Python source compiles                    |            |            |
 | scripts/run_environment_dependency_audit.py | python_file_py_compile         | pass     | Python source compiles                    |            |            |
 | scripts/run_evidence_consistency_audit.py   | python_file_py_compile         | pass     | Python source compiles                    |            |            |
-| scripts/run_external_policy_benchmark.py    | python_file_py_compile         | pass     | Python source compiles                    |            |            |

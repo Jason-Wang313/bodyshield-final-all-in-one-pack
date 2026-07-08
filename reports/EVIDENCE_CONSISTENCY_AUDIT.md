@@ -7,8 +7,8 @@ This audit scans the main claim, trace, reproducibility, completion, simulation-
 | metric | value |
 |---|---:|
 | audited documents | 7 |
-| references checked | 681 |
-| passing references | 681 |
+| references checked | 599 |
+| passing references | 599 |
 | missing references | 0 |
 
 ## Checked References

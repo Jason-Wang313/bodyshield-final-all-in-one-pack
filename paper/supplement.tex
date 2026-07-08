@@ -1,31 +1,13 @@
-\documentclass[10pt]{article}
+\documentclass{article}
 \usepackage{booktabs}
 \usepackage{url}
-\title{BodyShield Supplementary Material}
+\usepackage{amsmath}
+\title{BodyShield Supplement: Post-Nonhardware Evidence Map}
 \author{Anonymous Authors}
 \begin{document}
 \maketitle
-
 \section{Artifact Map}
-The non-hardware artifact includes source code, analytic-simulation results,
-bounded simulator probes, claim ledgers, and verification reports. The primary
-entry points are \texttt{reports/PACK\_VERIFICATION.md},
-\texttt{reports/claim\_ledger.csv}, and
-\texttt{reports/final\_artifact\_manifest.json}.
-
-\section{Evidence Boundary}
-All current results are analytic-simulation or bounded-probe evidence. Hardware
-noise floor, camera-verifier agreement, reset reliability, and physical
-held-out modification results are pending.
-
-\section{Reproduction Commands}
-\begin{verbatim}
-make smoke
-make test
-make reproduce-minimal
-make reproduce-main-figures
-make paper
-make package-artifacts
-\end{verbatim}
-
+The canonical post-nonhardware audit is \path{reports/POST_NON_HARDWARE_REPO_AUDIT.md}. Hardware blockers are listed in \path{reports/HARDWARE_BLOCKER.md}. External checkpoint blockers are listed in \path{reports/EXTERNAL_CHECKPOINT_BLOCKER.md}. Submission-readiness gates are listed in \path{reports/SUBMISSION_READY_AUDIT.md}.
+\section{Boundary}
+This supplement covers analytic/synthetic and bounded simulator artifacts only. Real robot videos, physical modifications, real-video WAM, and real corrective traces are absent.
 \end{document}

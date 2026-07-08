@@ -1,106 +1,87 @@
 # Initial Repository Audit
 
-Generated: `2026-07-08T01:05:15+00:00`
+Generated: `2026-07-08T02:25:12+00:00`
 
 ## First Command Results
 
 - `git status --short`: `M Makefile
- M README.md
- M bodyshield/analysis/make_figures.py
- M bodyshield/analysis/make_tables.py
- M bodyshield/artifact_inventory_audit.py
- M bodyshield/paper_source_audit.py
+ M README_FIRST.md
+ M bodyshield/analysis/verify_package.py
  M bodyshield/release_bundle.py
- M bodyshield/robot/calibrate_noise_floor.py
- M bodyshield/robot/emergency_stop_monitor.py
- M bodyshield/robot/healthcheck.py
- M bodyshield/robot/run_batch.py
- M bodyshield/robot/safety_gate.py
- M bodyshield/robot/verifier.py
- M bodyshield/safe_robot_runner.py
- M paper/appendix_reviewer_prebuttal.tex
- M paper/bodyshield_icra.pdf
+ M paper/bodyshield.pdf
+ M paper/main.pdf
  M paper/main.tex
- M paper/references.bib
- M paper/supplement.pdf
- M reports/CITATION_VERIFICATION_TABLE.md
- M reports/CLAIM_LEDGER.md
- M reports/COMMAND_SURFACE_AUDIT.md
+ M paper/supplement.tex
+ M release/RELEASE_BUNDLE_CHECKSUMS.txt
+ M release/RELEASE_BUNDLE_MANIFEST.csv
+ M release/RELEASE_README.md
+ M release/bodyshield_non_hardware_release.zip
+ M reports/ARTIFACT_INVENTORY_AUDIT.md
+ M reports/ARTIFACT_MANIFEST.csv
+ M reports/ARTIFACT_MANIFEST.md
+ M reports/NOT_READY_REASON.md
+ M reports/PACK_VERIFICATION.json
+ M reports/PACK_VERIFICATION.md
  M reports/PAPER_SOURCE_AUDIT.md
+ M reports/PORTABLE_HYGIENE_AUDIT.md
+ M reports/RELEASE_BUNDLE.md
+ M reports/RELEASE_DETERMINISM_AUDIT.md
+ M reports/RELEASE_PAYLOAD_AUDIT.md
+ M reports/RELEASE_RUNTIME_AUDIT.md
+ M reports/RESULTS_INTEGRITY_AUDIT.md
  M reports/SOURCE_IMPORT_AUDIT.md
- M reports/claim_ledger.csv
- M reports/final_artifact_manifest.json
- M reports/final_artifact_manifest_nonhardware.json
- M reports/final_reviewer_prebuttal.md
- M reports/final_submission_readiness_report.md
- M reports/final_video_index.md
  M reports/hardware_noise_floor.md
- M reports/prior_work_comparison_table.csv
- M reports/repo_gap_audit.md
- M reports/reviewer_prebuttal.md
- M reports/submission_readiness_gate.md
- M results/command_surface_audit.csv
+ M results/artifact_inventory_audit.csv
  M results/paper_source_audit.csv
+ M results/portable_hygiene_audit.csv
+ M results/release_determinism_audit.csv
+ M results/release_payload_audit.csv
+ M results/release_runtime_audit.csv
+ M results/results_integrity_audit.csv
  M results/source_import_audit.csv
- M scripts/build_paper_targets.py
- M scripts/finalize_nonrejectable_artifacts.py
- M scripts/run_non_hardware.py
- M scripts/verify_citations.py
- M tables/oracle_feasibility.csv
- M videos/video_index.md
-?? REPRODUCE.md
-?? bodyshield/_legacy.py
-?? bodyshield/analysis/claim_ledger.py
-?? bodyshield/analysis/plots.py
-?? bodyshield/analysis/stats.py
-?? bodyshield/analysis/tables.py
-?? bodyshield/analysis/verify_package.py
-?? bodyshield/analysis/videos.py
-?? bodyshield/core/
-?? bodyshield/paper/build.py
-?? bodyshield/policies/
-?? bodyshield/robot/audit_labels.py
-?? bodyshield/robot/reset_check.py
-?? bodyshield/sim/
-?? figures/bodybreak_search_efficiency.png
-?? figures/bodyshield_before_after.png
-?? figures/budget_matched_comparison.png
-?? figures/epec_stress_test.png
-?? figures/heldout_perturbation_success.png
-?? figures/nominal_vs_radius_scatter.png
-?? figures/robustness_profiles.png
-?? figures/threshold_sensitivity.png
-?? logs/sim/
-?? paper/appendix_claim_ledger.tex
-?? paper/bodyshield.pdf
-?? reports/baseline_fairness.md
-?? reports/citation_verification.md
-?? reports/conservatism_analysis.md
-?? reports/gate_1_domain_randomization.md
-?? reports/gate_2_before_after_repair.md
-?? reports/heldout_generalization.md
-?? reports/heldout_physical_modifications.md
-?? reports/initial_repo_audit.md
-?? reports/oracle_feasibility.md
-?? reports/prior_work_hardening.md
-?? reports/verifier_audit.md
-?? requirements.txt
-?? scripts/finalize_v2_artifacts.py
-?? tables/sim_budget_matched_results.csv
-?? tables/sim_heldout_results.csv
-?? tables/sim_main_results.csv
-?? tests/test_bodybreak.py
-?? tests/test_claim_ledger.py
-?? tests/test_robot_safety_gate.py
-?? tests/test_schema.py
-?? tests/test_verifier_logic.py
-?? videos/failure_recovery.md
-?? videos/heldout_physical_mods.md
-?? videos/index.md
-?? videos/oracle_feasibility.md
-?? videos/teaser_successes.md`
+ M results/trials_sample.jsonl
+?? figures/external_policy_bodyshield_delta.pdf
+?? figures/hardware_before_after_repair.pdf
+?? figures/hardware_bodybreak_search_efficiency.pdf
+?? figures/hardware_heldout_success.pdf
+?? figures/hardware_noise_floor.pdf
+?? figures/high_fidelity_heldout_success.pdf
+?? paper/bodyshield_full_paper.pdf
+?? paper/bodyshield_supplement.pdf
+?? reports/CORRECTIVE_TRACE_RESULTS.md
+?? reports/EXTERNAL_CHECKPOINT_BLOCKER.md
+?? reports/EXTERNAL_POLICY_BENCHMARK.md
+?? reports/FULL_REVIEWER_PREBUTTAL.md
+?? reports/HARDWARE_BLOCKER.md
+?? reports/HARDWARE_BODYBREAK_SEARCH.md
+?? reports/HARDWARE_BODYSHIELD_REPAIR.md
+?? reports/HARDWARE_HELDOUT_PHYSICAL_MODS.md
+?? reports/HARDWARE_ORACLE_FEASIBILITY.md
+?? reports/HARDWARE_READINESS_AUDIT.md
+?? reports/HIGH_FIDELITY_POLICY_RESULTS.md
+?? reports/METHOD_THEORY_STRENGTHENING.md
+?? reports/POST_NON_HARDWARE_ARTIFACT_MANIFEST.json
+?? reports/POST_NON_HARDWARE_REPO_AUDIT.md
+?? reports/POST_NON_HARDWARE_V3_RUN_LOG.md
+?? reports/REAL_VIDEO_WAM_RESULTS.md
+?? reports/SUBMISSION_READY_AUDIT.md
+?? results/corrective_trace_results.csv
+?? results/external_policy_benchmark.csv
+?? results/hardware_bodybreak_search.csv
+?? results/hardware_bodyshield_repair.csv
+?? results/hardware_heldout_physical_mods.csv
+?? results/hardware_noise_floor.csv
+?? results/hardware_oracle_feasibility.csv
+?? results/hardware_readiness.csv
+?? results/high_fidelity_policy_results.csv
+?? results/real_video_wam_results.csv
+?? results/reset_reliability.csv
+?? results/submission_ready_audit.csv
+?? results/verifier_calibration.csv
+?? scripts/finalize_v3_artifacts.py
+?? videos/hardware/`
 - Python: `Python 3.10.11`
-- File count discovered by recursive local listing: `1794`
+- File count discovered by recursive local listing: `1836`
 
 ## What Exists
 

@@ -6,7 +6,7 @@
       "status": "pass"
     },
     {
-      "detail": "rows=272; code_version=6b11b18147624edb; hashes and required rows match",
+      "detail": "rows=312; code_version=212b65210a58a1ce; hashes and required rows match",
       "name": "artifact_manifest",
       "status": "pass"
     },
@@ -46,12 +46,12 @@
       "status": "pass"
     },
     {
-      "detail": "payload_files=432; zip_bytes=15371661; zip_sha256=41152158a8ded9f57f1fc6a18118845e0960bb452f946a8086ba573d624025e8",
+      "detail": "payload_files=473; zip_bytes=15341205; zip_sha256=b8cf762e35662e0f9b9de0c703a3db5581a5be4e623587f0e20e9c737776161c",
       "name": "release_bundle",
       "status": "pass"
     },
     {
-      "detail": "rows=681; documents=7; all referenced local evidence exists",
+      "detail": "rows=599; documents=7; all referenced local evidence exists",
       "name": "evidence_consistency",
       "status": "pass"
     },
@@ -71,12 +71,12 @@
       "status": "pass"
     },
     {
-      "detail": "checks=301; artifacts=51; generated tables pass integrity checks",
+      "detail": "checks=353; artifacts=64; generated tables pass integrity checks",
       "name": "results_integrity_audit",
       "status": "pass"
     },
     {
-      "detail": "checks=293; artifacts=240; source compile/import and hardware-stub safety pass",
+      "detail": "checks=295; artifacts=241; source compile/import and hardware-stub safety pass",
       "name": "source_import_audit",
       "status": "pass"
     },
@@ -126,12 +126,12 @@
       "status": "pass"
     },
     {
-      "detail": "no stale downgrade phrases in 291 text files",
+      "detail": "no stale downgrade phrases in 309 text files",
       "name": "stale_phrases",
       "status": "pass"
     }
   ],
-  "code_version": "6b11b18147624edb",
+  "code_version": "212b65210a58a1ce",
   "manifest_note": "PACK_VERIFICATION, ARTIFACT_INVENTORY_AUDIT, PORTABLE_HYGIENE_AUDIT, RELEASE_PAYLOAD_AUDIT, RELEASE_DETERMINISM_AUDIT, and RELEASE_RUNTIME_AUDIT reports are excluded from ARTIFACT_MANIFEST to avoid self-referential hash churn.",
   "status": "pass"
 }

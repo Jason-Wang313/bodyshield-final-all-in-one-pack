@@ -1,0 +1,337 @@
+engine,task_id,method_id,perturbation_family,n,success_rate,mean_final_progress,mean_final_error,evidence_scope,notes
+mujoco,push_block_probe,nominal,nominal,4.0,1.0,0.0398599381214726,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,push_block_probe,nominal,latency,4.0,1.0,0.030739342711868,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,push_block_probe,nominal,action_noise,4.0,0.0,0.0292020656074803,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,push_block_probe,nominal,speed_accel_cap,4.0,0.0,0.0057270026036598,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,push_block_probe,nominal,payload,4.0,0.0,0.0241035552479141,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,push_block_probe,nominal,obstacle,4.0,0.0,0.0260007126192234,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,push_block_probe,nominal,compound,4.0,0.0,0.0171468975141244,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,push_block_probe,domain_randomization,nominal,4.0,1.0,0.0398599381214726,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,push_block_probe,domain_randomization,latency,4.0,1.0,0.0323846415542706,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,push_block_probe,domain_randomization,action_noise,4.0,1.0,0.0309099508384885,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,push_block_probe,domain_randomization,speed_accel_cap,4.0,0.0,0.0065011642291024,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,push_block_probe,domain_randomization,payload,4.0,0.0,0.0246091520831657,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,push_block_probe,domain_randomization,obstacle,4.0,0.0,0.0273297267538724,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,push_block_probe,domain_randomization,compound,4.0,0.0,0.0193639294245111,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,push_block_probe,bodyshield,nominal,4.0,1.0,0.0398599381214726,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,push_block_probe,bodyshield,latency,4.0,1.0,0.0329626855461122,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,push_block_probe,bodyshield,action_noise,4.0,1.0,0.0326813776472127,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,push_block_probe,bodyshield,speed_accel_cap,4.0,0.0,0.0068024348185695,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,push_block_probe,bodyshield,payload,4.0,0.0,0.0256422959273646,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,push_block_probe,bodyshield,obstacle,4.0,0.0,0.0288864762585427,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,push_block_probe,bodyshield,compound,4.0,0.0,0.0206176864234441,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,push_block_probe,oracle,nominal,4.0,1.0,0.0398599381214726,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,push_block_probe,oracle,latency,4.0,1.0,0.0359590459747834,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,push_block_probe,oracle,action_noise,4.0,1.0,0.0362066513569527,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,push_block_probe,oracle,speed_accel_cap,4.0,0.0,0.0086803001135611,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,push_block_probe,oracle,payload,4.0,0.0,0.0276778908359534,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,push_block_probe,oracle,obstacle,4.0,1.0,0.0331215412266307,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,push_block_probe,oracle,compound,4.0,0.0,0.0266123232927516,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,press_button_probe,nominal,nominal,4.0,1.0,0.0178725419419713,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,press_button_probe,nominal,latency,4.0,1.0,0.0133956330252868,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,press_button_probe,nominal,action_noise,4.0,0.5,0.0131061693014634,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,press_button_probe,nominal,speed_accel_cap,4.0,0.0,0.0025678939571797,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,press_button_probe,nominal,payload,4.0,0.0,0.0107126647592795,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,press_button_probe,nominal,obstacle,4.0,0.0,0.0120491195924994,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,press_button_probe,nominal,compound,4.0,0.0,0.0074707278850631,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,press_button_probe,domain_randomization,nominal,4.0,1.0,0.0178725419419713,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,press_button_probe,domain_randomization,latency,4.0,1.0,0.0141126236166713,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,press_button_probe,domain_randomization,action_noise,4.0,1.0,0.014299989334854,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,press_button_probe,domain_randomization,speed_accel_cap,4.0,0.0,0.0029150153219551,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,press_button_probe,domain_randomization,payload,4.0,0.0,0.0109373739087679,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,press_button_probe,domain_randomization,obstacle,4.0,0.0,0.0126650046446909,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,press_button_probe,domain_randomization,compound,4.0,0.0,0.0086149005691723,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,press_button_probe,bodyshield,nominal,4.0,1.0,0.0178725419419713,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,press_button_probe,bodyshield,latency,4.0,1.0,0.0143645244220907,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,press_button_probe,bodyshield,action_noise,4.0,1.0,0.014759366030691,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,press_button_probe,bodyshield,speed_accel_cap,4.0,0.0,0.0030501001088337,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,press_button_probe,bodyshield,payload,4.0,0.0,0.0113965478164001,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,press_button_probe,bodyshield,obstacle,4.0,1.0,0.0133864256777232,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,press_button_probe,bodyshield,compound,4.0,0.0,0.008993824809172,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,press_button_probe,oracle,nominal,4.0,1.0,0.0178725419419713,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,press_button_probe,oracle,latency,4.0,1.0,0.0156702824888849,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,press_button_probe,oracle,action_noise,4.0,1.0,0.0163410582846101,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,press_button_probe,oracle,speed_accel_cap,4.0,0.0,0.0038921040814397,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,press_button_probe,oracle,payload,4.0,0.0,0.0123012544298901,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,press_button_probe,oracle,obstacle,4.0,1.0,0.0153490182046976,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,press_button_probe,oracle,compound,4.0,0.0,0.0115910315109077,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,slide_track_probe,nominal,nominal,4.0,1.0,0.0438084289467234,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,slide_track_probe,nominal,latency,4.0,1.0,0.0339379198299156,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,slide_track_probe,nominal,action_noise,4.0,0.0,0.0318645180670679,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,slide_track_probe,nominal,speed_accel_cap,4.0,0.0,0.0062943145038395,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,slide_track_probe,nominal,payload,4.0,0.0,0.0265487427675727,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,slide_track_probe,nominal,obstacle,4.0,0.0,0.0283493963045559,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,slide_track_probe,nominal,compound,4.0,0.0,0.0188075195204115,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,slide_track_probe,domain_randomization,nominal,4.0,1.0,0.0438084289467234,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,slide_track_probe,domain_randomization,latency,4.0,1.0,0.0357544199656895,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,slide_track_probe,domain_randomization,action_noise,4.0,1.0,0.0343919004975706,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,slide_track_probe,domain_randomization,speed_accel_cap,4.0,0.0,0.0071451639070203,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,slide_track_probe,domain_randomization,payload,4.0,0.0,0.0271056299232282,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,slide_track_probe,domain_randomization,obstacle,4.0,0.0,0.0297984622955266,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,slide_track_probe,domain_randomization,compound,4.0,0.0,0.021559780323263,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,slide_track_probe,bodyshield,nominal,4.0,1.0,0.0438084289467234,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,slide_track_probe,bodyshield,latency,4.0,1.0,0.0363926122275465,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,slide_track_probe,bodyshield,action_noise,4.0,1.0,0.0365608974817053,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,slide_track_probe,bodyshield,speed_accel_cap,4.0,0.0,0.0074762780992247,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,slide_track_probe,bodyshield,payload,4.0,0.0,0.0282435811457521,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,slide_track_probe,bodyshield,obstacle,4.0,0.0,0.0314958353368405,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,slide_track_probe,bodyshield,compound,4.0,0.0,0.0230545764635456,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,slide_track_probe,oracle,nominal,4.0,1.0,0.0438084289467234,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,slide_track_probe,oracle,latency,4.0,1.0,0.0397007584349315,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,slide_track_probe,oracle,action_noise,4.0,1.0,0.0399554823844164,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,slide_track_probe,oracle,speed_accel_cap,4.0,0.0,0.009540163098154,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,slide_track_probe,oracle,payload,4.0,0.0,0.0304856771789412,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,slide_track_probe,oracle,obstacle,4.0,1.0,0.0361134601271357,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,slide_track_probe,oracle,compound,4.0,0.0,0.0294183984439498,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,pick_place_bin_probe,nominal,nominal,4.0,1.0,0.0250051730226374,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,pick_place_bin_probe,nominal,latency,4.0,1.0,0.0190611324377579,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,pick_place_bin_probe,nominal,action_noise,4.0,0.25,0.0185068879230388,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,pick_place_bin_probe,nominal,speed_accel_cap,4.0,0.0,0.0035926972733674,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,pick_place_bin_probe,nominal,payload,4.0,0.0,0.0150546611441327,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,pick_place_bin_probe,nominal,obstacle,4.0,0.0,0.0165784402604433,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,pick_place_bin_probe,nominal,compound,4.0,0.0,0.0107103006449102,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,pick_place_bin_probe,domain_randomization,nominal,4.0,1.0,0.0250051730226374,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,pick_place_bin_probe,domain_randomization,latency,4.0,1.0,0.0200813643740321,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,pick_place_bin_probe,domain_randomization,action_noise,4.0,1.0,0.0201499648274298,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,pick_place_bin_probe,domain_randomization,speed_accel_cap,4.0,0.0,0.0040783489402788,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,pick_place_bin_probe,domain_randomization,payload,4.0,0.0,0.0153704481287485,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,pick_place_bin_probe,domain_randomization,obstacle,4.0,0.0,0.0174258393975067,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,pick_place_bin_probe,domain_randomization,compound,4.0,0.0,0.0123086020256689,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,pick_place_bin_probe,bodyshield,nominal,4.0,1.0,0.0250051730226374,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,pick_place_bin_probe,bodyshield,latency,4.0,1.0,0.0204398031730208,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,pick_place_bin_probe,bodyshield,action_noise,4.0,1.0,0.0209033996106657,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,pick_place_bin_probe,bodyshield,speed_accel_cap,4.0,0.0,0.004267343795045,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,pick_place_bin_probe,bodyshield,payload,4.0,0.0,0.0160157317944811,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,pick_place_bin_probe,bodyshield,obstacle,4.0,0.0,0.0184184459864727,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,pick_place_bin_probe,bodyshield,compound,4.0,0.0,0.012906749073178,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,pick_place_bin_probe,oracle,nominal,4.0,1.0,0.0250051730226374,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,pick_place_bin_probe,oracle,latency,4.0,1.0,0.0222978137198796,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,pick_place_bin_probe,oracle,action_noise,4.0,1.0,0.0227427878014227,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,pick_place_bin_probe,oracle,speed_accel_cap,4.0,0.0,0.0054453774004001,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,pick_place_bin_probe,oracle,payload,4.0,0.0,0.0172871289498106,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,pick_place_bin_probe,oracle,obstacle,4.0,1.0,0.0211187862656323,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,pick_place_bin_probe,oracle,compound,4.0,0.0,0.0163716876802402,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,pull_ring_probe,nominal,nominal,4.0,1.0,0.0279898281687321,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,pull_ring_probe,nominal,latency,4.0,1.0,0.0214710412186659,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,pull_ring_probe,nominal,action_noise,4.0,0.75,0.0209403769169404,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,pull_ring_probe,nominal,speed_accel_cap,4.0,0.0,0.0040215270357373,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,pull_ring_probe,nominal,payload,4.0,0.0,0.016888704653237,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,pull_ring_probe,nominal,obstacle,4.0,0.0,0.0184059369717847,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,pull_ring_probe,nominal,compound,4.0,0.0,0.01215871297607,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,pull_ring_probe,domain_randomization,nominal,4.0,1.0,0.0279898281687321,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,pull_ring_probe,domain_randomization,latency,4.0,1.0,0.0226202616035445,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,pull_ring_probe,domain_randomization,action_noise,4.0,1.0,0.02212988159165,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,pull_ring_probe,domain_randomization,speed_accel_cap,4.0,0.0,0.0045651468177081,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,pull_ring_probe,domain_randomization,payload,4.0,0.0,0.0172429625847476,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,pull_ring_probe,domain_randomization,obstacle,4.0,0.0,0.0193467477393663,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,pull_ring_probe,domain_randomization,compound,4.0,0.0,0.0136373900829061,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,pull_ring_probe,bodyshield,nominal,4.0,1.0,0.0279898281687321,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,pull_ring_probe,bodyshield,latency,4.0,1.0,0.0230240180043033,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,pull_ring_probe,bodyshield,action_noise,4.0,1.0,0.0234033216818377,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,pull_ring_probe,bodyshield,speed_accel_cap,4.0,0.0,0.00477670038324,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,pull_ring_probe,bodyshield,payload,4.0,0.0,0.0179668583366198,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,pull_ring_probe,bodyshield,obstacle,4.0,0.0,0.0204487726601231,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,pull_ring_probe,bodyshield,compound,4.0,0.0,0.014555159160864,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,pull_ring_probe,oracle,nominal,4.0,1.0,0.0279898281687321,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,pull_ring_probe,oracle,latency,4.0,1.0,0.0251169377805332,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,pull_ring_probe,oracle,action_noise,4.0,1.0,0.0259526559801868,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,pull_ring_probe,oracle,speed_accel_cap,4.0,0.0,0.0060953458555601,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,pull_ring_probe,oracle,payload,4.0,0.0,0.0193931442455322,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,pull_ring_probe,oracle,obstacle,4.0,1.0,0.0234467804461254,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,pull_ring_probe,oracle,compound,4.0,0.0,0.018635439081496,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,constrained_place_probe,nominal,nominal,4.0,1.0,0.0223730495465703,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,constrained_place_probe,nominal,latency,4.0,1.0,0.0170546974443097,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,constrained_place_probe,nominal,action_noise,4.0,0.25,0.0166866853126405,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,constrained_place_probe,nominal,speed_accel_cap,4.0,0.0,0.0032145186130129,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,constrained_place_probe,nominal,payload,4.0,0.0,0.0134699599710661,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,constrained_place_probe,nominal,obstacle,4.0,0.0,0.0148333412856598,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,constrained_place_probe,nominal,compound,4.0,0.0,0.0096294922523669,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,constrained_place_probe,domain_randomization,nominal,4.0,1.0,0.0223730495465703,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,constrained_place_probe,domain_randomization,latency,4.0,1.0,0.0179675365451866,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,constrained_place_probe,domain_randomization,action_noise,4.0,1.0,0.0177591383179456,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,constrained_place_probe,domain_randomization,speed_accel_cap,4.0,0.0,0.0036490490518284,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,constrained_place_probe,domain_randomization,payload,4.0,0.0,0.0137525062204592,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,constrained_place_probe,domain_randomization,obstacle,4.0,0.0,0.0155915405135587,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,constrained_place_probe,domain_randomization,compound,4.0,0.0,0.010875283899867,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,constrained_place_probe,bodyshield,nominal,4.0,1.0,0.0223730495465703,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,constrained_place_probe,bodyshield,latency,4.0,1.0,0.0182882449442817,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,constrained_place_probe,bodyshield,action_noise,4.0,1.0,0.0182844823059931,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,constrained_place_probe,bodyshield,speed_accel_cap,4.0,0.0,0.003818149711356,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,constrained_place_probe,bodyshield,payload,4.0,0.0,0.0143298652897989,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,constrained_place_probe,bodyshield,obstacle,4.0,0.0,0.0164796621984229,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,constrained_place_probe,bodyshield,compound,4.0,0.0,0.0113286426414221,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,constrained_place_probe,oracle,nominal,4.0,1.0,0.0223730495465703,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,constrained_place_probe,oracle,latency,4.0,1.0,0.0199506754335765,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,constrained_place_probe,oracle,action_noise,4.0,1.0,0.0207661436456472,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,constrained_place_probe,oracle,speed_accel_cap,4.0,0.0,0.0048721797793053,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,constrained_place_probe,oracle,payload,4.0,0.0,0.01546743116562,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,constrained_place_probe,oracle,obstacle,4.0,1.0,0.0188957561324079,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,constrained_place_probe,oracle,compound,4.0,0.0,0.014780628146679,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,tool_push_probe,nominal,nominal,4.0,1.0,0.0362363073831569,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,tool_push_probe,nominal,latency,4.0,1.0,0.0279448570107891,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,tool_push_probe,nominal,action_noise,4.0,0.75,0.0269753415755851,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,tool_push_probe,nominal,speed_accel_cap,4.0,0.0,0.0052063660033271,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,tool_push_probe,nominal,payload,4.0,0.0,0.0219123229526492,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,tool_push_probe,nominal,obstacle,4.0,0.0,0.0236370114720213,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,tool_push_probe,nominal,compound,4.0,0.0,0.0157778821973012,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,tool_push_probe,domain_randomization,nominal,4.0,1.0,0.0362363073831569,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,tool_push_probe,domain_randomization,latency,4.0,1.0,0.0294405832311551,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,tool_push_probe,domain_randomization,action_noise,4.0,1.0,0.0286281075881583,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,tool_push_probe,domain_randomization,speed_accel_cap,4.0,0.0,0.005910149299184,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,tool_push_probe,domain_randomization,payload,4.0,0.0,0.0223719564392416,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,tool_push_probe,domain_randomization,obstacle,4.0,0.0,0.024845206139884,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,tool_push_probe,domain_randomization,compound,4.0,0.0,0.0177864911165596,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,tool_push_probe,bodyshield,nominal,4.0,1.0,0.0362363073831569,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,tool_push_probe,bodyshield,latency,4.0,1.0,0.0299660777691929,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,tool_push_probe,bodyshield,action_noise,4.0,1.0,0.0301671422434246,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,tool_push_probe,bodyshield,speed_accel_cap,4.0,0.0,0.006184031653245,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,tool_push_probe,bodyshield,payload,4.0,0.0,0.023311178115786,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,tool_push_probe,bodyshield,obstacle,4.0,0.0,0.0262604329623115,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,tool_push_probe,bodyshield,compound,4.0,0.0,0.0189271630986396,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,tool_push_probe,oracle,nominal,4.0,1.0,0.0362363073831569,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,tool_push_probe,oracle,latency,4.0,1.0,0.0326900417952577,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,tool_push_probe,oracle,action_noise,4.0,1.0,0.0333398240509925,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,tool_push_probe,oracle,speed_accel_cap,4.0,0.0,0.0078911819214191,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,tool_push_probe,oracle,payload,4.0,0.0,0.0251617189417758,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,tool_push_probe,oracle,obstacle,4.0,1.0,0.0301104920242097,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,tool_push_probe,oracle,compound,4.0,0.0,0.0242359126051633,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,rotate_object_probe,nominal,nominal,4.0,1.0,0.0873213096152382,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,rotate_object_probe,nominal,latency,4.0,1.0,0.0873167746486747,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,rotate_object_probe,nominal,action_noise,4.0,1.0,0.0873104130710829,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,rotate_object_probe,nominal,speed_accel_cap,4.0,0.0,0.0439698216213932,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,rotate_object_probe,nominal,payload,4.0,1.0,0.0873177255665809,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,rotate_object_probe,nominal,obstacle,4.0,1.0,0.0873116442782202,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,rotate_object_probe,nominal,compound,4.0,1.0,0.0872944195220265,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,rotate_object_probe,domain_randomization,nominal,4.0,1.0,0.0873213096152382,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,rotate_object_probe,domain_randomization,latency,4.0,1.0,0.0873194496239119,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,rotate_object_probe,domain_randomization,action_noise,4.0,1.0,0.0873121397378278,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,rotate_object_probe,domain_randomization,speed_accel_cap,4.0,0.0,0.0499135501182308,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,rotate_object_probe,domain_randomization,payload,4.0,1.0,0.0873187937664336,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,rotate_object_probe,domain_randomization,obstacle,4.0,1.0,0.0873137765103938,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,rotate_object_probe,domain_randomization,compound,4.0,1.0,0.0872970744567254,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,rotate_object_probe,bodyshield,nominal,4.0,1.0,0.0873213096152382,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,rotate_object_probe,bodyshield,latency,4.0,1.0,0.0873203887731496,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,rotate_object_probe,bodyshield,action_noise,4.0,1.0,0.0873158209711957,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,rotate_object_probe,bodyshield,speed_accel_cap,4.0,0.0,0.0522265950032072,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,rotate_object_probe,bodyshield,payload,4.0,1.0,0.0873209751722742,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,rotate_object_probe,bodyshield,obstacle,4.0,1.0,0.0873164156867413,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,rotate_object_probe,bodyshield,compound,4.0,1.0,0.0873018327761033,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,rotate_object_probe,oracle,nominal,4.0,1.0,0.0873213096152382,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,rotate_object_probe,oracle,latency,4.0,1.0,0.0873213096154432,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,rotate_object_probe,oracle,action_noise,4.0,1.0,0.0873181208383911,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,rotate_object_probe,oracle,speed_accel_cap,4.0,1.0,0.0666441547223206,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,rotate_object_probe,oracle,payload,4.0,1.0,0.0873210206199699,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,rotate_object_probe,oracle,obstacle,4.0,1.0,0.0873213105410569,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco,rotate_object_probe,oracle,compound,4.0,1.0,0.0873091538565385,nan,bounded_mujoco_probe,Bounded MuJoCo 1-DOF task-shaped dynamics probe; not a full robot benchmark.
+mujoco_planar,planar_reach_left,nominal,nominal,4.0,1.0,nan,0.0886621478441434,bounded_mujoco_planar_probe,Bounded MuJoCo 2-DOF closed-loop planar end-effector probe; not a full robot benchmark.
+mujoco_planar,planar_reach_left,nominal,latency,4.0,0.0,nan,0.1389230903163507,bounded_mujoco_planar_probe,Bounded MuJoCo 2-DOF closed-loop planar end-effector probe; not a full robot benchmark.
+mujoco_planar,planar_reach_left,nominal,action_noise,4.0,0.25,nan,0.1339344052975391,bounded_mujoco_planar_probe,Bounded MuJoCo 2-DOF closed-loop planar end-effector probe; not a full robot benchmark.
+mujoco_planar,planar_reach_left,nominal,joint_range,4.0,0.0,nan,0.1449161222485317,bounded_mujoco_planar_probe,Bounded MuJoCo 2-DOF closed-loop planar end-effector probe; not a full robot benchmark.
+mujoco_planar,planar_reach_left,nominal,speed_accel_cap,4.0,0.0,nan,0.2657085745334558,bounded_mujoco_planar_probe,Bounded MuJoCo 2-DOF closed-loop planar end-effector probe; not a full robot benchmark.
+mujoco_planar,planar_reach_left,nominal,payload,4.0,0.0,nan,0.1759287253737045,bounded_mujoco_planar_probe,Bounded MuJoCo 2-DOF closed-loop planar end-effector probe; not a full robot benchmark.
+mujoco_planar,planar_reach_left,nominal,compound,4.0,0.0,nan,0.1803609443195142,bounded_mujoco_planar_probe,Bounded MuJoCo 2-DOF closed-loop planar end-effector probe; not a full robot benchmark.
+mujoco_planar,planar_reach_left,domain_randomization,nominal,4.0,1.0,nan,0.0886621478441434,bounded_mujoco_planar_probe,Bounded MuJoCo 2-DOF closed-loop planar end-effector probe; not a full robot benchmark.
+mujoco_planar,planar_reach_left,domain_randomization,latency,4.0,0.0,nan,0.132145177111818,bounded_mujoco_planar_probe,Bounded MuJoCo 2-DOF closed-loop planar end-effector probe; not a full robot benchmark.
+mujoco_planar,planar_reach_left,domain_randomization,action_noise,4.0,0.25,nan,0.1424142260239998,bounded_mujoco_planar_probe,Bounded MuJoCo 2-DOF closed-loop planar end-effector probe; not a full robot benchmark.
+mujoco_planar,planar_reach_left,domain_randomization,joint_range,4.0,0.0,nan,0.1321889159941205,bounded_mujoco_planar_probe,Bounded MuJoCo 2-DOF closed-loop planar end-effector probe; not a full robot benchmark.
+mujoco_planar,planar_reach_left,domain_randomization,speed_accel_cap,4.0,0.0,nan,0.2617799730629911,bounded_mujoco_planar_probe,Bounded MuJoCo 2-DOF closed-loop planar end-effector probe; not a full robot benchmark.
+mujoco_planar,planar_reach_left,domain_randomization,payload,4.0,0.0,nan,0.173845966486877,bounded_mujoco_planar_probe,Bounded MuJoCo 2-DOF closed-loop planar end-effector probe; not a full robot benchmark.
+mujoco_planar,planar_reach_left,domain_randomization,compound,4.0,0.0,nan,0.176448155440048,bounded_mujoco_planar_probe,Bounded MuJoCo 2-DOF closed-loop planar end-effector probe; not a full robot benchmark.
+mujoco_planar,planar_reach_left,bodyshield,nominal,4.0,1.0,nan,0.0886621478441434,bounded_mujoco_planar_probe,Bounded MuJoCo 2-DOF closed-loop planar end-effector probe; not a full robot benchmark.
+mujoco_planar,planar_reach_left,bodyshield,latency,4.0,0.0,nan,0.1298038962613857,bounded_mujoco_planar_probe,Bounded MuJoCo 2-DOF closed-loop planar end-effector probe; not a full robot benchmark.
+mujoco_planar,planar_reach_left,bodyshield,action_noise,4.0,0.25,nan,0.1133719183660175,bounded_mujoco_planar_probe,Bounded MuJoCo 2-DOF closed-loop planar end-effector probe; not a full robot benchmark.
+mujoco_planar,planar_reach_left,bodyshield,joint_range,4.0,0.0,nan,0.1175256462389438,bounded_mujoco_planar_probe,Bounded MuJoCo 2-DOF closed-loop planar end-effector probe; not a full robot benchmark.
+mujoco_planar,planar_reach_left,bodyshield,speed_accel_cap,4.0,0.0,nan,0.2602894776186835,bounded_mujoco_planar_probe,Bounded MuJoCo 2-DOF closed-loop planar end-effector probe; not a full robot benchmark.
+mujoco_planar,planar_reach_left,bodyshield,payload,4.0,0.0,nan,0.1696448794176014,bounded_mujoco_planar_probe,Bounded MuJoCo 2-DOF closed-loop planar end-effector probe; not a full robot benchmark.
+mujoco_planar,planar_reach_left,bodyshield,compound,4.0,0.0,nan,0.1541939615755667,bounded_mujoco_planar_probe,Bounded MuJoCo 2-DOF closed-loop planar end-effector probe; not a full robot benchmark.
+mujoco_planar,planar_reach_left,oracle,nominal,4.0,1.0,nan,0.0886621478441434,bounded_mujoco_planar_probe,Bounded MuJoCo 2-DOF closed-loop planar end-effector probe; not a full robot benchmark.
+mujoco_planar,planar_reach_left,oracle,latency,4.0,0.0,nan,0.1180014384828446,bounded_mujoco_planar_probe,Bounded MuJoCo 2-DOF closed-loop planar end-effector probe; not a full robot benchmark.
+mujoco_planar,planar_reach_left,oracle,action_noise,4.0,0.75,nan,0.0976363804612836,bounded_mujoco_planar_probe,Bounded MuJoCo 2-DOF closed-loop planar end-effector probe; not a full robot benchmark.
+mujoco_planar,planar_reach_left,oracle,joint_range,4.0,1.0,nan,0.102458889810065,bounded_mujoco_planar_probe,Bounded MuJoCo 2-DOF closed-loop planar end-effector probe; not a full robot benchmark.
+mujoco_planar,planar_reach_left,oracle,speed_accel_cap,4.0,0.0,nan,0.2514516426786641,bounded_mujoco_planar_probe,Bounded MuJoCo 2-DOF closed-loop planar end-effector probe; not a full robot benchmark.
+mujoco_planar,planar_reach_left,oracle,payload,4.0,0.0,nan,0.1615783834657007,bounded_mujoco_planar_probe,Bounded MuJoCo 2-DOF closed-loop planar end-effector probe; not a full robot benchmark.
+mujoco_planar,planar_reach_left,oracle,compound,4.0,0.0,nan,0.1300203799983352,bounded_mujoco_planar_probe,Bounded MuJoCo 2-DOF closed-loop planar end-effector probe; not a full robot benchmark.
+mujoco_planar,planar_reach_right,nominal,nominal,4.0,1.0,nan,0.0788540051856481,bounded_mujoco_planar_probe,Bounded MuJoCo 2-DOF closed-loop planar end-effector probe; not a full robot benchmark.
+mujoco_planar,planar_reach_right,nominal,latency,4.0,0.0,nan,0.1330399376993426,bounded_mujoco_planar_probe,Bounded MuJoCo 2-DOF closed-loop planar end-effector probe; not a full robot benchmark.
+mujoco_planar,planar_reach_right,nominal,action_noise,4.0,0.0,nan,0.1366053047055885,bounded_mujoco_planar_probe,Bounded MuJoCo 2-DOF closed-loop planar end-effector probe; not a full robot benchmark.
+mujoco_planar,planar_reach_right,nominal,joint_range,4.0,0.0,nan,0.1392863327378225,bounded_mujoco_planar_probe,Bounded MuJoCo 2-DOF closed-loop planar end-effector probe; not a full robot benchmark.
+mujoco_planar,planar_reach_right,nominal,speed_accel_cap,4.0,0.0,nan,0.2626805028558478,bounded_mujoco_planar_probe,Bounded MuJoCo 2-DOF closed-loop planar end-effector probe; not a full robot benchmark.
+mujoco_planar,planar_reach_right,nominal,payload,4.0,0.0,nan,0.1713210915550573,bounded_mujoco_planar_probe,Bounded MuJoCo 2-DOF closed-loop planar end-effector probe; not a full robot benchmark.
+mujoco_planar,planar_reach_right,nominal,compound,4.0,0.0,nan,0.1803584639979103,bounded_mujoco_planar_probe,Bounded MuJoCo 2-DOF closed-loop planar end-effector probe; not a full robot benchmark.
+mujoco_planar,planar_reach_right,domain_randomization,nominal,4.0,1.0,nan,0.0788540051856481,bounded_mujoco_planar_probe,Bounded MuJoCo 2-DOF closed-loop planar end-effector probe; not a full robot benchmark.
+mujoco_planar,planar_reach_right,domain_randomization,latency,4.0,0.0,nan,0.1259458130860798,bounded_mujoco_planar_probe,Bounded MuJoCo 2-DOF closed-loop planar end-effector probe; not a full robot benchmark.
+mujoco_planar,planar_reach_right,domain_randomization,action_noise,4.0,0.75,nan,0.1163739682974379,bounded_mujoco_planar_probe,Bounded MuJoCo 2-DOF closed-loop planar end-effector probe; not a full robot benchmark.
+mujoco_planar,planar_reach_right,domain_randomization,joint_range,4.0,0.0,nan,0.1259917041384101,bounded_mujoco_planar_probe,Bounded MuJoCo 2-DOF closed-loop planar end-effector probe; not a full robot benchmark.
+mujoco_planar,planar_reach_right,domain_randomization,speed_accel_cap,4.0,0.0,nan,0.2587059224232417,bounded_mujoco_planar_probe,Bounded MuJoCo 2-DOF closed-loop planar end-effector probe; not a full robot benchmark.
+mujoco_planar,planar_reach_right,domain_randomization,payload,4.0,0.0,nan,0.1691816185752943,bounded_mujoco_planar_probe,Bounded MuJoCo 2-DOF closed-loop planar end-effector probe; not a full robot benchmark.
+mujoco_planar,planar_reach_right,domain_randomization,compound,4.0,0.0,nan,0.1614061784420749,bounded_mujoco_planar_probe,Bounded MuJoCo 2-DOF closed-loop planar end-effector probe; not a full robot benchmark.
+mujoco_planar,planar_reach_right,bodyshield,nominal,4.0,1.0,nan,0.0788540051856481,bounded_mujoco_planar_probe,Bounded MuJoCo 2-DOF closed-loop planar end-effector probe; not a full robot benchmark.
+mujoco_planar,planar_reach_right,bodyshield,latency,4.0,0.0,nan,0.1234870498661159,bounded_mujoco_planar_probe,Bounded MuJoCo 2-DOF closed-loop planar end-effector probe; not a full robot benchmark.
+mujoco_planar,planar_reach_right,bodyshield,action_noise,4.0,0.5,nan,0.1023260008354674,bounded_mujoco_planar_probe,Bounded MuJoCo 2-DOF closed-loop planar end-effector probe; not a full robot benchmark.
+mujoco_planar,planar_reach_right,bodyshield,joint_range,4.0,1.0,nan,0.1105091739353859,bounded_mujoco_planar_probe,Bounded MuJoCo 2-DOF closed-loop planar end-effector probe; not a full robot benchmark.
+mujoco_planar,planar_reach_right,bodyshield,speed_accel_cap,4.0,0.0,nan,0.2571976130507574,bounded_mujoco_planar_probe,Bounded MuJoCo 2-DOF closed-loop planar end-effector probe; not a full robot benchmark.
+mujoco_planar,planar_reach_right,bodyshield,payload,4.0,0.0,nan,0.1648617151209234,bounded_mujoco_planar_probe,Bounded MuJoCo 2-DOF closed-loop planar end-effector probe; not a full robot benchmark.
+mujoco_planar,planar_reach_right,bodyshield,compound,4.0,0.25,nan,0.1457489535205881,bounded_mujoco_planar_probe,Bounded MuJoCo 2-DOF closed-loop planar end-effector probe; not a full robot benchmark.
+mujoco_planar,planar_reach_right,oracle,nominal,4.0,1.0,nan,0.0788540051856481,bounded_mujoco_planar_probe,Bounded MuJoCo 2-DOF closed-loop planar end-effector probe; not a full robot benchmark.
+mujoco_planar,planar_reach_right,oracle,latency,4.0,1.0,nan,0.1110150417016567,bounded_mujoco_planar_probe,Bounded MuJoCo 2-DOF closed-loop planar end-effector probe; not a full robot benchmark.
+mujoco_planar,planar_reach_right,oracle,action_noise,4.0,0.75,nan,0.0948701737830892,bounded_mujoco_planar_probe,Bounded MuJoCo 2-DOF closed-loop planar end-effector probe; not a full robot benchmark.
+mujoco_planar,planar_reach_right,oracle,joint_range,4.0,1.0,nan,0.0943282762186065,bounded_mujoco_planar_probe,Bounded MuJoCo 2-DOF closed-loop planar end-effector probe; not a full robot benchmark.
+mujoco_planar,planar_reach_right,oracle,speed_accel_cap,4.0,0.0,nan,0.2482497303237177,bounded_mujoco_planar_probe,Bounded MuJoCo 2-DOF closed-loop planar end-effector probe; not a full robot benchmark.
+mujoco_planar,planar_reach_right,oracle,payload,4.0,0.0,nan,0.1565489508217447,bounded_mujoco_planar_probe,Bounded MuJoCo 2-DOF closed-loop planar end-effector probe; not a full robot benchmark.
+mujoco_planar,planar_reach_right,oracle,compound,4.0,0.0,nan,0.1265850255966507,bounded_mujoco_planar_probe,Bounded MuJoCo 2-DOF closed-loop planar end-effector probe; not a full robot benchmark.
+mujoco_planar,planar_diagonal_reach,nominal,nominal,4.0,1.0,nan,0.0846106855255775,bounded_mujoco_planar_probe,Bounded MuJoCo 2-DOF closed-loop planar end-effector probe; not a full robot benchmark.
+mujoco_planar,planar_diagonal_reach,nominal,latency,4.0,0.0,nan,0.1443261657914041,bounded_mujoco_planar_probe,Bounded MuJoCo 2-DOF closed-loop planar end-effector probe; not a full robot benchmark.
+mujoco_planar,planar_diagonal_reach,nominal,action_noise,4.0,0.0,nan,0.1619777654929674,bounded_mujoco_planar_probe,Bounded MuJoCo 2-DOF closed-loop planar end-effector probe; not a full robot benchmark.
+mujoco_planar,planar_diagonal_reach,nominal,joint_range,4.0,0.0,nan,0.15196788967341,bounded_mujoco_planar_probe,Bounded MuJoCo 2-DOF closed-loop planar end-effector probe; not a full robot benchmark.
+mujoco_planar,planar_diagonal_reach,nominal,speed_accel_cap,4.0,0.0,nan,0.2940682038882627,bounded_mujoco_planar_probe,Bounded MuJoCo 2-DOF closed-loop planar end-effector probe; not a full robot benchmark.
+mujoco_planar,planar_diagonal_reach,nominal,payload,4.0,0.0,nan,0.1876605086473498,bounded_mujoco_planar_probe,Bounded MuJoCo 2-DOF closed-loop planar end-effector probe; not a full robot benchmark.
+mujoco_planar,planar_diagonal_reach,nominal,compound,4.0,0.0,nan,0.2032505941237237,bounded_mujoco_planar_probe,Bounded MuJoCo 2-DOF closed-loop planar end-effector probe; not a full robot benchmark.
+mujoco_planar,planar_diagonal_reach,domain_randomization,nominal,4.0,1.0,nan,0.0846106855255775,bounded_mujoco_planar_probe,Bounded MuJoCo 2-DOF closed-loop planar end-effector probe; not a full robot benchmark.
+mujoco_planar,planar_diagonal_reach,domain_randomization,latency,4.0,0.0,nan,0.1362577990485298,bounded_mujoco_planar_probe,Bounded MuJoCo 2-DOF closed-loop planar end-effector probe; not a full robot benchmark.
+mujoco_planar,planar_diagonal_reach,domain_randomization,action_noise,4.0,0.75,nan,0.1044213554193419,bounded_mujoco_planar_probe,Bounded MuJoCo 2-DOF closed-loop planar end-effector probe; not a full robot benchmark.
+mujoco_planar,planar_diagonal_reach,domain_randomization,joint_range,4.0,0.0,nan,0.1368672797707496,bounded_mujoco_planar_probe,Bounded MuJoCo 2-DOF closed-loop planar end-effector probe; not a full robot benchmark.
+mujoco_planar,planar_diagonal_reach,domain_randomization,speed_accel_cap,4.0,0.0,nan,0.2894655401500465,bounded_mujoco_planar_probe,Bounded MuJoCo 2-DOF closed-loop planar end-effector probe; not a full robot benchmark.
+mujoco_planar,planar_diagonal_reach,domain_randomization,payload,4.0,0.0,nan,0.1851887292158946,bounded_mujoco_planar_probe,Bounded MuJoCo 2-DOF closed-loop planar end-effector probe; not a full robot benchmark.
+mujoco_planar,planar_diagonal_reach,domain_randomization,compound,4.0,0.0,nan,0.1679875733398499,bounded_mujoco_planar_probe,Bounded MuJoCo 2-DOF closed-loop planar end-effector probe; not a full robot benchmark.
+mujoco_planar,planar_diagonal_reach,bodyshield,nominal,4.0,1.0,nan,0.0846106855255775,bounded_mujoco_planar_probe,Bounded MuJoCo 2-DOF closed-loop planar end-effector probe; not a full robot benchmark.
+mujoco_planar,planar_diagonal_reach,bodyshield,latency,4.0,0.0,nan,0.1334677953711019,bounded_mujoco_planar_probe,Bounded MuJoCo 2-DOF closed-loop planar end-effector probe; not a full robot benchmark.
+mujoco_planar,planar_diagonal_reach,bodyshield,action_noise,4.0,0.75,nan,0.1118069433482863,bounded_mujoco_planar_probe,Bounded MuJoCo 2-DOF closed-loop planar end-effector probe; not a full robot benchmark.
+mujoco_planar,planar_diagonal_reach,bodyshield,joint_range,4.0,1.0,nan,0.119409479756589,bounded_mujoco_planar_probe,Bounded MuJoCo 2-DOF closed-loop planar end-effector probe; not a full robot benchmark.
+mujoco_planar,planar_diagonal_reach,bodyshield,speed_accel_cap,4.0,0.0,nan,0.2877191123848373,bounded_mujoco_planar_probe,Bounded MuJoCo 2-DOF closed-loop planar end-effector probe; not a full robot benchmark.
+mujoco_planar,planar_diagonal_reach,bodyshield,payload,4.0,0.0,nan,0.1802010284957314,bounded_mujoco_planar_probe,Bounded MuJoCo 2-DOF closed-loop planar end-effector probe; not a full robot benchmark.
+mujoco_planar,planar_diagonal_reach,bodyshield,compound,4.0,0.0,nan,0.1612535109682711,bounded_mujoco_planar_probe,Bounded MuJoCo 2-DOF closed-loop planar end-effector probe; not a full robot benchmark.
+mujoco_planar,planar_diagonal_reach,oracle,nominal,4.0,1.0,nan,0.0846106855255775,bounded_mujoco_planar_probe,Bounded MuJoCo 2-DOF closed-loop planar end-effector probe; not a full robot benchmark.
+mujoco_planar,planar_diagonal_reach,oracle,latency,4.0,1.0,nan,0.1193774249935989,bounded_mujoco_planar_probe,Bounded MuJoCo 2-DOF closed-loop planar end-effector probe; not a full robot benchmark.
+mujoco_planar,planar_diagonal_reach,oracle,action_noise,4.0,0.75,nan,0.0980240768573398,bounded_mujoco_planar_probe,Bounded MuJoCo 2-DOF closed-loop planar end-effector probe; not a full robot benchmark.
+mujoco_planar,planar_diagonal_reach,oracle,joint_range,4.0,1.0,nan,0.1013869153406265,bounded_mujoco_planar_probe,Bounded MuJoCo 2-DOF closed-loop planar end-effector probe; not a full robot benchmark.
+mujoco_planar,planar_diagonal_reach,oracle,speed_accel_cap,4.0,0.0,nan,0.2773614059923812,bounded_mujoco_planar_probe,Bounded MuJoCo 2-DOF closed-loop planar end-effector probe; not a full robot benchmark.
+mujoco_planar,planar_diagonal_reach,oracle,payload,4.0,0.0,nan,0.1706164009823823,bounded_mujoco_planar_probe,Bounded MuJoCo 2-DOF closed-loop planar end-effector probe; not a full robot benchmark.
+mujoco_planar,planar_diagonal_reach,oracle,compound,4.0,0.25,nan,0.1326613898666849,bounded_mujoco_planar_probe,Bounded MuJoCo 2-DOF closed-loop planar end-effector probe; not a full robot benchmark.
+mujoco_planar,planar_obstacle_reach,nominal,nominal,4.0,0.0,nan,0.1392699745983981,bounded_mujoco_planar_probe,Bounded MuJoCo 2-DOF closed-loop planar end-effector probe; not a full robot benchmark.
+mujoco_planar,planar_obstacle_reach,nominal,latency,4.0,0.0,nan,0.1839465930545489,bounded_mujoco_planar_probe,Bounded MuJoCo 2-DOF closed-loop planar end-effector probe; not a full robot benchmark.
+mujoco_planar,planar_obstacle_reach,nominal,action_noise,4.0,0.0,nan,0.2015034087334742,bounded_mujoco_planar_probe,Bounded MuJoCo 2-DOF closed-loop planar end-effector probe; not a full robot benchmark.
+mujoco_planar,planar_obstacle_reach,nominal,joint_range,4.0,0.0,nan,0.1895118896030743,bounded_mujoco_planar_probe,Bounded MuJoCo 2-DOF closed-loop planar end-effector probe; not a full robot benchmark.
+mujoco_planar,planar_obstacle_reach,nominal,speed_accel_cap,4.0,0.0,nan,0.3000552931256925,bounded_mujoco_planar_probe,Bounded MuJoCo 2-DOF closed-loop planar end-effector probe; not a full robot benchmark.
+mujoco_planar,planar_obstacle_reach,nominal,payload,4.0,0.0,nan,0.2154238963081893,bounded_mujoco_planar_probe,Bounded MuJoCo 2-DOF closed-loop planar end-effector probe; not a full robot benchmark.
+mujoco_planar,planar_obstacle_reach,nominal,compound,4.0,0.0,nan,0.2295822293115294,bounded_mujoco_planar_probe,Bounded MuJoCo 2-DOF closed-loop planar end-effector probe; not a full robot benchmark.
+mujoco_planar,planar_obstacle_reach,domain_randomization,nominal,4.0,0.0,nan,0.1392699745983981,bounded_mujoco_planar_probe,Bounded MuJoCo 2-DOF closed-loop planar end-effector probe; not a full robot benchmark.
+mujoco_planar,planar_obstacle_reach,domain_randomization,latency,4.0,0.0,nan,0.1780501708319181,bounded_mujoco_planar_probe,Bounded MuJoCo 2-DOF closed-loop planar end-effector probe; not a full robot benchmark.
+mujoco_planar,planar_obstacle_reach,domain_randomization,action_noise,4.0,0.0,nan,0.1510263712432187,bounded_mujoco_planar_probe,Bounded MuJoCo 2-DOF closed-loop planar end-effector probe; not a full robot benchmark.
+mujoco_planar,planar_obstacle_reach,domain_randomization,joint_range,4.0,0.0,nan,0.1784962287705383,bounded_mujoco_planar_probe,Bounded MuJoCo 2-DOF closed-loop planar end-effector probe; not a full robot benchmark.
+mujoco_planar,planar_obstacle_reach,domain_randomization,speed_accel_cap,4.0,0.0,nan,0.29610005584678,bounded_mujoco_planar_probe,Bounded MuJoCo 2-DOF closed-loop planar end-effector probe; not a full robot benchmark.
+mujoco_planar,planar_obstacle_reach,domain_randomization,payload,4.0,0.0,nan,0.2136303777832976,bounded_mujoco_planar_probe,Bounded MuJoCo 2-DOF closed-loop planar end-effector probe; not a full robot benchmark.
+mujoco_planar,planar_obstacle_reach,domain_randomization,compound,4.0,0.0,nan,0.2000069840738545,bounded_mujoco_planar_probe,Bounded MuJoCo 2-DOF closed-loop planar end-effector probe; not a full robot benchmark.
+mujoco_planar,planar_obstacle_reach,bodyshield,nominal,4.0,0.0,nan,0.1392699745983981,bounded_mujoco_planar_probe,Bounded MuJoCo 2-DOF closed-loop planar end-effector probe; not a full robot benchmark.
+mujoco_planar,planar_obstacle_reach,bodyshield,latency,4.0,0.0,nan,0.176005645653889,bounded_mujoco_planar_probe,Bounded MuJoCo 2-DOF closed-loop planar end-effector probe; not a full robot benchmark.
+mujoco_planar,planar_obstacle_reach,bodyshield,action_noise,4.0,0.0,nan,0.1567776679712976,bounded_mujoco_planar_probe,Bounded MuJoCo 2-DOF closed-loop planar end-effector probe; not a full robot benchmark.
+mujoco_planar,planar_obstacle_reach,bodyshield,joint_range,4.0,0.0,nan,0.1656497633745426,bounded_mujoco_planar_probe,Bounded MuJoCo 2-DOF closed-loop planar end-effector probe; not a full robot benchmark.
+mujoco_planar,planar_obstacle_reach,bodyshield,speed_accel_cap,4.0,0.0,nan,0.2946042432629082,bounded_mujoco_planar_probe,Bounded MuJoCo 2-DOF closed-loop planar end-effector probe; not a full robot benchmark.
+mujoco_planar,planar_obstacle_reach,bodyshield,payload,4.0,0.0,nan,0.2100139840254123,bounded_mujoco_planar_probe,Bounded MuJoCo 2-DOF closed-loop planar end-effector probe; not a full robot benchmark.
+mujoco_planar,planar_obstacle_reach,bodyshield,compound,4.0,0.0,nan,0.1949860074408082,bounded_mujoco_planar_probe,Bounded MuJoCo 2-DOF closed-loop planar end-effector probe; not a full robot benchmark.
+mujoco_planar,planar_obstacle_reach,oracle,nominal,4.0,0.0,nan,0.1392699745983981,bounded_mujoco_planar_probe,Bounded MuJoCo 2-DOF closed-loop planar end-effector probe; not a full robot benchmark.
+mujoco_planar,planar_obstacle_reach,oracle,latency,4.0,0.0,nan,0.1656261111782716,bounded_mujoco_planar_probe,Bounded MuJoCo 2-DOF closed-loop planar end-effector probe; not a full robot benchmark.
+mujoco_planar,planar_obstacle_reach,oracle,action_noise,4.0,0.0,nan,0.1550728023975283,bounded_mujoco_planar_probe,Bounded MuJoCo 2-DOF closed-loop planar end-effector probe; not a full robot benchmark.
+mujoco_planar,planar_obstacle_reach,oracle,joint_range,4.0,0.0,nan,0.1521913536867223,bounded_mujoco_planar_probe,Bounded MuJoCo 2-DOF closed-loop planar end-effector probe; not a full robot benchmark.
+mujoco_planar,planar_obstacle_reach,oracle,speed_accel_cap,4.0,0.0,nan,0.2857917543696171,bounded_mujoco_planar_probe,Bounded MuJoCo 2-DOF closed-loop planar end-effector probe; not a full robot benchmark.
+mujoco_planar,planar_obstacle_reach,oracle,payload,4.0,0.0,nan,0.2030673177763956,bounded_mujoco_planar_probe,Bounded MuJoCo 2-DOF closed-loop planar end-effector probe; not a full robot benchmark.
+mujoco_planar,planar_obstacle_reach,oracle,compound,4.0,0.0,nan,0.1794455882563899,bounded_mujoco_planar_probe,Bounded MuJoCo 2-DOF closed-loop planar end-effector probe; not a full robot benchmark.

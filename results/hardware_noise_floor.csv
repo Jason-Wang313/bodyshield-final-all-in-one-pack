@@ -1,0 +1,2 @@
+measurement,status,n_trials,mean,std,unit,missing_item
+noise_floor,blocked_by_hardware,0,,,,physical robot repeatability logs
