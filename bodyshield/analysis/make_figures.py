@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 
-from scripts.finalize_nonrejectable_artifacts import main
+from scripts.finalize_v2_artifacts import main
 
 
 if __name__ == "__main__":

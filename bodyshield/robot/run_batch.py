@@ -9,12 +9,12 @@ from __future__ import annotations
 import argparse
 
 
-def main() -> int:
+def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--config", required=True)
     parser.add_argument("--autonomous", action="store_true")
     parser.add_argument("--require-safety-green", action="store_true")
-    parser.parse_args()
+    parser.parse_args(argv)
     print("Refusing hardware batch: non-hardware phase is complete only after user safety confirmation.")
     return 2
 

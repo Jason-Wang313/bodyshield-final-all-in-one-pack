@@ -36,6 +36,7 @@ def _copy_main() -> str:
     if not source.exists():
         return "missing bodyshield_non_hardware_draft.pdf"
     shutil.copy2(source, target)
+    shutil.copy2(source, PAPER / "bodyshield.pdf")
     return "copied existing non-hardware draft PDF"
 
 

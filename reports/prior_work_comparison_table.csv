@@ -1,10 +1,6 @@
-bucket,primary_source,url,prior_focus,bodyshield_distinction
-domain_randomization,Tobin et al. / OpenAI ADR / Muratore review,https://arxiv.org/abs/1703.06907,Broad randomized training distribution.,BodyShield actively searches for discovered breaking body/control perturbations before repair.
-cross_embodiment,Open X-Embodiment / RT-X,https://arxiv.org/abs/2310.08864,Large cross-robot datasets and RT-X models.,BodyShield audits and repairs hidden body assumptions for scoped policies.
-xmop,XMoP,https://arxiv.org/abs/2409.15585,Cross-embodiment neural motion planning.,BodyShield is a falsification-to-repair layer rather than a planner trained across embodiments.
-umi_on_air,UMI-on-Air,https://arxiv.org/abs/2510.02614,Embodiment-aware guidance for embodiment-agnostic visuomotor policies.,BodyShield measures which hidden body/control assumption breaks a deployed policy.
-embodisteer,EmbodiSteer,https://arxiv.org/abs/2606.12965,Joint-space guidance for embodiment-aware deployment.,"BodyShield reports breaking perturbations, repair, and held-out tests without claiming foundation generality."
-counterexample_guided,Symbolic-geometric action abstraction repair,https://arxiv.org/abs/2105.06537,Repairs symbolic/geometric action abstractions from observations.,BodyShield targets continuous embodiment-control perturbations and oracle feasibility.
-safe_rl_falsification,Verification-guided falsification for safe RL,https://arxiv.org/abs/2506.03469,Model checking and risk-guided falsification.,BodyShield is robot embodiment-control falsification plus repair.
-robust_mpc_cbf,MPC-CBF / reachability literature,https://github.com/HybridRobotics/MPC-CBF,Safety filtering and robust control.,BodyShield identifies actual hidden assumptions and compares robust baselines under budget.
-human_effect_priors,VRB / ViPRA,https://arxiv.org/abs/2304.08488,Human-video affordance and video-action priors.,"Included only as a stress-test family, not the headline novelty."
+category,primary_source,bodyshield_distinction
+domain_randomization,tobin2017domainrandomization;peng2018dynamicsrandomization,active minimal falsification plus repair rather than broad randomized training
+embodiment_guidance,gupta2025umionair;wang2026embodisteer,falsifies hidden body assumptions rather than only steering target-body execution
+counterexample_repair,karunakaran2020counterexampleguided;le2025verificationguided,embodiment-control perturbation search plus robot deployment gates
+robust_control,zeng2021mpccbf;jiang2024transic,diagnostic repair layer rather than replacement for control or sim-to-real correction
+benchmark_stress_test,local BodyBreak audits,must show repair improvement and held-out gains

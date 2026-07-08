@@ -6,7 +6,7 @@
       "status": "pass"
     },
     {
-      "detail": "rows=239; code_version=9bcba4e9c35077af; hashes and required rows match",
+      "detail": "rows=272; code_version=6b11b18147624edb; hashes and required rows match",
       "name": "artifact_manifest",
       "status": "pass"
     },
@@ -46,7 +46,7 @@
       "status": "pass"
     },
     {
-      "detail": "payload_files=361; zip_bytes=14541109; zip_sha256=d11f6d465ff2c99d1e75135c3424a4a79d76d6c7927bd1719d634f6d5e17f0f4",
+      "detail": "payload_files=432; zip_bytes=15371661; zip_sha256=41152158a8ded9f57f1fc6a18118845e0960bb452f946a8086ba573d624025e8",
       "name": "release_bundle",
       "status": "pass"
     },
@@ -76,7 +76,7 @@
       "status": "pass"
     },
     {
-      "detail": "checks=224; artifacts=172; source compile/import and hardware-stub safety pass",
+      "detail": "checks=293; artifacts=240; source compile/import and hardware-stub safety pass",
       "name": "source_import_audit",
       "status": "pass"
     },
@@ -121,17 +121,17 @@
       "status": "pass"
     },
     {
-      "detail": "checks=6; artifacts=3; extracted pytest passed=62",
+      "detail": "checks=6; artifacts=3; extracted pytest passed=67",
       "name": "release_runtime_audit",
       "status": "pass"
     },
     {
-      "detail": "no stale downgrade phrases in 241 text files",
+      "detail": "no stale downgrade phrases in 291 text files",
       "name": "stale_phrases",
       "status": "pass"
     }
   ],
-  "code_version": "9bcba4e9c35077af",
+  "code_version": "6b11b18147624edb",
   "manifest_note": "PACK_VERIFICATION, ARTIFACT_INVENTORY_AUDIT, PORTABLE_HYGIENE_AUDIT, RELEASE_PAYLOAD_AUDIT, RELEASE_DETERMINISM_AUDIT, and RELEASE_RUNTIME_AUDIT reports are excluded from ARTIFACT_MANIFEST to avoid self-referential hash churn.",
   "status": "pass"
 }

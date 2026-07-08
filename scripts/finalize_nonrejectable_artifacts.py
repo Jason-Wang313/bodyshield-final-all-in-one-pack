@@ -278,7 +278,7 @@ def _update_final_manifest() -> None:
         "bodyshield", "configs", "paper", "release", "reports", "results", "scripts", "tests",
         "videos", "logs", "figures", "tables", ".github",
     ]
-    root_files = ["README.md", "README_FIRST.md", "README_EXECUTION.md", "Makefile", "pyproject.toml", "environment.yml", "LICENSE", "CITATION.cff"]
+    root_files = ["README.md", "README_FIRST.md", "README_EXECUTION.md", "REPRODUCE.md", "Makefile", "pyproject.toml", "requirements.txt", "environment.yml", "LICENSE", "CITATION.cff"]
     entries: list[dict[str, object]] = []
     for root_name in roots:
         root = ROOT / root_name

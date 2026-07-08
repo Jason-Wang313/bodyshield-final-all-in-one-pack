@@ -19,6 +19,14 @@ DEFAULT_EXPECTED_BIB_KEYS: tuple[str, ...] = (
     "muratore2022randomizedsim",
     "routray2025vipra",
     "vuong2019pickdr",
+    "tobin2017domainrandomization",
+    "peng2018dynamicsrandomization",
+    "openai2018dexterous",
+    "gupta2025umionair",
+    "wang2026embodisteer",
+    "le2025verificationguided",
+    "zeng2021mpccbf",
+    "jiang2024transic",
 )
 DEFAULT_REQUIRED_TEX_TERMS: tuple[str, ...] = (
     "analytic-simulation evidence",

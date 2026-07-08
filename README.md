@@ -16,6 +16,9 @@ SO-ARM101/SO-101 hardware trials.
 ```bash
 make smoke
 make test
+make sim-minimal
+make sim-full
+make verify
 make reproduce-minimal
 make reproduce-main-figures
 make paper
@@ -27,6 +30,8 @@ On Windows systems without GNU Make, run the underlying commands directly:
 ```powershell
 python scripts/smoke_check.py
 python -m pytest -q
+python scripts/finalize_v2_artifacts.py
+python -m bodyshield.analysis.verify_package --json
 python scripts/finalize_maxout_artifacts.py
 python scripts/run_derived_results_audit.py --json
 python scripts/run_results_integrity_audit.py --json
@@ -44,6 +49,8 @@ python scripts/verify_non_hardware_pack.py --write-reports --json
 - Reproducibility package: `release/bodyshield_non_hardware_release.zip`
 - Pack verifier: `reports/PACK_VERIFICATION.md`
 - Claim ledger: `reports/claim_ledger.csv`
+- Citation verification: `reports/citation_verification.md`
+- V2 package verifier: `python -m bodyshield.analysis.verify_package --json`
 - Final manifest: `reports/final_artifact_manifest.json`
 - Reviewer prebuttal: `reports/final_reviewer_prebuttal.md`
 - Submission readiness: `reports/final_submission_readiness_report.md`

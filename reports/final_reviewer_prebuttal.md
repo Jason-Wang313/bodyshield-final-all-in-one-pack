@@ -1,70 +1,61 @@
-# Final Reviewer Prebuttal
+# Reviewer Prebuttal
 
-Status: `non_hardware_prebuttal_hardware_pending`
+## Is this just domain randomization?
 
-## 1. Why This Is Not Domain Randomization
+No in the analytic package: see `reports/gate_1_domain_randomization.md` and `tables/sim_budget_matched_results.csv`. Hardware comparison remains pending.
 
-Domain randomization trains over sampled variation. BodyShield first searches
-for perturbations that break the current policy under a costed body/control
-space, records the failure axis, then repairs against the discovered
-counterexamples. Domain randomization remains a baseline, not the target being
-renamed.
+## Is this just benchmark/stress testing?
 
-## 2. Why This Is Not Just Counterexample-Guided Repair
+No for non-hardware: before/after repair is reported in `reports/gate_2_before_after_repair.md`.
 
-The counterexamples are not only unsafe states or adversarial trajectories. They
-are embodiment-control changes such as latency, calibration offset, gripper
-restriction, actuation caps, payload, tool extension, friction, sensing shift,
-and compounds. The unit of evidence is a policy failing under a small body/control
-change while an oracle/tuned policy still solves the task.
+## Is the cheap arm too toy?
 
-## 3. Why Cheap Hardware Is Scientifically Appropriate
+Hardware is not claimed. The cheap-arm stack is safety-gated in `bodyshield/robot/` and must be treated as a validation ladder.
 
-The intended SO-ARM101/SO-101 phase tests whether hidden embodiment-control
-assumptions appear in accessible robot manipulation. The scientific target is
-the falsification-to-repair mechanism, not high-end robot performance. Hardware
-claims remain blocked until safety-gated trials exist.
+## Are perturbations artificial?
 
-## 4. Why Perturbations Do Not Merely Make Tasks Impossible
+Some are software/control shifts; physical-style proxies are logged in `reports/heldout_physical_modifications.md`, while real physical modifications are blocked.
 
-The analytic pack includes oracle feasibility rows for main BodyBreak failures.
-If the oracle cannot solve a perturbation, that perturbation must be excluded
-from brittleness claims or described as task infeasibility. Hardware oracle
-feasibility is still pending.
+## Are failures impossible tasks?
 
-## 5. Why Artificial Perturbations Might Transfer to Physical Modifications
+Analytic oracle feasibility is reported in `reports/oracle_feasibility.md`. Hardware oracle feasibility is pending.
 
-Software/control perturbations model mechanisms that often arise physically:
-latency, calibration, actuation limits, gripper restrictions, payload, sensing
-shift, and contact changes. The current pack does not claim physical transfer;
-it defines the test that hardware must run.
+## Is this robust control/sysID?
 
-## 6. Why BodyShield Is Not Just Conservative
+No; `reports/prior_work_hardening.md` frames BodyShield as a diagnostic repair layer, not a replacement.
 
-The reports include nominal retention, execution time, path length, retries,
-failure categories, threshold sensitivity, and secondary metrics. A repair that
-only slows down or avoids the task should be visible in those metrics.
+## Is it too conservative?
 
-## 7. Why Baselines Are Fair
+`reports/conservatism_analysis.md` tracks execution time, path length, retries, and nominal retention.
 
-The analytic baselines use matched task, robot, perturbation, and evaluation
-grids. The remaining limitation is that these are parameterized local baselines,
-not full external neural controllers with matched training compute.
+## Are baselines fair?
 
-## 8. Why EPEC/Human-Effect Priors Are Included
+`reports/baseline_fairness.md` and `reports/BUDGET_AND_FAIRNESS_AUDIT.md` document budgets.
 
-They are stress-test policy families. They check whether effect-preserving or
-human-prior action choices still hide brittle embodiment assumptions. They are
-not the paper's main novelty.
+## Does repair overfit?
 
-## 9. What Limitations Remain
+`reports/heldout_generalization.md` reports held-out perturbation families.
 
-No real hardware trials, hardware noise floor, camera-verifier audit, reset
-reliability, external trained-policy rollout benchmark, real-video WAM training,
-or real corrective-trace adaptation is completed in the current public pack.
+## Is labeling biased?
 
-## 10. What Claims Are Intentionally Not Made
+`reports/verifier_audit.md` is blocked and prevents hardware claims.
 
-The paper should not claim global minimality, cross-embodiment foundation-model
-generality, hardware success, real-video learning, certified safety, or
-non-rejectability.
+## Is EPEC distracting?
+
+EPEC is only a stress-test policy family, not the headline method.
+
+## Why should ICRA care?
+
+The mechanism is failure diagnosis and repair for learned robot policies under body/control shift.
+
+## What does it not prove?
+
+It does not prove hardware transfer, foundation-model generality, or cross-embodiment transfer.
+
+## What would fail on bigger robots?
+
+Unmodeled compliance, force limits, perception latency, calibration drift, reset reliability, and safety limits.
+
+## Why valuable to labs with better hardware?
+
+It gives a falsification-to-repair audit layer that can be run before expensive deployments.
