@@ -14,7 +14,7 @@
     203
   ],
   "evidence_boundary": "Self-trained public Gymnasium environment evidence only; not a user-provided external checkpoint, not MuJoCo/ManiSkill full-scale trained-policy evidence, and not hardware evidence.",
-  "generated_utc": "2026-07-08T07:22:57+00:00",
+  "generated_utc": "2026-07-08T09:01:17+00:00",
   "gymnasium_version": "1.2.3",
   "max_steps": 300,
   "nominal_weights": [

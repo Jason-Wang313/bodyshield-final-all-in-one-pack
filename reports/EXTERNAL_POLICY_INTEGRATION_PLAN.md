@@ -1,12 +1,19 @@
 # External Policy Integration Plan
 
-Status: `ready_for_checkpoint_when_available`
+Status: `closed_for_public_pretrained_checkpoint`
 
-1. Place a redistributable checkpoint under `external_checkpoints/` or record an immutable download URL.
-2. Add a spec row to `configs/external_policy_benchmark.example.json` with checkpoint path, adapter module, expected observation/action dimensions, wrappers, seeds, horizon, and metric.
-3. Implement the adapter as `module:function`, returning a callable policy or object with `predict()`/`act()`.
-4. Run `python scripts\run_external_policy_benchmark.py --spec <spec>` for interface validation.
-5. Run a task-rollout benchmark that logs raw episode returns/successes, BodyBreak perturbation search, BodyShield repair, domain-randomization baseline, budget accounting, and held-out perturbations.
-6. Update `reports/SUBMISSION_READY_AUDIT.md` only after the real checkpoint rollout passes.
+The public external-policy gate is closed for one redistributable public checkpoint:
 
-Until then, `reports/EXTERNAL_CHECKPOINT_STILL_BLOCKED.md` is the controlling status.
+- Source: `sb3/ppo-HalfCheetah-v3`
+- Model card: https://huggingface.co/sb3/ppo-HalfCheetah-v3
+- RL-Zoo source: https://github.com/DLR-RM/rl-baselines3-zoo
+- Local artifacts: `results/checkpoints/public_sb3_ppo_halfcheetah_v3/`
+- Reproducible runner: `python scripts\run_public_checkpoint_benchmark.py`
+
+Optional future extensions:
+
+1. Add a ManiSkill manipulation checkpoint with wrappers, normalization, seeds, horizon, and rollout script.
+2. Add a second locomotion family only if the paper claims broader trained-policy coverage.
+3. Add a user-provided/private checkpoint only as an additional evidence tier, not as a blocker for the current public checkpoint gate.
+
+Reviewer-safe boundary: Public pretrained SB3/RL-Zoo MuJoCo checkpoint evidence only; evaluated locally in Gymnasium HalfCheetah-v5 using the checkpoint's VecNormalize statistics. This does not claim hardware transfer, manipulation transfer, or superiority over all robust-control/sysID baselines.

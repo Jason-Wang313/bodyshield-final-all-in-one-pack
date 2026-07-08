@@ -1,13 +1,11 @@
 # External Checkpoint Still Blocked
 
-Status: `blocked_external_checkpoint_missing`
+Status: `superseded_for_public_checkpoint`; `user_provided_checkpoint_not_needed_for_current_gate`
 
-The self-trained public-env benchmark is complete, but it does not provide a public pretrained or user-provided external checkpoint. The following are still missing:
+This file is retained for traceability. The earlier public/external checkpoint blocker is closed by `reports/PUBLIC_PRETRAINED_CHECKPOINT_COMPLETE.md` and `reports/MUJOCO_PUBLIC_CHECKPOINT_ROLLOUT_COMPLETE.md`.
 
-- Trained external checkpoint file or URL with redistribution/license status.
-- Exact environment version, wrappers, observation/action normalization, and checkpoint loader.
-- Seed list, horizon, success metric, and evaluation protocol.
-- Compute-matched tuning budget for BodyShield, domain randomization, robust-control/sysID alternatives, and the original policy.
-- Reproducible rollout script for the external checkpoint in its intended environment.
+Still not claimed:
 
-Allowed wording: external checkpoint integration remains blocked.
+- No user-private checkpoint was provided or needed.
+- No broad ManiSkill/foundation-policy checkpoint suite is complete.
+- No hardware transfer evidence exists.

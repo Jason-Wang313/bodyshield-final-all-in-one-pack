@@ -7,3 +7,10 @@ pypdf
 pyyaml
 tabulate
 pytest
+mujoco
+mani-skill
+gymnasium
+stable-baselines3
+huggingface_sb3
+gym
+shimmy

@@ -1,0 +1,14 @@
+{
+  "evaluated_env_id": "HalfCheetah-v5",
+  "evidence_boundary": "Public pretrained SB3/RL-Zoo MuJoCo checkpoint evidence only; evaluated locally in Gymnasium HalfCheetah-v5 using the checkpoint's VecNormalize statistics. This does not claim hardware transfer, manipulation transfer, or superiority over all robust-control/sysID baselines.",
+  "generated_utc": "2026-07-08T09:01:41+00:00",
+  "model_filename": "ppo-HalfCheetah-v3.zip",
+  "model_sha256": "8df0cd0c34b5ddf1e5210a5f45507e6d5da7c2f5bfde825e548009aa51d21a6f",
+  "repo_id": "sb3/ppo-HalfCheetah-v3",
+  "snapshot": "6765c82ac33ac720927a722a0b42a1eb09a65700",
+  "source_model_card": "https://huggingface.co/sb3/ppo-HalfCheetah-v3",
+  "source_rl_zoo": "https://github.com/DLR-RM/rl-baselines3-zoo",
+  "trained_env_id": "HalfCheetah-v3",
+  "vec_normalize_filename": "vec_normalize.pkl",
+  "vec_normalize_sha256": "b364c6b89c475a08290ac03d8e557c337cbdb592b33ef0e38b7e788cc071e759"
+}

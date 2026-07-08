@@ -1,16 +1,18 @@
 # External Trained Policy Tier
 
-Status: `partial_complete_self_trained_public_env`; `external_checkpoint_still_blocked`
+Status: `complete_public_pretrained_checkpoint`
 
 Completed:
 
-- A real self-trained public Gymnasium `CartPole-v1` policy checkpoint exists at `results/checkpoints/self_trained_cartpole_linear_policy.json`.
-- The benchmark is reproducible with `python scripts\run_self_trained_public_env_benchmark.py`.
-- Results are written to `results/self_trained_public_env_benchmark.csv`.
+- Public pretrained SB3/RL-Zoo checkpoint integrated: `sb3/ppo-HalfCheetah-v3`.
+- Full-horizon MuJoCo/Gymnasium rollouts completed for `HalfCheetah-v5`.
+- Public checkpoint and VecNormalize statistics are copied into `results/checkpoints/public_sb3_ppo_halfcheetah_v3/`.
+- Reproducible runner: `python scripts\run_public_checkpoint_benchmark.py`.
 
-Still blocked:
+Remaining scope limits:
 
-- No user-provided or public pretrained external checkpoint is present.
-- No full-scale MuJoCo/ManiSkill trained-policy rollout benchmark is completed.
+- This is one locomotion checkpoint, not a broad trained-policy suite.
+- No ManiSkill manipulation checkpoint is included.
+- Hardware, real-video WAM, and real corrective traces remain separate blockers.
 
-Reviewer-safe interpretation: the repo now has one small public-env trained-policy benchmark, but the stronger external checkpoint claim remains blocked.
+Allowed wording: external public pretrained MuJoCo checkpoint benchmark complete.

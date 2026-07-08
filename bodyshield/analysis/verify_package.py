@@ -72,6 +72,18 @@ POST_NONHARDWARE_REQUIRED = (
     "results/checkpoints/self_trained_cartpole_linear_policy.json",
     "figures/self_trained_public_env_returns.pdf",
     "figures/self_trained_public_env_training_curve.pdf",
+    "bodyshield/public_checkpoint_benchmark.py",
+    "scripts/run_public_checkpoint_benchmark.py",
+    "reports/PUBLIC_PRETRAINED_CHECKPOINT_COMPLETE.md",
+    "reports/MUJOCO_PUBLIC_CHECKPOINT_ROLLOUT_COMPLETE.md",
+    "results/public_pretrained_checkpoint_benchmark.csv",
+    "results/public_pretrained_checkpoint_rollouts.csv",
+    "results/public_pretrained_checkpoint_tuning.csv",
+    "results/public_pretrained_checkpoint_delta.csv",
+    "results/checkpoints/public_sb3_ppo_halfcheetah_v3/ppo-HalfCheetah-v3.zip",
+    "results/checkpoints/public_sb3_ppo_halfcheetah_v3/vec_normalize.pkl",
+    "results/checkpoints/public_sb3_ppo_halfcheetah_v3/source_metadata.json",
+    "figures/public_pretrained_checkpoint_returns.pdf",
 )
 
 HARDWARE_REQUIRED = (

@@ -16,6 +16,10 @@ dependencies = [
   "mujoco",
   "mani-skill",
   "gymnasium",
+  "stable-baselines3",
+  "huggingface_sb3",
+  "gym",
+  "shimmy",
 ]
 
 [tool.pytest.ini_options]

@@ -1,11 +1,11 @@
 artifact,check,status,detail,observed,expected
 bodyshield,source_root_exists,pass,source root exists,True,True
-bodyshield,source_python_files_discovered,pass,Python source files discovered under root,99,>0
+bodyshield,source_python_files_discovered,pass,Python source files discovered under root,100,>0
 scripts,source_root_exists,pass,source root exists,True,True
-scripts,source_python_files_discovered,pass,Python source files discovered under root,33,>0
+scripts,source_python_files_discovered,pass,Python source files discovered under root,34,>0
 tests,source_root_exists,pass,source root exists,True,True
 tests,source_python_files_discovered,pass,Python source files discovered under root,14,>0
-bodyshield,bodyshield_modules_discovered,pass,importable bodyshield modules discovered,96,>0
+bodyshield,bodyshield_modules_discovered,pass,importable bodyshield modules discovered,97,>0
 bodyshield/__init__.py,python_file_py_compile,pass,Python source compiles,,
 bodyshield/_legacy.py,python_file_py_compile,pass,Python source compiles,,
 bodyshield/analysis/__init__.py,python_file_py_compile,pass,Python source compiles,,
@@ -64,6 +64,7 @@ bodyshield/policies/robust_control.py,python_file_py_compile,pass,Python source 
 bodyshield/policies/sysid_retune.py,python_file_py_compile,pass,Python source compiles,,
 bodyshield/policies.py,python_file_py_compile,pass,Python source compiles,,
 bodyshield/portable_hygiene_audit.py,python_file_py_compile,pass,Python source compiles,,
+bodyshield/public_checkpoint_benchmark.py,python_file_py_compile,pass,Python source compiles,,
 bodyshield/real_video_wam_readiness.py,python_file_py_compile,pass,Python source compiles,,
 bodyshield/release_bundle.py,python_file_py_compile,pass,Python source compiles,,
 bodyshield/release_determinism_audit.py,python_file_py_compile,pass,Python source compiles,,
@@ -124,6 +125,7 @@ scripts/run_external_policy_benchmark.py,python_file_py_compile,pass,Python sour
 scripts/run_non_hardware.py,python_file_py_compile,pass,Python source compiles,,
 scripts/run_paper_source_audit.py,python_file_py_compile,pass,Python source compiles,,
 scripts/run_portable_hygiene_audit.py,python_file_py_compile,pass,Python source compiles,,
+scripts/run_public_checkpoint_benchmark.py,python_file_py_compile,pass,Python source compiles,,
 scripts/run_real_video_wam_readiness.py,python_file_py_compile,pass,Python source compiles,,
 scripts/run_release_determinism_audit.py,python_file_py_compile,pass,Python source compiles,,
 scripts/run_release_payload_audit.py,python_file_py_compile,pass,Python source compiles,,
@@ -171,6 +173,7 @@ scripts/run_external_policy_benchmark.py,script_has_main_guard,pass,script has a
 scripts/run_non_hardware.py,script_has_main_guard,pass,script has a guarded CLI entry point,,
 scripts/run_paper_source_audit.py,script_has_main_guard,pass,script has a guarded CLI entry point,,
 scripts/run_portable_hygiene_audit.py,script_has_main_guard,pass,script has a guarded CLI entry point,,
+scripts/run_public_checkpoint_benchmark.py,script_has_main_guard,pass,script has a guarded CLI entry point,,
 scripts/run_real_video_wam_readiness.py,script_has_main_guard,pass,script has a guarded CLI entry point,,
 scripts/run_release_determinism_audit.py,script_has_main_guard,pass,script has a guarded CLI entry point,,
 scripts/run_release_payload_audit.py,script_has_main_guard,pass,script has a guarded CLI entry point,,
@@ -242,6 +245,7 @@ bodyshield.policies.nominal,bodyshield_module_imports_in_subprocess,pass,module 
 bodyshield.policies.robust_control,bodyshield_module_imports_in_subprocess,pass,module imported,,import succeeds
 bodyshield.policies.sysid_retune,bodyshield_module_imports_in_subprocess,pass,module imported,,import succeeds
 bodyshield.portable_hygiene_audit,bodyshield_module_imports_in_subprocess,pass,module imported,,import succeeds
+bodyshield.public_checkpoint_benchmark,bodyshield_module_imports_in_subprocess,pass,module imported,,import succeeds
 bodyshield.real_video_wam_readiness,bodyshield_module_imports_in_subprocess,pass,module imported,,import succeeds
 bodyshield.release_bundle,bodyshield_module_imports_in_subprocess,pass,module imported,,import succeeds
 bodyshield.release_determinism_audit,bodyshield_module_imports_in_subprocess,pass,module imported,,import succeeds

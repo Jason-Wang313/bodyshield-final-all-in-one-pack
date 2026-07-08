@@ -2,7 +2,7 @@
 
 Status: `complete_self_trained_public_env_only`
 
-Generated: `2026-07-08T07:23:00+00:00`
+Generated: `2026-07-08T09:01:20+00:00`
 
 The repository now contains a real CPU-only trained checkpoint for a public Gymnasium environment: `CartPole-v1`. The policy is a linear CartPole controller trained by cross-entropy search, saved at `results/checkpoints/self_trained_cartpole_linear_policy.json`, and evaluated under nominal, seen BodyBreak-style perturbations, and held-out perturbations.
 

@@ -1,0 +1,7 @@
+benchmark_id,tuned_parameter,candidate_value,perturbation_id,tune_seeds,mean_return,min_return,max_return
+public_sb3_ppo_halfcheetah_v3,action_gain,0.85,actuator_0.65,"10,11,12",763.5207139551154,-6.128935526270652,1151.1510195918381
+public_sb3_ppo_halfcheetah_v3,action_gain,1.0,actuator_0.65,"10,11,12",1757.307731302455,1744.4178011659533,1771.3761541433632
+public_sb3_ppo_halfcheetah_v3,action_gain,1.15,actuator_0.65,"10,11,12",2423.238053045197,2409.811450734618,2441.6159014627337
+public_sb3_ppo_halfcheetah_v3,action_gain,1.35,actuator_0.65,"10,11,12",2694.233776301166,2683.424069710076,2703.6169849187754
+public_sb3_ppo_halfcheetah_v3,action_gain,1.55,actuator_0.65,"10,11,12",2915.6190519599863,2899.6826172173023,2935.7119253985584
+public_sb3_ppo_halfcheetah_v3,action_gain,1.8,actuator_0.65,"10,11,12",3142.216046884035,3121.642501413822,3164.86298812367

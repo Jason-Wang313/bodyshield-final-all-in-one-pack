@@ -1,15 +1,11 @@
 # External Checkpoint Blocker
 
-Status: `blocked_external_checkpoint_missing`
+Status: `closed_for_public_pretrained_checkpoint`
 
-The self-trained public-env benchmark is complete, but no user-provided or public pretrained external checkpoint is present. The controlling status file is `reports/EXTERNAL_CHECKPOINT_STILL_BLOCKED.md`.
+The public checkpoint blocker is closed by the SB3/RL-Zoo PPO HalfCheetah benchmark. See:
 
-Still missing:
+- `reports/PUBLIC_PRETRAINED_CHECKPOINT_COMPLETE.md`
+- `reports/MUJOCO_PUBLIC_CHECKPOINT_ROLLOUT_COMPLETE.md`
+- `results/public_pretrained_checkpoint_benchmark.csv`
 
-- Trained external checkpoint file or URL with redistribution/license status.
-- Exact environment version, wrappers, observation/action normalization, and checkpoint loader.
-- Seed list, horizon, success metric, and evaluation protocol.
-- Compute-matched tuning budget for BodyShield, domain randomization, robust-control/sysID alternatives, and the original policy.
-- Reproducible rollout script for the external checkpoint in its intended environment.
-
-Allowed wording: self-trained public-env benchmark complete; external checkpoint integration remains blocked.
+Residual limitation: this is one public MuJoCo locomotion checkpoint, not a broad ManiSkill manipulation or foundation-policy checkpoint suite.

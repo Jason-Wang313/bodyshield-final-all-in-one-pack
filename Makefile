@@ -1,6 +1,6 @@
 PYTHON ?= python
 
-.PHONY: smoke test nonhardware post-nonhardware external-policy-public-env reproduce-minimal reproduce-sim-main reproduce-main-figures sim-minimal sim-full paper verify package-artifacts final-check
+.PHONY: smoke test nonhardware post-nonhardware external-policy-public-env external-policy-public-checkpoint reproduce-minimal reproduce-sim-main reproduce-main-figures sim-minimal sim-full paper verify package-artifacts final-check
 
 smoke:
 	$(PYTHON) scripts/smoke_check.py
@@ -37,6 +37,10 @@ post-nonhardware:
 
 external-policy-public-env:
 	$(PYTHON) scripts/run_self_trained_public_env_benchmark.py
+	$(PYTHON) -m bodyshield.analysis.verify_package --json
+
+external-policy-public-checkpoint:
+	$(PYTHON) scripts/run_public_checkpoint_benchmark.py
 	$(PYTHON) -m bodyshield.analysis.verify_package --json
 
 sim-minimal: reproduce-minimal

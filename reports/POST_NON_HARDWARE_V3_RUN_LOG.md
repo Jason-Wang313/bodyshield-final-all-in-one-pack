@@ -1,6 +1,6 @@
 # Post-Nonhardware V3 Run Log
 
-Generated: `2026-07-08T07:22:17+00:00`
+Generated: `2026-07-08T08:54:59+00:00`
 
 Verifier return code: `0`
 
@@ -30,4 +30,6 @@ Verifier return code: `0`
 
 NON-HARDWARE COMPLETE: BodyShield software, simulation, baselines, perturbation search, repair algorithms, analysis scripts, paper skeleton/draft, verified citation table, release bundle, and reviewer-defense reports are finished under analytic/synthetic scope. Hardware phase is next. Do not proceed until the user confirms the SO-ARM101/SO-101 setup, safety gate, camera verifier, reset protocol, and emergency stop are ready.
 
-PAPER NOT READY: hardware validation/noise floor/verifier/reset/physical modifications/videos are not run; external trained-policy checkpoints and full-scale rollouts are missing; real-video WAM and corrective-trace datasets are missing; oracle feasibility is analytic only; BodyBreak minimality is estimated rather than globally proven; release is local rather than independently archived; human paper review remains open.
+Superseded checkpoint status: the later public checkpoint run closed the external/public checkpoint gap with `reports/PUBLIC_PRETRAINED_CHECKPOINT_COMPLETE.md` and `reports/MUJOCO_PUBLIC_CHECKPOINT_ROLLOUT_COMPLETE.md`.
+
+PAPER NOT READY: hardware validation/noise floor/verifier/reset/physical modifications/videos are not run; real-video WAM and corrective-trace datasets are missing; oracle feasibility is analytic only; BodyBreak minimality is estimated rather than globally proven; release is local rather than independently archived; human paper review remains open.

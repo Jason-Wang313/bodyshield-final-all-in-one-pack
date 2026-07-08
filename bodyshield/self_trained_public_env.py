@@ -233,12 +233,22 @@ def _write_report(path: Path, text: str) -> None:
     path.write_text(text.strip() + "\n", encoding="utf-8", newline="\n")
 
 
+def _public_checkpoint_artifacts_exist(root_path: Path) -> bool:
+    return (
+        (root_path / "reports" / "PUBLIC_PRETRAINED_CHECKPOINT_COMPLETE.md").exists()
+        and (root_path / "reports" / "MUJOCO_PUBLIC_CHECKPOINT_ROLLOUT_COMPLETE.md").exists()
+        and (root_path / "results" / "public_pretrained_checkpoint_benchmark.csv").exists()
+    )
+
+
 def _update_submission_ready_audit(root_path: Path) -> None:
     results_path = root_path / "results" / "submission_ready_audit.csv"
     report_path = root_path / "reports" / "SUBMISSION_READY_AUDIT.md"
+    public_checkpoint_exists = _public_checkpoint_artifacts_exist(root_path)
     paper_not_ready = (
         "PAPER NOT READY: hardware validation/noise floor/verifier/reset/physical modifications/videos are not run; "
-        "external pretrained checkpoint/full-scale rollouts remain missing; real-video WAM and corrective-trace datasets "
+        + ("" if public_checkpoint_exists else "external pretrained checkpoint/full-scale rollouts remain missing; ")
+        + "real-video WAM and corrective-trace datasets "
         "are missing; oracle feasibility is analytic only; BodyBreak minimality is estimated rather than globally proven; "
         "release is local rather than independently archived; human paper review remains open."
     )
@@ -255,13 +265,29 @@ def _update_submission_ready_audit(root_path: Path) -> None:
         "residual_risk": "small CartPole public-env evidence only",
         "allowed_wording": "self-trained public Gymnasium policy benchmark complete",
     }
-    by_gate["external_trained_policy"] = {
-        "gate_name": "external_trained_policy",
-        "pass_fail": "fail",
-        "evidence": "reports/EXTERNAL_CHECKPOINT_STILL_BLOCKED.md, reports/EXTERNAL_POLICY_INTEGRATION_PLAN.md",
-        "residual_risk": "pretrained external checkpoint missing; self-trained public env does not close this gate",
-        "allowed_wording": "do not claim external checkpoint validation",
-    }
+    if public_checkpoint_exists:
+        by_gate["external_trained_policy"] = {
+            "gate_name": "external_trained_policy",
+            "pass_fail": "pass",
+            "evidence": "reports/EXTERNAL_TRAINED_POLICY_COMPLETE.md, reports/PUBLIC_PRETRAINED_CHECKPOINT_COMPLETE.md, results/public_pretrained_checkpoint_benchmark.csv",
+            "residual_risk": "single public SB3 HalfCheetah checkpoint; not a broad manipulation/foundation-policy suite",
+            "allowed_wording": "public pretrained MuJoCo checkpoint benchmark complete",
+        }
+        by_gate["full_scale_mujoco_trained_policy_rollout"] = {
+            "gate_name": "full_scale_mujoco_trained_policy_rollout",
+            "pass_fail": "pass_with_scope_limit",
+            "evidence": "reports/MUJOCO_PUBLIC_CHECKPOINT_ROLLOUT_COMPLETE.md, results/public_pretrained_checkpoint_rollouts.csv",
+            "residual_risk": "MuJoCo HalfCheetah only; no ManiSkill manipulation checkpoint",
+            "allowed_wording": "one public MuJoCo full-horizon trained-policy rollout benchmark complete",
+        }
+    else:
+        by_gate["external_trained_policy"] = {
+            "gate_name": "external_trained_policy",
+            "pass_fail": "fail",
+            "evidence": "reports/EXTERNAL_CHECKPOINT_STILL_BLOCKED.md, reports/EXTERNAL_POLICY_INTEGRATION_PLAN.md",
+            "residual_risk": "pretrained external checkpoint missing; self-trained public env does not close this gate",
+            "allowed_wording": "do not claim external checkpoint validation",
+        }
     ordered_names = [
         "software_package",
         "analytic_simulation",
@@ -270,6 +296,7 @@ def _update_submission_ready_audit(root_path: Path) -> None:
         "high_fidelity_bounded",
         "self_trained_public_env_policy",
         "external_trained_policy",
+        "full_scale_mujoco_trained_policy_rollout",
         "real_video_wam",
         "corrective_trace",
         "hardware_safety_noise_verifier_reset",
@@ -325,7 +352,7 @@ def _plot_returns(path: Path, rows: pd.DataFrame) -> None:
     ax.set_title("Self-Trained Public-Env Evaluation")
     ax.set_ylabel("mean return over eval seeds")
     ax.grid(axis="y", alpha=0.25)
-    fig.text(0.02, 0.02, "Boundary: self-trained Gymnasium CartPole only; external checkpoint still blocked.", fontsize=8)
+    fig.text(0.02, 0.02, "Boundary: self-trained Gymnasium CartPole only; see public checkpoint report for external-policy evidence.", fontsize=8)
     fig.tight_layout(rect=(0, 0.05, 1, 1))
     fig.savefig(path)
     plt.close(fig)
@@ -475,9 +502,11 @@ Boundary: {reviewer_boundary}
 Allowed wording: a self-trained public-environment policy benchmark was completed. Do not call this a MuJoCo/ManiSkill pretrained-policy benchmark, hardware transfer evidence, or proof that BodyShield beats domain randomization.
 """,
     )
-    _write_report(
-        reports / "EXTERNAL_TRAINED_POLICY_COMPLETE.md",
-        f"""
+    public_checkpoint_exists = _public_checkpoint_artifacts_exist(root_path)
+    if not public_checkpoint_exists:
+        _write_report(
+            reports / "EXTERNAL_TRAINED_POLICY_COMPLETE.md",
+            f"""
 # External Trained Policy Tier
 
 Status: `partial_complete_self_trained_public_env`; `external_checkpoint_still_blocked`
@@ -495,10 +524,10 @@ Still blocked:
 
 Reviewer-safe interpretation: the repo now has one small public-env trained-policy benchmark, but the stronger external checkpoint claim remains blocked.
 """,
-    )
-    _write_report(
-        reports / "EXTERNAL_CHECKPOINT_STILL_BLOCKED.md",
-        """
+        )
+        _write_report(
+            reports / "EXTERNAL_CHECKPOINT_STILL_BLOCKED.md",
+            """
 # External Checkpoint Still Blocked
 
 Status: `blocked_external_checkpoint_missing`
@@ -513,10 +542,10 @@ The self-trained public-env benchmark is complete, but it does not provide a pub
 
 Allowed wording: external checkpoint integration remains blocked.
 """,
-    )
-    _write_report(
-        reports / "EXTERNAL_CHECKPOINT_BLOCKER.md",
-        """
+        )
+        _write_report(
+            reports / "EXTERNAL_CHECKPOINT_BLOCKER.md",
+            """
 # External Checkpoint Blocker
 
 Status: `blocked_external_checkpoint_missing`
@@ -533,10 +562,10 @@ Still missing:
 
 Allowed wording: self-trained public-env benchmark complete; external checkpoint integration remains blocked.
 """,
-    )
-    _write_report(
-        reports / "EXTERNAL_POLICY_INTEGRATION_PLAN.md",
-        """
+        )
+        _write_report(
+            reports / "EXTERNAL_POLICY_INTEGRATION_PLAN.md",
+            """
 # External Policy Integration Plan
 
 Status: `ready_for_checkpoint_when_available`
@@ -550,10 +579,10 @@ Status: `ready_for_checkpoint_when_available`
 
 Until then, `reports/EXTERNAL_CHECKPOINT_STILL_BLOCKED.md` is the controlling status.
 """,
-    )
-    _write_report(
-        reports / "EXTERNAL_POLICY_BENCHMARK.md",
-        f"""
+        )
+        _write_report(
+            reports / "EXTERNAL_POLICY_BENCHMARK.md",
+            f"""
 # External Policy Benchmark
 
 Generated: `{_utc()}`
@@ -572,7 +601,7 @@ The repository now contains one completed self-trained public-environment benchm
 
 Allowed wording: BodyShield has a completed self-trained public Gymnasium policy benchmark. Do not claim external checkpoint validation, full-scale MuJoCo/ManiSkill trained-policy validation, hardware transfer, or dominance over domain randomization.
 """,
-    )
+        )
     _update_submission_ready_audit(root_path)
     return {
         "status": completion_status,

@@ -4,7 +4,9 @@
   "platform": "Windows-10-10.0.26200-SP0",
   "processor": "Intel64 Family 6 Model 140 Stepping 1, GenuineIntel",
   "pyproject_dependencies": [
+    "gym",
     "gymnasium",
+    "huggingface-sb3",
     "mani-skill",
     "matplotlib",
     "mujoco",
@@ -15,6 +17,8 @@
     "pypdf",
     "pytest",
     "pyyaml",
+    "shimmy",
+    "stable-baselines3",
     "tabulate"
   ],
   "python_executable": "<USER_HOME>\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
