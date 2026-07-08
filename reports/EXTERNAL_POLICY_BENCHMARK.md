@@ -1,22 +1,30 @@
 # External Policy Benchmark
 
-Generated: `2026-07-08T02:29:54+00:00`
+Generated: `2026-07-08T07:23:00+00:00`
 
-Status: `partial_analytic_surrogate`; external trained-policy evidence remains blocked.
+Status: `self_trained_public_env_complete`; `external_checkpoint_still_blocked`
 
-The v3 pass found no public or user-provided trained policy checkpoint inside this repository. It therefore exports a local residual-policy surrogate summary from existing generated MuJoCo-style rollouts and labels it as surrogate evidence only.
+The repository now contains one completed self-trained public-environment benchmark and still lacks a user-provided or public pretrained external checkpoint.
 
-| benchmark | status | n rollouts | delta success | limitation |
-|---|---|---:|---:|---|
-| mujoco_residual_policy_surrogate | complete_only_local_surrogate | 252 | 0.067 | Does not close the external trained-policy checkpoint evidence tier. |
-| mujoco_residual_policy_surrogate | complete_only_local_surrogate | 72 | 0.000 | Does not close the external trained-policy checkpoint evidence tier. |
-| mujoco_residual_policy_surrogate | complete_only_local_surrogate | 180 | 0.094 | Does not close the external trained-policy checkpoint evidence tier. |
-| external_trained_policy_checkpoint | blocked_external_data_checkpoints | 0 |  | Requires public or provided trained policy checkpoints plus compute-matched rollout protocol. |
+## Self-Trained Public-Env Rows
 
-Artifacts:
+| benchmark_id                     | env_id      | policy_id                       | bucket   |   n_episodes |   mean_return |   median_return |   min_return |   max_return |   success_rate_at_250 | checkpoint_path                                              | evidence_tier           | evidence_boundary                                                                                                                                                                     |
+|:---------------------------------|:------------|:--------------------------------|:---------|-------------:|--------------:|----------------:|-------------:|-------------:|----------------------:|:-------------------------------------------------------------|:------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| self_trained_public_env_cartpole | CartPole-v1 | nominal_self_trained_checkpoint | nominal  |            4 |       240.75  |           245.5 |          172 |          300 |              0.5      | results/checkpoints/self_trained_cartpole_linear_policy.json | self_trained_public_env | Self-trained public Gymnasium environment evidence only; not a user-provided external checkpoint, not MuJoCo/ManiSkill full-scale trained-policy evidence, and not hardware evidence. |
+| self_trained_public_env_cartpole | CartPole-v1 | nominal_self_trained_checkpoint | seen     |           12 |       241.917 |           261   |          155 |          300 |              0.5      | results/checkpoints/self_trained_cartpole_linear_policy.json | self_trained_public_env | Self-trained public Gymnasium environment evidence only; not a user-provided external checkpoint, not MuJoCo/ManiSkill full-scale trained-policy evidence, and not hardware evidence. |
+| self_trained_public_env_cartpole | CartPole-v1 | nominal_self_trained_checkpoint | heldout  |           20 |       240.3   |           250.5 |          144 |          300 |              0.5      | results/checkpoints/self_trained_cartpole_linear_policy.json | self_trained_public_env | Self-trained public Gymnasium environment evidence only; not a user-provided external checkpoint, not MuJoCo/ManiSkill full-scale trained-policy evidence, and not hardware evidence. |
+| self_trained_public_env_cartpole | CartPole-v1 | nominal_self_trained_checkpoint | all      |           36 |       240.889 |           250.5 |          144 |          300 |              0.5      | results/checkpoints/self_trained_cartpole_linear_policy.json | self_trained_public_env | Self-trained public Gymnasium environment evidence only; not a user-provided external checkpoint, not MuJoCo/ManiSkill full-scale trained-policy evidence, and not hardware evidence. |
+| self_trained_public_env_cartpole | CartPole-v1 | bodyshield_repaired_checkpoint  | nominal  |            4 |       300     |           300   |          300 |          300 |              1        | results/checkpoints/self_trained_cartpole_linear_policy.json | self_trained_public_env | Self-trained public Gymnasium environment evidence only; not a user-provided external checkpoint, not MuJoCo/ManiSkill full-scale trained-policy evidence, and not hardware evidence. |
+| self_trained_public_env_cartpole | CartPole-v1 | bodyshield_repaired_checkpoint  | seen     |           12 |       290.583 |           300   |          258 |          300 |              1        | results/checkpoints/self_trained_cartpole_linear_policy.json | self_trained_public_env | Self-trained public Gymnasium environment evidence only; not a user-provided external checkpoint, not MuJoCo/ManiSkill full-scale trained-policy evidence, and not hardware evidence. |
+| self_trained_public_env_cartpole | CartPole-v1 | bodyshield_repaired_checkpoint  | heldout  |           20 |       293.9   |           300   |          178 |          300 |              0.95     | results/checkpoints/self_trained_cartpole_linear_policy.json | self_trained_public_env | Self-trained public Gymnasium environment evidence only; not a user-provided external checkpoint, not MuJoCo/ManiSkill full-scale trained-policy evidence, and not hardware evidence. |
+| self_trained_public_env_cartpole | CartPole-v1 | bodyshield_repaired_checkpoint  | all      |           36 |       293.472 |           300   |          178 |          300 |              0.972222 | results/checkpoints/self_trained_cartpole_linear_policy.json | self_trained_public_env | Self-trained public Gymnasium environment evidence only; not a user-provided external checkpoint, not MuJoCo/ManiSkill full-scale trained-policy evidence, and not hardware evidence. |
+| self_trained_public_env_cartpole | CartPole-v1 | domain_randomization_checkpoint | nominal  |            4 |       300     |           300   |          300 |          300 |              1        | results/checkpoints/self_trained_cartpole_linear_policy.json | self_trained_public_env | Self-trained public Gymnasium environment evidence only; not a user-provided external checkpoint, not MuJoCo/ManiSkill full-scale trained-policy evidence, and not hardware evidence. |
+| self_trained_public_env_cartpole | CartPole-v1 | domain_randomization_checkpoint | seen     |           12 |       300     |           300   |          300 |          300 |              1        | results/checkpoints/self_trained_cartpole_linear_policy.json | self_trained_public_env | Self-trained public Gymnasium environment evidence only; not a user-provided external checkpoint, not MuJoCo/ManiSkill full-scale trained-policy evidence, and not hardware evidence. |
+| self_trained_public_env_cartpole | CartPole-v1 | domain_randomization_checkpoint | heldout  |           20 |       298.9   |           300   |          285 |          300 |              1        | results/checkpoints/self_trained_cartpole_linear_policy.json | self_trained_public_env | Self-trained public Gymnasium environment evidence only; not a user-provided external checkpoint, not MuJoCo/ManiSkill full-scale trained-policy evidence, and not hardware evidence. |
+| self_trained_public_env_cartpole | CartPole-v1 | domain_randomization_checkpoint | all      |           36 |       299.389 |           300   |          285 |          300 |              1        | results/checkpoints/self_trained_cartpole_linear_policy.json | self_trained_public_env | Self-trained public Gymnasium environment evidence only; not a user-provided external checkpoint, not MuJoCo/ManiSkill full-scale trained-policy evidence, and not hardware evidence. |
 
-- `results/external_policy_benchmark.csv`
-- `figures/external_policy_bodyshield_delta.pdf`
-- `results/mujoco_residual_policy_eval.csv`
+## Boundary
 
-Allowed wording: BodyShield is evaluated on local analytic and bounded high-fidelity surrogates. Do not claim external trained-policy validation.
+Self-trained public Gymnasium environment evidence only; not a user-provided external checkpoint, not MuJoCo/ManiSkill full-scale trained-policy evidence, and not hardware evidence.
+
+Allowed wording: BodyShield has a completed self-trained public Gymnasium policy benchmark. Do not claim external checkpoint validation, full-scale MuJoCo/ManiSkill trained-policy validation, hardware transfer, or dominance over domain randomization.

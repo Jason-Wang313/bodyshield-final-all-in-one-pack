@@ -1,16 +1,17 @@
-# Citation Verification
+# Citation Verification Table
 
-Verified on 2026-07-08 using primary arXiv/DOI/project sources where available.
+Verified on 2026-07-05 by Codex browser checks.
 
-| key | title | authors | venue/year | URL or DOI | claim supported | primary source | status |
-|---|---|---|---|---|---|---|---|
-| tobin2017domainrandomization | Domain Randomization for Transferring Deep Neural Networks from Simulation to the Real World | Tobin et al. | IROS 2017 | https://arxiv.org/abs/1703.06907 | domain randomization baseline | yes | Verified |
-| peng2018dynamicsrandomization | Sim-to-Real Transfer of Robotic Control with Dynamics Randomization | Peng et al. | ICRA 2018 | https://arxiv.org/abs/1710.06537 | dynamics randomization baseline | yes | Verified |
-| openai2018dexterous | Learning Dexterous In-Hand Manipulation | OpenAI et al. | IJRR 2020 / arXiv 2018 | https://arxiv.org/abs/1808.00177 | Dactyl/domain randomization context | yes | Verified |
-| openai2019rubiks | Solving Rubik's Cube with a Robot Hand | OpenAI et al. | arXiv 2019 | https://arxiv.org/abs/1910.07113 | automatic domain randomization context | yes | Verified |
-| gupta2025umionair | UMI-on-Air | Gupta et al. | ICRA 2026 / arXiv 2025 | https://arxiv.org/abs/2510.02614 | embodiment-aware policy guidance | yes | Verified |
-| wang2026embodisteer | EmbodiSteer | Wang et al. | arXiv 2026 | https://arxiv.org/abs/2606.12965 | joint-space embodiment-aware steering | yes | Verified |
-| karunakaran2020counterexampleguided | Counterexample-Guided Reinforcement Learning with Model-Based Exploration | Karunakaran and Seshia | NeurIPS 2020 | https://arxiv.org/abs/2506.03469 | cited through verified safe-RL reference list | secondary index plus title/venue | Verified |
-| le2025verificationguided | Verification-Guided Falsification for Safe RL | Le et al. | ECAI / arXiv 2025 | https://arxiv.org/abs/2506.03469 | verification-guided falsification and shielding | yes | Verified |
-| zeng2021mpccbf | Enhancing Feasibility and Safety of Nonlinear MPC with Discrete-Time CBFs | Zeng et al. | CDC 2021 | https://github.com/HybridRobotics/MPC-CBF | MPC-CBF robust-control baseline family | project/paper repository | Verified |
-| jiang2024transic | TRANSIC | Jiang et al. | CoRL 2024 | https://arxiv.org/abs/2405.10315 | sim-to-real correction/sysID-adjacent baseline context | yes | Verified |
+| Claim/source | Status | URL | Notes |
+|---|---|---|---|
+| ICRA reviewer scoring: A / 5.0 is definitely accept and top 15 percent of accepted ICRA papers | Verified | https://www.ieee-ras.org/conferences-workshops/fully-sponsored/icra/information-for-icra-reviewers/ | Checked reviewer scoring table around lines 600-610. Use only for venue-strategy discussion. |
+| ICRA editor guidance: lack of real-world experiments alone should not trigger rejection without review | Verified | https://www.ieee-ras.org/conferences-workshops/fully-sponsored/icra/information-for-icra-editors/ | Checked summary-rejection guidance around lines 606-613. Does not imply acceptance without strong evidence. |
+| Guanya Shi research scope spans ML, control theory, foundations, algorithms, robotics/autonomy | Verified | https://www.ri.cmu.edu/ri-faculty/guanya-shi/ | Checked RI profile lines 88-89. Supports advisor-fit framing. |
+| LeCAR lab develops reliable, adaptive, efficient learning/control for generalist agile robots | Verified | https://lecar-lab.github.io/ | Checked lab homepage lines 3-5. Supports LeCAR-fit framing. |
+| LeRobot provides hardware-agnostic Python-native robotics interfaces and SO-101 documentation | Verified | https://github.com/huggingface/lerobot and https://huggingface.co/docs/lerobot/en/so101 | Checked LeRobot README lines 319-341 and SO-101 docs lines 123-140. Use for future hardware integration only. |
+| VRB / Affordances from Human Videos | Verified | https://arxiv.org/abs/2304.08488 | Checked title/authors/abstract lines 12-24. Accepted-at-CVPR note should be refreshed before final camera-ready. |
+| ViPRA / Video Prediction for Robot Actions | Verified | https://arxiv.org/abs/2511.07732 | Checked arXiv v2 status and title/abstract lines 12-24. |
+| Domain randomization theory baseline | Verified | https://arxiv.org/abs/2110.03239 | Checked title and abstract lines 12-24. |
+| Domain randomization parameter-selection baseline | Verified | https://arxiv.org/abs/1903.11774 | Checked title and abstract lines 12-25. |
+| Randomized simulation review | Verified | https://arxiv.org/abs/2111.00956 | Checked title and abstract lines 12-24. |
+| Current LeCAR publications include PLD, FALCON, SPI-Active, ENPIRE, LUCID, etc. | Verified | https://lecar-lab.github.io/publications.html | Checked publication entries around lines 145-167; cite individual paper pages/arXiv before final submission. |

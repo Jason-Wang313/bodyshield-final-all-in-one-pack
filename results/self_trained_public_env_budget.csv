@@ -1,0 +1,4 @@
+policy_id,training_scope,iterations,population,elite,train_seeds,evaluator_calls
+nominal_self_trained_checkpoint,nominal_only,6,28,5,"100,101",336
+bodyshield_repaired_checkpoint,bodybreak_seen_perturbations,4,24,5,"100,101",192
+domain_randomization_checkpoint,same_seen_perturbation_family,4,24,5,"100,101",192

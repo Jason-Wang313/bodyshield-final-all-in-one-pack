@@ -6,10 +6,10 @@ This audit checks generated result tables for parseability, nonempty rows, dupli
 
 | metric | value |
 |---|---:|
-| checks | 353 |
-| passed | 353 |
+| checks | 369 |
+| passed | 369 |
 | failed | 0 |
-| artifacts audited | 64 |
+| artifacts audited | 68 |
 
 ## Display Rows
 
@@ -23,7 +23,7 @@ This audit checks generated result tables for parseability, nonempty rows, dupli
 | results/breaking_search.csv                        | csv_parse           | pass     | CSV parsed                 | 288 rows; 10 columns  |            |
 | results/breaking_search.csv                        | csv_nonempty_rows   | pass     | CSV has data rows          | 288                   | >0         |
 | results/breaking_search.csv                        | csv_unique_columns  | pass     | column names are unique    |                       |            |
-| results/claim_boundary_audit.csv                   | csv_exists_nonempty | pass     | CSV exists and is nonempty | 9037                  | >0 bytes   |
+| results/claim_boundary_audit.csv                   | csv_exists_nonempty | pass     | CSV exists and is nonempty | 9038                  | >0 bytes   |
 | results/claim_boundary_audit.csv                   | csv_parse           | pass     | CSV parsed                 | 63 rows; 6 columns    |            |
 | results/claim_boundary_audit.csv                   | csv_nonempty_rows   | pass     | CSV has data rows          | 63                    | >0         |
 | results/claim_boundary_audit.csv                   | csv_unique_columns  | pass     | column names are unique    |                       |            |
@@ -63,9 +63,9 @@ This audit checks generated result tables for parseability, nonempty rows, dupli
 | results/environment_dependency_audit.csv           | csv_parse           | pass     | CSV parsed                 | 16 rows; 11 columns   |            |
 | results/environment_dependency_audit.csv           | csv_nonempty_rows   | pass     | CSV has data rows          | 16                    | >0         |
 | results/environment_dependency_audit.csv           | csv_unique_columns  | pass     | column names are unique    |                       |            |
-| results/evidence_consistency_audit.csv             | csv_exists_nonempty | pass     | CSV exists and is nonempty | 62709                 | >0 bytes   |
-| results/evidence_consistency_audit.csv             | csv_parse           | pass     | CSV parsed                 | 599 rows; 5 columns   |            |
-| results/evidence_consistency_audit.csv             | csv_nonempty_rows   | pass     | CSV has data rows          | 599                   | >0         |
+| results/evidence_consistency_audit.csv             | csv_exists_nonempty | pass     | CSV exists and is nonempty | 70497                 | >0 bytes   |
+| results/evidence_consistency_audit.csv             | csv_parse           | pass     | CSV parsed                 | 681 rows; 5 columns   |            |
+| results/evidence_consistency_audit.csv             | csv_nonempty_rows   | pass     | CSV has data rows          | 681                   | >0         |
 | results/evidence_consistency_audit.csv             | csv_unique_columns  | pass     | column names are unique    |                       |            |
 | results/external_policy_benchmark.csv              | csv_exists_nonempty | pass     | CSV exists and is nonempty | 1468                  | >0 bytes   |
 | results/external_policy_benchmark.csv              | csv_parse           | pass     | CSV parsed                 | 4 rows; 14 columns    |            |

@@ -1,92 +1,92 @@
 [
   {
     "bytes": 3452,
-    "generated_at": "2026-07-08T02:29:58+00:00",
+    "generated_at": "2026-07-08T07:22:17+00:00",
     "path": "reports/POST_NON_HARDWARE_REPO_AUDIT.md",
-    "sha256": "3a10360d7bb60658c4e6392514a362c0668e87b0e2e736366d9931582af66683"
+    "sha256": "c5187b5aa1e72787588c4fc491ede35887c3fb439c8f5f300df158cc944aff46"
   },
   {
     "bytes": 3798,
-    "generated_at": "2026-07-08T02:29:58+00:00",
+    "generated_at": "2026-07-08T07:22:17+00:00",
     "path": "reports/METHOD_THEORY_STRENGTHENING.md",
     "sha256": "ce8626a9f6f6e940f7ff90d2b7ac6f44c1a6afee89e0ff8f4996304e1670b3a2"
   },
   {
     "bytes": 3390,
-    "generated_at": "2026-07-08T02:29:58+00:00",
+    "generated_at": "2026-07-08T07:22:17+00:00",
     "path": "reports/FULL_REVIEWER_PREBUTTAL.md",
-    "sha256": "5df6962f8600e41275db2e1dd5fff20f1627c36073012ce679d3d4ac9b2b9e53"
+    "sha256": "df4b81be0a5d2ad652fefee2ac34efac5bb0bf8fe1044b4f1cb01e57d8e33b5c"
   },
   {
     "bytes": 2263,
-    "generated_at": "2026-07-08T02:29:58+00:00",
+    "generated_at": "2026-07-08T07:22:17+00:00",
     "path": "reports/SUBMISSION_READY_AUDIT.md",
-    "sha256": "12feda111a18127b51103de5d2d63d394f593c48c272b9206adb9901de1159ff"
+    "sha256": "b1ff83f34c076c21414bc39c8774c278dc91741a0d5e774f16d1c93d7e36ba75"
   },
   {
     "bytes": 833,
-    "generated_at": "2026-07-08T02:29:58+00:00",
+    "generated_at": "2026-07-08T07:22:17+00:00",
     "path": "reports/HARDWARE_BLOCKER.md",
-    "sha256": "cae7dd9fe76f52d08639b6352c9b4f4aff3a7ebd16e8452982da0034c33021fe"
+    "sha256": "962c01fb65f22dfd849cec7c95070cb70afcf195c44d2fbe09561ca9e9fbe5e7"
   },
   {
     "bytes": 1428,
-    "generated_at": "2026-07-08T02:29:58+00:00",
+    "generated_at": "2026-07-08T07:22:17+00:00",
     "path": "reports/EXTERNAL_POLICY_BENCHMARK.md",
-    "sha256": "d26a0d097f19a1725345598754349522e57b073fbd79e8597681cc6beccf303c"
+    "sha256": "e041892f0161652be8d0510be735762f9d2c899c64e8b3f67637b34ec4afc029"
   },
   {
     "bytes": 780,
-    "generated_at": "2026-07-08T02:29:58+00:00",
+    "generated_at": "2026-07-08T07:22:17+00:00",
     "path": "reports/HIGH_FIDELITY_POLICY_RESULTS.md",
-    "sha256": "12c18c9d06f7929288aa41d0a9d7c151126e9ae07f5ccf87b0706be1e30bf117"
+    "sha256": "3938f10f6706e2a6c37cce77260917037601e92a47a9c9354485bcc3dae4db97"
   },
   {
     "bytes": 1468,
-    "generated_at": "2026-07-08T02:29:58+00:00",
+    "generated_at": "2026-07-08T07:22:17+00:00",
     "path": "results/external_policy_benchmark.csv",
     "sha256": "888ac09854b5123bd38a269af92dd123222d6738e97cfac8e5e06e79dfcce856"
   },
   {
     "bytes": 62830,
-    "generated_at": "2026-07-08T02:29:58+00:00",
+    "generated_at": "2026-07-08T07:22:17+00:00",
     "path": "results/high_fidelity_policy_results.csv",
     "sha256": "b3b88bd95ce6777c8440c4664b27644ae03dd46ec5ec7846402387bd2fe4cca4"
   },
   {
     "bytes": 1578,
-    "generated_at": "2026-07-08T02:29:58+00:00",
+    "generated_at": "2026-07-08T07:22:17+00:00",
     "path": "results/submission_ready_audit.csv",
     "sha256": "32d6f1f2246150b7cb60443f79e1281a43e053cad7d5fec20c2ca945abee0b13"
   },
   {
     "bytes": 6926,
-    "generated_at": "2026-07-08T02:29:58+00:00",
+    "generated_at": "2026-07-08T07:22:17+00:00",
     "path": "paper/main.tex",
     "sha256": "45a2e625865410d1597d62f1e645afbce17443287d74b932929290934cb17038"
   },
   {
-    "bytes": 31605,
-    "generated_at": "2026-07-08T02:29:58+00:00",
+    "bytes": 30999,
+    "generated_at": "2026-07-08T07:22:17+00:00",
     "path": "paper/bodyshield_full_paper.pdf",
-    "sha256": "845c54577a743eb6185b4341339651020f5ef49134a2e8b7b1b05117afc2f06f"
+    "sha256": "10d520b32128bcda5c103dfbfa53d24706b47b31c0f67206f0e498871ef1509f"
   },
   {
-    "bytes": 28729,
-    "generated_at": "2026-07-08T02:29:58+00:00",
+    "bytes": 28124,
+    "generated_at": "2026-07-08T07:22:17+00:00",
     "path": "paper/bodyshield_supplement.pdf",
-    "sha256": "9079256b684d405f3a9493ba5031a398ae221b7ca95afad1db875884ed769424"
+    "sha256": "96a607a3a4bc56cdbc0b42c0bc84c57001417c68419b24799764e85db4946786"
   },
   {
     "bytes": 13872,
-    "generated_at": "2026-07-08T02:29:59+00:00",
+    "generated_at": "2026-07-08T07:22:17+00:00",
     "path": "figures/external_policy_bodyshield_delta.pdf",
-    "sha256": "87a7f9fc38f7ef5b309a97a6e2cd66777233c7225d9859f2098a35bc4f532a62"
+    "sha256": "979e00b79ddc06917391d12082df3152c183c37c2cf51eb533b52d57b8cad79d"
   },
   {
     "bytes": 15348,
-    "generated_at": "2026-07-08T02:29:59+00:00",
+    "generated_at": "2026-07-08T07:22:17+00:00",
     "path": "figures/high_fidelity_heldout_success.pdf",
-    "sha256": "804cb6ebe720836a561a974a88672da3bb7b5a7027934b3a75967927245df06b"
+    "sha256": "1c664e19014e4b1a7cb9e65e499acef9462673a71f9fd713b14a131ec26ebf5e"
   }
 ]

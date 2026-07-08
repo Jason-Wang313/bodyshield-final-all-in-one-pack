@@ -6,22 +6,22 @@ This audit checks that every shipped Python source file under `bodyshield/`, `sc
 
 | metric | value |
 |---|---:|
-| checks | 295 |
-| passed | 295 |
+| checks | 299 |
+| passed | 299 |
 | failed | 0 |
-| artifacts audited | 241 |
+| artifacts audited | 244 |
 
 ## Display Rows
 
 | artifact                                    | check                          | status   | detail                                    |   observed | expected   |
 |:--------------------------------------------|:-------------------------------|:---------|:------------------------------------------|-----------:|:-----------|
 | bodyshield                                  | source_root_exists             | pass     | source root exists                        |       True | True       |
-| bodyshield                                  | source_python_files_discovered | pass     | Python source files discovered under root |         98 | >0         |
+| bodyshield                                  | source_python_files_discovered | pass     | Python source files discovered under root |         99 | >0         |
 | scripts                                     | source_root_exists             | pass     | source root exists                        |       True | True       |
-| scripts                                     | source_python_files_discovered | pass     | Python source files discovered under root |         32 | >0         |
+| scripts                                     | source_python_files_discovered | pass     | Python source files discovered under root |         33 | >0         |
 | tests                                       | source_root_exists             | pass     | source root exists                        |       True | True       |
 | tests                                       | source_python_files_discovered | pass     | Python source files discovered under root |         14 | >0         |
-| bodyshield                                  | bodyshield_modules_discovered  | pass     | importable bodyshield modules discovered  |         95 | >0         |
+| bodyshield                                  | bodyshield_modules_discovered  | pass     | importable bodyshield modules discovered  |         96 | >0         |
 | bodyshield/__init__.py                      | python_file_py_compile         | pass     | Python source compiles                    |            |            |
 | bodyshield/_legacy.py                       | python_file_py_compile         | pass     | Python source compiles                    |            |            |
 | bodyshield/analysis/__init__.py             | python_file_py_compile         | pass     | Python source compiles                    |            |            |
@@ -100,6 +100,7 @@ This audit checks that every shipped Python source file under `bodyshield/`, `sc
 | bodyshield/robot/verifier.py                | python_file_py_compile         | pass     | Python source compiles                    |            |            |
 | bodyshield/safe_robot_runner.py             | python_file_py_compile         | pass     | Python source compiles                    |            |            |
 | bodyshield/schema.py                        | python_file_py_compile         | pass     | Python source compiles                    |            |            |
+| bodyshield/self_trained_public_env.py       | python_file_py_compile         | pass     | Python source compiles                    |            |            |
 | bodyshield/sim/__init__.py                  | python_file_py_compile         | pass     | Python source compiles                    |            |            |
 | bodyshield/sim/envs.py                      | python_file_py_compile         | pass     | Python source compiles                    |            |            |
 | bodyshield/sim/robots.py                    | python_file_py_compile         | pass     | Python source compiles                    |            |            |
@@ -134,4 +135,3 @@ This audit checks that every shipped Python source file under `bodyshield/`, `sc
 | scripts/run_corrective_trace_readiness.py   | python_file_py_compile         | pass     | Python source compiles                    |            |            |
 | scripts/run_derived_results_audit.py        | python_file_py_compile         | pass     | Python source compiles                    |            |            |
 | scripts/run_environment_dependency_audit.py | python_file_py_compile         | pass     | Python source compiles                    |            |            |
-| scripts/run_evidence_consistency_audit.py   | python_file_py_compile         | pass     | Python source compiles                    |            |            |

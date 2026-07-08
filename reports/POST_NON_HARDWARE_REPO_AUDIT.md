@@ -1,6 +1,6 @@
 # Post-Nonhardware Repository Audit
 
-Generated: `2026-07-08T02:29:56+00:00`
+Generated: `2026-07-08T07:22:09+00:00`
 
 This audit classifies every remaining evidence tier after the v2 non-hardware package and v3 post-nonhardware pass.
 

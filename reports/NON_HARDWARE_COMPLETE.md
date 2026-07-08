@@ -1,6 +1,6 @@
 # Non-Hardware Complete
 
-Code version: `9bcba4e9c35077af`
+Code version: `b2492a6fe5c81e0f`
 
 ## Completed software modules
 - `bodyshield.perturbations`

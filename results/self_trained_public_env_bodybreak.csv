@@ -1,0 +1,9 @@
+benchmark_id,policy_id,perturbation,bucket,cost,mean_return,success_rate_at_250,break_status
+self_trained_public_env_cartpole,nominal_self_trained_checkpoint,force_0.55,seen,0.45,235.5,0.5,break_found
+self_trained_public_env_cartpole,nominal_self_trained_checkpoint,length_1.7,seen,0.7,299.75,1.0,not_broken_under_threshold
+self_trained_public_env_cartpole,nominal_self_trained_checkpoint,action_delay_1,seen,0.4,190.5,0.0,break_found
+self_trained_public_env_cartpole,nominal_self_trained_checkpoint,force_0.45,heldout,0.55,261.5,0.75,not_broken_under_threshold
+self_trained_public_env_cartpole,nominal_self_trained_checkpoint,masspole_2.0,heldout,1.0,220.5,0.25,break_found
+self_trained_public_env_cartpole,nominal_self_trained_checkpoint,length_2.0,heldout,1.0,300.0,1.0,not_broken_under_threshold
+self_trained_public_env_cartpole,nominal_self_trained_checkpoint,obs_noise_0.05,heldout,0.5,207.25,0.25,break_found
+self_trained_public_env_cartpole,nominal_self_trained_checkpoint,compound_force_length_obs_delay,heldout,1.25,212.25,0.25,break_found

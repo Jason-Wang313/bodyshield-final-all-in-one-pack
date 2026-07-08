@@ -59,6 +59,19 @@ POST_NONHARDWARE_REQUIRED = (
     "figures/external_policy_bodyshield_delta.pdf",
     "figures/high_fidelity_heldout_success.pdf",
     "videos/hardware/index.md",
+    "bodyshield/self_trained_public_env.py",
+    "scripts/run_self_trained_public_env_benchmark.py",
+    "reports/EXTERNAL_TRAINED_POLICY_COMPLETE.md",
+    "reports/SELF_TRAINED_PUBLIC_ENV_COMPLETE.md",
+    "reports/EXTERNAL_CHECKPOINT_STILL_BLOCKED.md",
+    "reports/EXTERNAL_POLICY_INTEGRATION_PLAN.md",
+    "results/self_trained_public_env_benchmark.csv",
+    "results/self_trained_public_env_training_curve.csv",
+    "results/self_trained_public_env_bodybreak.csv",
+    "results/self_trained_public_env_budget.csv",
+    "results/checkpoints/self_trained_cartpole_linear_policy.json",
+    "figures/self_trained_public_env_returns.pdf",
+    "figures/self_trained_public_env_training_curve.pdf",
 )
 
 HARDWARE_REQUIRED = (

@@ -4,7 +4,8 @@ analytic_simulation,pass,"results/trials.parquet, logs/sim/results.jsonl",analyt
 budget_fairness,pass,reports/BUDGET_AND_FAIRNESS_AUDIT.md,external controller matching open,budget-matched local baselines
 claim_citation_repro,pass,"reports/CLAIM_LEDGER.md, reports/citation_verification.md, REPRODUCE.md",local only,audited local package
 high_fidelity_bounded,pass_with_scope_limit,results/high_fidelity_policy_results.csv,bounded probes only,bounded simulator probes
-external_trained_policy,fail,reports/EXTERNAL_CHECKPOINT_BLOCKER.md,checkpoint missing,do not claim external policy validation
+self_trained_public_env_policy,pass_with_scope_limit,"reports/SELF_TRAINED_PUBLIC_ENV_COMPLETE.md, results/self_trained_public_env_benchmark.csv, results/checkpoints/self_trained_cartpole_linear_policy.json",small CartPole public-env evidence only,self-trained public Gymnasium policy benchmark complete
+external_trained_policy,fail,"reports/EXTERNAL_CHECKPOINT_STILL_BLOCKED.md, reports/EXTERNAL_POLICY_INTEGRATION_PLAN.md",pretrained external checkpoint missing; self-trained public env does not close this gate,do not claim external checkpoint validation
 real_video_wam,fail,reports/REAL_VIDEO_WAM_RESULTS.md,dataset missing,readiness only
 corrective_trace,fail,reports/CORRECTIVE_TRACE_RESULTS.md,dataset missing,synthetic proxy only
 hardware_safety_noise_verifier_reset,fail,reports/HARDWARE_BLOCKER.md,hardware not confirmed or run,software readiness only

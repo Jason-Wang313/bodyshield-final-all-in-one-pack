@@ -1,0 +1,186 @@
+{
+  "domain_randomization_weights": [
+    -0.2378704818008271,
+    0.7356472352981005,
+    1.3703414458070569,
+    1.5545114123652728,
+    0.0807504893991062
+  ],
+  "env_id": "CartPole-v1",
+  "eval_seeds": [
+    200,
+    201,
+    202,
+    203
+  ],
+  "evidence_boundary": "Self-trained public Gymnasium environment evidence only; not a user-provided external checkpoint, not MuJoCo/ManiSkill full-scale trained-policy evidence, and not hardware evidence.",
+  "generated_utc": "2026-07-08T07:22:57+00:00",
+  "gymnasium_version": "1.2.3",
+  "max_steps": 300,
+  "nominal_weights": [
+    -0.10662037986446382,
+    0.41181188221304915,
+    -0.6960736515359741,
+    3.84361531068327,
+    0.035233385917365995
+  ],
+  "perturbations": {
+    "heldout": [
+      {
+        "action_delay": 0,
+        "bucket": "heldout",
+        "cost": 0.55,
+        "force_scale": 0.45,
+        "length_scale": 1.0,
+        "masspole_scale": 1.0,
+        "name": "force_0.45",
+        "obs_delay": 0,
+        "obs_noise": 0.0
+      },
+      {
+        "action_delay": 0,
+        "bucket": "heldout",
+        "cost": 1.0,
+        "force_scale": 1.0,
+        "length_scale": 1.0,
+        "masspole_scale": 2.0,
+        "name": "masspole_2.0",
+        "obs_delay": 0,
+        "obs_noise": 0.0
+      },
+      {
+        "action_delay": 0,
+        "bucket": "heldout",
+        "cost": 1.0,
+        "force_scale": 1.0,
+        "length_scale": 2.0,
+        "masspole_scale": 1.0,
+        "name": "length_2.0",
+        "obs_delay": 0,
+        "obs_noise": 0.0
+      },
+      {
+        "action_delay": 0,
+        "bucket": "heldout",
+        "cost": 0.5,
+        "force_scale": 1.0,
+        "length_scale": 1.0,
+        "masspole_scale": 1.0,
+        "name": "obs_noise_0.05",
+        "obs_delay": 0,
+        "obs_noise": 0.05
+      },
+      {
+        "action_delay": 0,
+        "bucket": "heldout",
+        "cost": 1.25,
+        "force_scale": 0.55,
+        "length_scale": 1.5,
+        "masspole_scale": 1.0,
+        "name": "compound_force_length_obs_delay",
+        "obs_delay": 1,
+        "obs_noise": 0.0
+      }
+    ],
+    "nominal": [
+      {
+        "action_delay": 0,
+        "bucket": "nominal",
+        "cost": 0.0,
+        "force_scale": 1.0,
+        "length_scale": 1.0,
+        "masspole_scale": 1.0,
+        "name": "nominal",
+        "obs_delay": 0,
+        "obs_noise": 0.0
+      }
+    ],
+    "repair_train": [
+      {
+        "action_delay": 0,
+        "bucket": "nominal",
+        "cost": 0.0,
+        "force_scale": 1.0,
+        "length_scale": 1.0,
+        "masspole_scale": 1.0,
+        "name": "nominal",
+        "obs_delay": 0,
+        "obs_noise": 0.0
+      },
+      {
+        "action_delay": 0,
+        "bucket": "seen",
+        "cost": 0.45,
+        "force_scale": 0.55,
+        "length_scale": 1.0,
+        "masspole_scale": 1.0,
+        "name": "force_0.55",
+        "obs_delay": 0,
+        "obs_noise": 0.0
+      },
+      {
+        "action_delay": 0,
+        "bucket": "seen",
+        "cost": 0.7,
+        "force_scale": 1.0,
+        "length_scale": 1.7,
+        "masspole_scale": 1.0,
+        "name": "length_1.7",
+        "obs_delay": 0,
+        "obs_noise": 0.0
+      },
+      {
+        "action_delay": 1,
+        "bucket": "seen",
+        "cost": 0.4,
+        "force_scale": 1.0,
+        "length_scale": 1.0,
+        "masspole_scale": 1.0,
+        "name": "action_delay_1",
+        "obs_delay": 0,
+        "obs_noise": 0.0
+      }
+    ]
+  },
+  "policy_id": "bodyshield_repaired_checkpoint",
+  "train_seeds": [
+    100,
+    101
+  ],
+  "training_budgets": [
+    {
+      "elite": 5,
+      "evaluator_calls": 336,
+      "iterations": 6,
+      "policy_id": "nominal_self_trained_checkpoint",
+      "population": 28,
+      "train_seeds": "100,101",
+      "training_scope": "nominal_only"
+    },
+    {
+      "elite": 5,
+      "evaluator_calls": 192,
+      "iterations": 4,
+      "policy_id": "bodyshield_repaired_checkpoint",
+      "population": 24,
+      "train_seeds": "100,101",
+      "training_scope": "bodybreak_seen_perturbations"
+    },
+    {
+      "elite": 5,
+      "evaluator_calls": 192,
+      "iterations": 4,
+      "policy_id": "domain_randomization_checkpoint",
+      "population": 24,
+      "train_seeds": "100,101",
+      "training_scope": "same_seen_perturbation_family"
+    }
+  ],
+  "weights": [
+    -0.248830094634069,
+    1.0057144204515418,
+    0.2418136374742279,
+    3.5883777223662565,
+    0.01995640592478011
+  ]
+}

@@ -1,9 +1,9 @@
 artifact,check,status,detail,observed,expected
-reports/ARTIFACT_MANIFEST.csv,artifact_manifest_exists_nonempty,pass,artifact manifest exists and is nonempty,312,>0 rows
-release/RELEASE_BUNDLE_MANIFEST.csv,release_manifest_exists_nonempty,pass,release manifest exists and is nonempty,473,>0 rows
-reports/ARTIFACT_MANIFEST.csv,artifact_manifest_exact_current_generated_set,pass,missing=[]; extra=[],312,312
+reports/ARTIFACT_MANIFEST.csv,artifact_manifest_exists_nonempty,pass,artifact manifest exists and is nonempty,323,>0 rows
+release/RELEASE_BUNDLE_MANIFEST.csv,release_manifest_exists_nonempty,pass,release manifest exists and is nonempty,486,>0 rows
+reports/ARTIFACT_MANIFEST.csv,artifact_manifest_exact_current_generated_set,pass,missing=[]; extra=[],323,323
 reports/ARTIFACT_MANIFEST.csv,artifact_manifest_hashes_match_current_files,pass,bad_bytes=[]; bad_hashes=[],0,0
-release/RELEASE_BUNDLE_MANIFEST.csv,release_manifest_exact_current_payload_set,pass,missing=[]; extra=[],473,473
+release/RELEASE_BUNDLE_MANIFEST.csv,release_manifest_exact_current_payload_set,pass,missing=[]; extra=[],486,486
 release/RELEASE_BUNDLE_MANIFEST.csv,release_manifest_hashes_match_current_files,pass,bad_bytes=[]; bad_hashes=[],0,0
 README_EXECUTION.md,documented_output_references_discovered,pass,documented output references discovered,68,>0
 reports/NON_HARDWARE_COMPLETE.md,documented_output_exists_nonempty,pass,README_EXECUTION.md reference exists and is nonempty,1,1

@@ -1,6 +1,6 @@
 artifact,check,status,detail,observed,expected
 paper/main.tex,tex_exists_nonempty,pass,paper TeX source exists and is nonempty,6926,>0 bytes
-paper/references.bib,bib_exists_nonempty,pass,paper BibTeX source exists and is nonempty,6532,>0 bytes
+paper/references.bib,bib_exists_nonempty,pass,paper BibTeX source exists and is nonempty,6550,>0 bytes
 paper/main.tex,tex_citations_resolve,pass,citation keys missing from bibliography=[],"gupta2025umionair,jiang2024transic,karunakaran2020counterexampleguided,le2025verificationguided,openai2018dexterous,openai2019rubiks,peng2018dynamicsrandomization,tobin2017domainrandomization,wang2026embodisteer,zeng2021mpccbf",all cited keys in paper/references.bib
 paper/references.bib,bib_required_keys_present,pass,expected bibliography keys missing=[],14,14
 paper/main.tex,tex_bibliography_files_resolve,pass,bibliography declarations missing=[],references.bib,at least one existing .bib file
@@ -18,4 +18,4 @@ paper/bodyshield_non_hardware_draft.pdf,pdf_readable_pages,pass,paper PDF opens 
 paper/bodyshield_non_hardware_draft.pdf,pdf_safe_structure,pass,paper PDF has no interactive/unsafe structure flags,,none
 paper/bodyshield_non_hardware_draft.pdf,pdf_unresolved_markers_absent,pass,PDF extracted text unresolved markers=[],,none
 paper/bodyshield_non_hardware_draft.pdf,pdf_boundary_terms_present,pass,required PDF boundary terms missing=[],5,5
-paper/bodyshield_non_hardware_draft.pdf,pdf_matches_build_output,pass,exported paper PDF matches paper/build/main.pdf when build output is available,07d53add629421d71f1124375de444130e750b410ca7206e241d9a50593254e8,07d53add629421d71f1124375de444130e750b410ca7206e241d9a50593254e8
+paper/bodyshield_non_hardware_draft.pdf,pdf_matches_build_output,pass,exported paper PDF matches paper/build/main.pdf when build output is available,b28727b4a0d030e51292135bd4d958db3eff84899ca32994ad4d7aa1f2b78dc3,b28727b4a0d030e51292135bd4d958db3eff84899ca32994ad4d7aa1f2b78dc3

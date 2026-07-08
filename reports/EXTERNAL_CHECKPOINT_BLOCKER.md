@@ -1,12 +1,15 @@
 # External Checkpoint Blocker
 
-Status: `blocked_external_data_checkpoints`
+Status: `blocked_external_checkpoint_missing`
 
-Missing items:
+The self-trained public-env benchmark is complete, but no user-provided or public pretrained external checkpoint is present. The controlling status file is `reports/EXTERNAL_CHECKPOINT_STILL_BLOCKED.md`.
 
-- A trained policy checkpoint from a public or user-provided benchmark.
-- Exact environment version, observation/action wrappers, normalization, seed list, and evaluation horizon.
-- Compute-matched baseline tuning budget for the same controller family.
-- Reproducible rollout script that can regenerate the benchmark table without fixture shortcuts.
+Still missing:
 
-The repository contains local analytic and bounded MuJoCo/ManiSkill probes, but those are not a substitute for an external trained-policy checkpoint benchmark.
+- Trained external checkpoint file or URL with redistribution/license status.
+- Exact environment version, wrappers, observation/action normalization, and checkpoint loader.
+- Seed list, horizon, success metric, and evaluation protocol.
+- Compute-matched tuning budget for BodyShield, domain randomization, robust-control/sysID alternatives, and the original policy.
+- Reproducible rollout script for the external checkpoint in its intended environment.
+
+Allowed wording: self-trained public-env benchmark complete; external checkpoint integration remains blocked.

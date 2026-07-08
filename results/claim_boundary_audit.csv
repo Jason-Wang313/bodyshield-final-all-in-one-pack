@@ -5,7 +5,7 @@ reports/CLAIM_BOUNDARY.md,required_boundary_phrase,pass,required boundary phrase
 reports/CLAIM_BOUNDARY.md,required_boundary_phrase,pass,required boundary phrase present,No external/full-scale robot-policy MuJoCo/ManiSkill benchmark suite has been run,
 reports/CLAIM_BOUNDARY.md,required_boundary_phrase,pass,required boundary phrase present,No real-camera or foundation-scale WAM training has been run,
 reports/CLAIM_BOUNDARY.md,required_boundary_phrase,pass,required boundary phrase present,No real/external corrective-trace adaptation has been run,
-reports/CLAIM_LEDGER.md,document_exists_nonempty,pass,document exists and is nonempty,1213,>0 bytes
+reports/CLAIM_LEDGER.md,document_exists_nonempty,pass,document exists and is nonempty,10024,>0 bytes
 reports/CLAIM_LEDGER.md,required_boundary_phrase,pass,required boundary phrase present,do not claim physical transfer,
 reports/CLAIM_LEDGER.md,required_boundary_phrase,pass,required boundary phrase present,Do not present as real-video,
 reports/CLAIM_LEDGER.md,required_boundary_phrase,pass,required boundary phrase present,Do not present as external/full-scale trained-policy MuJoCo/ManiSkill rollout evidence,
@@ -61,4 +61,4 @@ results/simulation_rollout_videos.csv,required_statuses,pass,required status/art
 results/simulation_rollout_videos.csv,required_boundary_phrase,pass,required CSV boundary phrase present,Synthetic generated rollout only,Synthetic generated rollout only
 results/simulation_rollout_videos.csv,required_boundary_phrase,pass,required CSV boundary phrase present,not real video,not real video
 results/simulation_rollout_videos.csv,required_boundary_phrase,pass,required CSV boundary phrase present,"not real video, camera verification, hardware","not real video, camera verification, hardware"
-text_claim_scan,forbidden_overclaim_phrases,pass,no unsupported overclaim phrases found,159,
+text_claim_scan,forbidden_overclaim_phrases,pass,no unsupported overclaim phrases found,163,
