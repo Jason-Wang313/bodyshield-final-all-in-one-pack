@@ -6,6 +6,8 @@ Status: `complete_public_pretrained_mujoco_checkpoint`
 
 The external-policy tier now includes a real public pretrained checkpoint benchmark from SB3/RL-Zoo: `sb3/ppo-HalfCheetah-v3`. The benchmark uses the public model zip and VecNormalize statistics, runs full-horizon MuJoCo/Gymnasium rollouts, tunes a gated actuator-loss action-gain adapter on seen actuator-loss seeds, and evaluates held-out perturbations.
 
+Fairness caveat: the repair is a diagnosed action-gain compensation, so `reports/EXTERNAL_BASELINE_FAIRNESS.md` treats compute-matched action scaling, domain randomization, robust control, and sysID as live alternative explanations rather than defeated baselines.
+
 ## Source
 
 

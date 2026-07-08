@@ -18,7 +18,7 @@
       "checkpoint_path": "external_checkpoints/replace_with_trained_policy.ckpt",
       "engine": "maniskill",
       "expected_action_dim": 7,
-      "notes": "Template row: replace with a real checkpoint and adapter before claiming external policy evidence.",
+      "notes": "Template row: replace with a real manipulation checkpoint and adapter before claiming broad external policy-suite evidence.",
       "observation_dim": 16,
       "policy_id": "replace_with_external_maniskill_checkpoint",
       "source": "external_checkpoint",

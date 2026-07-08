@@ -118,7 +118,7 @@ Generated: `2026-07-08T02:25:12+00:00`
 - reset reliability logs
 - all-trials hardware videos
 - held-out physical-modification hardware runs
-- external trained-policy checkpoints
+- broad manipulation/foundation-policy checkpoint suites beyond the public HalfCheetah checkpoint
 
 ## Blockers
 

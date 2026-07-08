@@ -6,18 +6,18 @@ This audit checks that documented local commands remain synchronized across the 
 
 | metric | value |
 |---|---:|
-| checks | 237 |
-| passed | 237 |
+| checks | 247 |
+| passed | 247 |
 | failed | 0 |
-| commands audited | 23 |
+| commands audited | 24 |
 | documents audited | 3 |
 
 ## Display Rows
 
 | document                            | command                                                    | target                                      | check                        | status   | detail                                                | observed     | expected     |
 |:------------------------------------|:-----------------------------------------------------------|:--------------------------------------------|:-----------------------------|:---------|:------------------------------------------------------|:-------------|:-------------|
-| README_EXECUTION.md                 |                                                            |                                             | document_has_python_commands | pass     | document contains python command lines                | 23           | >0           |
-| reports/REPRODUCIBILITY_MANIFEST.md |                                                            |                                             | document_has_python_commands | pass     | document contains python command lines                | 23           | >0           |
+| README_EXECUTION.md                 |                                                            |                                             | document_has_python_commands | pass     | document contains python command lines                | 24           | >0           |
+| reports/REPRODUCIBILITY_MANIFEST.md |                                                            |                                             | document_has_python_commands | pass     | document contains python command lines                | 24           | >0           |
 | release/RELEASE_README.md           |                                                            |                                             | document_has_python_commands | pass     | document contains python command lines                | 2            | >0           |
 | README_EXECUTION.md                 | python -m pytest -q                                        | pytest                                      | command_target_recognized    | pass     | command target recognized                             |              |              |
 | README_EXECUTION.md                 | python -m pytest -q                                        | pytest                                      | pytest_tests_dir_exists      | pass     | pytest command has local tests                        |              |              |
@@ -26,6 +26,11 @@ This audit checks that documented local commands remain synchronized across the 
 | README_EXECUTION.md                 | python scripts/run_external_policy_benchmark.py            | scripts/run_external_policy_benchmark.py    | script_py_compile            | pass     | script compiles                                       |              |              |
 | README_EXECUTION.md                 | python scripts/run_external_policy_benchmark.py            | scripts/run_external_policy_benchmark.py    | script_has_main_guard        | pass     | script has a guarded CLI entry point                  |              |              |
 | README_EXECUTION.md                 | python scripts/run_external_policy_benchmark.py            | scripts/run_external_policy_benchmark.py    | script_help_callable         | pass     | script --help exits successfully                      | returncode=0 | returncode=0 |
+| README_EXECUTION.md                 | python scripts/run_public_checkpoint_benchmark.py          | scripts/run_public_checkpoint_benchmark.py  | command_target_recognized    | pass     | command target recognized                             |              |              |
+| README_EXECUTION.md                 | python scripts/run_public_checkpoint_benchmark.py          | scripts/run_public_checkpoint_benchmark.py  | script_exists_nonempty       | pass     | script target exists and is nonempty                  | 543          | >0 bytes     |
+| README_EXECUTION.md                 | python scripts/run_public_checkpoint_benchmark.py          | scripts/run_public_checkpoint_benchmark.py  | script_py_compile            | pass     | script compiles                                       |              |              |
+| README_EXECUTION.md                 | python scripts/run_public_checkpoint_benchmark.py          | scripts/run_public_checkpoint_benchmark.py  | script_has_main_guard        | pass     | script has a guarded CLI entry point                  |              |              |
+| README_EXECUTION.md                 | python scripts/run_public_checkpoint_benchmark.py          | scripts/run_public_checkpoint_benchmark.py  | script_help_not_required     | pass     | script is intentionally not help-probed by this audit |              |              |
 | README_EXECUTION.md                 | python scripts/run_real_video_wam_readiness.py             | scripts/run_real_video_wam_readiness.py     | command_target_recognized    | pass     | command target recognized                             |              |              |
 | README_EXECUTION.md                 | python scripts/run_real_video_wam_readiness.py             | scripts/run_real_video_wam_readiness.py     | script_exists_nonempty       | pass     | script target exists and is nonempty                  | 1381         | >0 bytes     |
 | README_EXECUTION.md                 | python scripts/run_real_video_wam_readiness.py             | scripts/run_real_video_wam_readiness.py     | script_py_compile            | pass     | script compiles                                       |              |              |
@@ -117,7 +122,7 @@ This audit checks that documented local commands remain synchronized across the 
 | README_EXECUTION.md                 | python scripts/run_release_runtime_audit.py                | scripts/run_release_runtime_audit.py        | script_has_main_guard        | pass     | script has a guarded CLI entry point                  |              |              |
 | README_EXECUTION.md                 | python scripts/run_release_runtime_audit.py                | scripts/run_release_runtime_audit.py        | script_help_callable         | pass     | script --help exits successfully                      | returncode=0 | returncode=0 |
 | README_EXECUTION.md                 | python scripts/run_non_hardware.py                         | scripts/run_non_hardware.py                 | command_target_recognized    | pass     | command target recognized                             |              |              |
-| README_EXECUTION.md                 | python scripts/run_non_hardware.py                         | scripts/run_non_hardware.py                 | script_exists_nonempty       | pass     | script target exists and is nonempty                  | 192651       | >0 bytes     |
+| README_EXECUTION.md                 | python scripts/run_non_hardware.py                         | scripts/run_non_hardware.py                 | script_exists_nonempty       | pass     | script target exists and is nonempty                  | 194523       | >0 bytes     |
 | README_EXECUTION.md                 | python scripts/run_non_hardware.py                         | scripts/run_non_hardware.py                 | script_py_compile            | pass     | script compiles                                       |              |              |
 | README_EXECUTION.md                 | python scripts/run_non_hardware.py                         | scripts/run_non_hardware.py                 | script_has_main_guard        | pass     | script has a guarded CLI entry point                  |              |              |
 | README_EXECUTION.md                 | python scripts/run_non_hardware.py                         | scripts/run_non_hardware.py                 | script_help_not_required     | pass     | script is intentionally not help-probed by this audit |              |              |
@@ -131,8 +136,3 @@ This audit checks that documented local commands remain synchronized across the 
 | README_EXECUTION.md                 | python scripts/verify_release_payload.py                   | scripts/verify_release_payload.py           | script_py_compile            | pass     | script compiles                                       |              |              |
 | README_EXECUTION.md                 | python scripts/verify_release_payload.py                   | scripts/verify_release_payload.py           | script_has_main_guard        | pass     | script has a guarded CLI entry point                  |              |              |
 | README_EXECUTION.md                 | python scripts/verify_release_payload.py                   | scripts/verify_release_payload.py           | script_help_callable         | pass     | script --help exits successfully                      | returncode=0 | returncode=0 |
-| reports/REPRODUCIBILITY_MANIFEST.md | python -m pytest -q                                        | pytest                                      | command_target_recognized    | pass     | command target recognized                             |              |              |
-| reports/REPRODUCIBILITY_MANIFEST.md | python -m pytest -q                                        | pytest                                      | pytest_tests_dir_exists      | pass     | pytest command has local tests                        |              |              |
-| reports/REPRODUCIBILITY_MANIFEST.md | python scripts/run_external_policy_benchmark.py            | scripts/run_external_policy_benchmark.py    | command_target_recognized    | pass     | command target recognized                             |              |              |
-| reports/REPRODUCIBILITY_MANIFEST.md | python scripts/run_external_policy_benchmark.py            | scripts/run_external_policy_benchmark.py    | script_exists_nonempty       | pass     | script target exists and is nonempty                  | 1561         | >0 bytes     |
-| reports/REPRODUCIBILITY_MANIFEST.md | python scripts/run_external_policy_benchmark.py            | scripts/run_external_policy_benchmark.py    | script_py_compile            | pass     | script compiles                                       |              |              |

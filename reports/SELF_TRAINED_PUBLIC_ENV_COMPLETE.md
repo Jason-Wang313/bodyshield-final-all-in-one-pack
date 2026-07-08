@@ -21,6 +21,6 @@ The repository now contains a real CPU-only trained checkpoint for a public Gymn
 | BodyShield minus nominal heldout delta | 53.600 |
 | BodyShield minus domain-randomization heldout delta | -5.000 |
 
-Boundary: This closes only a small self-trained public Gymnasium environment evidence slot. It does not close the user-provided or public pretrained checkpoint slot.
+Boundary: This closes only a small self-trained public Gymnasium environment evidence slot. The separate public pretrained SB3/RL-Zoo HalfCheetah checkpoint slot is closed by `reports/PUBLIC_PRETRAINED_CHECKPOINT_COMPLETE.md`; this CartPole result should not be used as that evidence.
 
 Allowed wording: a self-trained public-environment policy benchmark was completed. Do not call this a MuJoCo/ManiSkill pretrained-policy benchmark, hardware transfer evidence, or proof that BodyShield beats domain randomization.

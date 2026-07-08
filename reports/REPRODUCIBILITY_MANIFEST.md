@@ -1,6 +1,6 @@
 # Reproducibility Manifest
 
-Code version: `b2492a6fe5c81e0f`
+Code version: `657ed1811cb15297`
 
 Python: `3.10.11`
 
@@ -8,6 +8,7 @@ Primary commands:
 ```powershell
 python -m pytest -q
 python scripts\run_external_policy_benchmark.py
+python scripts\run_public_checkpoint_benchmark.py
 python scripts\run_real_video_wam_readiness.py
 python scripts\run_corrective_trace_readiness.py
 python scripts\run_artifact_inventory_audit.py
@@ -98,6 +99,10 @@ Generated tables:
 - `results/nominal_vs_robustness_radius.csv`
 - `results/high_fidelity_benchmark.csv`
 - `results/external_policy_benchmark_readiness.csv`
+- `results/public_pretrained_checkpoint_benchmark.csv`
+- `results/public_pretrained_checkpoint_rollouts.csv`
+- `results/public_pretrained_checkpoint_tuning.csv`
+- `results/public_pretrained_checkpoint_delta.csv`
 - `trial_schema.schema.json`
 
 Generated reports:
@@ -118,6 +123,9 @@ Generated reports:
 - `reports/VISUAL_ARTIFACT_AUDIT.md`
 - `reports/RELEASE_PAYLOAD_AUDIT.md`
 - `reports/RELEASE_DETERMINISM_AUDIT.md`
+- `reports/PUBLIC_PRETRAINED_CHECKPOINT_COMPLETE.md`
+- `reports/MUJOCO_PUBLIC_CHECKPOINT_ROLLOUT_COMPLETE.md`
+- `reports/EXTERNAL_BASELINE_FAIRNESS.md`
 - `reports/RELEASE_RUNTIME_AUDIT.md`
 - `reports/PACK_VERIFICATION.json`
 - `reports/PACK_VERIFICATION.md`

@@ -285,8 +285,8 @@ def _update_submission_ready_audit(root_path: Path) -> None:
             "gate_name": "external_trained_policy",
             "pass_fail": "fail",
             "evidence": "reports/EXTERNAL_CHECKPOINT_STILL_BLOCKED.md, reports/EXTERNAL_POLICY_INTEGRATION_PLAN.md",
-            "residual_risk": "pretrained external checkpoint missing; self-trained public env does not close this gate",
-            "allowed_wording": "do not claim external checkpoint validation",
+            "residual_risk": "public checkpoint artifacts absent in this fallback path; self-trained public env alone does not close this gate",
+            "allowed_wording": "do not claim public checkpoint validation from self-trained CartPole alone",
         }
     ordered_names = [
         "software_package",
@@ -468,7 +468,8 @@ def write_self_trained_public_env_artifacts(root: Path | str = ".") -> dict[str,
     completion_status = "complete_self_trained_public_env_only"
     reviewer_boundary = (
         "This closes only a small self-trained public Gymnasium environment evidence slot. "
-        "It does not close the user-provided or public pretrained checkpoint slot."
+        "If the public HalfCheetah checkpoint artifacts are present, that separate slot is closed by "
+        "reports/PUBLIC_PRETRAINED_CHECKPOINT_COMPLETE.md; this CartPole result should not be used as that evidence."
     )
     table = eval_df.to_markdown(index=False)
     _write_report(
@@ -509,7 +510,7 @@ Allowed wording: a self-trained public-environment policy benchmark was complete
             f"""
 # External Trained Policy Tier
 
-Status: `partial_complete_self_trained_public_env`; `external_checkpoint_still_blocked`
+Status: `partial_complete_self_trained_public_env`; `public_checkpoint_gate_handled_separately`
 
 Completed:
 
@@ -587,7 +588,7 @@ Until then, `reports/EXTERNAL_CHECKPOINT_STILL_BLOCKED.md` is the controlling st
 
 Generated: `{_utc()}`
 
-Status: `self_trained_public_env_complete`; `external_checkpoint_still_blocked`
+Status: `self_trained_public_env_complete`; `public_checkpoint_gate_handled_separately`
 
 The repository now contains one completed self-trained public-environment benchmark and still lacks a user-provided or public pretrained external checkpoint.
 

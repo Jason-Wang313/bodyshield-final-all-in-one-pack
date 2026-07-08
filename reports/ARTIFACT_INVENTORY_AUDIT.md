@@ -6,22 +6,22 @@ This audit checks that the final artifact manifest exactly matches current gener
 
 | metric | value |
 |---|---:|
-| checks | 996 |
-| passed | 996 |
+| checks | 1038 |
+| passed | 1038 |
 | failed | 0 |
-| artifacts audited | 150 |
+| artifacts audited | 157 |
 
 ## Display Rows
 
 | artifact                                              | check                                                | status   | detail                                                     |   observed | expected   |
 |:------------------------------------------------------|:-----------------------------------------------------|:---------|:-----------------------------------------------------------|-----------:|:-----------|
-| reports/ARTIFACT_MANIFEST.csv                         | artifact_manifest_exists_nonempty                    | pass     | artifact manifest exists and is nonempty                   |        333 | >0 rows    |
-| release/RELEASE_BUNDLE_MANIFEST.csv                   | release_manifest_exists_nonempty                     | pass     | release manifest exists and is nonempty                    |        498 | >0 rows    |
-| reports/ARTIFACT_MANIFEST.csv                         | artifact_manifest_exact_current_generated_set        | pass     | missing=[]; extra=[]                                       |        333 | 333        |
+| reports/ARTIFACT_MANIFEST.csv                         | artifact_manifest_exists_nonempty                    | pass     | artifact manifest exists and is nonempty                   |        337 | >0 rows    |
+| release/RELEASE_BUNDLE_MANIFEST.csv                   | release_manifest_exists_nonempty                     | pass     | release manifest exists and is nonempty                    |        501 | >0 rows    |
+| reports/ARTIFACT_MANIFEST.csv                         | artifact_manifest_exact_current_generated_set        | pass     | missing=[]; extra=[]                                       |        337 | 337        |
 | reports/ARTIFACT_MANIFEST.csv                         | artifact_manifest_hashes_match_current_files         | pass     | bad_bytes=[]; bad_hashes=[]                                |          0 | 0          |
-| release/RELEASE_BUNDLE_MANIFEST.csv                   | release_manifest_exact_current_payload_set           | pass     | missing=[]; extra=[]                                       |        498 | 498        |
+| release/RELEASE_BUNDLE_MANIFEST.csv                   | release_manifest_exact_current_payload_set           | pass     | missing=[]; extra=[]                                       |        501 | 501        |
 | release/RELEASE_BUNDLE_MANIFEST.csv                   | release_manifest_hashes_match_current_files          | pass     | bad_bytes=[]; bad_hashes=[]                                |          0 | 0          |
-| README_EXECUTION.md                                   | documented_output_references_discovered              | pass     | documented output references discovered                    |         68 | >0         |
+| README_EXECUTION.md                                   | documented_output_references_discovered              | pass     | documented output references discovered                    |         75 | >0         |
 | reports/NON_HARDWARE_COMPLETE.md                      | documented_output_exists_nonempty                    | pass     | README_EXECUTION.md reference exists and is nonempty       |          1 | 1          |
 | reports/NON_HARDWARE_COMPLETE.md                      | documented_output_in_artifact_manifest_when_eligible | pass     | README_EXECUTION.md reference artifact_manifest_missing=[] |          1 | 1          |
 | reports/NON_HARDWARE_COMPLETE.md                      | documented_output_in_release_manifest_when_eligible  | pass     | README_EXECUTION.md reference release_manifest_missing=[]  |          1 | 1          |
@@ -121,17 +121,17 @@ This audit checks that the final artifact manifest exactly matches current gener
 | reports/EXTERNAL_POLICY_BENCHMARK_READINESS.md        | documented_output_exists_nonempty                    | pass     | README_EXECUTION.md reference exists and is nonempty       |          1 | 1          |
 | reports/EXTERNAL_POLICY_BENCHMARK_READINESS.md        | documented_output_in_artifact_manifest_when_eligible | pass     | README_EXECUTION.md reference artifact_manifest_missing=[] |          1 | 1          |
 | reports/EXTERNAL_POLICY_BENCHMARK_READINESS.md        | documented_output_in_release_manifest_when_eligible  | pass     | README_EXECUTION.md reference release_manifest_missing=[]  |          1 | 1          |
+| reports/PUBLIC_PRETRAINED_CHECKPOINT_COMPLETE.md      | documented_output_exists_nonempty                    | pass     | README_EXECUTION.md reference exists and is nonempty       |          1 | 1          |
+| reports/PUBLIC_PRETRAINED_CHECKPOINT_COMPLETE.md      | documented_output_in_artifact_manifest_when_eligible | pass     | README_EXECUTION.md reference artifact_manifest_missing=[] |          1 | 1          |
+| reports/PUBLIC_PRETRAINED_CHECKPOINT_COMPLETE.md      | documented_output_in_release_manifest_when_eligible  | pass     | README_EXECUTION.md reference release_manifest_missing=[]  |          1 | 1          |
+| reports/MUJOCO_PUBLIC_CHECKPOINT_ROLLOUT_COMPLETE.md  | documented_output_exists_nonempty                    | pass     | README_EXECUTION.md reference exists and is nonempty       |          1 | 1          |
+| reports/MUJOCO_PUBLIC_CHECKPOINT_ROLLOUT_COMPLETE.md  | documented_output_in_artifact_manifest_when_eligible | pass     | README_EXECUTION.md reference artifact_manifest_missing=[] |          1 | 1          |
+| reports/MUJOCO_PUBLIC_CHECKPOINT_ROLLOUT_COMPLETE.md  | documented_output_in_release_manifest_when_eligible  | pass     | README_EXECUTION.md reference release_manifest_missing=[]  |          1 | 1          |
+| reports/EXTERNAL_BASELINE_FAIRNESS.md                 | documented_output_exists_nonempty                    | pass     | README_EXECUTION.md reference exists and is nonempty       |          1 | 1          |
+| reports/EXTERNAL_BASELINE_FAIRNESS.md                 | documented_output_in_artifact_manifest_when_eligible | pass     | README_EXECUTION.md reference artifact_manifest_missing=[] |          1 | 1          |
+| reports/EXTERNAL_BASELINE_FAIRNESS.md                 | documented_output_in_release_manifest_when_eligible  | pass     | README_EXECUTION.md reference release_manifest_missing=[]  |          1 | 1          |
 | reports/TRAJECTORY_WAM_INTERPRETATION.md              | documented_output_exists_nonempty                    | pass     | README_EXECUTION.md reference exists and is nonempty       |          1 | 1          |
 | reports/TRAJECTORY_WAM_INTERPRETATION.md              | documented_output_in_artifact_manifest_when_eligible | pass     | README_EXECUTION.md reference artifact_manifest_missing=[] |          1 | 1          |
 | reports/TRAJECTORY_WAM_INTERPRETATION.md              | documented_output_in_release_manifest_when_eligible  | pass     | README_EXECUTION.md reference release_manifest_missing=[]  |          1 | 1          |
 | reports/CORRECTIVE_ADAPTATION_INTERPRETATION.md       | documented_output_exists_nonempty                    | pass     | README_EXECUTION.md reference exists and is nonempty       |          1 | 1          |
 | reports/CORRECTIVE_ADAPTATION_INTERPRETATION.md       | documented_output_in_artifact_manifest_when_eligible | pass     | README_EXECUTION.md reference artifact_manifest_missing=[] |          1 | 1          |
-| reports/CORRECTIVE_ADAPTATION_INTERPRETATION.md       | documented_output_in_release_manifest_when_eligible  | pass     | README_EXECUTION.md reference release_manifest_missing=[]  |          1 | 1          |
-| reports/CORRECTIVE_TRACE_READINESS.md                 | documented_output_exists_nonempty                    | pass     | README_EXECUTION.md reference exists and is nonempty       |          1 | 1          |
-| reports/CORRECTIVE_TRACE_READINESS.md                 | documented_output_in_artifact_manifest_when_eligible | pass     | README_EXECUTION.md reference artifact_manifest_missing=[] |          1 | 1          |
-| reports/CORRECTIVE_TRACE_READINESS.md                 | documented_output_in_release_manifest_when_eligible  | pass     | README_EXECUTION.md reference release_manifest_missing=[]  |          1 | 1          |
-| reports/MUJOCO_PLANAR_METHOD_SUMMARY_TABLE.md         | documented_output_exists_nonempty                    | pass     | README_EXECUTION.md reference exists and is nonempty       |          1 | 1          |
-| reports/MUJOCO_PLANAR_METHOD_SUMMARY_TABLE.md         | documented_output_in_artifact_manifest_when_eligible | pass     | README_EXECUTION.md reference artifact_manifest_missing=[] |          1 | 1          |
-| reports/MUJOCO_PLANAR_METHOD_SUMMARY_TABLE.md         | documented_output_in_release_manifest_when_eligible  | pass     | README_EXECUTION.md reference release_manifest_missing=[]  |          1 | 1          |
-| reports/MUJOCO_PLANAR_PROBE_TABLE.md                  | documented_output_exists_nonempty                    | pass     | README_EXECUTION.md reference exists and is nonempty       |          1 | 1          |
-| reports/MUJOCO_PLANAR_PROBE_TABLE.md                  | documented_output_in_artifact_manifest_when_eligible | pass     | README_EXECUTION.md reference artifact_manifest_missing=[] |          1 | 1          |

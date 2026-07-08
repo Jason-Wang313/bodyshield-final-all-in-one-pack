@@ -1517,7 +1517,7 @@ def write_requirement_trace(oracle_df: pd.DataFrame) -> None:
             "requirement": "Derived-results recomputation",
             "status": "complete for local recomputation of summary, profile, secondary-metric, failure-taxonomy, and delta tables from primary trials",
             "evidence": "bodyshield/derived_results_audit.py, scripts/run_derived_results_audit.py, results/derived_results_audit.csv, reports/DERIVED_RESULTS_AUDIT.md, results/trials.csv, results/summary_by_method_bucket.csv, results/robustness_profiles.csv, results/secondary_metrics_by_method.csv, results/failure_taxonomy_counts.csv, results/method_deltas_vs_bodyshield.csv",
-            "residual": "Checks deterministic table derivations from local analytic trials only; it does not add new physical evidence, external trained-policy rollouts, or independent replication.",
+            "residual": "Checks deterministic table derivations from local analytic trials only; it does not add new physical evidence, broad manipulation/foundation-policy checkpoint suites, or independent replication.",
         },
         {
             "requirement": "Generated-results integrity",
@@ -2203,7 +2203,8 @@ The readiness harness produced {corrective_trace_readiness_summary_rows['rows']}
 | Synthetic corrective-trace adaptation is locally executable | Ridge residual action adapter trained from generated corrective traces | `results/corrective_adaptation_eval.csv`, `results/corrective_adaptation_rollouts.csv`, `reports/CORRECTIVE_ADAPTATION_INTERPRETATION.md` | Analytic trace-world adaptation proxy | Do not present as real online learning, neural policy finetuning, or hardware recovery. |
 | Corrective-trace dataset readiness is locally executable | JSON spec validation, corrective-trace manifest detection, deterministic fixture residual-fit smoke, and residual-fit smoke for present datasets | `configs/corrective_trace_readiness.example.json`, `results/corrective_trace_readiness.csv`, `reports/CORRECTIVE_TRACE_READINESS.md` | Harness/readiness only; current example real/external corrective trace dataset is missing | Do not present as real corrective-trace adaptation, online learning, policy finetuning, hardware recovery, or physical transfer. |
 | Local high-fidelity backends can execute bounded probes | MuJoCo 8-task 1-DOF probes, MuJoCo 4-task planar-effector probes, and ManiSkill 6-task CPU random-action suite | `results/high_fidelity_benchmark.csv` | Bounded simulator compatibility and dynamics benchmark | Do not present as full trained robot policy benchmark evidence. |
-| External policy benchmark readiness is locally executable | JSON spec validation, checkpoint-path detection, deterministic fixture smoke, and adapter interface smoke for present checkpoints | `configs/external_policy_benchmark.example.json`, `results/external_policy_benchmark_readiness.csv`, `reports/EXTERNAL_POLICY_BENCHMARK_READINESS.md` | Harness/readiness only; current example external checkpoint is missing | Do not present as external/full-scale trained-policy MuJoCo/ManiSkill rollout evidence. |
+| External policy benchmark readiness is locally executable | JSON spec validation, checkpoint-path detection, deterministic fixture smoke, and adapter interface smoke for present checkpoints | `configs/external_policy_benchmark.example.json`, `results/external_policy_benchmark_readiness.csv`, `reports/EXTERNAL_POLICY_BENCHMARK_READINESS.md` | Harness/readiness only; the example ManiSkill checkpoint is missing, while the separate public HalfCheetah checkpoint benchmark is complete | Do not present the readiness harness as broad external/full-scale trained-policy MuJoCo/ManiSkill suite evidence. |
+| One public pretrained MuJoCo checkpoint benchmark is complete | Public SB3/RL-Zoo PPO HalfCheetah checkpoint plus public VecNormalize statistics are evaluated with full-horizon rollouts; BodyShield applies a diagnosed gated action-gain repair for actuator-loss perturbations | `reports/PUBLIC_PRETRAINED_CHECKPOINT_COMPLETE.md`, `reports/MUJOCO_PUBLIC_CHECKPOINT_ROLLOUT_COMPLETE.md`, `reports/EXTERNAL_BASELINE_FAIRNESS.md`, `results/public_pretrained_checkpoint_benchmark.csv`, `results/public_pretrained_checkpoint_delta.csv`, `results/checkpoints/public_sb3_ppo_halfcheetah_v3/source_metadata.json` | One public MuJoCo HalfCheetah locomotion checkpoint, Gymnasium HalfCheetah-v5, seeds 20-24, horizon 1000 | Say "one public pretrained MuJoCo checkpoint benchmark"; do not claim manipulation, foundation-policy, hardware, or dominance over compute-matched action scaling/domain randomization/robust-control/sysID baselines. |
 | Claimed analytic failures are not all task impossibility | Oracle feasibility policy is evaluated at found BodyBreak perturbations | `results/oracle_feasibility.csv` ({oracle_feasible}/{oracle_total} marked feasible) | Analytic feasibility only | Hardware oracle remains pending. |
 | Results include secondary costs | Execution time, path length, retries, tracking/load proxies, verifier confidence | `results/secondary_metrics_by_method.csv` | Simulated metrics only | Do not use these as hardware safety evidence. |
 | Outputs are reproducible and auditable | Artifact hashes, compressed trials, portable release ZIP, release payload manifest/checksums, unpacked-payload verifier, release-payload extraction audit, release-byte determinism audit, extracted-release runtime audit, portable-hygiene audit, artifact-inventory audit, evidence-reference consistency audit, environment dependency audit, config/schema audit, source/import audit, derived-results recomputation audit, generated-results integrity audit, paper-source audit, claim-boundary audit, command-surface audit, visual-artifact audit, and automated pack verification are generated after each run | `reports/ARTIFACT_MANIFEST.csv`, `release/bodyshield_non_hardware_release.zip`, `release/RELEASE_BUNDLE_MANIFEST.csv`, `release/RELEASE_BUNDLE_CHECKSUMS.txt`, `scripts/verify_release_payload.py`, `scripts/run_release_payload_audit.py`, `scripts/run_release_determinism_audit.py`, `scripts/run_release_runtime_audit.py`, `scripts/run_portable_hygiene_audit.py`, `scripts/run_artifact_inventory_audit.py`, `scripts/run_derived_results_audit.py`, `scripts/run_config_schema_audit.py`, `scripts/run_source_import_audit.py`, `scripts/run_paper_source_audit.py`, `results/release_payload_audit.csv`, `results/release_determinism_audit.csv`, `results/release_runtime_audit.csv`, `results/portable_hygiene_audit.csv`, `results/artifact_inventory_audit.csv`, `results/derived_results_audit.csv`, `results/evidence_consistency_audit.csv`, `results/environment_dependency_audit.csv`, `results/environment_snapshot.json`, `results/config_schema_audit.csv`, `results/source_import_audit.csv`, `results/results_integrity_audit.csv`, `results/paper_source_audit.csv`, `results/claim_boundary_audit.csv`, `results/command_surface_audit.csv`, `results/visual_artifact_audit.csv`, `reports/RELEASE_PAYLOAD_AUDIT.md`, `reports/RELEASE_DETERMINISM_AUDIT.md`, `reports/RELEASE_RUNTIME_AUDIT.md`, `reports/PORTABLE_HYGIENE_AUDIT.md`, `reports/ARTIFACT_INVENTORY_AUDIT.md`, `reports/DERIVED_RESULTS_AUDIT.md`, `reports/EVIDENCE_CONSISTENCY_AUDIT.md`, `reports/ENVIRONMENT_DEPENDENCY_AUDIT.md`, `reports/CONFIG_SCHEMA_AUDIT.md`, `reports/SOURCE_IMPORT_AUDIT.md`, `reports/RESULTS_INTEGRITY_AUDIT.md`, `reports/PAPER_SOURCE_AUDIT.md`, `reports/CLAIM_BOUNDARY_AUDIT.md`, `reports/COMMAND_SURFACE_AUDIT.md`, `reports/VISUAL_ARTIFACT_AUDIT.md`, `reports/RELEASE_BUNDLE.md`, `reports/PACK_VERIFICATION.md`, `results/trials.parquet` | Local files only | Does not replace external archival upload, public repository release, or independent replication. |
@@ -2222,6 +2223,7 @@ Primary commands:
 ```powershell
 python -m pytest -q
 python scripts\\run_external_policy_benchmark.py
+python scripts\\run_public_checkpoint_benchmark.py
 python scripts\\run_real_video_wam_readiness.py
 python scripts\\run_corrective_trace_readiness.py
 python scripts\\run_artifact_inventory_audit.py
@@ -2312,6 +2314,10 @@ Generated tables:
 - `results/nominal_vs_robustness_radius.csv`
 - `results/high_fidelity_benchmark.csv`
 - `results/external_policy_benchmark_readiness.csv`
+- `results/public_pretrained_checkpoint_benchmark.csv`
+- `results/public_pretrained_checkpoint_rollouts.csv`
+- `results/public_pretrained_checkpoint_tuning.csv`
+- `results/public_pretrained_checkpoint_delta.csv`
 - `trial_schema.schema.json`
 
 Generated reports:
@@ -2332,6 +2338,9 @@ Generated reports:
 - `reports/VISUAL_ARTIFACT_AUDIT.md`
 - `reports/RELEASE_PAYLOAD_AUDIT.md`
 - `reports/RELEASE_DETERMINISM_AUDIT.md`
+- `reports/PUBLIC_PRETRAINED_CHECKPOINT_COMPLETE.md`
+- `reports/MUJOCO_PUBLIC_CHECKPOINT_ROLLOUT_COMPLETE.md`
+- `reports/EXTERNAL_BASELINE_FAIRNESS.md`
 - `reports/RELEASE_RUNTIME_AUDIT.md`
 - `reports/PACK_VERIFICATION.json`
 - `reports/PACK_VERIFICATION.md`
@@ -2477,7 +2486,7 @@ Synthetic rollout media for visual inspection of a nominal reference, the nomina
 | High | Simulation Results | Evidence is mostly analytic and may not transfer to real contact dynamics. | Claim boundary, ledger, learned scalar/visual/neural-latent/trajectory/corrective audits, learned MuJoCo gated residual-policy audit with gate ablation, bounded high-fidelity benchmark tables, and external-checkpoint readiness reporting separate evidence tiers. | Real-video WAM, external/full-scale trained-policy MuJoCo/ManiSkill rollout benchmark, or hardware. |
 | High | BodyBreak | Minimal perturbation sounds globally optimal. | Paper uses "estimated" and reports budgets, fallback rows, threshold sensitivity, and a dense post-hoc minimality challenge. | Formal global proof or stronger high-fidelity optimizer if making stronger claims. |
 | High | BodyShield | Repair could win by being conservative. | Secondary metrics include execution time, path length, retries, and nominal retention. | Physical execution-time/path-length measurements. |
-| Medium | MuJoCo residual policy | The residual gate could look arbitrary. | Gate ablation compares residual-off, always-on, non-nominal-only, and selected gated variants for held-out gain and nominal preservation. | External trained-policy checkpoints or hardware traces. |
+| Medium | MuJoCo residual policy | The residual gate could look arbitrary. | Gate ablation compares residual-off, always-on, non-nominal-only, and selected gated variants for held-out gain and nominal preservation. | Additional public checkpoints or hardware traces. |
 | Medium | External policy benchmarks | A reader may expect imported trained-policy checkpoints. | `reports/EXTERNAL_POLICY_BENCHMARK_READINESS.md` records fixture smoke and missing-checkpoint rows explicitly. | Real external checkpoints plus full task-rollout adapters. |
 | Medium | Media artifacts | Synthetic GIFs might be mistaken for real videos. | `reports/SIMULATION_ROLLOUT_VIDEOS.md` and the claim ledger label them as generated rollout media only. | Real camera/verifier videos from hardware. |
 | Medium | Real-video WAM | A reader may expect camera sequences or foundation-video training. | `reports/REAL_VIDEO_WAM_READINESS.md` records fixture smoke and missing-dataset rows explicitly. | Real camera frame manifests plus substantive real-video/foundation WAM training. |
@@ -2505,6 +2514,7 @@ Run:
 ```powershell
 python -m pytest -q
 python scripts\\run_external_policy_benchmark.py
+python scripts\\run_public_checkpoint_benchmark.py
 python scripts\\run_real_video_wam_readiness.py
 python scripts\\run_corrective_trace_readiness.py
 python scripts\\run_artifact_inventory_audit.py
@@ -2561,6 +2571,9 @@ Primary outputs:
 - `reports/MUJOCO_RESIDUAL_POLICY_INTERPRETATION.md`
 - `reports/MUJOCO_RESIDUAL_POLICY_GATE_ABLATION_TABLE.md`
 - `reports/EXTERNAL_POLICY_BENCHMARK_READINESS.md`
+- `reports/PUBLIC_PRETRAINED_CHECKPOINT_COMPLETE.md`
+- `reports/MUJOCO_PUBLIC_CHECKPOINT_ROLLOUT_COMPLETE.md`
+- `reports/EXTERNAL_BASELINE_FAIRNESS.md`
 - `reports/TRAJECTORY_WAM_INTERPRETATION.md`
 - `reports/CORRECTIVE_ADAPTATION_INTERPRETATION.md`
 - `reports/CORRECTIVE_TRACE_READINESS.md`
@@ -2575,6 +2588,10 @@ Primary outputs:
 - `results/mujoco_residual_policy_rollouts.csv`
 - `results/mujoco_residual_policy_gate_ablation.csv`
 - `results/external_policy_benchmark_readiness.csv`
+- `results/public_pretrained_checkpoint_benchmark.csv`
+- `results/public_pretrained_checkpoint_rollouts.csv`
+- `results/public_pretrained_checkpoint_tuning.csv`
+- `results/public_pretrained_checkpoint_delta.csv`
 - `results/trajectory_wam_rollouts.csv`
 - `results/corrective_adaptation_rollouts.csv`
 - `results/corrective_trace_readiness.csv`

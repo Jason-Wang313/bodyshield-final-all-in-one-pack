@@ -58,4 +58,4 @@ Experimental anchor: `results/oracle_feasibility.csv`.
 
 Use "estimated lowest-cost breaking perturbation under budget" unless a global
 optimizer and proof are added. Use "analytic-simulation evidence" unless the
-specific claim is backed by hardware or external trained-policy rollouts.
+specific claim is backed by hardware, the public checkpoint benchmark, or a broader trained-policy suite.

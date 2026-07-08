@@ -84,7 +84,7 @@ def write_initial_audit() -> None:
         "reset reliability logs",
         "all-trials hardware videos",
         "held-out physical-modification hardware runs",
-        "external trained-policy checkpoints",
+        "broad manipulation/foundation-policy checkpoint suites",
     ]
     _write(
         REPORTS / "initial_repo_audit.md",
@@ -562,7 +562,7 @@ Ablations cover search mode, repair baseline, threshold, secondary execution cos
 \section{Failure Analysis}
 Failure categories include tracking error, calibration error, joint limit, collision, slip, unreachable pose, verifier uncertainty, and mechanical proxy faults. The paper must keep these tied to analytic simulation until hardware logs exist.
 \section{Limitations}
-The current package lacks hardware noise floor, camera verifier accuracy, reset reliability, real held-out physical modifications, all-trials hardware videos, external trained-policy rollouts, and real corrective-trace adaptation.
+The current package lacks hardware noise floor, camera verifier accuracy, reset reliability, real held-out physical modifications, all-trials hardware videos, broad manipulation/foundation-policy checkpoint suites, and real corrective-trace adaptation.
 \section{Reproducibility Statement}
 The package includes tests, CI, manifests, release ZIP, claim ledger, citation verification, and `python -m bodyshield.analysis.verify_package --json`. Trial fields follow \path{data_schema.json}.
 \section{Ethics and Safety Statement}

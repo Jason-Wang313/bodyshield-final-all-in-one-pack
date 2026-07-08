@@ -1,17 +1,17 @@
 {
   "checks": [
     {
-      "detail": "79 required artifacts exist and are nonempty",
+      "detail": "80 required artifacts exist and are nonempty",
       "name": "required_artifacts",
       "status": "pass"
     },
     {
-      "detail": "rows=333; code_version=8dbb2bb600af56ff; hashes and required rows match",
+      "detail": "rows=337; code_version=657ed1811cb15297; hashes and required rows match",
       "name": "artifact_manifest",
       "status": "pass"
     },
     {
-      "detail": "3 pages; safe structure; citations resolved; synthetic-media boundary present",
+      "detail": "2 pages; safe structure; citations resolved; synthetic-media boundary present",
       "name": "paper_pdf",
       "status": "pass"
     },
@@ -46,12 +46,12 @@
       "status": "pass"
     },
     {
-      "detail": "payload_files=498; zip_bytes=17005818; zip_sha256=ba81528d037baaf553e9b86689ac14973cb638a7a0242a5aef928a7d82ae4337",
+      "detail": "payload_files=501; zip_bytes=17489484; zip_sha256=ea7a561924848c7439bffc9d51e9372d0b2e3c035cb6b2848cd4dc2fea0732db",
       "name": "release_bundle",
       "status": "pass"
     },
     {
-      "detail": "rows=688; documents=7; all referenced local evidence exists",
+      "detail": "rows=714; documents=7; all referenced local evidence exists",
       "name": "evidence_consistency",
       "status": "pass"
     },
@@ -81,7 +81,7 @@
       "status": "pass"
     },
     {
-      "detail": "checks=996; artifacts=150; documented outputs and manifests are synchronized",
+      "detail": "checks=1038; artifacts=157; documented outputs and manifests are synchronized",
       "name": "artifact_inventory_audit",
       "status": "pass"
     },
@@ -96,12 +96,12 @@
       "status": "pass"
     },
     {
-      "detail": "checks=63; artifacts=15; claim boundaries preserved",
+      "detail": "checks=66; artifacts=15; claim boundaries preserved",
       "name": "claim_boundary_audit",
       "status": "pass"
     },
     {
-      "detail": "checks=237; commands=23; documented commands callable and synchronized",
+      "detail": "checks=247; commands=24; documented commands callable and synchronized",
       "name": "command_surface_audit",
       "status": "pass"
     },
@@ -126,12 +126,12 @@
       "status": "pass"
     },
     {
-      "detail": "no stale downgrade phrases in 319 text files",
+      "detail": "no stale downgrade phrases in 322 text files",
       "name": "stale_phrases",
       "status": "pass"
     }
   ],
-  "code_version": "8dbb2bb600af56ff",
+  "code_version": "657ed1811cb15297",
   "manifest_note": "PACK_VERIFICATION, ARTIFACT_INVENTORY_AUDIT, PORTABLE_HYGIENE_AUDIT, RELEASE_PAYLOAD_AUDIT, RELEASE_DETERMINISM_AUDIT, and RELEASE_RUNTIME_AUDIT reports are excluded from ARTIFACT_MANIFEST to avoid self-referential hash churn.",
   "status": "pass"
 }

@@ -672,6 +672,8 @@ Status: `complete_public_pretrained_mujoco_checkpoint`
 
 The external-policy tier now includes a real public pretrained checkpoint benchmark from SB3/RL-Zoo: `{REPO_ID}`. The benchmark uses the public model zip and VecNormalize statistics, runs full-horizon MuJoCo/Gymnasium rollouts, tunes a gated actuator-loss action-gain adapter on seen actuator-loss seeds, and evaluates held-out perturbations.
 
+Fairness caveat: the repair is a diagnosed action-gain compensation, so `reports/EXTERNAL_BASELINE_FAIRNESS.md` treats compute-matched action scaling, domain randomization, robust control, and sysID as live alternative explanations rather than defeated baselines.
+
 ## Source
 
 {source_block}
@@ -683,6 +685,59 @@ The external-policy tier now includes a real public pretrained checkpoint benchm
 ## Reviewer-Safe Boundary
 
 {BOUNDARY}
+""",
+    )
+    _write(
+        reports / "EXTERNAL_BASELINE_FAIRNESS.md",
+        f"""
+# External Baseline Fairness
+
+Status: `scoped_fairness_report_for_public_checkpoint`
+
+This report bounds the public SB3/RL-Zoo HalfCheetah checkpoint result. It exists because the public-checkpoint BodyShield repair uses a gated action-gain adapter, and a reviewer can reasonably ask whether the improvement is just hand-tuned action scaling.
+
+## What Was Run
+
+- Public checkpoint: `{REPO_ID}`
+- Evaluation environment: Gymnasium `{ENV_ID}`
+- Horizon: `{HORIZON}`
+- Evaluation seeds: `{','.join(str(seed) for seed in EVAL_SEEDS)}`
+- Tuning seeds: `{','.join(str(seed) for seed in TUNE_SEEDS)}`
+- Tuning artifact: `results/public_pretrained_checkpoint_tuning.csv`
+- Rollout artifact: `results/public_pretrained_checkpoint_rollouts.csv`
+- Summary artifact: `results/public_pretrained_checkpoint_benchmark.csv`
+- Delta artifact: `results/public_pretrained_checkpoint_delta.csv`
+
+The adapter tunes a scalar `action_gain` over the fixed candidate set logged in `results/public_pretrained_checkpoint_tuning.csv`. It is selected on the seen actuator-loss perturbation `actuator_0.65` and then applied only when the perturbation has reduced actuator authority (`action_scale < 1.0`).
+
+## Fair Claim
+
+The fair claim is:
+
+> For one public SB3/RL-Zoo HalfCheetah checkpoint, a diagnosed actuator-authority repair improves the logged seen actuator-loss perturbation and produces positive mean delta on the logged held-out actuator/compound family.
+
+This is a narrow external-policy sanity benchmark. It is not evidence that BodyShield is superior to all action-scaling, dynamics-randomization, robust-control, sysID, MPC, CBF, or foundation-policy adaptation methods.
+
+## Baseline Risk
+
+The strongest alternative explanation is that a compute-matched action-scaling baseline, tuned on the same seen actuator-loss seeds and evaluated on the same held-out seeds, may recover some or all of the reported gain. In this benchmark, BodyShield's repair is intentionally simple and interpretable: diagnose actuator authority loss, then compensate with a bounded scalar gain.
+
+## What Would Be Stronger
+
+A stronger trained-policy benchmark would add:
+
+- A matched action-gain baseline reported as its own method row.
+- A dynamics-randomization or domain-randomization policy trained for the same environment and budget.
+- A robust-control/sysID baseline with its own logged tuning budget.
+- A second public MuJoCo checkpoint family.
+- A manipulation checkpoint, preferably ManiSkill or another robot-manipulation environment.
+- Real hardware noise floor, verifier agreement, reset reliability, held-out physical modifications, and all-trials video.
+
+## Wording Boundary
+
+Allowed wording: one public pretrained MuJoCo checkpoint benchmark is complete with a scoped actuator-loss repair.
+
+Disallowed wording: this result proves broad trained-policy robustness, manipulation transfer, hardware transfer, or dominance over compute-matched action scaling, domain randomization, robust control, sysID, MPC, CBF, or foundation-policy adaptation.
 """,
     )
     _write(
@@ -728,7 +783,7 @@ This audit classifies every remaining evidence tier after the v2 non-hardware pa
 | Claim/citation/repro audits | complete | `reports/CLAIM_LEDGER.md, reports/citation_verification.md, REPRODUCE.md` | local verification | claim audited local package |
 | High-fidelity probes | complete only analytic surrogate | `results/high_fidelity_policy_results.csv` | bounded probes, not broad external trained policies | claim bounded simulator probes |
 | Self-trained public-env policy | complete small public-env tier | `reports/SELF_TRAINED_PUBLIC_ENV_COMPLETE.md` | CartPole-scale evidence only | claim self-trained public-env sanity benchmark |
-| Public pretrained MuJoCo checkpoint | complete with scope limit | `reports/PUBLIC_PRETRAINED_CHECKPOINT_COMPLETE.md, results/external_policy_benchmark.csv` | one SB3/RL-Zoo HalfCheetah checkpoint only | claim one public pretrained MuJoCo checkpoint benchmark |
+| Public pretrained MuJoCo checkpoint | complete with scope limit | `reports/PUBLIC_PRETRAINED_CHECKPOINT_COMPLETE.md, reports/EXTERNAL_BASELINE_FAIRNESS.md, results/external_policy_benchmark.csv` | one SB3/RL-Zoo HalfCheetah checkpoint only; action-gain fairness caveat applies | claim one public pretrained MuJoCo checkpoint benchmark |
 | Full-scale MuJoCo trained-policy rollout | complete with scope limit | `reports/MUJOCO_PUBLIC_CHECKPOINT_ROLLOUT_COMPLETE.md, results/public_pretrained_checkpoint_rollouts.csv` | MuJoCo locomotion only; no ManiSkill manipulation checkpoint | claim one full-horizon public MuJoCo trained-policy rollout benchmark |
 | Real-video WAM | readiness only | `reports/REAL_VIDEO_WAM_RESULTS.md` | dataset missing | schema/readiness only |
 | Corrective-trace adaptation | readiness only | `reports/CORRECTIVE_TRACE_RESULTS.md` | dataset missing | synthetic proxy only |

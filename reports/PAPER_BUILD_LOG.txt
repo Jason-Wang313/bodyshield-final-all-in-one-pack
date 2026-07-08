@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.3.17)  8 JUL 2026 10:40
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.3.17)  8 JUL 2026 18:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -282,35 +282,101 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 fg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-Underfull \hbox (badness 1448) in paragraph at lines 14--15
-[]\OT1/ptm/m/n/10 Nominal task suc-cess is not enough ev-i-dence that a
- []
-
-
-Underfull \hbox (badness 1924) in paragraph at lines 24--25
-[]\OT1/ptm/m/n/10 BodyBreak com-pares ran-dom search, one-axis search,
- []
-
-LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 2
-8.
-(<USER_HOME>\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1pcr.fd
+LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 4
+2.
+ (<USER_HOME>\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
+Underfull \hbox (badness 10000) in paragraph at lines 43--44
+[]$\OT1/pcr/m/n/7 results / high _ fidelity _
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 44--44
+[]\OT1/ptm/m/n/7 Complete
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 44--45
+[]$\OT1/pcr/m/n/7 reports / PUBLIC _
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 44--45
+\OT1/pcr/m/n/7 PRETRAINED _ CHECKPOINT _
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 45--46
+[]$\OT1/pcr/m/n/7 reports / HARDWARE _
+ []
+
+
+Underfull \hbox (badness 5345) in paragraph at lines 51--52
+\OT1/ptm/m/n/10 archetypes, per-tur-ba-tion fam-i-lies, search modes, re-pair
+ []
+
+
+Underfull \hbox (badness 3849) in paragraph at lines 51--52
+\OT1/ptm/m/n/10 vari-ants, ro-bust-ness pro-files, or-a-cle fea-si-bil-ity, bou
+nded
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 51--52
+\OT1/pcr/m/n/10 tables / sim _ budget _ matched _ results . csv$\OT1/ptm/m/n/10
+ ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 51--52
+\OT1/pcr/m/n/10 data _ schema . json$\OT1/ptm/m/n/10 , and $\OT1/pcr/m/n/10 res
+ults / public _
+ []
+
+<figures/bodyshield_before_after.pdf, id=1, 512.90088pt x 301.78796pt>
+File: figures/bodyshield_before_after.pdf Graphic file (type pdf)
+<use figures/bodyshield_before_after.pdf>
+Package pdftex.def Info: figures/bodyshield_before_after.pdf  used on input lin
+e 55.
+(pdftex.def)             Requested size: 239.39923pt x 140.85951pt.
+
+Underfull \hbox (badness 7186) in paragraph at lines 61--62
+[]\OT1/ptm/m/n/10 The an-a-lytic pack-age sup-ports bounded state-ments:
+ []
+
 [1{<USER_HOME>/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{<USER_HOME>
 ngz/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}
 
 
 ]
-Underfull \hbox (badness 5970) in paragraph at lines 104--105
-[]\OT1/ptm/m/n/10 The anal-y-sis pack sep-a-rates ro-bust-ness gains from
+Underfull \hbox (badness 6842) in paragraph at lines 67--68
+[]\OT1/ptm/m/n/10 The cur-rent repos-i-tory lacks hard-ware noise floor,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 104--105
-\OT1/ptm/m/n/10 con-ser-vatism, path-length growth, ver-i-fier un-cer-tainty,
+Underfull \hbox (badness 3078) in paragraph at lines 67--68
+\OT1/ptm/m/n/10 cam-era ver-i-fier ac-cu-racy, re-set re-li-a-bil-ity, real hel
+d-out
  []
 
-[2]
+
+Underfull \hbox (badness 2680) in paragraph at lines 67--68
+\OT1/ptm/m/n/10 phys-i-cal mod-i-fi-ca-tions, all-trials hard-ware videos, broa
+d
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 70--71
+[]\OT1/ptm/m/n/10 The pack-age in-cludes tests, claim ledger, ci-ta-tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 70--71
+\OT1/pcr/m/n/10 bodyshield.analysis.verify_package --json\OT1/ptm/m/n/10 .
+ []
+
+
 (<PACK_ROOT>\paper\build\main.bbl
 )
 
@@ -324,10 +390,7 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[3
-
-
-]
+[2 <./figures/bodyshield_before_after.pdf>]
 (<PACK_ROOT>\paper\build\main.aux
 )
  ***********
@@ -336,29 +399,31 @@ L3 programming layer <2025-12-24>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 3058 strings out of 467871
- 51910 string characters out of 5418376
- 472552 words of memory out of 5000000
- 31928 multiletter control sequences out of 15000+600000
- 662025 words of font info for 102 fonts, out of 8000000 for 9000
+ 3073 strings out of 467871
+ 52374 string characters out of 5418376
+ 472542 words of memory out of 5000000
+ 31940 multiletter control sequences out of 15000+600000
+ 664754 words of font info for 106 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,9n,65p,1487b,303s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 57i,11n,65p,1123b,410s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <<USER_HOME>/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
 cmmi10.pfb><<USER_HOME>/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
-fonts/cm/cmmi7.pfb><<USER_HOME>/AppData/Local/Programs/MiKTeX/fonts/type1/pu
-blic/amsfonts/cm/cmr10.pfb><<USER_HOME>/AppData/Local/Programs/MiKTeX/fonts/
-type1/public/amsfonts/cm/cmsy10.pfb><<USER_HOME>/AppData/Local/Programs/MiKT
-eX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><<USER_HOME>/AppData/Local/Progr
-ams/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><<USER_HOME>/AppData/Local/Pro
-grams/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><<USER_HOME>/AppData/Local/Pro
-grams/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><<USER_HOME>/AppData/Local/Pr
-ograms/MiKTeX/fonts/type1/urw/times/utmr8a.pfb>
+fonts/cm/cmmi5.pfb><<USER_HOME>/AppData/Local/Programs/MiKTeX/fonts/type1/pu
+blic/amsfonts/cm/cmmi7.pfb><<USER_HOME>/AppData/Local/Programs/MiKTeX/fonts/
+type1/public/amsfonts/cm/cmr10.pfb><<USER_HOME>/AppData/Local/Programs/MiKTe
+X/fonts/type1/public/amsfonts/cm/cmsy10.pfb><<USER_HOME>/AppData/Local/Progr
+ams/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><<USER_HOME>/AppData/Loc
+al/Programs/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><<USER_HOME>/AppData/L
+ocal/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><<USER_HOME>/AppData/L
+ocal/Programs/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><<USER_HOME>/AppData/
+Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><<USER_HOME>/AppData/
+Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
 Output written on <PACK_ROOT>\pap
-er\build\main.pdf (3 pages, 117832 bytes).
+er\build\main.pdf (2 pages, 155358 bytes).
 PDF statistics:
- 58 PDF objects out of 1000 (max. 8388607)
+ 74 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
 
 

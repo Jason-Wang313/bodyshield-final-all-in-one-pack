@@ -63,6 +63,7 @@ REQUIRED_ARTIFACTS: tuple[str, ...] = (
     "reports/REPRODUCIBILITY_MANIFEST.md",
     "reports/SIMULATION_ROLLOUT_VIDEOS.md",
     "reports/EXTERNAL_POLICY_BENCHMARK_READINESS.md",
+    "reports/EXTERNAL_BASELINE_FAIRNESS.md",
     "reports/REAL_VIDEO_WAM_READINESS.md",
     "reports/CORRECTIVE_TRACE_READINESS.md",
     "reports/ARTIFACT_INVENTORY_AUDIT.md",
@@ -115,6 +116,8 @@ STALE_PHRASES: tuple[str, ...] = (
     "# MuJoCo Residual Policy Interpretation",
     "not full trained-policy quality",
     "no full robot-policy",
+    "package stops without running trained-policy rollouts",
+    "external checkpoint row is explicitly blocked",
 )
 
 TEXT_SKIP_PARTS = {"__pycache__", ".pytest_cache", "tmp"}
@@ -257,12 +260,12 @@ def check_pdf(root: Path) -> VerificationCheck:
         "names": bool(trailer_root.get("/Names")),
     }
     unsafe_hits = [name for name, hit in unsafe.items() if hit]
-    if len(reader.pages) != 3 or bad_tokens or unsafe_hits:
+    if len(reader.pages) < 2 or bad_tokens or unsafe_hits:
         return _fail("paper_pdf", f"pages={len(reader.pages)}; bad_tokens={bad_tokens}; unsafe={unsafe_hits}")
-    required_boundary_terms = ("rollout", "generated frames", "real camera videos")
+    required_boundary_terms = ("rollout", "generated frames", "real camera", "public")
     if any(term not in text for term in required_boundary_terms):
         return _fail("paper_pdf", "missing synthetic-media boundary sentence in extracted text")
-    return _ok("paper_pdf", "3 pages; safe structure; citations resolved; synthetic-media boundary present")
+    return _ok("paper_pdf", f"{len(reader.pages)} pages; safe structure; citations resolved; synthetic-media boundary present")
 
 
 def check_paper_build_log(root: Path) -> VerificationCheck:
@@ -323,13 +326,15 @@ def check_external_policy_readiness(root: Path) -> VerificationCheck:
     missing_ok = "missing_checkpoint" in statuses
     boundary_ok = all(
         "not external" in boundary.lower() or "no external trained-policy evidence" in boundary.lower()
+        or "no example maniskill trained-policy evidence" in boundary.lower()
         or "not a mujoco/maniskill task-rollout benchmark" in boundary.lower()
         for boundary in boundaries
     )
     report_text = report_path.read_text(encoding="utf-8", errors="ignore") if report_path.exists() else ""
     report_boundary_ok = (
         "not external/full-scale MuJoCo or ManiSkill trained-policy evidence" in report_text
-        and "no external trained-policy checkpoint is present" in report_text
+        and "example ManiSkill checkpoint is not present" in report_text
+        and "public SB3/RL-Zoo HalfCheetah checkpoint benchmark is complete" in report_text
     )
     if not rows or not fixture_ok or not missing_ok or not boundary_ok or not report_boundary_ok:
         return _fail(

@@ -1,21 +1,21 @@
 artifact,check,status,detail,observed,expected
-paper/main.tex,tex_exists_nonempty,pass,paper TeX source exists and is nonempty,6926,>0 bytes
+paper/main.tex,tex_exists_nonempty,pass,paper TeX source exists and is nonempty,7900,>0 bytes
 paper/references.bib,bib_exists_nonempty,pass,paper BibTeX source exists and is nonempty,6550,>0 bytes
 paper/main.tex,tex_citations_resolve,pass,citation keys missing from bibliography=[],"gupta2025umionair,jiang2024transic,karunakaran2020counterexampleguided,le2025verificationguided,openai2018dexterous,openai2019rubiks,peng2018dynamicsrandomization,tobin2017domainrandomization,wang2026embodisteer,zeng2021mpccbf",all cited keys in paper/references.bib
 paper/references.bib,bib_required_keys_present,pass,expected bibliography keys missing=[],14,14
 paper/main.tex,tex_bibliography_files_resolve,pass,bibliography declarations missing=[],references.bib,at least one existing .bib file
 paper/main.tex,tex_refs_resolve,pass,label references missing=[],"fig:repair,tab:evidence",all refs have labels
 paper/main.tex,tex_figure_paths_resolve,pass,includegraphics paths missing=[],1,1
-paper/main.tex,tex_local_paths_resolve,pass,local \path references missing=[],"data_schema.json,logs/sim/results.jsonl,reports/EXTERNAL_CHECKPOINT_BLOCKER.md,reports/HARDWARE_BLOCKER.md,results/,results/high_fidelity_policy_results.csv,results/trials.parquet,tables/sim_budget_matched_results.csv,tables/sim_main_results.csv",all local paths exist
+paper/main.tex,tex_local_paths_resolve,pass,local \path references missing=[],"data_schema.json,logs/sim/results.jsonl,reports/EXTERNAL_BASELINE_FAIRNESS.md,reports/HARDWARE_BLOCKER.md,reports/PUBLIC_PRETRAINED_CHECKPOINT_COMPLETE.md,results/,results/high_fidelity_policy_results.csv,results/public_pretrained_checkpoint_benchmark.csv,results/public_pretrained_checkpoint_delta.csv,results/trials.parquet,tables/sim_budget_matched_results.csv,tables/sim_main_results.csv",all local paths exist
 paper/main.tex,tex_required_result_refs_present,pass,required local evidence refs missing from TeX=[],2,2
-paper/main.tex,tex_boundary_terms_present,pass,required TeX boundary terms missing=[],4,4
+paper/main.tex,tex_boundary_terms_present,pass,required TeX boundary terms missing=[],5,5
 paper/main.tex,tex_unresolved_markers_absent,pass,TeX unresolved markers=[],,none
 paper/main.tex,tex_tables_have_captions_and_labels,pass,tables missing caption or label=[],1,>=1
 reports/PAPER_BUILD_STATUS.json,paper_build_status_written,pass,paper build status JSON records the expected written output,status=written; output=paper\bodyshield_non_hardware_draft.pdf,status=written; output=paper\bodyshield_non_hardware_draft.pdf
 reports/PAPER_BUILD_LOG.txt,paper_build_log_clean,pass,build log unresolved/warning markers=[],0,0
-paper/bodyshield_non_hardware_draft.pdf,pdf_exists_nonempty,pass,paper PDF exists and is nonempty,117832,>0 bytes
-paper/bodyshield_non_hardware_draft.pdf,pdf_readable_pages,pass,paper PDF opens and has expected page count,3,3
+paper/bodyshield_non_hardware_draft.pdf,pdf_exists_nonempty,pass,paper PDF exists and is nonempty,155358,>0 bytes
+paper/bodyshield_non_hardware_draft.pdf,pdf_readable_pages,pass,paper PDF opens and has expected page count,2,any
 paper/bodyshield_non_hardware_draft.pdf,pdf_safe_structure,pass,paper PDF has no interactive/unsafe structure flags,,none
 paper/bodyshield_non_hardware_draft.pdf,pdf_unresolved_markers_absent,pass,PDF extracted text unresolved markers=[],,none
 paper/bodyshield_non_hardware_draft.pdf,pdf_boundary_terms_present,pass,required PDF boundary terms missing=[],5,5
-paper/bodyshield_non_hardware_draft.pdf,pdf_matches_build_output,pass,exported paper PDF matches paper/build/main.pdf when build output is available,b28727b4a0d030e51292135bd4d958db3eff84899ca32994ad4d7aa1f2b78dc3,b28727b4a0d030e51292135bd4d958db3eff84899ca32994ad4d7aa1f2b78dc3
+paper/bodyshield_non_hardware_draft.pdf,pdf_matches_build_output,pass,exported paper PDF matches paper/build/main.pdf when build output is available,34837fd841fcb52d1f3938235ac2846fa319479359fc64eef7c2ed1d66a54d29,34837fd841fcb52d1f3938235ac2846fa319479359fc64eef7c2ed1d66a54d29

@@ -37,7 +37,7 @@ NON_HARDWARE_MESSAGE = (
 
 PAPER_NOT_READY = (
     "PAPER NOT READY: hardware validation/noise floor/verifier/reset/physical modifications/videos are not run; "
-    "external trained-policy checkpoints and full-scale rollouts are missing; real-video WAM and corrective-trace "
+    "broad manipulation/foundation-policy checkpoint suites are missing; real-video WAM and corrective-trace "
     "datasets are missing; oracle feasibility is analytic only; BodyBreak minimality is estimated rather than "
     "globally proven; release is local rather than independently archived; human paper review remains open."
 )
@@ -678,7 +678,7 @@ def write_post_nonhardware_audit() -> None:
         ("Budget and fairness", "complete", "reports/BUDGET_AND_FAIRNESS_AUDIT.md", "baseline tuning remains analytic", "claim budget-matched local comparison"),
         ("Claim/citation/repro audits", "complete", "reports/CLAIM_LEDGER.md, reports/citation_verification.md, REPRODUCE.md", "local verification", "claim audited local package"),
         ("High-fidelity probes", "complete only analytic surrogate", "results/high_fidelity_policy_results.csv", "bounded probes, not full external trained policies", "claim bounded simulator probes"),
-        ("External trained policy benchmark", "blocked by external data/checkpoints", "reports/EXTERNAL_CHECKPOINT_BLOCKER.md", "no checkpoint in repo", "do not claim external checkpoint validation"),
+        ("Public pretrained MuJoCo checkpoint", "complete with scope limit", "reports/PUBLIC_PRETRAINED_CHECKPOINT_COMPLETE.md, reports/EXTERNAL_BASELINE_FAIRNESS.md", "one SB3/RL-Zoo HalfCheetah checkpoint only", "claim one public pretrained MuJoCo checkpoint benchmark"),
         ("Real-video WAM", "readiness only", "reports/REAL_VIDEO_WAM_RESULTS.md", "dataset missing", "schema/readiness only"),
         ("Corrective-trace adaptation", "readiness only", "reports/CORRECTIVE_TRACE_RESULTS.md", "dataset missing", "synthetic proxy only"),
         ("Oracle feasibility", "complete only analytic surrogate", "reports/oracle_feasibility.md", "not physical oracle feasibility", "claim analytic upper-bound gap"),
@@ -763,7 +763,7 @@ For a fixed candidate set Z_B, deterministic evaluator S, threshold alpha, and e
 
 ## Limits
 
-The current evidence is analytic/synthetic plus bounded simulator probes. Hardware validation, external trained-policy checkpoints, real-video WAM, real corrective traces, and independent archive replication are outside the completed evidence set.
+The current evidence is analytic/synthetic plus bounded simulator probes and one public SB3/RL-Zoo HalfCheetah checkpoint rollout. Hardware validation, broad manipulation/foundation-policy checkpoint suites, real-video WAM, real corrective traces, and independent archive replication are outside the completed evidence set.
 """,
     )
 
@@ -780,7 +780,7 @@ def write_full_paper() -> None:
 \begin{document}
 \maketitle
 \begin{abstract}
-Robot policies can pass nominal tests while relying on hidden assumptions about latency, calibration, joint range, gripper authority, sensing geometry, payload, and contact. BodyShield is a falsification-to-repair workflow: BodyBreak searches for low-cost embodiment-control perturbations that break a policy, then BodyShield repairs against discovered failures and evaluates held-out perturbation families. This paper is explicitly an analytic/simulation study. It contains analytic-simulation evidence, generated frames rather than real camera videos, bounded MuJoCo/ManiSkill probes, local surrogate policy repair results, audits, and release verification; real robot results and external full-scale trained-policy high-fidelity benchmarks remain future evidence tiers. The package stops without running trained-policy rollouts, real-video WAM training, or real corrective adaptation, and none establishes physical transfer.
+Robot policies can pass nominal tests while relying on hidden assumptions about latency, calibration, joint range, gripper authority, sensing geometry, payload, and contact. BodyShield is a falsification-to-repair workflow: BodyBreak searches for low-cost embodiment-control perturbations that break a policy, then BodyShield repairs against discovered failures and evaluates held-out perturbation families. This paper is explicitly an analytic/simulation study. It contains analytic-simulation evidence, generated frames rather than real camera videos, bounded MuJoCo/ManiSkill probes, local surrogate policy repair results, one public SB3/RL-Zoo HalfCheetah checkpoint rollout, audits, and release verification. Broader trained-policy suites, manipulation/foundation-policy checkpoints, real robot results, real-video WAM training, and real corrective adaptation remain future evidence tiers, and none establishes physical transfer.
 \end{abstract}
 
 \section{Introduction}
@@ -830,13 +830,13 @@ The completed package evaluates analytic tasks, robot archetypes, perturbation f
 \end{figure}
 
 \section{Results}
-The analytic package supports bounded statements: BodyShield improves specific held-out perturbation families under the local budgeted simulation protocol, and bounded high-fidelity probes are exported as stress evidence. The v3 package adds `results/external_policy_benchmark.csv` and `results/high_fidelity_policy_results.csv`, but the external checkpoint row is explicitly blocked.
+The analytic package supports bounded statements: BodyShield improves specific held-out perturbation families under the local budgeted simulation protocol, and bounded high-fidelity probes are exported as stress evidence. The package adds `results/external_policy_benchmark.csv`, `results/high_fidelity_policy_results.csv`, and one public SB3/RL-Zoo HalfCheetah checkpoint benchmark with a scoped action-gain fairness caveat.
 
 \section{Real Robot Experiments}
 \textbf{Hardware placeholder only. Do not fill until SO-ARM101/SO-101 safety gates pass.} Required hardware evidence includes measured noise floor, camera-verifier agreement, reset reliability, emergency-stop test, all-trials logs, all-trials videos, held-out physical modifications, and physical oracle feasibility.
 
 \section{Limitations}
-The current repository lacks hardware noise floor, camera verifier accuracy, reset reliability, real held-out physical modifications, all-trials hardware videos, external trained-policy rollouts, real-video WAM datasets, and real corrective-trace datasets. BodyBreak minimality is estimated over evaluated candidates only.
+The current repository lacks hardware noise floor, camera verifier accuracy, reset reliability, real held-out physical modifications, all-trials hardware videos, broad manipulation/foundation-policy checkpoint suites, real-video WAM datasets, and real corrective-trace datasets. BodyBreak minimality is estimated over evaluated candidates only.
 
 \section{Reproducibility and Safety}
 The package includes tests, claim ledger, citation verification, source audits, release bundle, and `python -m bodyshield.analysis.verify_package --json`. The robot modules expose bounded safe primitives and refuse to run before explicit physical readiness checks. This software boundary does not guarantee hardware safety.
@@ -869,7 +869,7 @@ This supplement covers analytic/synthetic and bounded simulator artifacts only. 
     full_sections = [
         (
             "Abstract",
-            "BodyShield is presented here as an analytic/simulation study of falsifying and repairing hidden embodiment-control assumptions. The package contains simulation, bounded high-fidelity probes, local surrogate policy repair summaries, audits, and release verification. Hardware and external checkpoint evidence are explicitly blocked.",
+            "BodyShield is presented here as an analytic/simulation study of falsifying and repairing hidden embodiment-control assumptions. The package contains simulation, bounded high-fidelity probes, local surrogate policy repair summaries, one public SB3/RL-Zoo HalfCheetah checkpoint rollout, audits, and release verification. Hardware and broad manipulation/foundation-policy checkpoint evidence remain blocked.",
         ),
         (
             "Method",
@@ -930,7 +930,7 @@ def write_prebuttal_and_readiness() -> None:
         ("Domain randomization is stronger and more established.", "Agreed; it is the dangerous baseline. BodyShield must beat it under equal or lower budget before any stronger wording."),
         ("This is only a benchmark.", "The package includes before/after repair artifacts, not only stress tests, but hardware repair evidence is still blocked."),
         ("The perturbations are artificial.", "Some are analytic/control perturbations. Physical-style proxies exist, while real physical modifications remain blocked by hardware."),
-        ("The method overfits to discovered failures.", "Held-out perturbation families and robustness profiles are included, but external checkpoint and physical held-out tests remain future evidence."),
+        ("The method overfits to discovered failures.", "Held-out perturbation families, robustness profiles, and one public SB3/RL-Zoo HalfCheetah checkpoint rollout are included, but broad manipulation/foundation-policy checkpoint suites and physical held-out tests remain future evidence."),
         ("BodyBreak minimality is not proven.", "Correct. The claim is finite-budget estimated minimality over evaluated candidates only."),
         ("Oracle feasibility is synthetic.", "Correct. It is an analytic upper-bound audit, not physical oracle feasibility."),
         ("Baselines may be under-tuned.", "The v2/v3 audits require budget accounting and fair tuning; external trained-controller compute matching remains unresolved."),
@@ -969,7 +969,7 @@ Primary artifacts: `reports/POST_NON_HARDWARE_REPO_AUDIT.md`, `reports/METHOD_TH
         ("budget_fairness", "pass", "reports/BUDGET_AND_FAIRNESS_AUDIT.md", "external controller matching open", "budget-matched local baselines"),
         ("claim_citation_repro", "pass", "reports/CLAIM_LEDGER.md, reports/citation_verification.md, REPRODUCE.md", "local only", "audited local package"),
         ("high_fidelity_bounded", "pass_with_scope_limit", "results/high_fidelity_policy_results.csv", "bounded probes only", "bounded simulator probes"),
-        ("external_trained_policy", "fail", "reports/EXTERNAL_CHECKPOINT_BLOCKER.md", "checkpoint missing", "do not claim external policy validation"),
+        ("external_trained_policy", "pass", "reports/PUBLIC_PRETRAINED_CHECKPOINT_COMPLETE.md; reports/EXTERNAL_BASELINE_FAIRNESS.md", "single public SB3 HalfCheetah checkpoint; not a broad manipulation/foundation-policy suite", "public pretrained MuJoCo checkpoint benchmark complete"),
         ("real_video_wam", "fail", "reports/REAL_VIDEO_WAM_RESULTS.md", "dataset missing", "readiness only"),
         ("corrective_trace", "fail", "reports/CORRECTIVE_TRACE_RESULTS.md", "dataset missing", "synthetic proxy only"),
         ("hardware_safety_noise_verifier_reset", "fail", "reports/HARDWARE_BLOCKER.md", "hardware not confirmed or run", "software readiness only"),

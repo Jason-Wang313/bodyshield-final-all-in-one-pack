@@ -65,14 +65,17 @@ Supported now:
 - Oracle feasibility, secondary metrics, threshold sensitivity, command-surface,
   source/import, paper-source, visual-artifact, release, and manifest audits are
   generated locally.
+- One public SB3/RL-Zoo HalfCheetah checkpoint benchmark is complete with a
+  scoped actuator-loss repair and an explicit baseline-fairness caveat.
 
 Not supported yet:
 
 - No real SO-ARM101/SO-101 hardware trials have been run.
 - No hardware noise floor, verifier agreement, reset reliability, or emergency
   stop statistics are available.
-- External trained-policy checkpoints, real-camera WAM training, and real
-  corrective-trace adaptation remain readiness harnesses rather than evidence.
+- Broad manipulation/foundation-policy checkpoint suites, real-camera WAM
+  training, and real corrective-trace adaptation remain readiness harnesses
+  rather than evidence.
 
 Hardware execution must not begin until the user explicitly confirms the robot,
 camera, workspace, physical emergency stop, power, reset protocol, and bounded

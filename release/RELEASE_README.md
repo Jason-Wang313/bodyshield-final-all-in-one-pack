@@ -4,7 +4,8 @@ This archive is a portable local export of the BodyShield non-hardware pack.
 
 Evidence boundary:
 - Contains software, configs, generated non-hardware results, reports, synthetic media, and the paper draft.
-- Does not contain hardware logs, real camera-verifier videos, external trained-policy checkpoints, real-video WAM data, or real corrective-trace datasets.
+- Contains one public pretrained MuJoCo checkpoint benchmark and its copied SB3/RL-Zoo checkpoint artifacts.
+- Does not contain hardware logs, real camera-verifier videos, broad manipulation/foundation-policy checkpoint suites, real-video WAM data, or real corrective-trace datasets.
 - Does not replace an external archival upload or public repository release.
 
 Suggested verification after unpacking:
@@ -14,6 +15,6 @@ python -m pytest -q
 ```
 
 Payload summary:
-- Payload files: 498
-- Payload bytes: 374340132
+- Payload files: 501
+- Payload bytes: 374863886
 - Manifest: `RELEASE_BUNDLE_MANIFEST.csv`

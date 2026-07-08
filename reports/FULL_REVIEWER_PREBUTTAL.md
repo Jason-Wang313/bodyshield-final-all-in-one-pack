@@ -8,11 +8,11 @@ Generated: `2026-07-08T08:54:57+00:00`
 | 2 | Domain randomization is stronger and more established. | Agreed; it is the dangerous baseline. BodyShield must beat it under equal or lower budget before any stronger wording. |
 | 3 | This is only a benchmark. | The package includes before/after repair artifacts, not only stress tests, but hardware repair evidence is still blocked. |
 | 4 | The perturbations are artificial. | Some are analytic/control perturbations. Physical-style proxies exist, while real physical modifications remain blocked by hardware. |
-| 5 | The method overfits to discovered failures. | Held-out perturbation families and robustness profiles are included, but external checkpoint and physical held-out tests remain future evidence. |
+| 5 | The method overfits to discovered failures. | Held-out perturbation families, robustness profiles, and one public SB3/RL-Zoo HalfCheetah checkpoint rollout are included; physical held-out tests and broad manipulation/foundation-policy checkpoint suites remain future evidence. |
 | 6 | BodyBreak minimality is not proven. | Correct. The claim is finite-budget estimated minimality over evaluated candidates only. |
 | 7 | Oracle feasibility is synthetic. | Correct. It is an analytic upper-bound audit, not physical oracle feasibility. |
-| 8 | Baselines may be under-tuned. | The v2/v3 audits require budget accounting and fair tuning; external trained-controller compute matching remains unresolved. |
-| 9 | High-fidelity probes are too small. | Correct. They are bounded probes, not full benchmark closure. |
+| 8 | Baselines may be under-tuned. | The v2/v3 audits require budget accounting and fair tuning; `reports/EXTERNAL_BASELINE_FAIRNESS.md` explicitly flags that a compute-matched action-scaling or dynamics-randomization baseline may explain the public-checkpoint gain. |
+| 9 | High-fidelity probes are too small. | Correct. They are bounded probes plus one public HalfCheetah checkpoint, not full manipulation/foundation-policy benchmark closure. |
 | 10 | No real videos exist. | Correct. Current media are generated/synthetic; videos/hardware is a blocked placeholder. |
 | 11 | No real corrective traces exist. | Correct. Readiness checks exist, dataset evidence does not. |
 | 12 | No real-video WAM data exist. | Correct. The repository only defines readiness/schema. |

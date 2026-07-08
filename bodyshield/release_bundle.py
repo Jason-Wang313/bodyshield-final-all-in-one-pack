@@ -222,6 +222,7 @@ REQUIRED_PAYLOADS = (
     "reports/SUBMISSION_READY_AUDIT.md",
     "reports/HARDWARE_BLOCKER.md",
     "reports/EXTERNAL_POLICY_BENCHMARK.md",
+    "reports/EXTERNAL_BASELINE_FAIRNESS.md",
     "reports/HIGH_FIDELITY_POLICY_RESULTS.md",
     "reports/EXTERNAL_TRAINED_POLICY_COMPLETE.md",
     "reports/SELF_TRAINED_PUBLIC_ENV_COMPLETE.md",
@@ -391,7 +392,8 @@ This archive is a portable local export of the BodyShield non-hardware pack.
 
 Evidence boundary:
 - Contains software, configs, generated non-hardware results, reports, synthetic media, and the paper draft.
-- Does not contain hardware logs, real camera-verifier videos, external trained-policy checkpoints, real-video WAM data, or real corrective-trace datasets.
+- Contains one public pretrained MuJoCo checkpoint benchmark and its copied SB3/RL-Zoo checkpoint artifacts.
+- Does not contain hardware logs, real camera-verifier videos, broad manipulation/foundation-policy checkpoint suites, real-video WAM data, or real corrective-trace datasets.
 - Does not replace an external archival upload or public repository release.
 
 Suggested verification after unpacking:
@@ -484,7 +486,7 @@ Status: `created`
 | payload bytes | {result.payload_bytes} |
 | checksums | `{result.checksums_path}` |
 
-Boundary: this is a portable local non-hardware archive. It does not prove an external archival upload, real trained-policy checkpoint benchmark, real-video WAM training, real corrective-trace adaptation, or hardware transfer.
+Boundary: this is a portable local non-hardware archive. It includes one public pretrained MuJoCo checkpoint benchmark, but it does not prove an external archival upload, a broad manipulation/foundation-policy checkpoint suite, real-video WAM training, real corrective-trace adaptation, or hardware transfer.
 """,
         encoding="utf-8",
     )

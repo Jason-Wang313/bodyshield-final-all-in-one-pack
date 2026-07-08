@@ -31,7 +31,8 @@ DOCUMENT_REQUIREMENTS: tuple[DocumentRequirement, ...] = (
         (
             "software and analytic-simulation claim only",
             "No real SO-ARM101/SO-101 hardware result has been run",
-            "No external/full-scale robot-policy MuJoCo/ManiSkill benchmark suite has been run",
+            "One public pretrained MuJoCo checkpoint benchmark has been run",
+            "No broad external/full-scale robot-policy MuJoCo/ManiSkill benchmark suite has been run",
             "No real-camera or foundation-scale WAM training has been run",
             "No real/external corrective-trace adaptation has been run",
         ),
@@ -41,7 +42,8 @@ DOCUMENT_REQUIREMENTS: tuple[DocumentRequirement, ...] = (
         (
             "do not claim physical transfer",
             "Do not present as real-video",
-            "Do not present as external/full-scale trained-policy MuJoCo/ManiSkill rollout evidence",
+            "one public pretrained MuJoCo checkpoint benchmark",
+            "Do not present as broad external/full-scale trained-policy MuJoCo/ManiSkill suite evidence",
             "does not replace external archival upload",
         ),
     ),
@@ -49,7 +51,7 @@ DOCUMENT_REQUIREMENTS: tuple[DocumentRequirement, ...] = (
         "reports/SIMULATION_SUMMARY.md",
         (
             "must not be presented as real robot or high-fidelity physics evidence",
-            "not external trained-policy benchmark evidence",
+            "not broad external/full-scale MuJoCo or ManiSkill suite evidence",
             "not real-video or foundation-scale WAM evidence",
             "not real corrective-trace adaptation evidence",
         ),
@@ -58,7 +60,7 @@ DOCUMENT_REQUIREMENTS: tuple[DocumentRequirement, ...] = (
         "reports/RELEASE_BUNDLE.md",
         (
             "does not prove an external archival upload",
-            "real trained-policy checkpoint benchmark",
+            "public pretrained MuJoCo checkpoint benchmark",
             "real-video WAM training",
             "real corrective-trace adaptation",
             "hardware transfer",
@@ -68,8 +70,8 @@ DOCUMENT_REQUIREMENTS: tuple[DocumentRequirement, ...] = (
         "reports/EXTERNAL_POLICY_BENCHMARK_READINESS.md",
         (
             "not external/full-scale MuJoCo or ManiSkill trained-policy evidence",
-            "no external trained-policy checkpoint is present",
-            "no external/full-scale trained-policy benchmark claim is supported",
+            "example ManiSkill checkpoint is not present",
+            "public SB3/RL-Zoo HalfCheetah checkpoint benchmark is complete",
         ),
     ),
     DocumentRequirement(
@@ -91,9 +93,9 @@ DOCUMENT_REQUIREMENTS: tuple[DocumentRequirement, ...] = (
     DocumentRequirement(
         "paper/main.tex",
         (
-            "real robot results and external full-scale trained-policy high-fidelity benchmarks remain future evidence tiers",
+            "one public SB3/RL-Zoo HalfCheetah checkpoint rollout",
             "generated frames rather than real camera videos",
-            "without running trained-policy rollouts, real-video WAM training, or real corrective adaptation",
+            "broader trained-policy suites, manipulation/foundation-policy checkpoints, real robot results, real-video WAM training, and real corrective adaptation remain future evidence tiers",
             "none establishes physical transfer",
         ),
     ),
@@ -115,7 +117,8 @@ PDF_REQUIREMENTS: tuple[DocumentRequirement, ...] = (
         (
             "real robot results",
             "generated frames",
-            "real camera videos",
+            "real camera",
+            "public SB3/RL-Zoo HalfCheetah checkpoint",
             "none establishes physical transfer",
         ),
     ),
@@ -128,7 +131,7 @@ CSV_BOUNDARY_REQUIREMENTS: tuple[CsvBoundaryRequirement, ...] = (
         "status",
         ("fixture_smoke_passed", "missing_checkpoint"),
         "evidence_boundary",
-        ("not external checkpoint evidence", "No external trained-policy evidence was generated"),
+        ("not external checkpoint evidence", "No example ManiSkill trained-policy evidence was generated"),
     ),
     CsvBoundaryRequirement(
         "results/real_video_wam_readiness.csv",

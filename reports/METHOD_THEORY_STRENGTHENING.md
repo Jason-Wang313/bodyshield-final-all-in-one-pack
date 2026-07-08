@@ -46,4 +46,4 @@ For a fixed candidate set Z_B, deterministic evaluator S, threshold alpha, and e
 
 ## Limits
 
-The current evidence is analytic/synthetic plus bounded simulator probes. Hardware validation, external trained-policy checkpoints, real-video WAM, real corrective traces, and independent archive replication are outside the completed evidence set.
+The current evidence is analytic/synthetic plus bounded simulator probes and one public SB3/RL-Zoo HalfCheetah checkpoint rollout. Hardware validation, broad manipulation/foundation-policy checkpoint suites, real-video WAM, real corrective traces, and independent archive replication are outside the completed evidence set.

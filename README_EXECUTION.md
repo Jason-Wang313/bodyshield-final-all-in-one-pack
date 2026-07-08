@@ -1,11 +1,12 @@
 # BodyShield Non-Hardware Execution
 
-Current code version: `b2492a6fe5c81e0f`
+Current code version: `657ed1811cb15297`
 
 Run:
 ```powershell
 python -m pytest -q
 python scripts\run_external_policy_benchmark.py
+python scripts\run_public_checkpoint_benchmark.py
 python scripts\run_real_video_wam_readiness.py
 python scripts\run_corrective_trace_readiness.py
 python scripts\run_artifact_inventory_audit.py
@@ -62,6 +63,9 @@ Primary outputs:
 - `reports/MUJOCO_RESIDUAL_POLICY_INTERPRETATION.md`
 - `reports/MUJOCO_RESIDUAL_POLICY_GATE_ABLATION_TABLE.md`
 - `reports/EXTERNAL_POLICY_BENCHMARK_READINESS.md`
+- `reports/PUBLIC_PRETRAINED_CHECKPOINT_COMPLETE.md`
+- `reports/MUJOCO_PUBLIC_CHECKPOINT_ROLLOUT_COMPLETE.md`
+- `reports/EXTERNAL_BASELINE_FAIRNESS.md`
 - `reports/TRAJECTORY_WAM_INTERPRETATION.md`
 - `reports/CORRECTIVE_ADAPTATION_INTERPRETATION.md`
 - `reports/CORRECTIVE_TRACE_READINESS.md`
@@ -76,6 +80,10 @@ Primary outputs:
 - `results/mujoco_residual_policy_rollouts.csv`
 - `results/mujoco_residual_policy_gate_ablation.csv`
 - `results/external_policy_benchmark_readiness.csv`
+- `results/public_pretrained_checkpoint_benchmark.csv`
+- `results/public_pretrained_checkpoint_rollouts.csv`
+- `results/public_pretrained_checkpoint_tuning.csv`
+- `results/public_pretrained_checkpoint_delta.csv`
 - `results/trajectory_wam_rollouts.csv`
 - `results/corrective_adaptation_rollouts.csv`
 - `results/corrective_trace_readiness.csv`

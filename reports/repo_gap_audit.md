@@ -31,7 +31,7 @@ Generated: `2026-07-08T01:02:34.320741+00:00`
 - Real SO-ARM101/SO-101 hardware trials.
 - Hardware noise-floor and verifier-audit trials.
 - Held-out physical-modification trials.
-- External trained-policy checkpoint rollout benchmark.
+- Broad manipulation/foundation-policy checkpoint rollout benchmark beyond the single public SB3/RL-Zoo HalfCheetah checkpoint.
 - Real-video WAM and real corrective-trace adaptation.
 
 ## Hardware Readiness Status

@@ -8,7 +8,7 @@
 \begin{document}
 \maketitle
 \begin{abstract}
-Robot policies can pass nominal tests while relying on hidden assumptions about latency, calibration, joint range, gripper authority, sensing geometry, payload, and contact. BodyShield is a falsification-to-repair workflow: BodyBreak searches for low-cost embodiment-control perturbations that break a policy, then BodyShield repairs against discovered failures and evaluates held-out perturbation families. This paper is explicitly an analytic/simulation study. It contains analytic-simulation evidence, generated frames rather than real camera videos, bounded MuJoCo/ManiSkill probes, local surrogate policy repair results, audits, and release verification; real robot results and external full-scale trained-policy high-fidelity benchmarks remain future evidence tiers. The package stops without running trained-policy rollouts, real-video WAM training, or real corrective adaptation, and none establishes physical transfer.
+Robot policies can pass nominal tests while relying on hidden assumptions about latency, calibration, joint range, gripper authority, sensing geometry, payload, and contact. BodyShield is a falsification-to-repair workflow: BodyBreak searches for low-cost embodiment-control perturbations that break a policy, then BodyShield repairs against discovered failures and evaluates held-out perturbation families. This paper is explicitly an analytic/simulation study. It contains analytic-simulation evidence, generated frames rather than real camera videos, bounded MuJoCo/ManiSkill probes, local surrogate policy repair results, one public SB3/RL-Zoo HalfCheetah checkpoint rollout, audits, and release verification. The public checkpoint result is limited to a single MuJoCo locomotion policy with a diagnosed action-gain repair; broader trained-policy suites, manipulation/foundation-policy checkpoints, real robot results, real-video WAM training, and real corrective adaptation remain future evidence tiers, and none establishes physical transfer.
 \end{abstract}
 
 \section{Introduction}
@@ -34,21 +34,21 @@ BodyBreak compares random, one-axis, grid, and compound adversarial search. Body
 \begin{table}[t]
 \caption{Evidence tiers after the post-nonhardware v3 pass.}
 \label{tab:evidence}
-\centering\footnotesize
-\begin{tabular}{lll}
+\centering\scriptsize
+\begin{tabular}{@{}p{0.23\linewidth}p{0.16\linewidth}p{0.38\linewidth}@{}}
 \toprule
 Tier & Status & Artifact \\
 \midrule
 Analytic simulation & Complete & \path{results/trials.parquet} \\
 High-fidelity probes & Bounded surrogate & \path{results/high_fidelity_policy_results.csv} \\
-External checkpoints & Blocked & \path{reports/EXTERNAL_CHECKPOINT_BLOCKER.md} \\
+Public checkpoint & Complete scoped & \path{reports/PUBLIC_PRETRAINED_CHECKPOINT_COMPLETE.md} \\
 Hardware & Blocked & \path{reports/HARDWARE_BLOCKER.md} \\
 \bottomrule
 \end{tabular}
 \end{table}
 
 \section{Experiments}
-The completed package evaluates analytic tasks, robot archetypes, perturbation families, search modes, repair variants, robustness profiles, oracle feasibility, and bounded simulator probes. Evidence lives in \path{results/}, \path{logs/sim/results.jsonl}, \path{tables/sim_main_results.csv}, \path{tables/sim_budget_matched_results.csv}, and \path{data_schema.json}. Figure~\ref{fig:repair} points to the main analytic before/after repair visualization.
+The completed package evaluates analytic tasks, robot archetypes, perturbation families, search modes, repair variants, robustness profiles, oracle feasibility, bounded simulator probes, and one public pretrained MuJoCo checkpoint rollout. Evidence lives in \path{results/}, \path{logs/sim/results.jsonl}, \path{tables/sim_main_results.csv}, \path{tables/sim_budget_matched_results.csv}, \path{data_schema.json}, and \path{results/public_pretrained_checkpoint_benchmark.csv}. Figure~\ref{fig:repair} points to the main analytic before/after repair visualization.
 
 \begin{figure}[t]
 \centering
@@ -58,16 +58,16 @@ The completed package evaluates analytic tasks, robot archetypes, perturbation f
 \end{figure}
 
 \section{Results}
-The analytic package supports bounded statements: BodyShield improves specific held-out perturbation families under the local budgeted simulation protocol, and bounded high-fidelity probes are exported as stress evidence. The v3 package adds `results/external_policy_benchmark.csv` and `results/high_fidelity_policy_results.csv`, but the external checkpoint row is explicitly blocked.
+The analytic package supports bounded statements: BodyShield improves specific held-out perturbation families under the local budgeted simulation protocol, and bounded high-fidelity probes are exported as stress evidence. The public checkpoint package adds a real SB3/RL-Zoo PPO HalfCheetah checkpoint evaluated in Gymnasium HalfCheetah-v5 for full-horizon 1000-step rollouts. In that scoped setting, the diagnosed action-gain repair improves a seen actuator-loss perturbation from 1747.849 to 3123.995 mean return and reports a held-out mean delta of 677.408 in \path{results/public_pretrained_checkpoint_delta.csv}. This is not manipulation evidence, foundation-policy evidence, hardware evidence, or proof that BodyShield beats a compute-matched action-scaling/domain-randomization baseline for all controller families; the fairness boundary is recorded in \path{reports/EXTERNAL_BASELINE_FAIRNESS.md}.
 
 \section{Real Robot Experiments}
 \textbf{Hardware placeholder only. Do not fill until SO-ARM101/SO-101 safety gates pass.} Required hardware evidence includes measured noise floor, camera-verifier agreement, reset reliability, emergency-stop test, all-trials logs, all-trials videos, held-out physical modifications, and physical oracle feasibility.
 
 \section{Limitations}
-The current repository lacks hardware noise floor, camera verifier accuracy, reset reliability, real held-out physical modifications, all-trials hardware videos, external trained-policy rollouts, real-video WAM datasets, and real corrective-trace datasets. BodyBreak minimality is estimated over evaluated candidates only.
+The current repository lacks hardware noise floor, camera verifier accuracy, reset reliability, real held-out physical modifications, all-trials hardware videos, broad manipulation/foundation-policy checkpoint suites, real-video WAM datasets, and real corrective-trace datasets. BodyBreak minimality is estimated over evaluated candidates only. The one public MuJoCo checkpoint result should be read as a narrow external-policy sanity benchmark, not as physical transfer.
 
 \section{Reproducibility and Safety}
-The package includes tests, claim ledger, citation verification, source audits, release bundle, and `python -m bodyshield.analysis.verify_package --json`. The robot modules expose bounded safe primitives and refuse to run before explicit physical readiness checks. This software boundary does not guarantee hardware safety.
+The package includes tests, claim ledger, citation verification, source audits, release bundle, and \texttt{python -m bodyshield.analysis.verify\_package --json}. The robot modules expose bounded safe primitives and refuse to run before explicit physical readiness checks. This software boundary does not guarantee hardware safety.
 
 \section{Conclusion}
 BodyShield is best read as a falsification-to-repair protocol for hidden embodiment-control assumptions. The non-hardware package is complete under analytic/synthetic scope, while the paper is not ready for final submission until the blocked evidence tiers are closed.

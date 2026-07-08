@@ -23,7 +23,7 @@ EVIDENCE_BOUNDARY = (
     "Readiness/interface validation only; not an external full-scale trained-policy benchmark."
 )
 MISSING_CHECKPOINT_BOUNDARY = (
-    "No external trained-policy evidence was generated because the checkpoint path is missing."
+    "No example ManiSkill trained-policy evidence was generated because the template checkpoint path is missing."
 )
 FIXTURE_BOUNDARY = "Deterministic fixture smoke only; not external checkpoint evidence."
 EXTERNAL_SMOKE_BOUNDARY = (
@@ -70,7 +70,7 @@ def default_spec() -> dict[str, Any]:
                 "adapter": "your_policy_module:load_policy",
                 "expected_action_dim": 7,
                 "observation_dim": 16,
-                "notes": "Template row: replace with a real checkpoint and adapter before claiming external policy evidence.",
+                "notes": "Template row: replace with a real manipulation checkpoint and adapter before claiming broad external policy-suite evidence.",
             },
         ],
     }
@@ -317,7 +317,7 @@ def run_external_policy_benchmark(
                 {
                     "status": "missing_checkpoint",
                     "steps_requested": steps,
-                    "notes": f"{row['notes']} Checkpoint path not found; external trained-policy benchmark was not run.".strip(),
+                    "notes": f"{row['notes']} Checkpoint path not found; example ManiSkill trained-policy benchmark was not run.".strip(),
                 }
             )
             rows.append(row)
@@ -378,7 +378,7 @@ def write_external_policy_benchmark_report(path: Path | str, rows: pd.DataFrame)
 
 This report validates the local spec, checkpoint-detection, adapter-loading, and deterministic interface-smoke path for future external trained-policy checkpoints.
 
-It is not external/full-scale MuJoCo or ManiSkill trained-policy evidence. A real benchmark row must have an existing checkpoint, an explicit adapter, and later task-rollout execution beyond this interface smoke.
+It is not external/full-scale MuJoCo or ManiSkill trained-policy evidence. The separate public SB3/RL-Zoo HalfCheetah checkpoint benchmark is complete in `reports/PUBLIC_PRETRAINED_CHECKPOINT_COMPLETE.md`; this readiness harness still contains an example ManiSkill checkpoint row that is intentionally missing until a real manipulation checkpoint and adapter are supplied.
 
 ## Summary
 - Rows: {summary['rows']}
@@ -392,7 +392,7 @@ It is not external/full-scale MuJoCo or ManiSkill trained-policy evidence. A rea
 {table}
 
 ## Safe claim
-The pack now has a runnable harness for external checkpoint readiness. With the included example spec, no external trained-policy checkpoint is present, so no external/full-scale trained-policy benchmark claim is supported.
+The pack now has a runnable harness for external checkpoint readiness, and the public SB3/RL-Zoo HalfCheetah checkpoint benchmark is complete. With the included example spec, the example ManiSkill checkpoint is not present, so no broad external/full-scale MuJoCo or ManiSkill trained-policy suite claim is supported by this readiness harness.
 """,
         encoding="utf-8",
     )
